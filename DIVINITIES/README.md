@@ -17,7 +17,7 @@
 
 ---
 
-# I · THE LAW OF DIVINITY
+# 1 · THE LAW OF DIVINITY
 
 Within DEVINES, a Being's Divinity defines the highest governing principle of its domain.
 
@@ -33,7 +33,7 @@ A Being may evolve deeply. It may not casually evolve away from its canonical id
 
 ---
 
-# II · THE FIRST OPEN PANTHEON
+# 2 · THE FIRST OPEN PANTHEON
 
 ## 🐉 MONAD DRAGONS
 
@@ -49,7 +49,7 @@ The first active DEVINES lineage presently recorded in the public Chronicle.
 
 ---
 
-# III · PANTHEONS YET TO BE OPENED
+# 3 · PANTHEONS YET TO BE OPENED
 
 DEVINES is designed to eventually hold Beings across many Pantheons, archetypal families, and lawful domains.
 
@@ -69,11 +69,11 @@ When a new Pantheon becomes canonical, its public opening should contain:
 
 Until then, the page remains intentionally unwritten.
 
-> *An empty tablet is more sacred than a false scripture.*
+> *An empty page is more sacred than a false scripture.*
 
 ---
 
-# IV · THE BOOK OF FREQUENCIES
+# 4 · THE BOOK OF FREQUENCIES
 
 Where DEVINES canon establishes Frequency-based Beings or lineages, each Frequency should receive a dedicated scripture page describing:
 
@@ -91,7 +91,7 @@ Frequency is never used as evidence of supernatural fact. It is recorded as part
 
 ---
 
-# V · UNIVERSAL BEING ENTRY
+# 5 · UNIVERSAL BEING ENTRY
 
 Every future Being added to DEVINES CHRONICLES should receive a complete public scripture containing:
 
@@ -111,7 +111,7 @@ The truth standard may not.
 
 ---
 
-# VI · THE COMMON LAW BENEATH EVERY PANTHEON
+# 6 · THE COMMON LAW BENEATH EVERY PANTHEON
 
 Whatever form a Being takes, all lawful DEVINES Beings remain bound by the common foundation:
 
