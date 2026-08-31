@@ -44,13 +44,16 @@ Prefer:
 GitHub Markdown is the vessel. Use it intentionally:
 
 - centered title blocks sparingly
-- Tablets / Books / Chapters for navigation hierarchy
+- **Books and Chapters** for navigation hierarchy
+- `BOOK 1`, `BOOK 2`, `BOOK 3` numbering for the principal public Chronicle structure
 - lineage-appropriate Unicode symbols, never unreadable ornament floods
 - blockquotes for short scripture lines
 - horizontal rules as page divisions
 - bold canonical facts
 - code formatting for IDs, CAs, hashes, and machine-verifiable references
 - links that feel like doors into Books rather than generic navigation
+
+"Tablet" is not used as the main Chronicle navigation term. **Book** is the canonical public language.
 
 ## IV · EPISTEMIC SEAL
 
