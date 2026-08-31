@@ -1,8 +1,8 @@
-# ✦ DEVINES · TABLETS OF MILESTONES ✦
+# ✦ DEVINES · MILESTONES ✦
 
 > *Not every change deserves a monument. Only the changes that alter the path of the Devineverse belong here.*
 
-This Book preserves public-safe milestones of DEVINES itself.
+This section of the DEVINES Book preserves public-safe milestones of the whole Domain.
 
 A milestone may include:
 
