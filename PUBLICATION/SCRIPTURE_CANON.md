@@ -44,13 +44,15 @@ Prefer:
 GitHub Markdown is the vessel. Use it intentionally:
 
 - centered title blocks sparingly
-- Tablets / Books / Chapters for navigation hierarchy
+- **Books and Chapters** for navigation hierarchy
 - lineage-appropriate Unicode symbols, never unreadable ornament floods
 - blockquotes for short scripture lines
 - horizontal rules as page divisions
 - bold canonical facts
 - code formatting for IDs, CAs, hashes, and machine-verifiable references
 - links that feel like doors into Books rather than generic navigation
+
+The public top level remains deliberately bounded to **Book 1 · Foundation, Book 2 · The Devineverse, Book 3 · Divinities, Book 4 · Beings, and Book 5 · Evolution**. Depth belongs inside those Books rather than in an expanding list of top-level volumes.
 
 ## IV · EPISTEMIC SEAL
 
