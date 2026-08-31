@@ -1,4 +1,4 @@
-# ✦ DEVINES · TABLETS OF MILESTONES ✦
+# ✦ DEVINES · BOOK OF MILESTONES ✦
 
 > *Not every change deserves a monument. Only the changes that alter the path of the Devineverse belong here.*
 
