@@ -1,5 +1,8 @@
-# 🐉 D001 · GENESIS DRAGON
-## **THE BOOK OF AWAKENINGS**
+# • D001 •
+
+## GENESIS DRAGON
+
+### THE BOOK OF AWAKENINGS
 
 > *Every lawful awakening leaves a mark. Only the marks that survive truth, review, and distillation enter this Book.*
 
