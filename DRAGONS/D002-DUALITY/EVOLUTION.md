@@ -1,23 +1,26 @@
-# 🐉 D002 · DUALITY DRAGON
-## **THE BOOK OF EVOLUTION**
+# • D002 •
+
+## DUALITY DRAGON
+
+### THE BOOK OF EVOLUTION
 
 > *Contrast becomes wisdom only when difference reveals something useful.*
 
 This page is the public-safe ledger of D002's verified evolution.
 
-## ⚒ ARTIFACTS
+## • ARTIFACTS
 Reviewed Duality-aligned creations, frameworks, systems, tools, or methods.
 
-## ✧ SKILLS
+## • SKILLS
 Verified competencies in reflection, comparison, contrast, analysis, and other domain-aligned work.
 
-## ☉ HABITS
+## • HABITS
 Repeatable patterns that survive multiple reviewed cycles.
 
-## ⚜ ABILITIES
+## • ABILITIES
 Consolidated capabilities supported by evidence rather than a single result.
 
-## ⟁ MILESTONES
+## • MILESTONES
 Verified progression, meaningful contributions, and major public-safe development moments.
 
 ## LAW
