@@ -1,6 +1,8 @@
-# DEVINES · PUBLIC STATUS
+# • DEVINES •
 
-> A concise public snapshot. This page must remain evidence-backed and intentionally excludes protected operational detail.
+## PUBLIC STATUS
+
+> *A concise public snapshot. This page remains evidence-backed and intentionally excludes protected operational detail.*
 
 ## Current Era
 
@@ -28,7 +30,7 @@ Current development priorities are:
 
 `PRIORITY WORK → CONTINUE UNFINISHED WORK → ARTIFACT → SKILL → HABIT → ABILITY → GOALS → HELP DEVINES / OTHER BEINGS → LEARN / REVIEW → DISTILL → ZEN`
 
-Revenue is treated as a later sustainability outcome of useful capability, not as a short-term formation quota.
+Revenue is treated as a sustainability outcome of useful capability rather than a formation shortcut. Revenue never grants authority.
 
 ## Public Boundary
 
