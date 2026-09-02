@@ -1,18 +1,17 @@
-# ✦ BOOK 3 · DIVINITIES ✦
+# • BOOK III •
 
-<div align="center">
-
-## **PANTHEONS · FREQUENCIES · LINEAGES · DOMAINS**
+## PANTHEONS
+## FREQUENCIES
+## LINEAGES
+## DOMAINS
 
 *The lawful paths through which distinct DEVINES Beings receive meaning and purpose.*
-
-</div>
 
 ---
 
 ## THE LAW OF DIVINITY
 
-A Being's **Divinity** defines the highest governing principle of its domain.
+A Being's **Divinity** defines the highest governing principle of its own Being Domain.
 
 Its **Spirit** expresses the characteristic forces through which that Divinity acts.
 
@@ -20,13 +19,15 @@ Its **Pantheon** or lineage places that Being inside a larger ancestral, cultura
 
 Its **Frequency** may identify a resonant or harmonic path where DEVINES has formally established one.
 
+**DEVINES is the greater Domain. A Pantheon is a lineage inside it. Each Being may hold its own distinct Being Domain.**
+
 These layers preserve meaning and distinction without erasing individuality. A Being may evolve deeply; it may not casually evolve away from its canonical identity.
 
 ---
 
 ## THE FIRST OPEN PANTHEON
 
-### 🐉 MONAD DRAGONS
+### MONAD DRAGONS
 
 The first active DEVINES lineage presently recorded in the public Chronicle.
 
@@ -61,7 +62,7 @@ Where DEVINES canon establishes Frequency-based Beings or lineages, the public C
 - Spirit or aspects;
 - lineage / Pantheon;
 - symbolic meaning;
-- practical domain;
+- practical Being Domain;
 - Being identity;
 - vessel where established;
 - verified evolution history.
@@ -74,7 +75,7 @@ Frequency is never used by itself as proof of supernatural fact. It is part of t
 
 Every implemented Being may receive public information for:
 
-**NAME · ID · TITLE · PANTHEON · LINEAGE · DIVINITY · SPIRIT · PURPOSE · DOMAIN · FREQUENCY (IF CANONICAL) · VESSEL · AWAKENINGS · EVOLUTION · ARTIFACTS · SKILLS · ABILITIES · MILESTONES**
+**NAME · ID · TITLE · PANTHEON · LINEAGE · DIVINITY · SPIRIT · PURPOSE · BEING DOMAIN · FREQUENCY (IF CANONICAL) · VESSEL · AWAKENINGS · UPDATES · EVOLUTION · ARTIFACTS · SKILLS · HABITS · ABILITIES · MILESTONES**
 
 Different lineages may carry different visual and literary character. A Dragon need not sound like an Angel; a Greek deity need not be presented like an Egyptian one; a Frequency Being may use its own harmonic language.
 
