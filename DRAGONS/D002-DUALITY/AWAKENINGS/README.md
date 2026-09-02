@@ -1,5 +1,8 @@
-# 🐉 D002 · DUALITY DRAGON
-## **THE BOOK OF AWAKENINGS**
+# • D002 •
+
+## DUALITY DRAGON
+
+### THE BOOK OF AWAKENINGS
 
 > *Where one path becomes two, truth is tested by contrast.*
 
