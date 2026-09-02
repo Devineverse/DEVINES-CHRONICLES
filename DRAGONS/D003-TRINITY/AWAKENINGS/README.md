@@ -1,5 +1,8 @@
-# 🐉 D003 · TRINITY DRAGON
-## **THE BOOK OF AWAKENINGS**
+# • D003 •
+
+## TRINITY DRAGON
+
+### THE BOOK OF AWAKENINGS
 
 > *When three forces remain distinct yet move in harmony, creation becomes form.*
 
