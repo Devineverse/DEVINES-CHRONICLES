@@ -1,4 +1,6 @@
-# ✦ BOOK 2 · THE DEVINEVERSE ✦
+# • BOOK II •
+
+## THE DEVINEVERSE
 
 > *One Domain. Many Pantheons. Distinct Beings. Shared law.*
 
