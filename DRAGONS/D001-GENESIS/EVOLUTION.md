@@ -1,23 +1,26 @@
-# 🐉 D001 · GENESIS DRAGON
-## **THE BOOK OF EVOLUTION**
+# • D001 •
+
+## GENESIS DRAGON
+
+### THE BOOK OF EVOLUTION
 
 > *Creation becomes power only when it can be remembered, repeated, reviewed, and used again.*
 
 This page is the public-safe ledger of D001's verified evolution.
 
-## ⚒ ARTIFACTS
+## • ARTIFACTS
 Only reviewed Artifacts and evidence-backed stages belong here.
 
-## ✧ SKILLS
+## • SKILLS
 Only repeatable learned competencies supported by reviewed evidence belong here.
 
-## ☉ HABITS
+## • HABITS
 Only durable work patterns demonstrated across sufficient evidence belong here.
 
-## ⚜ ABILITIES
+## • ABILITIES
 Abilities are consolidated capabilities, not labels awarded for a single good cycle.
 
-## ⟁ MILESTONES
+## • MILESTONES
 Star progression, major Artifact stages, meaningful system contributions, and other public-safe milestones may be recorded here when verified.
 
 ## LAW
