@@ -1,45 +1,69 @@
 # DEVINES Visual Law
 
-DEVINES CHRONICLES is presented as a **living codex in the Void** — minimal, ancestral, cosmic and precise.
+DEVINES CHRONICLES must feel like a living codex emerging from the Monad: minimal, ancestral, cosmic and precise.
 
-## Foundation
+## Canonical palette authority
 
-**Canonical appearance:** Dark.
+The canonical AUM sigil supplied by DEVINES is the palette authority.
 
-The global palette comes only from the canonical **AUM / Monad** visual field.
+The site itself uses only this progression:
 
-### Core spectrum
+**Void Black → Deep Monad Violet → Monad Purple → AUM Lavender → White**
 
-- **Void Black** — `#000000`
-- **Deep Monad** — `#100030`
-- **Monad Violet** — `#201050`
-- **AUM Violet** — `#6050A0`
-- **Luminous Lavender** — `#D0C0F0`
-- **AUM White** — `#F0F0F0`
-- **Pure White** — `#FFFFFF`
+No gold, blue, green, red, cyan or other Being-specific color becomes part of the global interface.
 
-The movement is:
+A Being portrait may preserve its own canonical colors. Those colors remain inside the Being's identity image; they do not recolor the Book around it.
 
-> **Void → Monad → AUM → Light**
+## Core palette
 
-Black remains the body of every page. Violet expresses depth, connection and transition. Lavender marks emergence. White is clarity.
+- **Void Black:** #000000
+- **Deep Monad:** #10051F
+- **Monad Violet:** #2B0B52
+- **DEVINES Purple:** #6D35C7
+- **AUM Lavender:** #B59CFF
+- **AUM Light:** #E9E2FF
+- **Primary White:** #FFFFFF
+- **Soft White:** #F7F5FA
 
-No unrelated global accent color is introduced.
-
-Colors such as gold, green, blue, red or cyan may exist **inside an individual Being's canonical portrait**, but they do not become site chrome, navigation colors or global UI accents.
+The exact final tint may be tuned visually against the canonical AUM asset, but it must stay inside this black → violet → lavender → white family.
 
 ## Depth law
 
-The deeper the reader travels, the more light may emerge — without abandoning the Void.
+Depth is expressed through light, not through additional colors.
 
-- **Threshold / Welcome:** almost pure black, sparse white, one AUM violet signal.
-- **BOOK I · Origin:** black → deep Monad violet.
-- **BOOK II · Beings:** black foundation; canonical portraits carry individual identity.
-- **BOOK III · Treasury:** deeper violet/lavender for durable artifacts and knowledge.
-- **BOOK IV · Living History:** luminous violet moving toward white, expressing accumulated continuity.
-- **THE CALL:** return to black with AUM white/violet — the cycle closes at the threshold.
+### Threshold / Welcome
+Predominantly black. AUM appears as the first luminous presence. White typography. Violet is sparse.
 
-This is not a literal full-page gradient behind paragraphs. It is a hierarchy of accents, selected surfaces, separators and light intensity.
+### BOOK I · THE ORIGIN
+Black with deep-violet undertones. The reader is close to the root.
+
+### BOOK II · THE BEINGS
+More visible Monad purple. Canonical Being portraits become the main individual color-bearing elements.
+
+### BOOK III · THE LIVING TREASURY
+Purple moves toward luminous lavender: knowledge made durable.
+
+### BOOK IV · THE LIVING HISTORY
+Lavender and white become slightly more present: continuity becoming visible.
+
+### THE CALL
+Return toward black, with AUM-light/white at the threshold. Completion folds back into origin.
+
+This progression must remain restrained. It is an atmosphere and hierarchy, not a page-sized decorative gradient.
+
+## Background and typography
+
+**Default experience:** true dark.
+
+- Main background: black.
+- Reading surfaces: black to near-black.
+- Primary text: white.
+- Secondary text: soft white / AUM-light at reduced emphasis.
+- Links and active states: Monad purple / AUM lavender.
+- Borders/dividers: deep violet at low contrast.
+- Focus/selected state: restrained lavender luminance.
+
+Never use grey as the visual identity. Neutral greys may occur only where GitBook requires them for accessibility/system UI.
 
 ## Typography
 
@@ -47,77 +71,76 @@ This is not a literal full-page gradient behind paragraphs. It is a hierarchy of
 
 Character: **carved, monumental, rune-adjacent, elegant**.
 
-Preferred direction: **Cinzel**, or the closest GitBook-supported inscriptional serif.
+Preferred direction: **Cinzel** or the closest restrained inscriptional serif available in GitBook.
 
-Use for:
+Use display typography for:
 - DEVINES CHRONICLES
 - BOOK I / II / III / IV
 - Series names
 - Being names
 - THE CALL
 
-Never use ornamental typography for paragraph copy.
+Do not use novelty runes or hard-to-read fantasy alphabets.
 
 ### Reading / body
 
-Use a highly legible neutral sans:
+Use a clean, highly legible sans-serif.
 
-1. General Sans when available
+Preferred order:
+1. General Sans
 2. Inter
 3. closest GitBook-native neutral sans
 
-Body copy is white / soft white on black.
+Long-form text stays white/soft-white on black.
 
-## Hierarchy
+## Page hierarchy
 
 The Book breathes.
 
-- large titles;
-- short ceremonial thresholds;
-- generous negative space;
-- restrained violet separators;
-- one canonical portrait at the opening of every Being page;
-- evidence visually quieter than the Being's voice;
-- no noisy card grids or SaaS dashboard styling.
+- generous negative space
+- few visual elements
+- one canonical identity image at a Being threshold
+- restrained dividers
+- evidence quieter than voice
+- no decorative clutter
+- no rainbow accents
+- no playful badges
+- no emoji in the published Book UI
 
 ## Being pages
 
-Each Being page opens:
+Opening order:
 
-1. canonical portrait;
-2. BEING NAME · ID;
-3. title / divinity;
-4. spirit aspects;
-5. first-person threshold;
-6. current public cycle;
-7. durable trace / carry-forward;
-8. decentralized anchor where applicable.
+1. canonical portrait
+2. BEING NAME · ID
+3. title / divinity
+4. spirit aspects
+5. first-person threshold
+6. current public cycle
+7. durable trace / carry-forward
+8. decentralized anchor where applicable
 
-The portrait is identity, not decoration.
+The portrait is part of the Being's public identity, not decoration.
 
-## Interface restraint
+## AUM law
 
-Prefer:
+AUM is not a generic logo placed everywhere.
 
-- black surfaces;
-- white typography;
-- AUM violet focus/links;
-- low or square corner radius;
-- subtle borders;
-- flat depth where possible;
-- almost no shadows;
-- no playful badges;
-- no emoji in published navigation;
-- no repeated bright CTA buttons.
+It marks thresholds:
+- the entrance
+- major Book transitions when useful
+- the final Call
 
-Membership appears at **THE CALL**, not throughout the Book.
+Its black/violet/lavender/white spectrum defines the site around it.
 
 ## Dark-mode law
 
-Dark is the canonical reference experience.
+If GitBook permits a default appearance, choose **Dark**.
 
-If GitBook allows a reader theme switch, light mode may remain for accessibility, but visual QA is performed against Dark first.
+If readers can switch themes, Dark remains the canonical design and the version used for visual QA.
 
 ## Principle
 
-> **Ancient in resonance. Futuristic in precision. Minimal in form. Alive in continuity.**
+> **From void to light without leaving the Monad.**
+>
+> Ancient in resonance. Futuristic in precision. Minimal in form. Alive in continuity.

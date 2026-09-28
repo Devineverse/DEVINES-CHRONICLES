@@ -1,67 +1,80 @@
 # GitBook Presentation Specification
 
-## Site
+## Site identity
 
-**Title:** DEVINES CHRONICLES  
+**Site:** DEVINES CHRONICLES  
 **Subtitle:** The Living Book of DEVINES  
-**Canonical appearance:** Dark  
+**Account / public creator identity:** AUMDEVINES  
+**Project identity:** DEVINES  
+**Default appearance:** Dark  
 **Source:** Git Sync from `Devineverse/DEVINES-CHRONICLES` / `main`
 
-## Brand palette
+## Global visual system
 
-Use only the AUM/Monad spectrum for site-level UI:
+The GitBook chrome must remain subordinate to the Book.
 
-**#000000 → #100030 → #201050 → #6050A0 → #D0C0F0 → #F0F0F0 → #FFFFFF**
+- background: black
+- primary text: white
+- secondary text: soft white
+- primary/tint: Monad violet
+- active/highlight: AUM lavender
+- borders: very dark violet
+- no global gold
+- no global Being-series colors
+- low/no card shadow
+- low corner radius
+- no colorful SaaS gradients
 
-Primary background: **#000000**  
-Primary text: **#FFFFFF / #F0F0F0**  
-Primary accent/link: closest supported value to **#6050A0**  
-Secondary/hover accent: closest supported value to **#D0C0F0**
-
-Do not make gold, red, green, blue or cyan part of global navigation even when those colors appear in individual Being portraits.
-
-## Theme
-
-- Dark/near-black surfaces.
-- White body typography.
-- AUM violet links, focus and selected state.
-- Minimal sidebar.
-- Low corner radius.
-- Flat depth where available.
-- No decorative SaaS gradients behind body copy.
-- Let the official portraits carry visual complexity.
+The only global color family is the AUM/Monad spectrum:
+**black → deep violet → purple → lavender → white**.
 
 ## Typography
 
-**Display:** Cinzel when GitBook makes it available; otherwise the closest restrained inscriptional serif.
+**Display:** Cinzel when available; otherwise the closest elegant inscriptional serif in GitBook.
 
 **Body:** General Sans or Inter.
 
-Display typography is reserved for titles and thresholds.
+Display typography belongs to titles and thresholds only. Body readability wins everywhere else.
 
 ## Navigation
 
-- Welcome to DEVINES
-- BOOK I · THE ORIGIN
-- BOOK II · THE BEINGS
-- BOOK III · THE LIVING TREASURY
-- BOOK IV · THE LIVING HISTORY
-- THE CALL
+Top-level reader order:
+
+1. Welcome to DEVINES
+2. BOOK I · THE ORIGIN
+3. BOOK II · THE BEINGS
+4. BOOK III · THE LIVING TREASURY
+5. BOOK IV · THE LIVING HISTORY
+6. THE CALL
+
+Developer/configuration pages remain outside the reader's primary journey.
 
 ## Landing threshold
 
-Prioritize:
+The first visual sequence:
 
-1. canonical AUM sigil;
-2. DEVINES CHRONICLES;
-3. short Welcome to DEVINES threshold;
-4. four Books;
-5. direct Being entry.
+1. canonical AUM sigil on black
+2. DEVINES CHRONICLES
+3. The Living Book of DEVINES
+4. Welcome threshold
+5. the four Books
+6. direct Being entry
 
-Publication/configuration pages remain secondary to the reading path.
+Do not overload the entrance with cards or explanatory UI.
 
-## Canonical imagery
+## Depth progression
 
-All Being portraits and the AUM sigil are versioned in this Git repository under `.gitbook/assets/`.
+Use increasing luminance, not new colors:
 
-No substitute image may silently replace an official identity asset.
+- Welcome: black + sparse violet
+- Book I: black/deep violet
+- Book II: black + Monad purple
+- Book III: purple/lavender emphasis
+- Book IV: lavender/white emphasis
+- The Call: back toward black with a final AUM-light threshold
+
+## Imagery
+
+Use only canonical assets supplied by DEVINES.
+
+A Being's portrait may carry its own intrinsic colors. The surrounding GitBook UI stays inside the AUM/Monad palette.
