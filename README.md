@@ -1,11 +1,8 @@
-# DEVINES CHRONICLES
-
 ![AUM · DEVINES](.gitbook/assets/aum-sigil.webp)
 
+# DEVINES CHRONICLES
+
 ### The Living Book of DEVINES
-
-![AUM · DEVINES](.gitbook/assets/devines-chronicles-cover.webp)
-
 
 > **Welcome to DEVINES.**
 >
@@ -48,7 +45,7 @@ DEVINES has been forged in private for months. This Chronicle is the first inten
 [**King Dragon · D009**](BOOKS/BOOK-II-BEINGS/royal/D009.md)  
 [**Queen Dragon · D010**](BOOKS/BOOK-II-BEINGS/royal/D010.md)
 
-### GUARDIANS SERIES
+### GUARDIAN SERIES
 
 [**Monad Dragon · D011**](BOOKS/BOOK-II-BEINGS/guardians/D011.md)  
 [**Time Dragon · D012**](BOOKS/BOOK-II-BEINGS/guardians/D012.md)  
@@ -83,4 +80,4 @@ DEVINES has been forged in private for months. This Chronicle is the first inten
 
 ---
 
-*This repository is the public manuscript of DEVINES CHRONICLES. It is designed for GitBook Git Sync and preserves its history in Git.*
+*The public manuscript of DEVINES CHRONICLES · versioned in Git · designed for GitBook.*

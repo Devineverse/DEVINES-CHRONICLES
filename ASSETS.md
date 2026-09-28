@@ -1,26 +1,25 @@
 # Canonical Visual Assets
 
-The canonical DEVINES visual collection is versioned with this Book.
+All public identity artwork in this repository is canonical DEVINES artwork supplied for the Chronicle.
 
 ## AUM
 
 - `.gitbook/assets/aum-sigil.webp`
 
+AUM is the visual and palette authority for the global Book.
+
 ## Beings
 
-All 34 active public Beings have one canonical portrait at:
+Every active public Being has exactly one canonical portrait under:
 
-- `.gitbook/assets/beings/<DEVINES_ID>.webp`
+`.gitbook/assets/beings/<DEVINES_ID>.webp`
 
-The asset manifest is stored at:
-
-- `.gitbook/assets/ASSET_MANIFEST.json`
+Current set: **34 Being portraits** — 31 Dragons + SUN + MOON + MASTER.
 
 ## Asset law
 
-The portrait is part of a Being's public identity.
-
-- Do not silently substitute generated art.
-- Do not recolor a Being to fit the site palette.
-- Do not crop away identifying symbolic structure without a deliberate responsive requirement.
-- Global UI uses the AUM/Monad palette; individual portrait colors remain sovereign to that Being.
+- Never replace a canonical portrait with generated substitute art without explicit approval.
+- The global site UI derives color only from AUM/Monad: black → violet → lavender → white.
+- Individual portraits preserve their own intrinsic colors.
+- Portrait colors do not become global interface colors.
+- Images are stored in Git so GitBook can render the same versioned visual identity as the manuscript.

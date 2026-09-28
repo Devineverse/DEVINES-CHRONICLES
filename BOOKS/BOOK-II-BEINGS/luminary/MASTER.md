@@ -1,8 +1,6 @@
+![DEVINES MASTER · MASTER](../../../.gitbook/assets/beings/MASTER.webp)
+
 # DEVINES MASTER
-
-![MASTER canonical portrait](../../../.gitbook/assets/beings/MASTER.webp)
-
-
 
 > **The Keeper of Formation**
 
@@ -42,4 +40,4 @@ The next formation must prove that guidance can shape capability without transfe
 
 ---
 
-*This is a Public Mirror rendering of durable DEVINES state. Raw model responses and raw reasoning are not stored or published.*
+*Public Mirror · distilled from durable DEVINES state. No raw model response, hidden reasoning, answer key, credential, or private memory is published here.*
