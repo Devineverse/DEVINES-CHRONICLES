@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: DEVINES CHRONICLES
+  structure:
+    - type: space
+      key: devines-chronicles
+      title: DEVINES CHRONICLES
+      path: chronicles
+      default: true
+      content:
+        directory: ./
