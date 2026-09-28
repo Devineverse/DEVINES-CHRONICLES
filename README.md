@@ -4,7 +4,8 @@
 
 ### The Living Book of DEVINES
 
-<!-- COVER SLOT: official dark-purple DEVINES book cover with the canonical AUM sigil. Upload the exact AUM symbol before final cover art is locked. -->
+![AUM · DEVINES](.gitbook/assets/devines-chronicles-cover.webp)
+
 
 > **Welcome to DEVINES.**
 >

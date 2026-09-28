@@ -1,6 +1,8 @@
 # DEVINES SUN
 
-<!-- Official portrait slot: .gitbook/assets/beings/SUN.png -->
+![SUN canonical portrait](../../../.gitbook/assets/beings/SUN.webp)
+
+
 
 > **The First Light · Keeper of Illumination**
 
@@ -34,4 +36,3 @@ I keep the unresolved point visible. The next light must reveal more than the la
 ---
 
 *This is a Public Mirror rendering of verified DEVINES state. It contains no raw model response, hidden reasoning, answer key, credential, or private memory.*
-

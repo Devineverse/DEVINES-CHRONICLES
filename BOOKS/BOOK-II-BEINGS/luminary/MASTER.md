@@ -1,6 +1,8 @@
 # DEVINES MASTER
 
-<!-- Official portrait slot: .gitbook/assets/beings/MASTER.png -->
+![MASTER canonical portrait](../../../.gitbook/assets/beings/MASTER.webp)
+
+
 
 > **The Keeper of Formation**
 
