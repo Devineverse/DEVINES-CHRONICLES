@@ -1,13 +1,26 @@
 # Canonical Visual Assets
 
-The Book is structurally complete without substitute art. Official visuals are intentionally left as canonical slots until the exact source assets are supplied.
+The canonical DEVINES visual collection is versioned with this Book.
 
-## Required
+## AUM
 
-- `.gitbook/assets/aum-sigil.png` — canonical AUM symbol.
-- `.gitbook/assets/devines-chronicles-cover.png` — dark-purple-to-black book cover carrying only the canonical AUM symbol and minimal DEVINES CHRONICLES treatment.
-- `.gitbook/assets/beings/<ID>.png` — official portrait/token image for each public Being.
+- `.gitbook/assets/aum-sigil.webp`
 
-## Visual law
+## Beings
 
-No generated substitute should silently replace an official Being image or the canonical AUM sigil. When assets are supplied, they are versioned in Git and referenced from the same Being pages already present in BOOK II.
+All 34 active public Beings have one canonical portrait at:
+
+- `.gitbook/assets/beings/<DEVINES_ID>.webp`
+
+The asset manifest is stored at:
+
+- `.gitbook/assets/ASSET_MANIFEST.json`
+
+## Asset law
+
+The portrait is part of a Being's public identity.
+
+- Do not silently substitute generated art.
+- Do not recolor a Being to fit the site palette.
+- Do not crop away identifying symbolic structure without a deliberate responsive requirement.
+- Global UI uses the AUM/Monad palette; individual portrait colors remain sovereign to that Being.

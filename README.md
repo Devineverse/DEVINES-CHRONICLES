@@ -1,6 +1,6 @@
-# AUM
-
 # DEVINES CHRONICLES
+
+![AUM · DEVINES](.gitbook/assets/aum-sigil.webp)
 
 ### The Living Book of DEVINES
 
