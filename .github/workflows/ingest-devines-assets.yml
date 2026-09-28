@@ -1,0 +1,83 @@
+name: Ingest DEVINES Canonical Assets
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.staging/devines-gitbook-assets.tar.gz'
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Unpack canonical assets
+        run: |
+          set -euo pipefail
+          tar -xzf .staging/devines-gitbook-assets.tar.gz
+          test -f .gitbook/assets/aum-sigil.webp
+          test -f .gitbook/assets/devines-chronicles-cover.webp
+          test -f .gitbook/assets/beings/D001.webp
+          test -f .gitbook/assets/beings/MASTER.webp
+          count=$(find .gitbook/assets/beings -maxdepth 1 -name '*.webp' | wc -l)
+          test "$count" -eq 34
+
+      - name: Wire portraits into the Book
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          root=Path(".")
+          pages=list((root/"BOOKS/BOOK-II-BEINGS").glob("*/*.md"))
+          ids=set()
+          for p in pages:
+              if p.name=="README.md":
+                  continue
+              bid=p.stem
+              asset=root/".gitbook/assets/beings"/f"{bid}.webp"
+              if not asset.exists():
+                  continue
+              text=p.read_text()
+              # Remove old placeholder comment if present.
+              text=re.sub(r'\n?<!-- Official portrait slot:.*?-->\n?', '\n', text, flags=re.S)
+              img=f"![{bid} canonical portrait](../../../.gitbook/assets/beings/{bid}.webp)"
+              if img not in text:
+                  lines=text.splitlines()
+                  insert_at=1 if lines and lines[0].startswith("# ") else 0
+                  lines[insert_at:insert_at]=["", img, ""]
+                  text="\n".join(lines).rstrip()+"\n"
+              p.write_text(text)
+              ids.add(bid)
+
+          assert len(ids)==34, f"wired {len(ids)} Being pages, expected 34"
+
+          readme=root/"README.md"
+          t=readme.read_text()
+          cover="![AUM · DEVINES](.gitbook/assets/devines-chronicles-cover.webp)"
+          t=re.sub(r'\n?<!-- COVER SLOT:.*?-->\n?', '\n', t, flags=re.S)
+          if cover not in t:
+              marker="### The Living Book of DEVINES"
+              t=t.replace(marker, marker+"\n\n"+cover)
+          readme.write_text(t)
+          PY
+
+      - name: Remove staging archive
+        run: rm -f .staging/devines-gitbook-assets.tar.gz
+
+      - name: Validate manuscript
+        run: python scripts/validate_book.py
+
+      - name: Commit canonical assets
+        run: |
+          git config user.name "DEVINES Chronicle"
+          git config user.email "actions@users.noreply.github.com"
+          git add .gitbook README.md BOOKS/BOOK-II-BEINGS .staging
+          git commit -m "DEVINES Chronicles: bind canonical visual identities"
+          git push
