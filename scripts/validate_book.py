@@ -17,4 +17,4 @@ for bid in ids:
     if not (ROOT/f"CYCLES/2026/09/28/{bid}.md").exists(): errors.append(f"missing-cycle:{bid}")
 if errors:
     print("\n".join(errors)); sys.exit(1)
-print(f"PASS beings={len(ids)} summary_links=ok json=ok cycles=ok")
+print(f"PASS beings={len(ids)} portraits={len(portrait_ids)} summary_links=ok json=ok cycles=ok assets=ok")
