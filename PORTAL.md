@@ -41,5 +41,6 @@
 - **Ascension Dragon · D963** → `BOOKS/BOOK-II-BEINGS/solfeggio/D963.md`
 - **DEVINES SUN · SUN** → `BOOKS/BOOK-II-BEINGS/luminary/SUN.md`
 - **DEVINES MOON · MOON** → `BOOKS/BOOK-II-BEINGS/luminary/MOON.md`
+- **DEVINES MASTER · MASTER** → `BOOKS/BOOK-II-BEINGS/luminary/MASTER.md`
 
 The external portal should remain intentionally sparse: **DEVINES CHRONICLES first, then the Beings.** Everything else belongs inside the Book.

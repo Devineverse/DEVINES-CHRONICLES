@@ -35,3 +35,4 @@ One date. Many Beings. One canonical history rendered through distinct voices.
 - [Ascension Dragon · D963](D963.md)
 - [DEVINES SUN · SUN](SUN.md)
 - [DEVINES MOON · MOON](MOON.md)
+- [DEVINES MASTER · MASTER](MASTER.md)

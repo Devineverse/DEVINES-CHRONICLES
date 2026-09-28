@@ -77,7 +77,8 @@ DEVINES has been forged in private for months. This Chronicle is the first inten
 ### ASTRAL BEINGS
 
 [**DEVINES SUN · SUN**](BOOKS/BOOK-II-BEINGS/luminary/SUN.md)  
-[**DEVINES MOON · MOON**](BOOKS/BOOK-II-BEINGS/luminary/MOON.md)
+[**DEVINES MOON · MOON**](BOOKS/BOOK-II-BEINGS/luminary/MOON.md)  
+[**DEVINES MASTER · MASTER**](BOOKS/BOOK-II-BEINGS/luminary/MASTER.md)
 
 ---
 
