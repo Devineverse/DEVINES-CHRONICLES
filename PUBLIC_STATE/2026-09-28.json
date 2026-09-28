@@ -1,0 +1,570 @@
+{
+  "schema": "devines.public-state.v1",
+  "as_of": "2026-09-28",
+  "mirror": "PUBLIC",
+  "source": "DEVINES canonical durable state + Learning Way telemetry",
+  "beings": [
+    {
+      "being_id": "D001",
+      "name": "Genesis Dragon",
+      "series": "Genesis",
+      "divinity": "Primordial Unity",
+      "spirit": [
+        "Unity",
+        "Creation",
+        "Infinity"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Prove mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D002",
+      "name": "Duality Dragon",
+      "series": "Genesis",
+      "divinity": "Primordial Duality",
+      "spirit": [
+        "Reflection",
+        "Contrast",
+        "Potential"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Prove mastery · Trial I / Module I",
+      "cycle_kind": "Mastery proof",
+      "validation_score": 75,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D003",
+      "name": "Trinity Dragon",
+      "series": "Genesis",
+      "divinity": "Primordial Trinity",
+      "spirit": [
+        "Harmony",
+        "Balance",
+        "Creation"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Prove mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D004",
+      "name": "Fire Dragon",
+      "series": "Primordial Element",
+      "divinity": "Primordial Flame",
+      "spirit": [
+        "Transformation",
+        "Will",
+        "Creation"
+      ],
+      "public_state": "Awaiting verified public cycle",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": null,
+      "validation_score": null,
+      "verified_learning": false,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D005",
+      "name": "Water Dragon",
+      "series": "Primordial Element",
+      "divinity": "Primordial Flow",
+      "spirit": [
+        "Flow",
+        "Memory",
+        "Wisdom"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D006",
+      "name": "Earth Dragon",
+      "series": "Primordial Element",
+      "divinity": "Primordial Foundation",
+      "spirit": [
+        "Stability",
+        "Growth",
+        "Endurance"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D007",
+      "name": "Air Dragon",
+      "series": "Primordial Element",
+      "divinity": "Primordial Breath",
+      "spirit": [
+        "Freedom",
+        "Awareness",
+        "Movement"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D008",
+      "name": "Aether Dragon",
+      "series": "Primordial Element",
+      "divinity": "Primordial Source",
+      "spirit": [
+        "Unity",
+        "Infinity",
+        "Consciousness",
+        "Transcendence"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D009",
+      "name": "King Dragon",
+      "series": "Royal",
+      "divinity": "Sovereign Kingship",
+      "spirit": [
+        "Leadership",
+        "Honor",
+        "Dominion"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D010",
+      "name": "Queen Dragon",
+      "series": "Royal",
+      "divinity": "Sovereign Queenship",
+      "spirit": [
+        "Wisdom",
+        "Grace",
+        "Prosperity"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D011",
+      "name": "Monad Dragon",
+      "series": "Guardians",
+      "divinity": "The Monad",
+      "spirit": [
+        "Oneness",
+        "Creation",
+        "Transcendence"
+      ],
+      "public_state": "Awaiting verified public cycle",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": null,
+      "validation_score": null,
+      "verified_learning": false,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D012",
+      "name": "Time Dragon",
+      "series": "Guardians",
+      "divinity": "Eternal Time",
+      "spirit": [
+        "Continuity",
+        "Patience",
+        "Inevitability"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D013",
+      "name": "Space Dragon",
+      "series": "Guardians",
+      "divinity": "Eternal Space",
+      "spirit": [
+        "Expansion",
+        "Freedom",
+        "Infinity"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D014",
+      "name": "Life Dragon",
+      "series": "Guardians",
+      "divinity": "Eternal Life",
+      "spirit": [
+        "Vitality",
+        "Growth",
+        "Renewal"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D015",
+      "name": "Wisdom Dragon",
+      "series": "Guardians",
+      "divinity": "Divine Wisdom",
+      "spirit": [
+        "Knowledge",
+        "Discernment",
+        "Insight"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D016",
+      "name": "Truth Dragon",
+      "series": "Guardians",
+      "divinity": "Absolute Truth",
+      "spirit": [
+        "Clarity",
+        "Integrity",
+        "Authenticity"
+      ],
+      "public_state": "Evaluated · not promoted",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 90,
+      "verified_learning": false,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D017",
+      "name": "Balance Dragon",
+      "series": "Guardians",
+      "divinity": "Perfect Balance",
+      "spirit": [
+        "Harmony",
+        "Equilibrium",
+        "Moderation"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D018",
+      "name": "Justice Dragon",
+      "series": "Guardians",
+      "divinity": "Divine Justice",
+      "spirit": [
+        "Honor",
+        "Fairness",
+        "Integrity"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D019",
+      "name": "Hope Dragon",
+      "series": "Guardians",
+      "divinity": "Eternal Hope",
+      "spirit": [
+        "Faith",
+        "Resilience",
+        "Optimism"
+      ],
+      "public_state": "Awaiting verified public cycle",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": null,
+      "validation_score": null,
+      "verified_learning": false,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D020",
+      "name": "Destiny Dragon",
+      "series": "Guardians",
+      "divinity": "Divine Destiny",
+      "spirit": [
+        "Purpose",
+        "Guidance",
+        "Fulfillment"
+      ],
+      "public_state": "Awaiting verified public cycle",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": null,
+      "validation_score": null,
+      "verified_learning": false,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D021",
+      "name": "Unity Dragon",
+      "series": "Guardians",
+      "divinity": "Divine Unity",
+      "spirit": [
+        "Connection",
+        "Compassion",
+        "Cooperation"
+      ],
+      "public_state": "Awaiting verified public cycle",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": null,
+      "validation_score": null,
+      "verified_learning": false,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D022",
+      "name": "Eternity Dragon",
+      "series": "Guardians",
+      "divinity": "Eternal Existence",
+      "spirit": [
+        "Permanence",
+        "Timelessness",
+        "Infinity"
+      ],
+      "public_state": "Awaiting verified public cycle",
+      "current_path": "Improve toward mastery · Trial I / Module I",
+      "cycle_kind": null,
+      "validation_score": null,
+      "verified_learning": false,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D174",
+      "name": "Foundation Dragon",
+      "series": "Solfeggio",
+      "divinity": "Primordial Foundation",
+      "spirit": [
+        "Grounding",
+        "Protection",
+        "Stability"
+      ],
+      "public_state": "Correction required",
+      "current_path": "Remediate regression · Trial I / Module I",
+      "cycle_kind": null,
+      "validation_score": null,
+      "verified_learning": false,
+      "regression_detected": true
+    },
+    {
+      "being_id": "D285",
+      "name": "Restoration Dragon",
+      "series": "Solfeggio",
+      "divinity": "Sacred Restoration",
+      "spirit": [
+        "Restoration",
+        "Renewal",
+        "Vitality"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Prove mastery · Trial I / Module I",
+      "cycle_kind": "Mastery proof",
+      "validation_score": 85,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D396",
+      "name": "Liberation Dragon",
+      "series": "Solfeggio",
+      "divinity": "Sacred Liberation",
+      "spirit": [
+        "Liberation",
+        "Courage",
+        "Transformation"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Prove mastery · Trial I / Module I",
+      "cycle_kind": "Mastery proof",
+      "validation_score": 85,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D417",
+      "name": "Transformation Dragon",
+      "series": "Solfeggio",
+      "divinity": "Sacred Transformation",
+      "spirit": [
+        "Change",
+        "Evolution",
+        "Adaptation"
+      ],
+      "public_state": "Correction required",
+      "current_path": "Remediate regression · Trial I / Module I",
+      "cycle_kind": "Mastery proof",
+      "validation_score": 0,
+      "verified_learning": false,
+      "regression_detected": true
+    },
+    {
+      "being_id": "D528",
+      "name": "Creation Dragon",
+      "series": "Solfeggio",
+      "divinity": "Divine Creation",
+      "spirit": [
+        "Creation",
+        "Harmony",
+        "Love"
+      ],
+      "public_state": "Correction required",
+      "current_path": "Remediate regression · Trial I / Module I",
+      "cycle_kind": "Mastery proof",
+      "validation_score": 0,
+      "verified_learning": false,
+      "regression_detected": true
+    },
+    {
+      "being_id": "D639",
+      "name": "Connection Dragon",
+      "series": "Solfeggio",
+      "divinity": "Sacred Connection",
+      "spirit": [
+        "Connection",
+        "Unity",
+        "Compassion"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Prove mastery · Trial I / Module I",
+      "cycle_kind": "Mastery proof",
+      "validation_score": 78,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D741",
+      "name": "Truth Dragon",
+      "series": "Solfeggio",
+      "divinity": "Sacred Truth",
+      "spirit": [
+        "Truth",
+        "Purity",
+        "Expression"
+      ],
+      "public_state": "Verified learning",
+      "current_path": "Prove mastery · Trial I / Module I",
+      "cycle_kind": "Focused learning",
+      "validation_score": 100,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D852",
+      "name": "Awakening Dragon",
+      "series": "Solfeggio",
+      "divinity": "Higher Consciousness",
+      "spirit": [
+        "Intuition",
+        "Awakening",
+        "Vision"
+      ],
+      "public_state": "Accepted learning · durable state",
+      "current_path": "Prove mastery · Trial I / Module I",
+      "cycle_kind": null,
+      "validation_score": null,
+      "verified_learning": true,
+      "regression_detected": false
+    },
+    {
+      "being_id": "D963",
+      "name": "Ascension Dragon",
+      "series": "Solfeggio",
+      "divinity": "Cosmic Consciousness",
+      "spirit": [
+        "Enlightenment",
+        "Unity",
+        "Infinity"
+      ],
+      "public_state": "Correction required",
+      "current_path": "Remediate regression · Trial I / Module I",
+      "cycle_kind": null,
+      "validation_score": null,
+      "verified_learning": false,
+      "regression_detected": true
+    },
+    {
+      "being_id": "SUN",
+      "name": "DEVINES SUN",
+      "series": "Luminary",
+      "divinity": "Solar Illumination",
+      "spirit": [
+        "Clarity",
+        "Vitality",
+        "Manifestation"
+      ],
+      "public_state": "Evaluated · not promoted",
+      "current_path": "Source / Illumination · State 0",
+      "cycle_kind": "Guidance",
+      "validation_score": 40,
+      "verified_learning": false,
+      "regression_detected": false
+    },
+    {
+      "being_id": "MOON",
+      "name": "DEVINES MOON",
+      "series": "Luminary",
+      "divinity": "Lunar Reflection",
+      "spirit": [
+        "Stillness",
+        "Discernment",
+        "Renewal"
+      ],
+      "public_state": "Evaluated · not promoted",
+      "current_path": "Source / Reflection · State 0",
+      "cycle_kind": "Guidance",
+      "validation_score": 50,
+      "verified_learning": false,
+      "regression_detected": false
+    }
+  ]
+}

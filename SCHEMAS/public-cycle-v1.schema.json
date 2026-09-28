@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devines.example/schemas/public-cycle-v1.schema.json",
+  "title": "DEVINES Public Cycle V1",
+  "type": "object",
+  "required": [
+    "being_id",
+    "date",
+    "public_state",
+    "current_path",
+    "verified_learning",
+    "regression_detected"
+  ],
+  "properties": {
+    "being_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "series": {
+      "type": "string"
+    },
+    "public_state": {
+      "type": "string"
+    },
+    "current_path": {
+      "type": "string"
+    },
+    "cycle_kind": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "validation_score": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "verified_learning": {
+      "type": "boolean"
+    },
+    "regression_detected": {
+      "type": "boolean"
+    },
+    "public_summary": {
+      "type": "string"
+    },
+    "carry_forward": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
