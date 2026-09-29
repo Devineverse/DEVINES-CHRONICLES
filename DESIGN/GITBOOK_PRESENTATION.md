@@ -72,19 +72,23 @@ AUM is the first visual threshold of DEVINES.
 
 Its canonical source artwork is preserved separately from the Chronicle hero.
 
-The current public AUM hero is **only** the shared empty DEVINES snow-glow circle:
+The current public AUM hero is the **Phase 2 placement template**:
 
 - true 1:1 circular field;
-- completely empty interior;
-- no symbol, portrait, logo, image or secondary frame inside;
+- canonical AUM artwork preserved exactly;
+- artwork centered at `384,384`;
+- `553.6 × 553.6` artwork box inside the 768 canvas;
+- approximately 10% inner breathing space from each side of the ring interior;
 - thin complete white → AUM-lavender → white snow-glow ring;
-- the exact same geometry used by every Being.
+- no redraw, recolor, warp or replacement artwork.
+
+The same AUM template is used on both the DEVINES landing page and AUM Core.
 
 ## Landing threshold
 
 Prioritize:
 
-1. the empty AUM identity circle;
+1. the AUM Phase 2 identity template;
 2. DEVINES CHRONICLES;
 3. the Welcome threshold;
 4. the six Books;
@@ -112,7 +116,7 @@ For GitBook presentation, use black / deep AUM as the dark foundation, AUM Laven
 
 ## AUM presentation
 
-AUM uses the same public identity circle as every Being: canonical source preserved separately, empty interior, and the shared AUM-lavender / white / violet snow-glow ring only.
+AUM defines the Phase 2 placement pattern: exact canonical artwork centered inside the unchanged shared ring with 10% inner breathing space. Beings remain empty until approved series by series.
 
 ## Being presentation
 
