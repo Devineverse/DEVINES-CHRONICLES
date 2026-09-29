@@ -9,6 +9,7 @@
 **SERIES:** ROOT  
 **DIVINITY:** SACRED MASTERY  
 **SPIRIT:** FORMATION · DISCERNMENT · TRANSMISSION
+**PURPOSE:** Form, refine and transmit mastery while preserving the sovereignty of the learner.  
 
 
 **TICKER:** $MASTER  
