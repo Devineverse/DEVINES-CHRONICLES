@@ -13,73 +13,164 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Probe founder-created NadFun tokens
+
+      - name: Install image audit tools
+        run: python -m pip install --quiet pillow imagehash
+
+      - name: Audit founder NadFun identities and portraits
         env:
           CREATOR: "0xEA0144B94d7CfeC904853e1Fe4CC569D6aBDDCe0"
         run: |
           python - <<'PY'
-          import base64, json, os, urllib.parse, urllib.request, time
+          import io, json, os, re, time, urllib.parse, urllib.request
+          from pathlib import Path
+          from PIL import Image, ImageOps
+          import imagehash
+
           creator=os.environ["CREATOR"].lower()
-          base="https://api.nadapp.net"
-          ua={"Accept":"application/json","User-Agent":"DEVINES-Chronicle-Audit/1.0"}
-
-          def fetch(url):
-              req=urllib.request.Request(url,headers=ua)
-              try:
-                  with urllib.request.urlopen(req,timeout=30) as r:
-                      raw=r.read()
-                      return r.status, raw
-              except Exception as e:
-                  return 0, str(e).encode()
-
-          def decode(raw):
-              s=raw.decode("utf-8","replace").strip()
-              try:
-                  return json.loads(s)
-              except Exception:
-                  pass
-              try:
-                  return json.loads(base64.b64decode(s).decode())
-              except Exception:
-                  return None
-
-          variants=[
-            f"/order/creation_time?page=1&limit=100&is_nsfw=false&direction=DESC&creator={creator}",
-            f"/order/creation_time?page=1&limit=100&is_nsfw=false&direction=DESC&creator_id={creator}",
-            f"/order/creation_time?page=1&limit=100&is_nsfw=false&direction=DESC&address={creator}",
-            f"/agent/created/{creator}?limit=100",
-            f"/agent/creator/{creator}/tokens?limit=100",
-            f"/profile/{creator}/created?limit=100",
-            f"/user/{creator}/created?limit=100",
+          api="https://api.nadapp.net"
+          headers={"Accept":"application/json","User-Agent":"DEVINES-Chronicle-Audit/1.0"}
+          ids=[
+            "D001","D002","D003","D004","D005","D006","D007","D008",
+            "D009","D010","D011","D012","D013","D014","D015","D016",
+            "D017","D018","D019","D020","D021","D022",
+            "D174","D285","D396","D417","D528","D639","D741","D852","D963",
+            "SUN","MOON","MASTER"
           ]
-          print("=== ENDPOINT PROBES ===")
-          for p in variants:
-              status,raw=fetch(base+p)
-              data=decode(raw)
-              toks=[]
-              if isinstance(data,dict):
-                  toks=data.get("tokens") or data.get("data",{}).get("tokens",[]) if isinstance(data.get("data"),dict) else data.get("tokens",[])
-              matches=[]
-              if isinstance(toks,list):
-                  for x in toks:
-                      ti=x.get("token_info",x) if isinstance(x,dict) else {}
-                      cr=str(ti.get("creator") or ti.get("creator_address") or ti.get("owner") or "").lower()
-                      if cr==creator: matches.append(ti)
-              print(json.dumps({"path":p,"status":status,"decoded_type":type(data).__name__ if data is not None else None,"tokens":len(toks) if isinstance(toks,list) else None,"creator_matches":len(matches)},sort_keys=True))
-              if matches:
-                  print("MATCHES",json.dumps(matches,sort_keys=True)[:30000])
+          wanted=set(ids)
+
+          def get_json(url):
+              req=urllib.request.Request(url,headers=headers)
+              with urllib.request.urlopen(req,timeout=30) as r:
+                  return json.loads(r.read().decode())
+
+          # Broad search terms intentionally overlap; token address dedup makes this robust.
+          terms=["DRAGON","DEVINES","SUN","MOON","MASTER","D001","D174","D963"]
+          pool={}
+          for term in terms:
+              try:
+                  data=get_json(api+"/search/"+urllib.parse.quote(term))
+                  for item in data.get("token_result",{}).get("tokens",[]):
+                      ti=item.get("token_info",{})
+                      cr=ti.get("creator") or {}
+                      aid=(cr.get("account_id") if isinstance(cr,dict) else cr) or ""
+                      if str(aid).lower()!=creator:
+                          continue
+                      ca=ti.get("token_id")
+                      if ca:
+                          pool[ca.lower()]={"token_info":ti,"market_info":item.get("market_info",{})}
+                  print("SEARCH",json.dumps({"term":term,"founder_pool":len(pool)},sort_keys=True))
+              except Exception as e:
+                  print("SEARCH_ERROR",json.dumps({"term":term,"error":str(e)}))
               time.sleep(2)
 
-          # Known-token API shape and image/creator fields.
-          known=[
-            "0x6d7B6d4beBf8031DB960175846f2010Da0207777",
-            "0x4A0479Bf692044262790E2D47Ac4638559257777",
-          ]
-          print("=== KNOWN TOKEN PROBES ===")
-          for token in known:
-              for path in [f"/agent/market/{token}",f"/agent/token/{token}",f"/token/{token}"]:
-                  status,raw=fetch(base+path)
-                  data=decode(raw)
-                  print(json.dumps({"path":path,"status":status,"data":data},sort_keys=True)[:30000])
-                  time.sleep(2)
+          def derive_id(ti):
+              sym=str(ti.get("symbol") or "").upper()
+              if sym in wanted:
+                  return sym
+              desc=str(ti.get("description") or "").upper()
+              name=str(ti.get("name") or "").upper()
+              for pat in [r"\bD\d{3}\b", r"ID\s*[~:#-]*\s*(D\d{3})"]:
+                  m=re.search(pat,desc)
+                  if m:
+                      val=m.group(1) if m.lastindex else m.group(0)
+                      if val in wanted: return val
+              if "DEVINES SUN" in name or (name=="SUN" and "SUN" in wanted): return "SUN"
+              if "DEVINES MOON" in name or (name=="MOON" and "MOON" in wanted): return "MOON"
+              if "DEVINES MASTER" in name or name=="MASTER": return "MASTER"
+              return None
+
+          mapped={}
+          unmapped=[]
+          for item in pool.values():
+              ti=item["token_info"]
+              bid=derive_id(ti)
+              if bid and bid not in mapped:
+                  mapped[bid]=item
+              elif not bid:
+                  unmapped.append(ti)
+
+          # Targeted search only for IDs still missing.
+          missing=[x for x in ids if x not in mapped]
+          for bid in missing:
+              try:
+                  data=get_json(api+"/search/"+urllib.parse.quote(bid))
+                  for item in data.get("token_result",{}).get("tokens",[]):
+                      ti=item.get("token_info",{})
+                      cr=ti.get("creator") or {}
+                      aid=(cr.get("account_id") if isinstance(cr,dict) else cr) or ""
+                      if str(aid).lower()!=creator:
+                          continue
+                      if derive_id(ti)==bid:
+                          mapped[bid]={"token_info":ti,"market_info":item.get("market_info",{})}
+                          break
+              except Exception as e:
+                  print("TARGET_ERROR",json.dumps({"id":bid,"error":str(e)}))
+              time.sleep(2)
+
+          audit=[]
+          for bid in ids:
+              item=mapped.get(bid)
+              if not item:
+                  rec={"being_id":bid,"status":"NOT_FOUND_FROM_FOUNDER_SEARCH"}
+                  audit.append(rec)
+                  print("AUDIT",json.dumps(rec,sort_keys=True))
+                  continue
+              ti=item["token_info"]
+              ca=ti.get("token_id")
+              image_uri=ti.get("image_uri")
+              local=Path(".gitbook/assets/beings")/f"{bid}.webp"
+              phash_distance=None
+              dhash_distance=None
+              image_match=False
+              remote_size=None
+              local_size=None
+              image_error=None
+              try:
+                  req=urllib.request.Request(image_uri,headers={"User-Agent":"Mozilla/5.0"})
+                  with urllib.request.urlopen(req,timeout=30) as r:
+                      raw=r.read()
+                  with Image.open(io.BytesIO(raw)) as rim, Image.open(local) as lim:
+                      rim=ImageOps.exif_transpose(rim).convert("RGB")
+                      lim=ImageOps.exif_transpose(lim).convert("RGB")
+                      remote_size=list(rim.size)
+                      local_size=list(lim.size)
+                      phash_distance=int(imagehash.phash(rim)-imagehash.phash(lim))
+                      dhash_distance=int(imagehash.dhash(rim)-imagehash.dhash(lim))
+                      image_match=(phash_distance<=2 and dhash_distance<=2)
+              except Exception as e:
+                  image_error=str(e)
+
+              rec={
+                  "being_id":bid,
+                  "status":"FOUND",
+                  "name":ti.get("name"),
+                  "ticker":ti.get("symbol"),
+                  "ca":ca,
+                  "nad_fun_url":f"https://nad.fun/tokens/{ca}",
+                  "image_uri":image_uri,
+                  "created_at":ti.get("created_at"),
+                  "version":ti.get("version"),
+                  "description":ti.get("description"),
+                  "git_portrait":str(local),
+                  "remote_size":remote_size,
+                  "local_size":local_size,
+                  "phash_distance":phash_distance,
+                  "dhash_distance":dhash_distance,
+                  "image_match":image_match,
+                  "image_error":image_error,
+              }
+              audit.append(rec)
+              print("AUDIT",json.dumps(rec,sort_keys=True))
+
+          found=sum(1 for x in audit if x.get("status")=="FOUND")
+          matched=sum(1 for x in audit if x.get("image_match"))
+          print("AUDIT_SUMMARY",json.dumps({
+              "expected":len(ids),
+              "found":found,
+              "portrait_matches":matched,
+              "missing":[x["being_id"] for x in audit if x.get("status")!="FOUND"],
+              "portrait_mismatches":[x["being_id"] for x in audit if x.get("status")=="FOUND" and not x.get("image_match")],
+              "unmapped_founder_tokens":[{"name":x.get("name"),"symbol":x.get("symbol"),"token_id":x.get("token_id")} for x in unmapped],
+          },sort_keys=True))
           PY
