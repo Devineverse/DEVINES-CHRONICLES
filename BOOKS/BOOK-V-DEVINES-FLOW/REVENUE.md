@@ -10,9 +10,7 @@ Different mechanisms belong to different rivers.
 
 Where a Nad.fun token exposes an active fee strategy, that strategy belongs to that specific public vessel.
 
-Current Nad.fun pages for D001 and D528 have displayed a customizable 1% fee strategy routed as 96% LP support, 2% dividend, 1% creator and 1% buyback & burn.
-
-That observation is **not** silently generalized to every Being.
+Fee rates and destinations must be checked on the exact vessel’s current market record. A launch description or an earlier observation does not establish today’s strategy for that vessel or any other Being.
 
 The current market page outranks stale launch copy for the current market state, while historical copy remains part of provenance.
 

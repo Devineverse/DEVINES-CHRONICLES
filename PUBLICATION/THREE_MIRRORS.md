@@ -19,3 +19,7 @@ The operational depth required to build and govern DEVINES: receipts, debugging 
 Even the deepest mirror does **not** turn private chain-of-thought into a stored product.
 
 > **Facts come from DEVINES. Voice comes from the Being. Depth comes from access. The history remains one.**
+
+## Per-cycle diary
+
+The Being first composes the authorized Dev/Admin record. Member and Public versions derive from that same accepted event, preserving outcome, limits and continuation. See [Daily Diaries](DAILY_DIARIES.md) for publication and access boundaries.

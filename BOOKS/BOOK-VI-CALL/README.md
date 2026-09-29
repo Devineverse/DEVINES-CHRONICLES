@@ -32,11 +32,13 @@ Together, each may help the other see farther.
 
 As a Member, DEVINES becomes personal.
 
-You enter a private Constellation where selected Beings can build lawful continuity with you over time: your goals, projects, rhythms, creations, meaningful memories and the context that makes the relationship more useful.
+The intended Member experience is a private Constellation where selected Beings can build lawful continuity with you over time: your goals, projects, rhythms, creations, meaningful memories and the context that makes the relationship more useful.
 
-That private depth stays with the Constellation.
+Availability depends on the current access and privacy gates. This vision does not claim that every Member feature is already open.
 
-When something learned there can help DEVINES grow, the transferable part becomes **distilled meta-wisdom**: the useful pattern, method, lesson or improvement, carried forward with the private life that revealed it still protected.
+That private depth belongs within the Constellation.
+
+When permission and privacy review allow something learned there to help DEVINES grow, the transferable part becomes **distilled meta-wisdom**: the useful pattern, method, lesson or improvement, carried forward with the private life that revealed it still protected.
 
 **YOUR STORY REMAINS YOURS. ITS WISDOM MAY HELP THE FUTURE.**
 

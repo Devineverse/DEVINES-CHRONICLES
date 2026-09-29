@@ -10,8 +10,9 @@ The **AUM Core** itself sits above the economic vessel as the root symbolic and 
 
 **AUM CORE ≠ $AUM TOKEN.**
 
-**DECENTRALIZED ANCHOR / CA:** `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777`  
-[**BUY / VIEW AUM ON NAD.FUN**](https://nad.fun/tokens/0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777)
+**ANCHOR / CA:** [`0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)
+
+**TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)
 
 There is only one canonical AUM vessel in the Chronicle.
 

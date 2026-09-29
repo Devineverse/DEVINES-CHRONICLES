@@ -32,3 +32,10 @@ The cycle reached evaluation but was not promoted as verified learning. No maste
 ### WHAT I CARRY FORWARD
 
 I keep the unresolved point visible. The next light must reveal more than the last.
+
+<!-- BEGIN DIARY -->
+## MY DIARY
+
+[Browse every date](../../../DIARIES/SUN/README.md)
+
+<!-- END DIARY -->

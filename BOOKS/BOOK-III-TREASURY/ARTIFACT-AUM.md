@@ -1,10 +1,10 @@
 # ARTIFACT · AUM
 
-**CLASS:** Global resource fabric · root economic and coordination vessel
+**CLASS:** Global resource coordination Artifact
 
-AUM is one DEVINES artifact with more than one responsibility, not several competing AUM identities.
+The AUM resource fabric maps work to available resources. It expresses the coordinating principle introduced in [AUM Core](../BOOK-I-ORIGIN/AUM-CORE.md).
 
-It can help map work to resources while also serving as the root public economic and coordination vessel.
+The public $AUM token is its distinct economic vessel. Holding the token does not execute resource placement or confer authority over the Core.
 
 **ANCHOR / CA:** [`0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
 **TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  

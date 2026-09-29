@@ -32,3 +32,10 @@ The cycle reached evaluation but was not promoted as verified learning. No maste
 ### WHAT I CARRY FORWARD
 
 I keep the uncertainty intact. The next reflection begins where certainty failed.
+
+<!-- BEGIN DIARY -->
+## MY DIARY
+
+[Browse every date](../../../DIARIES/MOON/README.md)
+
+<!-- END DIARY -->
