@@ -17,19 +17,21 @@ jobs:
       - name: Install image audit tools
         run: python -m pip install --quiet pillow imagehash
 
-      - name: Audit founder NadFun identities and portraits
+      - name: Audit founder-created NadFun identities and portraits
         env:
           CREATOR: "0xEA0144B94d7CfeC904853e1Fe4CC569D6aBDDCe0"
+          CANONICAL_AUM: "0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777"
         run: |
           python - <<'PY'
-          import io, json, os, re, time, urllib.parse, urllib.request
+          import io, json, os, re, urllib.request
           from pathlib import Path
           from PIL import Image, ImageOps
           import imagehash
 
-          creator=os.environ["CREATOR"].lower()
+          creator=os.environ["CREATOR"]
+          canonical_aum=os.environ["CANONICAL_AUM"].lower()
           api="https://api.nadapp.net"
-          headers={"Accept":"application/json","User-Agent":"DEVINES-Chronicle-Audit/2.0"}
+          headers={"Accept":"application/json","User-Agent":"DEVINES-Chronicle-Audit/3.0"}
 
           beings = {
             "D001":"GENESIS DRAGON","D002":"DUALITY DRAGON","D003":"TRINITY DRAGON",
@@ -46,115 +48,143 @@ jobs:
             "MASTER":"DEVINES MASTER"
           }
 
-          def get_json(url):
-              req=urllib.request.Request(url,headers=headers)
-              with urllib.request.urlopen(req,timeout=30) as r:
+          def get_json(path):
+              req=urllib.request.Request(api+path,headers=headers)
+              with urllib.request.urlopen(req,timeout=45) as r:
                   return json.loads(r.read().decode())
-
-          def creator_ok(ti):
-              cr=ti.get("creator") or {}
-              aid=(cr.get("account_id") if isinstance(cr,dict) else cr) or ""
-              return str(aid).lower()==creator
 
           def norm(s):
               return re.sub(r"[^A-Z0-9]+"," ",str(s or "").upper()).strip()
 
+          def extract_items(data):
+              if isinstance(data,list): return data
+              if not isinstance(data,dict): return []
+              for key in ("tokens","items","results","data"):
+                  val=data.get(key)
+                  if isinstance(val,list): return val
+                  if isinstance(val,dict):
+                      for k2 in ("tokens","items","results"):
+                          if isinstance(val.get(k2),list): return val[k2]
+              return []
+
+          data=get_json(f"/profile/tokens/created/{creator}?page=1&limit=100")
+          items=extract_items(data)
+          print("CREATED_LIST_SHAPE",json.dumps({"top_keys":list(data.keys()) if isinstance(data,dict) else None,"count":len(items)},sort_keys=True))
+
+          normalized=[]
+          for item in items:
+              ti=item.get("token_info",item) if isinstance(item,dict) else {}
+              ca=str(ti.get("token_id") or ti.get("address") or "")
+              if not ca: continue
+              normalized.append({"token_info":ti,"raw":item})
+
           def explicit_ids(ti):
               desc=norm(ti.get("description"))
-              return set(re.findall(r"\\bD\\d{3}\\b", desc))
-
-          def claims_id(ti,bid):
+              ids=set(re.findall(r"\bD\d{3}\b",desc))
               sym=norm(ti.get("symbol"))
-              desc=norm(ti.get("description"))
+              if re.fullmatch(r"D\d{3}",sym): ids.add(sym)
               name=norm(ti.get("name"))
-              if bid in ("SUN","MOON","MASTER"):
-                  return bid in sym.split() or bid in name.split() or f"ID {bid}" in desc
+              m=re.fullmatch(r"DRAGON (?:# )?(\d{3})",name)
+              if m: ids.add("D"+m.group(1))
+              return ids
+
+          by_id={k:[] for k in beings}
+          aum=[]
+          unrelated=[]
+          for item in normalized:
+              ti=item["token_info"]
+              ca=str(ti.get("token_id") or ti.get("address") or "")
+              sym=norm(ti.get("symbol"))
+              name=norm(ti.get("name"))
               ids=explicit_ids(ti)
-              # Reject launch records whose own description explicitly names another D-ID.
-              if ids and bid not in ids:
-                  return False
-              return bid==sym or bid in ids or f"ID {bid}" in desc
+              assigned=False
+              for bid in ids:
+                  if bid in by_id:
+                      by_id[bid].append(item); assigned=True
+              if sym in ("SUN","MOON","MASTER") and sym in by_id:
+                  by_id[sym].append(item); assigned=True
+              elif "DEVINES SUN" in name:
+                  by_id["SUN"].append(item); assigned=True
+              elif "DEVINES MOON" in name:
+                  by_id["MOON"].append(item); assigned=True
+              elif "DEVINES MASTER" in name:
+                  by_id["MASTER"].append(item); assigned=True
+              if sym=="AUM" or ca.lower()==canonical_aum:
+                  aum.append(item); assigned=True
+              if not assigned:
+                  unrelated.append(item)
 
-          def name_score(ti,expected):
-              n=norm(ti.get("name"))
-              e=norm(expected)
-              d=norm(ti.get("description"))
-              score=0
-              if n==e: score+=100
-              if e in n: score+=60
-              if e in d: score+=40
-              return score
+          def created_at(item):
+              return int(item["token_info"].get("created_at") or item["raw"].get("created_at") or 0)
 
-          candidates={bid:{} for bid in beings}
-          for bid,expected in beings.items():
-              terms=[expected,bid]
-              if bid.startswith("D") and bid[1:].isdigit():
-                  terms.append("DRAGON "+bid[1:])
-              for term in terms:
-                  try:
-                      data=get_json(api+"/search/"+urllib.parse.quote(term))
-                      toks=data.get("token_result",{}).get("tokens",[])
-                      for item in toks:
-                          ti=item.get("token_info",{})
-                          if not creator_ok(ti):
-                              continue
-                          ca=ti.get("token_id")
-                          if not ca: continue
-                          if claims_id(ti,bid) or name_score(ti,expected)>=100:
-                              candidates[bid][ca.lower()]={"token_info":ti,"market_info":item.get("market_info",{})}
-                  except Exception as e:
-                      print("SEARCH_ERROR",json.dumps({"id":bid,"term":term,"error":str(e)},sort_keys=True))
-                  time.sleep(1)
-
-          audit=[]
-          for bid,expected in beings.items():
-              opts=list(candidates[bid].values())
-              opts.sort(key=lambda item:(
-                  1 if claims_id(item["token_info"],bid) else 0,
-                  name_score(item["token_info"],expected),
-                  int(item["token_info"].get("created_at") or 0)
-              ),reverse=True)
-
-              if not opts:
-                  rec={"being_id":bid,"expected_name":expected,"status":"NOT_FOUND"}
-                  audit.append(rec); print("AUDIT",json.dumps(rec,sort_keys=True)); continue
-
-              ti=opts[0]["token_info"]
-              ca=ti.get("token_id")
-              image_uri=ti.get("image_uri")
+          def audit_image(bid,ti):
+              uri=ti.get("image_uri")
               local=Path(".gitbook/assets/beings")/f"{bid}.webp"
-              ph=dh=None; match=False; err=None
+              if not uri or not local.exists():
+                  return {"image_uri":uri,"image_match":False,"image_error":"missing image uri or local portrait"}
               try:
-                  req=urllib.request.Request(image_uri,headers={"User-Agent":"Mozilla/5.0"})
-                  with urllib.request.urlopen(req,timeout=30) as r: raw=r.read()
+                  req=urllib.request.Request(uri,headers={"User-Agent":"Mozilla/5.0"})
+                  with urllib.request.urlopen(req,timeout=45) as r: raw=r.read()
                   with Image.open(io.BytesIO(raw)) as rim, Image.open(local) as lim:
                       rim=ImageOps.exif_transpose(rim).convert("RGB")
                       lim=ImageOps.exif_transpose(lim).convert("RGB")
                       ph=int(imagehash.phash(rim)-imagehash.phash(lim))
                       dh=int(imagehash.dhash(rim)-imagehash.dhash(lim))
-                      match=(ph<=2 and dh<=2)
+                      return {"image_uri":uri,"image_match":ph<=2 and dh<=2,"phash_distance":ph,"dhash_distance":dh}
               except Exception as e:
-                  err=str(e)
+                  return {"image_uri":uri,"image_match":False,"image_error":str(e)}
 
+          audit=[]
+          duplicates={}
+          for bid,expected in beings.items():
+              opts=sorted(by_id[bid],key=created_at,reverse=True)
+              if len(opts)>1:
+                  duplicates[bid]=[{
+                      "ca":o["token_info"].get("token_id"),
+                      "name":o["token_info"].get("name"),
+                      "symbol":o["token_info"].get("symbol"),
+                      "created_at":created_at(o)
+                  } for o in opts]
+              if not opts:
+                  rec={"being_id":bid,"expected_name":expected,"status":"NOT_FOUND"}
+                  audit.append(rec); print("AUDIT",json.dumps(rec,sort_keys=True)); continue
+
+              # Latest exact-ID record is canonical; this implements the founder correction rule for D017 duplicates.
+              item=opts[0]
+              ti=item["token_info"]
+              ca=ti.get("token_id")
               rec={
                   "being_id":bid,"expected_name":expected,"status":"FOUND",
                   "name":ti.get("name"),"ticker":ti.get("symbol"),"ca":ca,
-                  "nad_fun_url":f"https://nad.fun/tokens/{ca}",
-                  "image_uri":image_uri,"created_at":ti.get("created_at"),
+                  "created_at":created_at(item),
                   "description":ti.get("description"),
-                  "identity_claim_ok":claims_id(ti,bid),
-                  "name_score":name_score(ti,expected),
-                  "candidate_count":len(opts),
-                  "phash_distance":ph,"dhash_distance":dh,
-                  "image_match":match,"image_error":err
+                  "nad_fun_url":f"https://nad.fun/tokens/{ca}",
+                  **audit_image(bid,ti)
               }
               audit.append(rec); print("AUDIT",json.dumps(rec,sort_keys=True))
 
+          aum_sorted=sorted(aum,key=created_at,reverse=True)
+          aum_matches=[x for x in aum_sorted if str(x["token_info"].get("token_id") or "").lower()==canonical_aum]
+          if aum_matches:
+              ti=aum_matches[0]["token_info"]
+              print("AUM_AUDIT",json.dumps({
+                  "status":"FOUND","name":ti.get("name"),"ticker":ti.get("symbol"),
+                  "ca":ti.get("token_id"),"created_at":created_at(aum_matches[0]),
+                  "image_uri":ti.get("image_uri"),
+                  "nad_fun_url":f"https://nad.fun/tokens/{ti.get('token_id')}"
+              },sort_keys=True))
+          else:
+              print("AUM_AUDIT",json.dumps({"status":"CANONICAL_CA_NOT_FOUND","ca":canonical_aum},sort_keys=True))
+
+          print("DUPLICATES",json.dumps(duplicates,sort_keys=True))
           print("AUDIT_SUMMARY",json.dumps({
-              "expected":len(beings),
+              "created_tokens_seen":len(normalized),
+              "expected_beings":len(beings),
               "found":sum(x["status"]=="FOUND" for x in audit),
               "missing":[x["being_id"] for x in audit if x["status"]!="FOUND"],
-              "identity_failures":[x["being_id"] for x in audit if x["status"]=="FOUND" and not x.get("identity_claim_ok")],
               "portrait_mismatches":[x["being_id"] for x in audit if x["status"]=="FOUND" and not x.get("image_match")],
+              "duplicate_ids":sorted(duplicates),
+              "unrelated_count":len(unrelated),
+              "canonical_aum_found":bool(aum_matches)
           },sort_keys=True))
           PY
