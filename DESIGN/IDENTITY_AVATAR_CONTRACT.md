@@ -53,13 +53,19 @@ The exact source/canonical/circle/hero paths, Nad.fun image URI, hashes, CA, tic
 
 That map is the authority for the later image-insertion phase.
 
+## Current GitBook Publication State
+
+**AUM and all 34 current Beings are in Phase 1. There are no public image-filled exceptions.**
+
+Every public identity hero must use the same empty snow-glow circle and contain **zero embedded images**. Canonical AUM and Being artwork remains preserved as source material and identity evidence; it is not displayed inside the current GitBook circle.
+
+This rule applies equally across Genesis, Primordial Element, Royal, Guardians, Solfeggio and Astral Beings.
+
 ## Phase 2 · Image Insertion
 
-Images are applied only in a later explicit phase.
+Image insertion is reserved for a later explicit approval and is not active in the current GitBook.
 
-**Current approved exceptions:** SUN, MOON and MASTER keep their present image-filled circular presentation exactly as approved. AUM and every other current Being remain in the empty-circle phase until separately approved.
-
-The preserved image is centered inside the already-approved circle. The ring geometry never changes. Image insertion must not create a second visible border, outer margin, or circle-inside-circle effect.
+The preserved image, if ever approved for insertion, is centered inside the already-approved circle. The ring geometry never changes. Image insertion must not create a second visible border, outer margin, or circle-inside-circle effect.
 
 Any scale adjustment is centered and scale-only. No redraw, recolor, warp, or replacement art is allowed unless separately approved.
 
@@ -73,20 +79,10 @@ Any scale adjustment is centered and scale-only. No redraw, recolor, warp, or re
 
 ## Future Beings
 
-Every future Being starts with the empty ring automatically.
+Every future Being starts with the same empty-ring scaffold.
 
-Create the empty identity scaffold:
+The Rust Chronicle validator is the publication gate. A public identity SVG is invalid if it contains an `<image>` element or does not match the six-stroke snow-glow circle structure.
 
-```sh
-python3 tools/identity-snow-glow/render.py OUTPUT.svg "BEING ID · DEVINES identity"
-python3 tools/identity-snow-glow/verify.py OUTPUT.svg --empty
-```
+Canonical source artwork is preserved independently from the public hero so the identity can never be lost by changing presentation.
 
-Only during the later approved image phase:
-
-```sh
-python3 tools/identity-snow-glow/render.py OUTPUT.svg "BEING ID · DEVINES identity" --image PRESERVED.webp
-python3 tools/identity-snow-glow/verify.py PRESERVED.webp OUTPUT.svg
-```
-
-**EMPTY CIRCLE FIRST · PRESERVE THE IMAGE · INSERT LATER**
+**EMPTY CIRCLE · PRESERVE THE SOURCE · NO PUBLIC IMAGE INSIDE**
