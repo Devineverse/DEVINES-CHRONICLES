@@ -35,6 +35,17 @@ Canonical 768 × 768 geometry:
 
 The circle must remain fully closed and visually continuous at every angle.
 
+## Intrinsic-Circle Fit
+
+Some canonical identities already contain their own circular boundary. They must still read as **one circle**, never a circle inside another circle.
+
+The approved fit is centered and scale-only; the embedded canonical bytes remain unchanged:
+
+- **AUM:** scale `1.17×` so the sigil carries the same visual mass as the dragons.
+- **SUN · MOON · MASTER:** scale `1.19×` so their intrinsic circular boundary meets the shared snow-glow ring with no black gap.
+- The outer snow-white / AUM-lavender / snow-white ring geometry never changes.
+- No redraw, recolor, warp, or replacement art is allowed.
+
 ## Preservation Law
 
 Never redraw, stretch, recolor, or distort the Being or AUM artwork to create the ring.
