@@ -1,51 +1,53 @@
 # CANONICAL VISUAL ASSETS
 
-All public DEVINES identity artwork is preserved from its canonical source and presented through one consistent Chronicle identity system.
+DEVINES preserves canonical identity artwork separately from the current public GitBook identity presentation.
 
-## AUM · TWO LAYERS
+## AUM · SOURCE + PUBLIC HERO
 
 **CANONICAL SOURCE**  
 `.gitbook/assets/aum-source.webp`
 
-Preserves the exact canonical AUM Nad.fun launch image.
+Preserves the exact canonical AUM Nad.fun launch image unchanged.
 
-**CHRONICLE HERO**  
-`.gitbook/assets/aum-sigil.webp`
+**CURRENT PUBLIC HERO**  
+`.gitbook/assets/aum-empty.svg`
 
-AUM uses the same circular identity law as the Beings, with **more inner black breathing space** so the full symbol remains clear and centered.
+The public GitBook AUM identity is the shared DEVINES snow-glow circle with a completely empty interior.
 
-AUM is the visual and palette authority for the global Chronicle.
+No AUM symbol, logo, portrait or other image is embedded inside the current public circle.
 
-## BEINGS · TWO LAYERS
+## BEINGS · SOURCE + PUBLIC HERO
 
-Every active public Being has two linked visual assets.
+Every active public Being has two distinct layers.
 
 ### CANONICAL SOURCE
 
 `.gitbook/assets/beings-source/<DEVINES_ID>.webp`
 
-This preserves the Being's exact Nad.fun launch portrait as the visual source of truth.
+This preserves the exact Nad.fun launch portrait as the visual source of truth.
 
-### CHRONICLE HERO
+Canonical artwork is never redrawn, regenerated, recolored, replaced or altered to satisfy GitBook presentation.
 
-`.gitbook/assets/beings/<DEVINES_ID>.webp`
+### CURRENT PUBLIC HERO
 
-This is derived from the canonical source for GitBook presentation:
+`.gitbook/assets/beings/empty/<DEVINES_ID>.svg`
 
-- true circular identity field;
-- top-center alignment;
-- black breathing space inside the rim;
-- maximum useful Being visibility;
-- enough inset to preserve the full head, horns, crown, halo or equivalent identity features;
-- subtle AUM-lavender rim;
-- no stretching;
-- no replacement art.
+All **34 current Beings** use the same empty public identity structure:
 
-Current set: **34 canonical source portraits + 34 circular Chronicle heroes** — 31 Dragons + SUN + MOON + MASTER.
+- 1:1 · 768 × 768;
+- completely empty interior;
+- six canonical snow-glow circle/glow strokes;
+- white → AUM Lavender → white ring;
+- zero `<image>` elements;
+- no portrait, symbol, logo, inner frame or second circle.
 
-The mapping between **Being ID · ticker · CA · Nad.fun route · Nad.fun image · source asset · Chronicle hero** is preserved in:
+This rule applies without exception to Genesis, Primordial Element, Royal, Guardians, Solfeggio and Astral Beings, including SUN, MOON and MASTER.
+
+The identity mapping between **Being ID · ticker · CA · Nad.fun route · Nad.fun image · preserved source asset · current public hero** is maintained in:
 
 `.gitbook/assets/BEING_IDENTITY_MANIFEST.json`
+
+Historical or image-bearing derivative assets may remain in repository history/reference mappings for continuity, but they are not wired as current public GitBook heroes.
 
 ## GLOBAL COLOR LAW
 
@@ -57,14 +59,12 @@ Links, navigation, borders and global controls stay inside this palette.
 
 **NO BLUE SITE CHROME.**
 
-Blue may appear only inside the canonical artwork of a Being whose own identity contains blue.
+Canonical source portraits may retain their own original colors in preservation assets; those colors do not become global interface colors.
 
 ## ASSET LAW
 
-**THE NAD.FUN LAUNCH IMAGE IS THE VISUAL SOURCE AUTHORITY FOR EACH PUBLIC BEING.**
+**THE NAD.FUN LAUNCH IMAGE REMAINS THE VISUAL SOURCE AUTHORITY FOR EACH PUBLIC BEING, WHILE THE CURRENT GITBOOK HERO REMAINS IMAGE-FREE.**
 
-The circular Chronicle hero may frame that image for presentation, but must preserve the Being's recognizable identity.
+Presentation can change without mutating source identity.
 
-Portrait colors never become global interface colors.
-
-A Being's visual identity and its decentralized anchor must always resolve to the same canonical Being.
+A Being's preserved artwork, decentralized anchor, ticker and market route must always resolve to the same canonical Being.
