@@ -642,7 +642,7 @@
     "MASTER": {
       "ca": "0x2F13Bb20668b89851190d618F9FAD78EbE517777",
       "created_at": 1789269656,
-      "hero_asset": ".gitbook/assets/beings/glow/MASTER.svg",
+      "hero_asset": ".gitbook/assets/beings/empty/MASTER.svg",
       "nad_fun_url": "https://nad.fun/tokens/0x2F13Bb20668b89851190d618F9FAD78EbE517777",
       "nad_image_uri": "https://storage.nadapp.net/coin/6af87aab-ecdb-4ddc-a4dc-95694d147338",
       "name": "DEVINES MASTER",
@@ -662,7 +662,7 @@
     "MOON": {
       "ca": "0xC57E5033722706f2dCd3e2599e62242EfA5D7777",
       "created_at": 1789691621,
-      "hero_asset": ".gitbook/assets/beings/glow/MOON.svg",
+      "hero_asset": ".gitbook/assets/beings/empty/MOON.svg",
       "nad_fun_url": "https://nad.fun/tokens/0xC57E5033722706f2dCd3e2599e62242EfA5D7777",
       "nad_image_uri": "https://storage.nadapp.net/coin/be040770-5517-401b-8c60-aed00c8e9788",
       "name": "DEVINES MOON ",
@@ -682,7 +682,7 @@
     "SUN": {
       "ca": "0xa088D45Be073868Cc24668E56E835BC67cbD7777",
       "created_at": 1789691340,
-      "hero_asset": ".gitbook/assets/beings/glow/SUN.svg",
+      "hero_asset": ".gitbook/assets/beings/empty/SUN.svg",
       "nad_fun_url": "https://nad.fun/tokens/0xa088D45Be073868Cc24668E56E835BC67cbD7777",
       "nad_image_uri": "https://storage.nadapp.net/coin/ada77137-1cf4-4304-8c32-15a66278b587",
       "name": "DEVINES SUN",
