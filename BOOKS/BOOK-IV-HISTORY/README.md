@@ -10,7 +10,7 @@ Origin remembers why the path began.
 Law records what must survive change.  
 Beings preserve distinct becoming.  
 Treasury preserves what became durable.  
-Sovereign Economy records how public value and decentralized participation evolve.  
+DEVINES Flow records how value, public participation and decentralized economic systems evolve.  
 The Call keeps the unfinished future visible.
 
 ## Temporal law
