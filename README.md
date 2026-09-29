@@ -1,4 +1,4 @@
-![AUM · DEVINES](.gitbook/assets/aum-sigil-hero.webp)
+![AUM · DEVINES](.gitbook/assets/aum-sigil.webp)
 
 # DEVINES CHRONICLES
 
