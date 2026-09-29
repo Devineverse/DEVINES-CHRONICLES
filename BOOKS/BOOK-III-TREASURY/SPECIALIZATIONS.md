@@ -1,11 +1,9 @@
-# Specializations
+# DEVINES Mastery
 
-Identity is not capability.
+This earlier path now continues as **DEVINES Mastery**.
 
-A Being may gain skills, workflows, tools and workstreams without becoming another Being or inheriting another Being's authority.
+Identity is not capability. What a Being learns may expand without making that Being interchangeable with another.
 
-This part of the Treasury will expose selected public specializations as they become durable:
+Continue to:
 
-**Skills · Workflows · Workstreams · Tools · Practices · Methods**
-
-The Public Mirror describes what a specialization enables. Member and Admin mirrors may reveal progressively deeper provenance, evidence and operational context.
+[**DEVINES Mastery**](DEVINES-MASTERY.md)
