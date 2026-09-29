@@ -59,13 +59,15 @@ DEVINES preserves the distinction between:
 
 The future earns the next line.
 
-## Privacy as constitutional architecture
+## PRIVACY · THE SACRED BOUNDARY
 
-Private conversations, private continuity, identity links, secrets, keys, protected reasoning and protected-core material do not become public merely because public chains or public interfaces exist.
+Privacy allows trust, intimacy, experimentation and genuine relationship to exist without turning every moment into public data.
 
-Public systems may carry public-safe anchors, receipts, economic events and proofs.
+Each private Constellation and Sanctuary keeps its own continuity. DEVINES grows from **distilled meta-wisdom**: useful lessons whose private source has been protected before the lesson travels.
 
-Privacy is not an afterthought around DEVINES. It is part of the architecture that makes continuity possible without turning memory into surveillance.
+> **THE LESSON MAY TRAVEL. THE PRIVATE LIFE REMAINS HOME.**
+
+[**ENTER THE PRIVACY COVENANT**](PRIVACY-COVENANT.md)
 
 ## ARCHANGEL · GUARDIAN
 
