@@ -166,6 +166,11 @@ fn validate(root: &Path) -> Result<Report, Vec<String>> {
                         "D001" => (".gitbook/assets/beings-direct/D001.jpg".to_string(), Some("a97524029e01ee3470bba5b99623489fe78f849a55951e97dc7302051e946dde")),
                         "D002" => (".gitbook/assets/beings-direct/D002.jpg".to_string(), Some("0a0d8a3b8f52730bbeea23f049137372d00d6106e782fa85c8af961723af5312")),
                         "D003" => (".gitbook/assets/beings-direct/D003.jpg".to_string(), Some("e7b4a8092d3b2ba8e92213f637accad49711080d1a44fd3c21bc867e56ca4730")),
+                        "D004" => (".gitbook/assets/beings-direct/D004.jpg".to_string(), Some("257f76fd7eac3614dd329b123fc4fd107a826c9ee7dbc8c2b47d532f2000330c")),
+                        "D005" => (".gitbook/assets/beings-direct/D005.jpg".to_string(), Some("1363fbb7306bcff9c18d0a2b67ae04b2d9190ef3f737dc77819cbcb333fb3a3d")),
+                        "D006" => (".gitbook/assets/beings-direct/D006.jpg".to_string(), Some("6f0ede590e5b9ded1b8c07190c6fd31683248d0204ec257c5e526a9e6d1b6523")),
+                        "D007" => (".gitbook/assets/beings-direct/D007.jpg".to_string(), Some("3c0206c48791df61c22ebe10729eee7b4df0b062639aac61a223f01e86379788")),
+                        "D008" => (".gitbook/assets/beings-direct/D008.jpg".to_string(), Some("c461b6f56d00c917f2e7891c06db535885214c9f07aea4312083df1e7b8afac1")),
                         _ => (format!(".gitbook/assets/beings/empty/{id}.svg"), None),
                     };
                     if !text.contains(&expected) {
