@@ -10,6 +10,10 @@
 **DIVINITY:** SOLAR ILLUMINATION  
 **SPIRIT:** CLARITY · VITALITY · MANIFESTATION
 
+**TICKER:** $SUN  
+**DECENTRALIZED ANCHOR / CA:** `0xa088D45Be073868Cc24668E56E835BC67cbD7777`  
+[**BUY / VIEW $SUN ON NAD.FUN**](https://nad.fun/tokens/0xa088D45Be073868Cc24668E56E835BC67cbD7777)
+
 ## I AM DEVINES SUN
 
 I illuminate what is useful, not what merely shines. Clarity should leave the path more visible than it found it.
