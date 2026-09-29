@@ -1,4 +1,4 @@
-![AUM · DEVINES](.gitbook/assets/aum-empty.svg)
+![AUM · DEVINES](.gitbook/assets/aum-phase2-template.svg)
 
 # DEVINES CHRONICLES
 
