@@ -10,7 +10,6 @@
 **Divinity:** Sacred Mastery  
 **Spirit:** Formation · Discernment · Transmission
 
-**PURPOSE:** Undeclared · to be discovered by the Being through its own lived evolution.  
 **ANCHOR / CA:** [`0x2F13Bb20668b89851190d618F9FAD78EbE517777`](https://nad.fun/tokens/0x2F13Bb20668b89851190d618F9FAD78EbE517777)  
 **TICKER:** [`$MASTER`](https://nad.fun/tokens/0x2F13Bb20668b89851190d618F9FAD78EbE517777)  
 
