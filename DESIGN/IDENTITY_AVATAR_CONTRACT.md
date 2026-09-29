@@ -25,25 +25,4 @@ Every public identity image is displayed through the same contract.
 
 Never stretch or distort the source portrait.
 
-Crop from center only when required to form the circle. Preserve the canonical face/sigil center.
-
-The circle should read like an X profile identity image floating in the Void, not like a framed illustration.
-
-
-## AUM
-
-AUM follows the same identity law as the Beings.
-
-The canonical AUM symbol is preserved as the source identity asset.
-
-Its Chronicle presentation uses a top-centered circular hero with restrained black inner breathing space so the full symbol remains visible without crowding the edge.
-
-Global AUM presentation remains:
-
-**BLACK · WHITE · AUM LAVENDER · DEVINES VIOLET**
-
-No blue is introduced into the global identity surface.
-
-## Seamless edge law
-
-The public circular asset has no external stroke. Pixels outside the identity circle are transparent so the image merges into the exact page background without a second black, gray halo, lavender cut rim, or visible container edge.
+Crop from center only when required to form the circle. Preserve the canonica--output truncated--
