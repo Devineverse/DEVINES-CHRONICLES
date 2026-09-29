@@ -25,7 +25,7 @@ The entire DEVINES GitBook is one continuous visual surface. This applies to the
 - No gray page canvas behind black identity artwork
 - No alternate dark surface that creates a visible black-on-charcoal rectangle
 
-The intended result is a single uninterrupted Void Black field. Circular AUM and Being assets must visually dissolve into that field while preserving their canonical internal black and identity colors.
+The intended result is a single uninterrupted Void Black field. Circular public identity rings must visually dissolve into that field. Canonical AUM and Being artwork remains preserved separately and is not embedded inside the current GitBook hero circles.
 
 Canonical site chrome:
 
@@ -70,25 +70,21 @@ Display typography is reserved for headings and thresholds.
 
 AUM is the first visual threshold of DEVINES.
 
-Its canonical source is preserved separately from the Chronicle hero.
+Its canonical source artwork is preserved separately from the Chronicle hero.
 
-The Chronicle hero uses:
+The current public AUM hero is **only** the shared empty DEVINES snow-glow circle:
 
-- a true circular field;
-- centered AUM symbol;
-- generous black inner breathing space;
+- true 1:1 circular field;
+- completely empty interior;
+- no symbol, portrait, logo, image or secondary frame inside;
 - thin complete white → AUM-lavender → white snow-glow ring;
-- no distortion;
-- no blue;
-- no aggressive crop.
-
-The AUM symbol should feel calm, complete and primary.
+- the exact same geometry used by every Being.
 
 ## Landing threshold
 
 Prioritize:
 
-1. canonical AUM cover / sigil;
+1. the empty AUM identity circle;
 2. DEVINES CHRONICLES;
 3. the Welcome threshold;
 4. the six Books;
@@ -116,23 +112,24 @@ For GitBook presentation, use black / deep AUM as the dark foundation, AUM Laven
 
 ## AUM presentation
 
-AUM uses the same circular identity treatment as the Beings: canonical source preserved, top-centered hero, black breathing space inside the circle, and AUM lavender / white / violet only.
+AUM uses the same public identity circle as every Being: canonical source preserved separately, empty interior, and the shared AUM-lavender / white / violet snow-glow ring only.
 
 ## Being presentation
 
-Every public Being page places the canonical portrait at the top center in a true circular identity treatment.
+Every public Being page places the same empty identity circle at the top center.
 
-The Nad.fun launch image is the visual source authority. GitBook uses a derived presentation asset from that exact source:
+The Nad.fun launch image remains the visual source authority for canonical identity preservation, but the current GitBook presentation does **not** embed that portrait inside the public hero.
+
+For every Being, across every series:
 
 - 1:1 circular field;
-- top-center alignment;
-- black breathing space inside the circle;
-- enough inset to preserve the full head, horns, crown, halo or equivalent identity features;
-- strong fill without sacrificing the face/head;
+- completely empty interior;
+- zero embedded images;
+- no portrait, symbol, logo, inner frame or second circle;
 - thin complete white → AUM-lavender → white snow-glow ring only;
-- no distortion and no replacement art.
+- identical geometry for Genesis, Primordial Element, Royal, Guardians, Solfeggio and Astral Beings.
 
-The canonical untouched source portrait is preserved separately. The public profile uses the shared circular asset defined by the Identity Avatar Contract.
+The canonical untouched source portrait remains preserved separately in the identity mapping and source asset set.
 
 Near the identity threshold:
 
@@ -155,4 +152,4 @@ Use stable identity, contract and status information. Avoid flashing prices, urg
 
 ## PERMANENT IDENTITY RING LAW
 
-AUM, all existing Beings, and every future Being use the exact same full 360° snow-glow ring defined in [Identity Avatar Contract](IDENTITY_AVATAR_CONTRACT.md). The approved portrait, size and crop do not change; only the shared luminous ring is added.
+AUM, all existing Beings, and every future Being use the exact same full 360° snow-glow ring defined in [Identity Avatar Contract](IDENTITY_AVATAR_CONTRACT.md). In the current GitBook state the public hero contains the ring only: six canonical circle/glow strokes and zero embedded images.

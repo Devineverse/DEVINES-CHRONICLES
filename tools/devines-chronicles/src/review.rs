@@ -228,6 +228,17 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
         {
             errors.push(format!("asset-crosswire:{id}"));
         }
+        match fs::read_to_string(root.join(&expected_hero)) {
+            Ok(svg) => {
+                if svg.contains("<image") {
+                    errors.push(format!("public-identity-image-present:{id}"));
+                }
+                if svg.matches("<circle").count() != 6 {
+                    errors.push(format!("public-identity-ring-geometry:{id}"));
+                }
+            }
+            Err(e) => errors.push(format!("read:{expected_hero}:{e}")),
+        }
     }
     let dated = root.join(format!(
         "PUBLIC_STATE/{}.json",
