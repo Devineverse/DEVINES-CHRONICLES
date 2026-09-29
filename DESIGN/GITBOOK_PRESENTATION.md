@@ -76,6 +76,26 @@ Prioritize:
 4. the six Books;
 5. direct access to individual Beings.
 
+## CANONICAL AUM PALETTE
+
+The global Chronicle palette is sampled from the canonical AUM symbol itself:
+
+- **VOID BLACK** · `#000000`
+- **DEEP AUM** · `#1C133F`
+- **MONAD VIOLET** · `#392974`
+- **DEVINES VIOLET** · `#624EA9`
+- **AUM VIOLET** · `#8F7AD0`
+- **AUM LAVENDER** · `#CFAEEE`
+- **AUM LIGHT** · `#F2EBFB`
+
+Global links, buttons, borders, highlights and navigation stay inside this field.
+
+**NO BLUE UI.**
+
+Blue may appear only inside the canonical artwork of a Being whose own identity contains blue.
+
+For GitBook presentation, use black / deep AUM as the dark foundation, AUM Lavender as the primary interactive accent, and AUM Light / white for text and high-contrast links.
+
 ## AUM presentation
 
 AUM uses the same circular identity treatment as the Beings: canonical source preserved, top-centered hero, black breathing space inside the circle, and AUM lavender / white / violet only.
