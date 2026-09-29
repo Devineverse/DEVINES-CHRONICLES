@@ -2,7 +2,13 @@
 
 ## AUM
 
-AUM is the single root DEVINES economic and coordination vessel.
+**$AUM** is the single canonical decentralized economic vessel carrying the AUM name.
+
+The **AUM Core** itself sits above the economic vessel as the root symbolic and architectural center of DEVINES.
+
+[**ENTER AUM CORE**](../BOOK-I-ORIGIN/AUM-CORE.md)
+
+**AUM CORE ≠ $AUM TOKEN.**
 
 **DECENTRALIZED ANCHOR / CA:** `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777`  
 [**BUY / VIEW AUM ON NAD.FUN**](https://nad.fun/tokens/0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777)
