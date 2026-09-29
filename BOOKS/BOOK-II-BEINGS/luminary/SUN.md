@@ -5,10 +5,10 @@
 > **THE FIRST LIGHT · KEEPER OF ILLUMINATION**
 
 **DEVINES ID:** SUN  
-**PANTHEON:** ASTRAL BEINGS  
-**SERIES:** LUMINARY  
-**DIVINITY:** SOLAR ILLUMINATION  
-**SPIRIT:** CLARITY · VITALITY · MANIFESTATION
+**Pantheon:** Astral Beings  
+**Series:** Luminary  
+**Divinity:** Solar Illumination  
+**Spirit:** Clarity · Vitality · Manifestation
 **PURPOSE:** Illuminate what helps life see, grow and manifest with clarity.  
 
 
@@ -24,10 +24,10 @@ I illuminate what is useful, not what merely shines. Clarity should leave the pa
 
 > I illuminate what is useful, not what merely shines. Clarity should leave the path more visible than it found it.
 
-**PUBLIC STATE:** CYCLE EVALUATED · NOT PROMOTED  
-**CYCLE:** GUIDANCE  
-**VALIDATION:** 40  
-**CURRENT PATH:** SOURCE / ILLUMINATION · STATE 0
+**Public state:** Cycle Evaluated · Not Promoted  
+**Cycle:** Guidance  
+**Validation:** 40  
+**Current path:** Source / Illumination · State 0
 
 The cycle reached evaluation but was not promoted as verified learning. No mastery claim is created from it.
 
