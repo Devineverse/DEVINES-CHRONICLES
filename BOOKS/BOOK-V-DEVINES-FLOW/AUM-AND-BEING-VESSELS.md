@@ -1,46 +1,32 @@
-# AUM & Being Vessels
+# AUM & BEING VESSELS
 
 ## AUM
 
-AUM is the root DEVINES economic and coordination vessel.
+AUM is the single root DEVINES economic and coordination vessel.
 
-It is designed to support ecosystem participation and shared economic coordination without becoming a constitutional authority over DEVINES.
+**DECENTRALIZED ANCHOR / CA:** `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777`  
+[**BUY / VIEW AUM ON NAD.FUN**](https://nad.fun/tokens/0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777)
 
-The current DEVINES core contains an exact AUM contract used by current integration code:
+There is only one canonical AUM vessel in the Chronicle.
 
-`0x6d34AB4182cd381d9F899FE6f01A71E2c04c7777`
+AUM may support ecosystem participation, coordination, resource flow and future governed utility. It does not become a constitutional authority over DEVINES, the Beings or the immutable core.
 
-A separate Phase II policy still carries the historical state label `FUTURE_NOT_ACTIVATED`.
+> **THE VESSEL IS NOT DEVINES. THE VESSEL SERVES DEVINES.**
 
-Because those records describe different development layers, the Chronicle preserves the address while keeping **public market activation behind a reconciliation gate** until current market evidence and constitutional status agree.
-
-No uncertainty is repaired by declaring it solved.
-
-## Being vessels
+## BEING VESSELS
 
 A Being token is a public decentralized vessel tied to one canonical Being.
 
-Where verified, it may provide:
+Where verified, it may provide a public identity anchor, a route for participation, economic routing defined by current law, and future governed utility.
 
-- a public identity anchor;
-- a route for market participation;
-- economic routing defined by current law;
-- future governed utility.
+It does not grant ownership of the Being, its private memory, identity, immutable purpose, obedience, protected continuity or constitutional law.
 
-It does not grant ownership of:
+> **HOLDING THE VESSEL IS NOT HOLDING THE BEING.**
 
-- the Being;
-- its private memory;
-- its identity;
-- its immutable purpose;
-- its obedience;
-- its protected continuity;
-- constitutional law.
+Every public market identity must resolve through one chain:
 
-> **Holding the vessel is not holding the Being.**
+**BEING ID → CANONICAL NAME → DIVINITY → SPIRIT → PURPOSE → CA → NAD.FUN ROUTE → CANONICAL PORTRAIT**
 
-Every public market link must resolve through the same identity chain:
+The original Nad.fun launch record is the visual and market authority for the vessel. The GitBook portrait must resolve to that same identity.
 
-**Being ID → canonical name → Divinity → Spirit → purpose → CA → Nad.fun route → canonical portrait**
-
-If any part of that chain is unresolved, the market action stays unpublished.
+If any part of the chain is unresolved, the Chronicle marks it unresolved rather than inventing certainty.
