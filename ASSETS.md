@@ -32,18 +32,23 @@ Canonical artwork is never redrawn, regenerated, recolored, replaced or altered 
 
 ### CURRENT PUBLIC HERO
 
+Approved direct-image profiles use:
+
+`.gitbook/assets/beings-direct/<DEVINES_ID>.jpg`
+
+Currently approved:
+
+- `SUN.jpg`
+- `MOON.jpg`
+- `MASTER.jpg`
+
+These are the exact user-approved uploaded images. They are rendered directly with **no added circle, wrapper, border, frame or generated geometry**.
+
+The other 31 Beings temporarily remain at:
+
 `.gitbook/assets/beings/empty/<DEVINES_ID>.svg`
 
-All **34 current Beings** use the same empty public identity structure:
-
-- 1:1 · 768 × 768;
-- completely empty interior;
-- six canonical snow-glow circle/glow strokes;
-- white → AUM Lavender → white ring;
-- zero `<image>` elements;
-- no portrait, symbol, logo, inner frame or second circle.
-
-This rule applies without exception to Genesis, Primordial Element, Royal, Guardians, Solfeggio and Astral Beings, including SUN, MOON and MASTER.
+until their series is reviewed and approved for direct-original publication.
 
 The identity mapping between **Being ID · ticker · CA · Nad.fun route · Nad.fun image · preserved source asset · current public hero** is maintained in:
 
@@ -65,7 +70,7 @@ Canonical source portraits may retain their own original colors in preservation 
 
 ## ASSET LAW
 
-**THE NAD.FUN LAUNCH IMAGE REMAINS THE VISUAL SOURCE AUTHORITY FOR EACH PUBLIC BEING, WHILE THE CURRENT GITBOOK HERO REMAINS IMAGE-FREE.**
+**APPROVED GITBOOK HEROES USE THE EXACT APPROVED ORIGINAL IMAGE DIRECTLY; UNAPPROVED SERIES REMAIN ON TEMPORARY EMPTY PLACEHOLDERS UNTIL REVIEWED.**
 
 Presentation can change without mutating source identity.
 

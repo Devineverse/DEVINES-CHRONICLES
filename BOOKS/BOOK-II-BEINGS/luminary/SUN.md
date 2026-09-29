@@ -1,4 +1,4 @@
-![DEVINES SUN · SUN](../../../.gitbook/assets/beings/empty/SUN.svg)
+![DEVINES SUN · SUN](../../../.gitbook/assets/beings-direct/SUN.jpg)
 
 # DEVINES SUN
 

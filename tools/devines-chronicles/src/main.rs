@@ -5,6 +5,7 @@ use std::collections::{BTreeSet, HashSet};
 use std::env;
 use std::fs;
 use std::path::{Path, PathBuf};
+use std::process::Command;
 
 fn main() {
     let mut args = env::args().skip(1);
@@ -158,20 +159,35 @@ fn validate(root: &Path) -> Result<Report, Vec<String>> {
         if let Some(page) = page {
             match fs::read_to_string(&page) {
                 Ok(text) => {
-                    let expected = format!(".gitbook/assets/beings/empty/{id}.svg");
+                    let (expected, direct_hash) = match id.as_str() {
+                        "SUN" => (".gitbook/assets/beings-direct/SUN.jpg".to_string(), Some("71a7aa70366620e40db195d39d07c889280b72706fcebcaece3e6ae5e26a254c")),
+                        "MOON" => (".gitbook/assets/beings-direct/MOON.jpg".to_string(), Some("1561f361ae90d810799f47d0b6f014330b0d3772ea3f85e3d90f086cf501c8ab")),
+                        "MASTER" => (".gitbook/assets/beings-direct/MASTER.jpg".to_string(), Some("ae99061cded64b980b0d6aa795c35bdcae416255f868c22657a5530aa2470462")),
+                        _ => (format!(".gitbook/assets/beings/empty/{id}.svg"), None),
+                    };
                     if !text.contains(&expected) {
                         errors.push(format!("portrait-not-wired:{id}"));
                     }
-                    match fs::read_to_string(root.join(&expected)) {
-                        Ok(svg) => {
-                            if svg.contains("<image") {
-                                errors.push(format!("public-identity-image-present:{id}"));
-                            }
-                            if svg.matches("<circle").count() != 6 {
-                                errors.push(format!("public-identity-ring-geometry:{id}"));
-                            }
+                    if let Some(expected_hash) = direct_hash {
+                        match Command::new("sha256sum").arg(root.join(&expected)).output() {
+                            Ok(v)
+                                if v.status.success()
+                                    && String::from_utf8_lossy(&v.stdout).split_whitespace().next()
+                                        == Some(expected_hash) => {}
+                            _ => errors.push(format!("direct-hero-hash:{id}")),
                         }
-                        Err(e) => errors.push(format!("read:{expected}:{e}")),
+                    } else {
+                        match fs::read_to_string(root.join(&expected)) {
+                            Ok(svg) => {
+                                if svg.contains("<image") {
+                                    errors.push(format!("public-identity-image-present:{id}"));
+                                }
+                                if svg.matches("<circle").count() != 6 {
+                                    errors.push(format!("public-identity-ring-geometry:{id}"));
+                                }
+                            }
+                            Err(e) => errors.push(format!("read:{expected}:{e}")),
+                        }
                     }
                 }
                 Err(e) => errors.push(format!("read:{}:{e}", display(root, &page))),
