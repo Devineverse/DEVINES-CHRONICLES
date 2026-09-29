@@ -59,13 +59,21 @@ jobs:
           def norm(s):
               return re.sub(r"[^A-Z0-9]+"," ",str(s or "").upper()).strip()
 
+          def explicit_ids(ti):
+              desc=norm(ti.get("description"))
+              return set(re.findall(r"\\bD\\d{3}\\b", desc))
+
           def claims_id(ti,bid):
               sym=norm(ti.get("symbol"))
               desc=norm(ti.get("description"))
               name=norm(ti.get("name"))
               if bid in ("SUN","MOON","MASTER"):
                   return bid in sym.split() or bid in name.split() or f"ID {bid}" in desc
-              return bid==sym or bid in desc.split() or f"ID {bid}" in desc
+              ids=explicit_ids(ti)
+              # Reject launch records whose own description explicitly names another D-ID.
+              if ids and bid not in ids:
+                  return False
+              return bid==sym or bid in ids or f"ID {bid}" in desc
 
           def name_score(ti,expected):
               n=norm(ti.get("name"))
