@@ -2,9 +2,17 @@
 
 All public DEVINES identity artwork is preserved from its canonical source and presented through one consistent Chronicle identity system.
 
-## AUM
+## AUM · TWO LAYERS
 
-- `.gitbook/assets/aum-sigil.webp`
+**CANONICAL SOURCE**  
+`.gitbook/assets/aum-source.webp`
+
+Preserves the exact canonical AUM Nad.fun launch image.
+
+**CHRONICLE HERO**  
+`.gitbook/assets/aum-sigil.webp`
+
+AUM uses the same circular identity law as the Beings, with **more inner black breathing space** so the full symbol remains clear and centered.
 
 AUM is the visual and palette authority for the global Chronicle.
 
