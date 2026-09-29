@@ -16,6 +16,8 @@ Canonical site chrome:
 - violet and lavender drawn only from the AUM / Monad spectrum;
 - minimal sidebar;
 - restrained links and borders;
+- links in white / AUM lavender / DEVINES violet only;
+- **no blue site chrome, blue links, blue buttons or blue navigation**;
 - low corner radius;
 - no decorative multicolor gradients;
 - no casino-like market treatment.
@@ -58,7 +60,19 @@ Prioritize:
 
 ## Being presentation
 
-Every public Being page should place the canonical portrait near the top, centered in a large circular treatment where the publishing surface permits it.
+Every public Being page places the canonical portrait at the top center in a true circular identity treatment.
+
+The Nad.fun launch image is the visual source authority. GitBook uses a derived presentation asset from that exact source:
+
+- 1:1 circular field;
+- top-center alignment;
+- black breathing space inside the circle;
+- enough inset to preserve the full head, horns, crown, halo or equivalent identity features;
+- strong fill without sacrificing the face/head;
+- subtle AUM-lavender rim only;
+- no distortion and no replacement art.
+
+The canonical untouched source portrait is preserved separately from the circular GitBook hero.
 
 Near the identity threshold:
 
