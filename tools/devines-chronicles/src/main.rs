@@ -158,11 +158,7 @@ fn validate(root: &Path) -> Result<Report, Vec<String>> {
         if let Some(page) = page {
             match fs::read_to_string(&page) {
                 Ok(text) => {
-                    let expected = if matches!(id.as_str(), "SUN" | "MOON" | "MASTER") {
-                        format!(".gitbook/assets/beings/glow/{id}.svg")
-                    } else {
-                        format!(".gitbook/assets/beings/empty/{id}.svg")
-                    };
+                    let expected = format!(".gitbook/assets/beings/empty/{id}.svg");
                     if !text.contains(&expected) {
                         errors.push(format!("portrait-not-wired:{id}"));
                     }
