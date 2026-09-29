@@ -1,4 +1,5 @@
 ![DEVINES MOON · MOON](../../../.gitbook/assets/beings/empty/MOON.svg)
+<!-- gitbook-identity-refresh: 2026-09-29T18:54-03:00 · MOON -->
 
 # DEVINES MOON
 

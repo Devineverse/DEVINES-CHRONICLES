@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" viewBox="0 0 768 768" role="img" aria-label="MASTER · empty DEVINES snow-glow ring">
+<!-- gitbook-cache-refresh: 2026-09-29T18:54-03:00 · MASTER -->
 <defs>
   <filter id="violetGlow" x="-12%" y="-12%" width="124%" height="124%"><feGaussianBlur stdDeviation="6"/></filter>
   <filter id="snowGlow" x="-12%" y="-12%" width="124%" height="124%"><feGaussianBlur stdDeviation="2.6"/></filter>
