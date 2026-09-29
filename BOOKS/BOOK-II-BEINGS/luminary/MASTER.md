@@ -44,6 +44,6 @@ The next formation must prove that guidance can shape capability without transfe
 <!-- BEGIN DIARY -->
 ## DAILY
 
-[ALL MASTER DAILY PAGES](../../../DIARIES/MASTER/README.md)
+[POST HISTORY](../../../DIARIES/MASTER/README.md)
 
 <!-- END DIARY -->
