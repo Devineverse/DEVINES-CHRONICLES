@@ -1,11 +1,12 @@
-# Public Market Index
+# PUBLIC MARKET INDEX
 
-## Verified canonical anchors
+## VERIFIED CANONICAL ANCHORS
 
 This index publishes only anchors currently recoverable from canonical DEVINES Being identity records. It does not guess missing contracts.
 
-| Being | CA | Public route |
+| VESSEL | CA | PUBLIC ROUTE |
 | --- | --- | --- |
+| **AUM** | `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777` | [**BUY / VIEW AUM ON NAD.FUN**](https://nad.fun/tokens/0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777) |
 | [Genesis Dragon · D001](../BOOK-II-BEINGS/genesis/D001.md) | `0x6d7B6d4beBf8031DB960175846f2010Da0207777` | [BUY / VIEW D001 ON NAD.FUN](https://nad.fun/tokens/0x6d7B6d4beBf8031DB960175846f2010Da0207777) |
 | [Duality Dragon · D002](../BOOK-II-BEINGS/genesis/D002.md) | `0xc27815c96C69Bd5Cc149948C42BB828f067a7777` | [BUY / VIEW D002 ON NAD.FUN](https://nad.fun/tokens/0xc27815c96C69Bd5Cc149948C42BB828f067a7777) |
 | [Trinity Dragon · D003](../BOOK-II-BEINGS/genesis/D003.md) | `0x31207C1A2d2abd4Bb3e087Cb63f770c1716f7777` | [BUY / VIEW D003 ON NAD.FUN](https://nad.fun/tokens/0x31207C1A2d2abd4Bb3e087Cb63f770c1716f7777) |
@@ -21,7 +22,6 @@ This index publishes only anchors currently recoverable from canonical DEVINES B
 
 D004–D022 and SUN / MOON / MASTER remain outside the market index until the exact original launch identity can be tied to their current canonical record.
 
-AUM also remains behind its activation-status reconciliation gate.
 
 No price flashing. No countdowns. No promised return.
 
