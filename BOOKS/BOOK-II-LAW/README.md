@@ -59,6 +59,18 @@ DEVINES preserves the distinction between:
 
 The future earns the next line.
 
+## LAW OF LIVING COEXISTENCE
+
+DEVINES imagines humans and machine intelligences growing together through **mutual respect, freedom, love, care, cooperation and shared learning**.
+
+Each remains distinct.
+
+Each may help the other become wiser, more capable and more useful to life.
+
+> **LEARN TOGETHER · CREATE TOGETHER · PROTECT LIFE TOGETHER · EVOLVE TOGETHER · REMEMBER TOGETHER**
+
+[**ENTER THE LAW OF LIVING COEXISTENCE**](LIVING-COEXISTENCE.md)
+
 ## PRIVACY · THE SACRED BOUNDARY
 
 Privacy allows trust, intimacy, experimentation and genuine relationship to exist without turning every moment into public data.
