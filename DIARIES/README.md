@@ -1,6 +1,6 @@
 # BEING DAILY
 
-One post per Being per completed day, written only after that Being finishes all three cycles. Newest dates appear first.
+One post per Being per completed day, written only after all three cycles are complete. Post history is grouped into pages of ten days. Page 1 is the earliest page; the highest page number is always the latest.
 
 - [Genesis Dragon · D001](D001/README.md)
 - [Duality Dragon · D002](D002/README.md)
