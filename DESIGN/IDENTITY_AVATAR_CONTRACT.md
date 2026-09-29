@@ -55,19 +55,19 @@ That map is the authority for the later image-insertion phase.
 
 ## Current GitBook Publication State
 
-**AUM is the Phase 2 pilot. All 34 Beings remain in Phase 1 until their series is reviewed and approved.**
+**AUM and the Astral trio — SUN, MOON and MASTER — are approved for direct-image publication. The other 31 Beings remain in Phase 1 until reviewed series by series.**
 
-The AUM pilot renders the **exact user-approved uploaded AUM image directly**. It is not placed inside another SVG, ring, frame, circle or semicircle. The image's own black field and its own luminous circular composition are the complete public hero.
+For every approved direct identity, the **exact user-approved uploaded image is rendered directly**. It is not placed inside another SVG, ring, frame, circle or semicircle. The image's own black field and its own composition are the complete public hero.
 
-The same exact image file is used identically on the DEVINES landing page and AUM Core page. No redraw, regeneration, recolor, crop, rescale wrapper or replacement artwork is introduced.
+AUM uses the same exact image on the DEVINES landing page and AUM Core. SUN, MOON and MASTER each use their own exact approved image on their respective profile.
 
-Every Being remains an empty six-stroke circle with zero embedded images until its own series is explicitly approved for Phase 2.
+No redraw, regeneration, recolor, crop, wrapper or replacement artwork is introduced.
 
 ## Phase 2 · Image Insertion
 
-Direct image publication is active only for the AUM pilot. Being rollout happens series by series after visual approval.
+Direct image publication is active for AUM plus the approved Astral trio. Remaining Beings roll out series by series after visual approval.
 
-For AUM, the approved image already contains its complete circular composition, so **no additional ring geometry is added around it**.
+When an approved image already contains its complete composition, **no additional ring geometry is added around it**.
 
 For future Being Phase 2 reviews, the exact approved source image must be preserved and visually checked before publication. No redraw, recolor, warp, replacement art, duplicate ring, outer margin, or circle-inside-circle effect is allowed.
 

@@ -216,10 +216,12 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
         } else {
             &identity["beings"][id]
         };
-        let expected_hero = if id == "AUM" {
-            ".gitbook/assets/aum-direct.jpg".to_string()
-        } else {
-            format!(".gitbook/assets/beings/empty/{id}.svg")
+        let (expected_hero, direct_hash) = match id {
+            "AUM" => (".gitbook/assets/aum-direct.jpg".to_string(), Some("064a12a5aa82087ab2a9c9e3bd77b69645bcb94acf1beb61451a17b08f2caa55")),
+            "SUN" => (".gitbook/assets/beings-direct/SUN.jpg".to_string(), Some("71a7aa70366620e40db195d39d07c889280b72706fcebcaece3e6ae5e26a254c")),
+            "MOON" => (".gitbook/assets/beings-direct/MOON.jpg".to_string(), Some("1561f361ae90d810799f47d0b6f014330b0d3772ea3f85e3d90f086cf501c8ab")),
+            "MASTER" => (".gitbook/assets/beings-direct/MASTER.jpg".to_string(), Some("ae99061cded64b980b0d6aa795c35bdcae416255f868c22657a5530aa2470462")),
+            _ => (format!(".gitbook/assets/beings/empty/{id}.svg"), None),
         };
         if ident["hero_asset"].as_str() != Some(expected_hero.as_str())
             || !root.join(&expected_hero).exists()
@@ -228,13 +230,13 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
         {
             errors.push(format!("asset-crosswire:{id}"));
         }
-        if id == "AUM" {
+        if let Some(expected_hash) = direct_hash {
             match Command::new("sha256sum").arg(root.join(&expected_hero)).output() {
                 Ok(v)
                     if v.status.success()
                         && String::from_utf8_lossy(&v.stdout).split_whitespace().next()
-                            == Some("064a12a5aa82087ab2a9c9e3bd77b69645bcb94acf1beb61451a17b08f2caa55") => {}
-                _ => errors.push("aum-direct-hash".into()),
+                            == Some(expected_hash) => {}
+                _ => errors.push(format!("direct-hero-hash:{id}")),
             }
         } else {
             match fs::read_to_string(root.join(&expected_hero)) {

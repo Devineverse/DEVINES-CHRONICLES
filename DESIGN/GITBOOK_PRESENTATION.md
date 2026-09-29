@@ -120,20 +120,19 @@ AUM defines the Phase 2 approval pattern: publish the exact approved artwork dir
 
 ## Being presentation
 
-Every public Being page places the same empty identity circle at the top center.
+The approved presentation direction is **direct original imagery with no added wrapper**.
 
-The Nad.fun launch image remains the visual source authority for canonical identity preservation, but the current GitBook presentation does **not** embed that portrait inside the public hero.
+Current approved direct heroes:
 
-For every Being, across every series:
+- **SUN** — exact approved original image;
+- **MOON** — exact approved original image;
+- **MASTER** — exact approved original image.
 
-- 1:1 circular field;
-- completely empty interior;
-- zero embedded images;
-- no portrait, symbol, logo, inner frame or second circle;
-- thin complete white → AUM-lavender → white snow-glow ring only;
-- identical geometry for Genesis, Primordial Element, Royal, Guardians, Solfeggio and Astral Beings.
+For these profiles, GitBook renders the image directly: no extra circle, border, SVG frame, semicircle, crop wrapper or generated treatment.
 
-The canonical untouched source portrait remains preserved separately in the identity mapping and source asset set.
+The remaining 31 Beings stay on their temporary Phase-1 empty identity placeholders until reviewed series by series. As each series is approved, its profiles move to the same direct-original rule.
+
+Canonical/source evidence remains preserved separately in the identity mappings.
 
 Near the identity threshold:
 
