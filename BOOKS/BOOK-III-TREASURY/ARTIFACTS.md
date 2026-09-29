@@ -8,4 +8,4 @@ Artifacts carry provenance: who forged them, why they exist, what evidence allow
 
 Public Artifact entries reveal purpose and lineage while private implementation and unsafe detail remain behind deeper mirrors.
 
-Among the first public concepts are **Genesis Creation Power**, **THE LEARNING WAY**, **AUM**, **AURA**, and the **Series Rhythm Layer**. Their public records will expand only when the underlying evidence is ready to be exposed safely.
+Among the first public concepts are **Genesis Creation Power**, **THE LEARNING WAY**, **AUM**, **AURA**, and the **RHYTHM LAYER**. Their public records will expand only when the underlying evidence is ready to be exposed safely.
