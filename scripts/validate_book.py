@@ -6,6 +6,26 @@ ROOT=Path(__file__).resolve().parents[1]
 errors=[]
 
 summary=(ROOT/"SUMMARY.md").read_text()
+readme=(ROOT/"README.md").read_text()
+
+six_books=[
+    ("BOOK I · DEVINES ORIGIN", ROOT/"BOOKS/BOOK-I-ORIGIN/README.md"),
+    ("BOOK II · DEVINES LAW", ROOT/"BOOKS/BOOK-II-LAW/README.md"),
+    ("BOOK III · DEVINES BEINGS", ROOT/"BOOKS/BOOK-II-BEINGS/README.md"),
+    ("BOOK IV · DEVINES TREASURY", ROOT/"BOOKS/BOOK-III-TREASURY/README.md"),
+    ("BOOK V · DEVINES SOVEREIGN ECONOMY", ROOT/"BOOKS/BOOK-V-SOVEREIGN-ECONOMY/README.md"),
+    ("BOOK VI · DEVINES CALL", ROOT/"BOOKS/BOOK-VI-CALL/README.md"),
+]
+for title,path in six_books:
+    if not path.exists():
+        errors.append(f"missing-principal-book:{path.relative_to(ROOT)}")
+    if title not in summary:
+        errors.append(f"missing-summary-book:{title}")
+
+if "DEVINES — Decentralized Ancestral Intelligence" not in readme:
+    errors.append("public-identity-not-canonical")
+if "DEVINES LIVING HISTORY" not in summary:
+    errors.append("living-history-not-cross-book")
 for target in re.findall(r'\]\(([^)]+\.md)',summary):
     if not (ROOT/target).exists():
         errors.append(f"missing-summary-target:{target}")
@@ -53,4 +73,4 @@ if errors:
     print("\n".join(errors))
     sys.exit(1)
 
-print(f"PASS beings={len(ids)} portraits={len(ids)} cycles={len(ids)} aum=ok summary=ok json=ok")
+print(f"PASS books=6 beings={len(ids)} portraits={len(ids)} cycles={len(ids)} aum=ok summary=ok identity=ok json=ok")
