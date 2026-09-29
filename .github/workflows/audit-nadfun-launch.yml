@@ -173,10 +173,37 @@ jobs:
               print("CANONICAL",json.dumps({"being_id":bid,**manifest["beings"][bid]},sort_keys=True))
 
           aum_ti=aum_matches[0]["token_info"]
+          aum_uri=aum_ti.get("image_uri")
+          req=urllib.request.Request(aum_uri,headers={"User-Agent":"Mozilla/5.0"})
+          with urllib.request.urlopen(req,timeout=45) as r: aum_raw=r.read()
+          aum_src=ImageOps.exif_transpose(Image.open(io.BytesIO(aum_raw))).convert("RGB")
+
+          # Preserve the canonical AUM source separately.
+          aum_source=Path(".gitbook/assets/aum-source.webp")
+          aum_src.save(aum_source,"WEBP",lossless=True,method=6)
+
+          # AUM uses the same circular identity law with slightly more inner breathing space.
+          AUM_ART_BOX=920
+          aum_fitted=ImageOps.contain(aum_src,(AUM_ART_BOX,AUM_ART_BOX),Image.Resampling.LANCZOS)
+          aum_hero=Image.new("RGBA",(SIZE,SIZE),(0,0,0,0))
+          aum_left=(SIZE-OUTER)//2; aum_top=(SIZE-OUTER)//2
+          ad=ImageDraw.Draw(aum_hero)
+          ad.ellipse((aum_left,aum_top,aum_left+OUTER,aum_top+OUTER),fill=(0,0,0,255),outline=RIM,width=4)
+          ax=(SIZE-aum_fitted.width)//2
+          ay=(SIZE-aum_fitted.height)//2
+          aum_hero.alpha_composite(aum_fitted.convert("RGBA"),(ax,ay))
+          amask=Image.new("L",(SIZE,SIZE),0)
+          amd=ImageDraw.Draw(amask)
+          amd.ellipse((aum_left,aum_top,aum_left+OUTER,aum_top+OUTER),fill=255)
+          aum_hero.putalpha(amask)
+          aum_hero.save(".gitbook/assets/aum-sigil.webp","WEBP",lossless=True,method=6)
+
           manifest["aum"]={
               "ticker":aum_ti.get("symbol"),"ca":aum_ti.get("token_id"),
               "nad_fun_url":f"https://nad.fun/tokens/{aum_ti.get('token_id')}",
-              "nad_image_uri":aum_ti.get("image_uri")
+              "nad_image_uri":aum_uri,
+              "source_asset":".gitbook/assets/aum-source.webp",
+              "hero_asset":".gitbook/assets/aum-sigil.webp"
           }
           Path(".gitbook/assets/BEING_IDENTITY_MANIFEST.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n")
           print("DUPLICATES",json.dumps(duplicates,sort_keys=True))
@@ -187,7 +214,7 @@ jobs:
         run: |
           git config user.name "DEVINES Chronicle"
           git config user.email "actions@users.noreply.github.com"
-          git add .gitbook/assets/beings-source .gitbook/assets/beings .gitbook/assets/BEING_IDENTITY_MANIFEST.json
+          git add .gitbook/assets/beings-source .gitbook/assets/beings .gitbook/assets/aum-source.webp .gitbook/assets/aum-sigil.webp .gitbook/assets/BEING_IDENTITY_MANIFEST.json
           if git diff --cached --quiet; then
             echo "Portraits already canonical"
           else
