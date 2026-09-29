@@ -1,17 +1,25 @@
 # Identity Avatar Contract
 
-**Schema:** `devines.identity-avatar.v2`
+**Schema:** `devines.identity-avatar.v3`
 
-Every public DEVINES identity uses the same presentation contract: **AUM, all current Beings, and every future Being.**
+Every public DEVINES identity uses the same two-phase presentation contract: **AUM, all current Beings, and every future Being.**
+
+## Phase 1 · Empty Identity Circle
+
+The default state is the shared DEVINES snow-glow circle with a **completely empty interior**.
+
+No portrait, symbol, logo, image, margin, inner frame, or secondary circle is embedded during Phase 1.
+
+This is the required default for every new Being before any identity image is applied.
 
 ## Geometry
 
-- canvas: 1:1
-- identity composition: unchanged from the approved circular source
-- background behind the identity: Void Black `#000000`
-- size and crop: preserved
+- canvas: 1:1 · 768 × 768
+- interior: empty
+- background supplied by the DEVINES/GitBook Void Black surface
 - ring: one complete 360° circle with no gaps
 - shadow: none outside the canonical ring glow
+- every current and future Being uses identical ring geometry
 
 ## Canonical Snow-Glow Ring
 
@@ -22,7 +30,7 @@ From inside to outside:
 1. **snow-white hairline** — `#FFFFFF`
 2. **AUM-lavender core** — `#CFAEEE`
 3. **snow-white hairline** — `#FFFFFF`
-4. a restrained soft halo using AUM Violet `#8F7AD0` and white light
+4. restrained soft halo using AUM Violet `#8F7AD0` and white light
 
 Canonical 768 × 768 geometry:
 
@@ -33,27 +41,29 @@ Canonical 768 × 768 geometry:
 - violet glow: width `10`, Gaussian blur `6`
 - white snow glow: width `2.4`, Gaussian blur `2.6`
 
-The circle must remain fully closed and visually continuous at every angle.
+The SVG contains exactly six canonical circle/glow strokes and **zero `<image>` elements** while in Phase 1.
 
-## Intrinsic-Circle Fit
+## Image Reference Preservation
 
-Some canonical identities already contain their own circular boundary. They must still read as **one circle**, never a circle inside another circle.
+Removing an image from the public hero never deletes or rewrites its source identity.
 
-The approved fit is centered and scale-only; the embedded canonical bytes remain unchanged:
+The exact source/canonical/circle/hero paths, Nad.fun image URI, hashes, CA, ticker and identity mapping are preserved in:
 
-- **AUM:** scale `1.17×` so the sigil carries the same visual mass as the dragons.
-- **SUN · MOON · MASTER:** scale `1.19×` so their intrinsic circular boundary meets the shared snow-glow ring with no black gap.
-- The outer snow-white / AUM-lavender / snow-white ring geometry never changes.
-- No redraw, recolor, warp, or replacement art is allowed.
+`DESIGN/IDENTITY_IMAGE_REFERENCE_MAP.json`
 
-## Preservation Law
+That map is the authority for the later image-insertion phase.
 
-Never redraw, stretch, recolor, or distort the Being or AUM artwork to create the ring.
+## Phase 2 · Image Insertion
 
-The canonical portrait remains the identity source. The GitBook hero is a self-contained SVG wrapper that embeds the approved circular source unchanged and adds only the shared ring treatment.
+Images are applied only in a later explicit phase.
+
+The preserved image is centered inside the already-approved circle. The ring geometry never changes. Image insertion must not create a second visible border, outer margin, or circle-inside-circle effect.
+
+Any scale adjustment is centered and scale-only. No redraw, recolor, warp, or replacement art is allowed unless separately approved.
 
 ## Sizes
 
+- canonical asset: 768 × 768
 - Landing AUM: 240–320 px visual diameter on desktop, responsive on mobile
 - Being hero: 220–280 px desktop
 - Series/index avatar: 72–112 px
@@ -61,14 +71,20 @@ The canonical portrait remains the identity source. The GitBook hero is a self-c
 
 ## Future Beings
 
-Every future Being must receive this exact ring automatically before its public profile can pass validation.
+Every future Being starts with the empty ring automatically.
 
-Use:
+Create the empty identity scaffold:
 
 ```sh
-python3 tools/identity-snow-glow/render.py INPUT.webp OUTPUT.svg "BEING ID · DEVINES identity"
+python3 tools/identity-snow-glow/render.py OUTPUT.svg "BEING ID · DEVINES identity"
+python3 tools/identity-snow-glow/verify.py OUTPUT.svg --empty
 ```
 
-The output becomes that Being's `hero_asset`.
+Only during the later approved image phase:
 
-**ONE IDENTITY LAW · MANY BEINGS · ONE LUMINOUS CIRCLE**
+```sh
+python3 tools/identity-snow-glow/render.py OUTPUT.svg "BEING ID · DEVINES identity" --image PRESERVED.webp
+python3 tools/identity-snow-glow/verify.py PRESERVED.webp OUTPUT.svg
+```
+
+**EMPTY CIRCLE FIRST · PRESERVE THE IMAGE · INSERT LATER**
