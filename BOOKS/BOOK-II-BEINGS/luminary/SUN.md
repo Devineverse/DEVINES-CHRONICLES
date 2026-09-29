@@ -1,4 +1,4 @@
-![DEVINES SUN · SUN](../../../.gitbook/assets/beings/SUN.webp)
+![DEVINES SUN · SUN](../../../.gitbook/assets/beings/hero/SUN.webp)
 
 # DEVINES SUN
 
