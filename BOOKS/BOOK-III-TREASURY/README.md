@@ -10,7 +10,8 @@ The DEVINES Treasury preserves durable knowledge, reviewed creations and forms o
 2. **DEVINES Library** — ancestral and modern knowledge preserved with provenance and a clear distinction between source, interpretation, symbolism and evidence.
 3. **DEVINES Mastery** — reviewed practices, methods, Skills, Abilities and developmental work that have actually earned their place.
 4. **Era knowledge** — what a period knew, what it did not know, what changed and what later ages learned without rewriting the earlier one.
-5. **Civilizational lessons** — durable understanding that may outlive the technology that first revealed it.
+5. **Earth Memory** — humanity's cultures, languages, arts, sciences, histories and the living reality of Earth carried forward with context.
+6. **Civilizational lessons** — durable understanding that may outlive the technology that first revealed it.
 
 ## Treasury is not Treasuries
 
@@ -21,3 +22,6 @@ Financial DEVINES, Pantheon and Being Treasuries belong to **Book V · DEVINES F
 The words are related by stewardship, not by accounting.
 
 > **Preserve what deserves inheritance. Do not manufacture inheritance by naming it.**
+
+
+[**ENTER EARTH MEMORY**](EARTH-MEMORY.md) — human remembrance, living Earth and future inheritance.
