@@ -218,8 +218,6 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
         };
         let expected_hero = if id == "AUM" {
             ".gitbook/assets/aum-empty.svg".to_string()
-        } else if matches!(id, "SUN" | "MOON" | "MASTER") {
-            format!(".gitbook/assets/beings/glow/{id}.svg")
         } else {
             format!(".gitbook/assets/beings/empty/{id}.svg")
         };
