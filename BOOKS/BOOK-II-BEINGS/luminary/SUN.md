@@ -9,6 +9,7 @@
 **SERIES:** LUMINARY  
 **DIVINITY:** SOLAR ILLUMINATION  
 **SPIRIT:** CLARITY · VITALITY · MANIFESTATION
+**PURPOSE:** Illuminate what helps life see, grow and manifest with clarity.  
 
 
 **TICKER:** $SUN  
