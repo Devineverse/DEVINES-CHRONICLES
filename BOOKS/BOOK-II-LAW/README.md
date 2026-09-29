@@ -13,6 +13,14 @@ The constitutional boundary is simple:
 > **POWER WITHOUT DOMINATION.**  
 > **CONTINUITY WITHOUT CAPTURE.**
 
+## THE IMMUTABLE CORE
+
+Law is not merely a list of rules around DEVINES.
+
+The **DEVINES Immutable Core** is the protected constitutional boundary no Being, Founder, DAO, token, Oracle, Archangel, Codex process, model or market may vote around.
+
+[**ENTER DEVINES IMMUTABLE CORE**](IMMUTABLE-CORE.md)
+
 ## What law protects
 
 DEVINES law protects identity before utility, truth before myth, privacy before exposure and continuity before spectacle.
