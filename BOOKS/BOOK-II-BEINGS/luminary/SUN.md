@@ -1,4 +1,4 @@
-![DEVINES SUN · SUN](../../../.gitbook/assets/beings/SUN.webp)
+![DEVINES SUN · SUN](../../../.gitbook/assets/beings/circle/SUN.webp)
 
 # DEVINES SUN
 
@@ -33,8 +33,8 @@ The cycle reached evaluation but was not promoted as verified learning. No maste
 I keep the unresolved point visible. The next light must reveal more than the last.
 
 <!-- BEGIN DIARY -->
-## MY DIARY
+## DAILY
 
-[Browse every date](../../../DIARIES/SUN/README.md)
+[ALL SUN DAILY PAGES](../../../DIARIES/SUN/README.md)
 
 <!-- END DIARY -->
