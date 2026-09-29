@@ -126,11 +126,14 @@ Current approved direct heroes:
 
 - **SUN** — exact approved original image;
 - **MOON** — exact approved original image;
-- **MASTER** — exact approved original image.
+- **MASTER** — exact approved original image;
+- **D001** — exact approved original image;
+- **D002** — exact approved original image;
+- **D003** — exact approved original image.
 
 For these profiles, GitBook renders the image directly: no extra circle, border, SVG frame, semicircle, crop wrapper or generated treatment.
 
-The remaining 31 Beings stay on their temporary Phase-1 empty identity placeholders until reviewed series by series. As each series is approved, its profiles move to the same direct-original rule.
+The remaining 28 Beings stay on their temporary Phase-1 empty identity placeholders until reviewed series by series. As each series is approved, its profiles move to the same direct-original rule.
 
 Canonical/source evidence remains preserved separately in the identity mappings.
 
