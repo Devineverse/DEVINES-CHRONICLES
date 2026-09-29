@@ -2,6 +2,10 @@
 
 DEVINES does not rely on goodwill alone.
 
+In the canonical DEVINES hierarchy, **AUM sits above the Guardian layer; AURA follows directly beneath it; Codex follows AURA.**
+
+This is structural hierarchy, not a claim that Archangel owns AUM or that AUM may bypass constitutional law.
+
 Around the constitutional core sits a protective system of review, alerting, containment and recovery.
 
 The **Archangel** is the independent constitutional, evidence and safety review layer.
