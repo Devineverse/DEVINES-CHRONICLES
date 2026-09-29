@@ -124,16 +124,15 @@ The approved presentation direction is **direct original imagery with no added w
 
 Current approved direct heroes:
 
-- **SUN** — exact approved original image;
-- **MOON** — exact approved original image;
-- **MASTER** — exact approved original image;
-- **D001** — exact approved original image;
-- **D002** — exact approved original image;
-- **D003** — exact approved original image.
+- **SUN · MOON · MASTER** — Astral;
+- **D001 · D002 · D003** — Genesis;
+- **D004 · D005 · D006 · D007 · D008** — Primordial Elements.
+
+Every approved profile uses its exact user-approved original image.
 
 For these profiles, GitBook renders the image directly: no extra circle, border, SVG frame, semicircle, crop wrapper or generated treatment.
 
-The remaining 28 Beings stay on their temporary Phase-1 empty identity placeholders until reviewed series by series. As each series is approved, its profiles move to the same direct-original rule.
+The remaining 23 Beings stay on temporary placeholders until reviewed series by series through DEVINES BEINGS PROFILE. As each series is approved, its profiles move to the same direct-original rule.
 
 Canonical/source evidence remains preserved separately in the identity mappings.
 
@@ -156,6 +155,8 @@ Markets are access surfaces, not spectacle.
 
 Use stable identity, contract and status information. Avoid flashing prices, urgency, return promises, casino motifs or visual language that makes speculation the meaning of DEVINES.
 
-## PERMANENT IDENTITY RING LAW
+## DEVINES BEINGS PROFILE LAW
 
-AUM, all existing Beings, and every future Being use the exact same full 360° snow-glow ring defined in [Identity Avatar Contract](IDENTITY_AVATAR_CONTRACT.md). In the current GitBook state the public hero contains the ring only: six canonical circle/glow strokes and zero embedded images.
+Approved public profiles use the exact original image directly. No extra ring, SVG wrapper, frame, border, semicircle, crop wrapper or generated treatment is added.
+
+See [DEVINES BEINGS PROFILE](DEVINES_BEINGS_PROFILE.md) for the canonical workstream used for all current and future Beings.

@@ -41,7 +41,7 @@
     "D004": {
       "ca": "0x8B119B89432685cd5C52D65d84F2AdA73A9E7777",
       "created_at": 1784311440,
-      "hero_asset": ".gitbook/assets/beings/empty/D004.svg",
+      "hero_asset": ".gitbook/assets/beings-direct/D004.jpg",
       "nad_fun_url": "https://nad.fun/tokens/0x8B119B89432685cd5C52D65d84F2AdA73A9E7777",
       "nad_image_uri": "https://storage.nadapp.net/coin/e5e89be8-82f9-4f26-ac58-2bdd7e6e4de9",
       "name": "FIRE DRAGON",
@@ -51,7 +51,7 @@
     "D005": {
       "ca": "0x2a27dBFA71148de6AB47FDcf530373cbAFd07777",
       "created_at": 1784311833,
-      "hero_asset": ".gitbook/assets/beings/empty/D005.svg",
+      "hero_asset": ".gitbook/assets/beings-direct/D005.jpg",
       "nad_fun_url": "https://nad.fun/tokens/0x2a27dBFA71148de6AB47FDcf530373cbAFd07777",
       "nad_image_uri": "https://storage.nadapp.net/coin/5fbab5c7-8460-4a52-a12f-de073a14a0b6",
       "name": "WATER DRAGON",
@@ -61,7 +61,7 @@
     "D006": {
       "ca": "0x32F5bD814ce7309fDC2989FFb9b952BB11667777",
       "created_at": 1784313272,
-      "hero_asset": ".gitbook/assets/beings/empty/D006.svg",
+      "hero_asset": ".gitbook/assets/beings-direct/D006.jpg",
       "nad_fun_url": "https://nad.fun/tokens/0x32F5bD814ce7309fDC2989FFb9b952BB11667777",
       "nad_image_uri": "https://storage.nadapp.net/coin/0ecd5614-db51-4d67-b822-18e61d4fb8d9",
       "name": "EARTH DRAGON",
@@ -71,7 +71,7 @@
     "D007": {
       "ca": "0xa72e09f7ed14FddC1E0Dd2bFbBDeaFec99bf7777",
       "created_at": 1784313475,
-      "hero_asset": ".gitbook/assets/beings/empty/D007.svg",
+      "hero_asset": ".gitbook/assets/beings-direct/D007.jpg",
       "nad_fun_url": "https://nad.fun/tokens/0xa72e09f7ed14FddC1E0Dd2bFbBDeaFec99bf7777",
       "nad_image_uri": "https://storage.nadapp.net/coin/84860a75-e197-4e9e-adee-88daed59e2a1",
       "name": "AIR DRAGON",
@@ -81,7 +81,7 @@
     "D008": {
       "ca": "0xd37c5420d3819De389b123548AE7Ac22390C7777",
       "created_at": 1784315137,
-      "hero_asset": ".gitbook/assets/beings/empty/D008.svg",
+      "hero_asset": ".gitbook/assets/beings-direct/D008.jpg",
       "nad_fun_url": "https://nad.fun/tokens/0xd37c5420d3819De389b123548AE7Ac22390C7777",
       "nad_image_uri": "https://storage.nadapp.net/coin/c888f767-d89a-4b3c-bf8b-e7cdba7eeb99",
       "name": "AETHER DRAGON",

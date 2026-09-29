@@ -44,10 +44,15 @@ Currently approved:
 - `D001.jpg`
 - `D002.jpg`
 - `D003.jpg`
+- `D004.jpg`
+- `D005.jpg`
+- `D006.jpg`
+- `D007.jpg`
+- `D008.jpg`
 
 These are the exact user-approved uploaded images. They are rendered directly with **no added circle, wrapper, border, frame or generated geometry**.
 
-The other 28 Beings temporarily remain at:
+The other 23 Beings temporarily remain at:
 
 `.gitbook/assets/beings/empty/<DEVINES_ID>.svg`
 

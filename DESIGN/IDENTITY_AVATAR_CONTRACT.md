@@ -55,17 +55,17 @@ That map is the authority for the later image-insertion phase.
 
 ## Current GitBook Publication State
 
-**AUM, the Astral trio — SUN, MOON and MASTER — and Genesis — D001, D002 and D003 — are approved for direct-image publication. The other 28 Beings remain in Phase 1 until reviewed series by series.**
+**AUM, Astral — SUN, MOON and MASTER — Genesis — D001, D002 and D003 — and Primordial Elements — D004, D005, D006, D007 and D008 — are approved for direct-image publication. The other 23 Beings remain in Phase 1 until reviewed series by series.**
 
 For every approved direct identity, the **exact user-approved uploaded image is rendered directly**. It is not placed inside another SVG, ring, frame, circle or semicircle. The image's own black field and its own composition are the complete public hero.
 
-AUM uses the same exact image on the DEVINES landing page and AUM Core. SUN, MOON, MASTER, D001, D002 and D003 each use their own exact approved image on their respective profile.
+AUM uses the same exact image on the DEVINES landing page and AUM Core. SUN, MOON, MASTER and D001 through D008 each use their own exact approved image on their respective profile.
 
 No redraw, regeneration, recolor, crop, wrapper or replacement artwork is introduced.
 
 ## Phase 2 · Image Insertion
 
-Direct image publication is active for AUM, the approved Astral trio and the approved Genesis series. Remaining Beings roll out series by series after visual approval.
+Direct image publication is active for AUM, Astral, Genesis and Primordial Elements. Remaining Beings roll out series by series through the DEVINES BEINGS PROFILE workstream after visual approval.
 
 When an approved image already contains its complete composition, **no additional ring geometry is added around it**.
 
@@ -81,10 +81,10 @@ For future Being Phase 2 reviews, the exact approved source image must be preser
 
 ## Future Beings
 
-Every future Being starts with the same empty-ring scaffold.
+Every future Being follows [DEVINES BEINGS PROFILE](DEVINES_BEINGS_PROFILE.md) once its canonical identity image is approved. Before approval, a temporary placeholder may be used.
 
 The Rust Chronicle validator is the publication gate. A public identity SVG is invalid if it contains an `<image>` element or does not match the six-stroke snow-glow circle structure.
 
 Canonical source artwork is preserved independently from the public hero so presentation can change without mutating identity.
 
-**EMPTY CIRCLE · PRESERVE THE SOURCE · NO PUBLIC IMAGE INSIDE**
+**PRESERVE THE SOURCE · APPROVE THE ORIGINAL · PUBLISH DIRECTLY · HASH LOCK**
