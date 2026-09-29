@@ -48,6 +48,24 @@ Display typography is reserved for headings and thresholds.
 - DEVINES LIVING HISTORY
 - Chronicle Law
 
+## AUM PRESENTATION
+
+AUM is the first visual threshold of DEVINES.
+
+Its canonical source is preserved separately from the Chronicle hero.
+
+The Chronicle hero uses:
+
+- a true circular field;
+- centered AUM symbol;
+- generous black inner breathing space;
+- subtle AUM-lavender rim;
+- no distortion;
+- no blue;
+- no aggressive crop.
+
+The AUM symbol should feel calm, complete and primary.
+
 ## Landing threshold
 
 Prioritize:
