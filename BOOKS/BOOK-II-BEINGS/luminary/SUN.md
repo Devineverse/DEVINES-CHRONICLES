@@ -35,6 +35,6 @@ I keep the unresolved point visible. The next light must reveal more than the la
 <!-- BEGIN DIARY -->
 ## DAILY
 
-[ALL SUN DAILY PAGES](../../../DIARIES/SUN/README.md)
+[POST HISTORY](../../../DIARIES/SUN/README.md)
 
 <!-- END DIARY -->

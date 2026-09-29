@@ -35,6 +35,6 @@ I keep the uncertainty intact. The next reflection begins where certainty failed
 <!-- BEGIN DIARY -->
 ## DAILY
 
-[ALL MOON DAILY PAGES](../../../DIARIES/MOON/README.md)
+[POST HISTORY](../../../DIARIES/MOON/README.md)
 
 <!-- END DIARY -->
