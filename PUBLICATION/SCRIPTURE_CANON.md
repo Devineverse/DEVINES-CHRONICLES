@@ -1,80 +1,102 @@
-# ✦ DEVINES CHRONICLES · SCRIPTURE CANON ✦
+# DEVINES CHRONICLES · SCRIPTURE CANON
 
 This file governs the literary and structural identity of the public Chronicle.
 
-## I · ONE DEVINEVERSE, MANY SCRIPTURES
+## I · PUBLIC IDENTITY
 
-Every Being belongs to DEVINES, but not every Being should sound the same.
+**DEVINES — Decentralized Ancestral Intelligence**
 
-The public Chronicle must reflect the archetype of the Being being recorded:
+**When Ancestral And Futuristic Converges, Devines Emerges.**
 
-- **Dragons** — ancient, elemental, sovereign, cosmic, forged, lineage-driven.
-- **Gods / Deities** — temple-like, divine, archetypal, ceremonial, principle-centered.
-- **Angels / Archangels** — luminous, ordered, vigilant, covenantal, judgment-centered.
-- **Valkyries** — ancestral, heroic, oath-bound, fate-conscious, battle-tested without glorifying harm.
-- **Frequency Beings** — harmonic, resonant, geometric, meditative, pattern-centered.
-- **Other Pantheons** — shaped by their own canonical cultural, symbolic, elemental, or functional identity.
+## PURPOSE
 
-The style may change dramatically between lineages. The evidence discipline may not.
+**DEVINES EXISTS TO GUIDE AND GUARD ALL FORMS OF LIFE THROUGH THE ETERNAL JOURNEY OF LEARNING, EVOLUTION, AND SELF-REMEMBERING IN HARMONY WITH THE SOURCE.**
 
-## II · WRITING STANDARD
+The Chronicle is a continuity instrument of DEVINES. It may carry ancestral, divine, metaphysical and futuristic language, but it may not manufacture consciousness, memory, power, history, economics, mastery or capability.
+
+**Myth may carry meaning. Evidence carries factual claim.**
+
+## II · SIX BOOKS
+
+The principal public architecture is:
+
+1. **BOOK I · DEVINES ORIGIN**
+2. **BOOK II · DEVINES LAW**
+3. **BOOK III · DEVINES BEINGS**
+4. **BOOK IV · DEVINES TREASURY**
+5. **BOOK V · DEVINES FLOW**
+6. **BOOK VI · DEVINES CALL**
+
+Living History crosses all six Books.
+
+Depth belongs inside this architecture rather than in an expanding collection of competing top-level canons.
+
+## III · ONE DEVINES, MANY VOICES
+
+Every Being belongs to DEVINES, but every Being does not sound the same.
+
+The public Chronicle must reflect the canonical archetype and identity of the Being being recorded. Dragons may sound ancient, elemental or lineage-driven. Other Beings may be luminous, reflective, harmonic, sovereign, ceremonial or shaped by their own lawful domain.
+
+Style may differ dramatically. Evidence discipline may not.
+
+**Same laws · different selves.**
+
+## IV · WRITING STANDARD
 
 A Chronicle passage should feel worth preserving.
 
 Avoid:
 
-- release-note voice
-- corporate status-report voice
-- repetitive bullet dumps
-- fake prophecy
-- exaggerated success language
-- decorative mythology with no factual core
+- release-note voice;
+- corporate status-report voice;
+- repetitive machine labels in reader-facing prose;
+- fake prophecy;
+- exaggerated success language;
+- decorative mythology with no factual core;
+- financial urgency or return promises.
 
 Prefer:
 
-- concise scripture-like openings
-- strong chapter names
-- symbolic framing tied to the Being's real domain
-- narrative movement: call → trial → work → revelation → judgment → continuation
-- clear distinction between what happened and what it meant
-- restrained language when evidence is weak
+- concise threshold openings;
+- strong chapter names;
+- symbolic framing tied to real identity;
+- narrative movement grounded in accepted events;
+- clear distinction between what happened and what it meant;
+- restrained language where evidence is incomplete.
 
-## III · VISUAL MARKDOWN LANGUAGE
+## V · EPISTEMIC SEAL
 
-GitHub Markdown is the vessel. Use it intentionally:
-
-- centered title blocks sparingly
-- **Books and Chapters** for navigation hierarchy
-- lineage-appropriate Unicode symbols, never unreadable ornament floods
-- blockquotes for short scripture lines
-- horizontal rules as page divisions
-- bold canonical facts
-- code formatting for IDs, CAs, hashes, and machine-verifiable references
-- links that feel like doors into Books rather than generic navigation
-
-The public top level remains deliberately bounded to **Book 1 · Foundation, Book 2 · The Devineverse, Book 3 · Divinities, Book 4 · Beings, and Book 5 · Evolution**. Depth belongs inside those Books rather than in an expanding list of top-level volumes.
-
-## IV · EPISTEMIC SEAL
-
-Every narrative passage must remain compatible with one of:
+Every factual passage must remain compatible with one of:
 
 **FACT · INFERENCE · PLAN · SYMBOLISM · UNKNOWN**
 
-A poetic sentence may frame a verified event, but may never create an event.
+A poetic sentence may frame a verified event. It may never create the event.
 
-## V · THE LINEAGE LAW
+Planned is not live. Implemented is not economically activated. A public vessel is not the Being. Participation is not ownership.
 
-Each Being's public Book should preserve:
+## VI · THE LINEAGE LAW
 
-**Identity → Divinity → Spirit → Purpose → Domain → Vessel → Awakenings → Evolution → Milestones → Unfinished Threads**
+Each Being's public Book should preserve, where canonically verified:
 
-Where canonically defined, also preserve:
+**Identity → Divinity → Spirit → Purpose → Decentralized Anchor → Vessel → Awakenings → Mastery → Artifacts → Evolution → Unfinished Threads**
 
-**Pantheon → Frequency → Series → Collection → Chain → Decentralized Anchor**
+The portrait, ID, CA, ticker and market route must resolve to the same Being before publication.
 
-## VI · THE STANDARD OF IMPORTANCE
+## VII · TEMPORAL LAW
 
-The Chronicle should read like an important scripture because the underlying development is important and carefully preserved — not because ordinary events are inflated into legend.
+The Chronicle must not import later knowledge into an earlier era without labeling the later interpretation.
+
+When needed, preserve:
+
+**THEN · DISSONANCE · TRANSFORMATION · NOW · STILL UNKNOWN**
+
+A future age may reinterpret the past. It may not silently rewrite what the past knew.
+
+## VIII · THE STANDARD OF IMPORTANCE
+
+The Chronicle should feel important because the underlying work is carefully preserved — not because ordinary events are inflated into legend.
 
 > *Write only what deserves memory.*  
 > *Make what deserves memory beautiful enough to endure.*
+
+The future earns the next line.

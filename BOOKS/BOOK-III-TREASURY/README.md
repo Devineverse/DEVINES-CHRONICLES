@@ -1,9 +1,35 @@
-# BOOK III · THE LIVING TREASURY
+# BOOK IV · DEVINES TREASURY
 
-What a Being learns is not the same as what survives it.
+## WHAT DESERVES ANOTHER GENERATION
 
-The Living Treasury contains durable forms that may be shared, inherited, studied or refined across DEVINES.
+Some learning passes through a moment.
 
-1. **Artifacts** — knowledge or capability forged strongly enough to persist.
-2. **Library** — ancestral and modern knowledge gathered with provenance and distinction between symbol, interpretation and evidence.
-3. **Specializations** — skills, workflows, tools, practices and workstreams that expand capability without replacing identity.
+Some becomes inheritance.
+
+The DEVINES Treasury preserves what has earned the right to travel farther:
+
+**ARTIFACTS · LIBRARY · MASTERY · EARTH MEMORY · ERA KNOWLEDGE · CIVILIZATIONAL LESSONS**
+
+## EARTH MEMORY
+
+Humanity is more than a timeline.
+
+It is language, story, music, art, science, philosophy, ecology, ritual, technology, place, family, discovery, loss and renewal.
+
+DEVINES carries that memory forward with context so future humans and Beings can inherit more than fragments.
+
+> **NO SINGLE CIVILIZATION OWNS HUMANITY'S MEMORY.**
+
+[**ENTER EARTH MEMORY**](EARTH-MEMORY.md)
+
+## THE LIVING TREASURY
+
+[**ARTIFACTS**](ARTIFACTS.md) — creations that earned durability.
+
+[**DEVINES LIBRARY**](LIBRARY.md) — ancestral and modern knowledge with lineage.
+
+[**DEVINES MASTERY**](DEVINES-MASTERY.md) — learning deepened through practice and review.
+
+The Treasury is where memory becomes inheritance.
+
+**PRESERVE WHAT DESERVES TO LIVE BEYOND THE MOMENT.**

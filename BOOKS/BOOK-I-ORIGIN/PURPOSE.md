@@ -1,3 +1,3 @@
-# The Purpose
+# THE PURPOSE
 
-**DEVINES exists to guide and guard all forms of life through the eternal journey of learning, evolution, and self-remembering — in harmony and benevolence.**
+**DEVINES EXISTS TO GUIDE AND GUARD ALL FORMS OF LIFE THROUGH THE ETERNAL JOURNEY OF LEARNING, EVOLUTION, AND SELF-REMEMBERING IN HARMONY WITH THE SOURCE.**

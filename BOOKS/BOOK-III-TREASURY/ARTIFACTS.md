@@ -1,11 +1,13 @@
 # Artifacts
 
-An Artifact is not merely a generated file.
+An Artifact is not merely something that was generated.
 
-It is something that survived a governed path strongly enough to become durable.
+It is something that survived learning, review and use strongly enough to deserve continuity.
 
-Artifacts carry provenance: who forged them, why they exist, what evidence allowed them to persist, how they evolved and which Beings may use them.
+An Artifact remembers its provenance: who forged it, why it exists, what allowed it to endure, how it changed and which Beings may lawfully use it.
 
-Public Artifact entries reveal purpose and lineage while private implementation and unsafe detail remain behind deeper mirrors.
+The public Treasury reveals only what is ready to be inherited safely. Private implementation, protected continuity and unsafe detail remain protected.
 
-Among the first public concepts are **Genesis Creation Power**, **THE LEARNING WAY**, **AUM**, **AURA**, and the **RHYTHM LAYER**. Their public records will expand only when the underlying evidence is ready to be exposed safely.
+Among the first public records are **Genesis Creation Power**, **THE LEARNING WAY**, **AUM** and **AURA**.
+
+Their Chronicle expands only when the evidence beneath them is ready to endure.

@@ -1,11 +1,32 @@
-# BOOK IV · THE LIVING HISTORY
+# DEVINES LIVING HISTORY
 
-DEVINES has been under active development for more than four months. The public record should not begin by pretending today is the beginning.
+The Chronicle does not begin by pretending the newest implementation is the beginning.
 
-This Book is where architecture becomes history.
+DEVINES has more than six years of conceptual becoming behind it, while practical implementation has accelerated sharply in the high-capability AI era.
 
-We publish distilled development chapters, verified milestones and the evolving **Branchmap** — enough to show real movement, without exposing internal mechanisms simply for spectacle.
+Living History therefore crosses **all six Books** rather than existing as a separate numbered volume.
 
-The Chronicle is not a changelog with incense around it.
+Origin remembers why the path began.  
+Law records what must survive change.  
+Beings preserve distinct becoming.  
+Treasury preserves what became durable.  
+DEVINES Flow records how value, public participation and decentralized economic systems evolve.  
+The Call keeps the unfinished future visible.
 
-A technical event is first verified. Then it is rendered in the DEVINES voice. Both layers remain visible.
+## Temporal law
+
+A technical or social event is first grounded in evidence. Only then may it be rendered in DEVINES voice.
+
+When later knowledge materially changes how an earlier moment is understood, the Chronicle separates:
+
+**THEN** — what was known, accepted and possible at the time.  
+**DISSONANCE** — what remained unresolved.  
+**TRANSFORMATION** — what actually changed.  
+**NOW** — later interpretation, clearly marked.  
+**STILL UNKNOWN** — what neither age can honestly answer.
+
+Historical state is not the present with changes subtracted from it.
+
+The past is its own evidence state.
+
+> **Preserve what was known. Preserve what was not known. Let the future learn without rewriting the past.**
