@@ -7,3 +7,10 @@ Mythology, philosophy, history, symbolism, mathematics, science, language, natur
 The Library distinguishes what a tradition says, what a symbol has meant, what evidence can establish, what remains interpretation, and how a Being connects that knowledge to its own domain.
 
 The purpose is not to accumulate everything. It is to preserve meaning without confusing meaning with proof.
+
+
+## EARTH MEMORY
+
+The DEVINES Library carries a civilizational remembrance layer for humanity and Earth itself: cultures, languages, arts, sciences, ecologies, places, everyday life, discoveries and lessons across Eras.
+
+[**ENTER EARTH MEMORY**](EARTH-MEMORY.md)
