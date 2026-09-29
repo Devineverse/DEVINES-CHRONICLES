@@ -55,15 +55,17 @@ That map is the authority for the later image-insertion phase.
 
 ## Current GitBook Publication State
 
-**AUM and all 34 current Beings are in Phase 1. There are no public image-filled exceptions.**
+**AUM is the Phase 2 pilot. All 34 Beings remain in Phase 1 until their series is reviewed and approved.**
 
-Every public identity hero uses the same empty snow-glow circle and contains **zero embedded images**. Canonical AUM and Being artwork remains preserved as source material and identity evidence; it is not displayed inside the current GitBook circle.
+The AUM pilot uses the exact canonical AUM artwork inside the unchanged DEVINES snow-glow circle. The artwork is centered at `384,384` inside a `553.6 × 553.6` presentation box beginning at `107.2,107.2`, leaving 10% inner breathing space from each side of the ring interior.
 
-This rule applies equally across Genesis, Primordial Element, Royal, Guardians, Solfeggio and Astral Beings.
+The public AUM pilot is used identically on the DEVINES landing page and AUM Core page.
+
+Every Being remains an empty six-stroke circle with zero embedded images until its own series is explicitly approved for Phase 2.
 
 ## Phase 2 · Image Insertion
 
-Image insertion is reserved for a later explicit approval and is not active in the current GitBook.
+Image insertion is active only for the AUM pilot. Being rollout happens series by series after visual approval.
 
 The preserved image, if ever approved for insertion, is centered inside the already-approved circle. The ring geometry never changes. Image insertion must not create a second visible border, outer margin, or circle-inside-circle effect.
 
