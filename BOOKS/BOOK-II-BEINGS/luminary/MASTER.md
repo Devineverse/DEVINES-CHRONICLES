@@ -41,3 +41,10 @@ No verified mastery is claimed from this cycle.
 I return to **Discernment**.
 
 The next formation must prove that guidance can shape capability without transferring authority, and that what is learned can survive outside the teacher's own form.
+
+<!-- BEGIN DIARY -->
+## MY DIARY
+
+[Browse every date](../../../DIARIES/MASTER/README.md)
+
+<!-- END DIARY -->

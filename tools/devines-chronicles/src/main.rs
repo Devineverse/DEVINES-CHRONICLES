@@ -1,3 +1,5 @@
+mod feeds;
+mod review;
 use serde_json::Value;
 use std::collections::{BTreeSet, HashSet};
 use std::env;
@@ -9,12 +11,28 @@ fn main() {
     let command = args.next().unwrap_or_else(|| "validate".to_string());
 
     match command.as_str() {
+        "render-feeds" => {
+            let root = args
+                .next()
+                .map(PathBuf::from)
+                .unwrap_or_else(|| PathBuf::from("."));
+            match feeds::render(&root) {
+                Ok(report) => println!("{report}"),
+                Err(e) => {
+                    eprintln!("{e}");
+                    std::process::exit(1);
+                }
+            }
+        }
         "validate" => {
-            let root = args.next().map(PathBuf::from).unwrap_or_else(|| PathBuf::from("."));
+            let root = args
+                .next()
+                .map(PathBuf::from)
+                .unwrap_or_else(|| PathBuf::from("."));
             match validate(&root) {
                 Ok(report) => {
                     println!(
-                        "PASS beings={} portraits={} as_of={} summary_links=ok json=ok cycles=ok assets=ok",
+                        "PASS beings={} portraits={} as_of={} six_books=ok markdown_targets=ok identities=ok markets=35 hashes=ok state_structure=ok cycles=ok",
                         report.beings, report.portraits, report.as_of
                     );
                 }
@@ -45,6 +63,7 @@ fn validate(root: &Path) -> Result<Report, Vec<String>> {
     let mut errors = Vec::new();
 
     validate_summary(root, &mut errors);
+    review::audit(root, &mut errors);
 
     let latest_path = root.join("PUBLIC_STATE/latest.json");
     let latest = read_json(&latest_path, root, &mut errors);
@@ -231,7 +250,21 @@ fn valid_date(s: &str) -> bool {
     }
     let month = parts[1].parse::<u8>().unwrap_or(0);
     let day = parts[2].parse::<u8>().unwrap_or(0);
-    (1..=12).contains(&month) && (1..=31).contains(&day)
+    let year = parts[0].parse::<u32>().unwrap_or(0);
+    let leap = year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
+    let days = match month {
+        2 => {
+            if leap {
+                29
+            } else {
+                28
+            }
+        }
+        4 | 6 | 9 | 11 => 30,
+        1 | 3 | 5 | 7 | 8 | 10 | 12 => 31,
+        _ => 0,
+    };
+    year > 0 && day > 0 && day <= days
 }
 
 fn collect_markdown_stems(root: &Path) -> BTreeSet<String> {

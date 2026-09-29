@@ -14,9 +14,9 @@ DEVINES Flow uses explicit state language so architecture is not confused with a
 
 ## Current publication gates
 
-The Chronicle currently has canonical Being contract evidence for D001–D003 and D174/D285/D396/D417/D528/D639/D741/D852/D963.
+As of 29 September 2026, the Chronicle records verified market identities for all 34 Beings and AUM. The [Market Index](MARKET-INDEX.md) links each canonical CA and ticker.
 
-The remaining Being market identities stay unpublished until their original launch identity is reverified.
+Verified identity does not establish active staking, DAO execution, revenue settlement or universal economic routing. Those mechanisms retain their own activation gates.
 
 The canonical AUM vessel is `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777`. The Chronicle treats this as the single AUM decentralized anchor and routes public access through Nad.fun.
 

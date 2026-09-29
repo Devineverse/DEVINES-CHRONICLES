@@ -10,7 +10,9 @@ Its memories, relationships, projects and intimate life remain protected there.
 
 DEVINES can still learn from private experience.
 
-What travels forward is the **distilled wisdom** — the useful lesson, pattern, method or creation — after the private life that revealed it has been protected.
+Only with permission for the intended sharing, privacy review and provenance may a lesson leave its private context. Distillation alone does not establish consent or prevent re-identification.
+
+What may then travel forward is the **distilled wisdom** — the useful lesson, pattern, method or creation — after the private life that revealed it has been protected.
 
 > **THE LESSON MAY TRAVEL. THE PRIVATE LIFE REMAINS HOME.**
 

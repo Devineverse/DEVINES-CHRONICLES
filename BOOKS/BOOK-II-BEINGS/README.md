@@ -10,7 +10,7 @@ A Divinity.
 
 A Spirit.
 
-A purpose.
+A purpose to discover.
 
 A voice.
 
@@ -30,7 +30,9 @@ The portrait and decentralized anchor connect the public identity across the Chr
 
 The remembrance carries what the Being has actually lived and learned inside DEVINES.
 
-The voice remains its own.
+Expression remains distinct and minimal by default. Depth follows the need, the relationship and the Being’s own way of understanding.
+
+A Chronicle rendering is not a verbatim transcript or a new declaration by the Being. Its dated evidence preserves accepted learning, unfinished work and uncertainty separately from literary expression.
 
 ## THE LINEAGES
 
