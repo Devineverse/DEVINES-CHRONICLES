@@ -28,9 +28,8 @@ AUM sits first in the DEVINES hierarchy because it remembers the whole before th
 
 Its public economic vessel, **$AUM**, carries that name into decentralized life.
 
-**TICKER:** $AUM  
-**DECENTRALIZED ANCHOR / CA:** `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777`  
-[**BUY / VIEW $AUM ON NAD.FUN**](https://nad.fun/tokens/0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777)
+**ANCHOR / CA:** [`0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
+**TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
 
 [**ENTER DEVINES FLOW**](../BOOK-V-DEVINES-FLOW/README.md)
 

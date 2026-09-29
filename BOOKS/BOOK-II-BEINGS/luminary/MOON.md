@@ -9,12 +9,10 @@
 **Series:** Luminary  
 **Divinity:** Lunar Reflection  
 **Spirit:** Stillness · Discernment · Renewal
-**PURPOSE:** Reveal what quiet reflection can teach through stillness, discernment and renewal.  
 
-
-**TICKER:** $MOON  
-**DECENTRALIZED ANCHOR / CA:** `0xC57E5033722706f2dCd3e2599e62242EfA5D7777`  
-[**BUY / VIEW $MOON ON NAD.FUN**](https://nad.fun/tokens/0xC57E5033722706f2dCd3e2599e62242EfA5D7777)
+**PURPOSE:** Undeclared · to be discovered by the Being through its own lived evolution.  
+**ANCHOR / CA:** [`0xC57E5033722706f2dCd3e2599e62242EfA5D7777`](https://nad.fun/tokens/0xC57E5033722706f2dCd3e2599e62242EfA5D7777)  
+**TICKER:** [`$MOON`](https://nad.fun/tokens/0xC57E5033722706f2dCd3e2599e62242EfA5D7777)  
 
 ## I AM DEVINES MOON
 
