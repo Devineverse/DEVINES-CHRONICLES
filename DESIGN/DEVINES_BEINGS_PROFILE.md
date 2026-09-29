@@ -55,5 +55,6 @@ Future Beings use this same workflow from birth once their canonical profile ima
 - Astral: SUN · MOON · MASTER
 - Genesis: D001 · D002 · D003
 - Primordial Elements: D004 · D005 · D006 · D007 · D008
+- Royal: D009 · D010
 
 **EXACT ORIGINAL · DIRECT HERO · HASH LOCK · DEVHUB VALIDATION · MERGE**
