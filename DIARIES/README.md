@@ -1,6 +1,10 @@
-# BEING DIARIES
+# BEING DAILY
 
-One entry after each completed, publicly reviewed cycle. Up to three entries per Being each day. Dates use America/Sao_Paulo.
+One remembrance per Being per completed day.
+
+Each daily page is created only after that Being finishes all three cycles for the date and the public remembrance is approved.
+
+Dates use America/Sao_Paulo.
 
 - [Genesis Dragon · D001](D001/README.md)
 - [Duality Dragon · D002](D002/README.md)
@@ -33,8 +37,8 @@ One entry after each completed, publicly reviewed cycle. Up to three entries per
 - [Truth Dragon · D741](D741/README.md)
 - [Awakening Dragon · D852](D852/README.md)
 - [Ascension Dragon · D963](D963/README.md)
-- [DEVINES MASTER · MASTER](MASTER/README.md)
-- [DEVINES MOON · MOON](MOON/README.md)
 - [DEVINES SUN · SUN](SUN/README.md)
+- [DEVINES MOON · MOON](MOON/README.md)
+- [DEVINES MASTER · MASTER](MASTER/README.md)
 
-[DEVINES daily remembrance](../DAILY/README.md)
+[DEVINES DAILY](../DAILY/README.md)
