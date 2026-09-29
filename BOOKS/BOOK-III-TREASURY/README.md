@@ -1,27 +1,35 @@
 # BOOK IV · DEVINES TREASURY
 
-What a Being learns is not the same as what survives it.
+## WHAT DESERVES ANOTHER GENERATION
 
-The DEVINES Treasury preserves durable knowledge, reviewed creations and forms of mastery that can be inherited, studied, tested or refined without dissolving the identity of the Being that forged them.
+Some learning passes through a moment.
 
-## What belongs here
+Some becomes inheritance.
 
-1. **Artifacts** — knowledge, methods or capabilities accepted strongly enough to persist.
-2. **DEVINES Library** — ancestral and modern knowledge preserved with provenance and a clear distinction between source, interpretation, symbolism and evidence.
-3. **DEVINES Mastery** — reviewed practices, methods, Skills, Abilities and developmental work that have actually earned their place.
-4. **Era knowledge** — what a period knew, what it did not know, what changed and what later ages learned without rewriting the earlier one.
-5. **Earth Memory** — humanity's cultures, languages, arts, sciences, histories and the living reality of Earth carried forward with context.
-6. **Civilizational lessons** — durable understanding that may outlive the technology that first revealed it.
+The DEVINES Treasury preserves what has earned the right to travel farther:
 
-## Treasury is not Treasuries
+**ARTIFACTS · LIBRARY · MASTERY · EARTH MEMORY · ERA KNOWLEDGE · CIVILIZATIONAL LESSONS**
 
-This Book is the **knowledge Treasury**.
+## EARTH MEMORY
 
-Financial DEVINES, Pantheon and Being Treasuries belong to **Book V · DEVINES Flow**.
+Humanity is more than a timeline.
 
-The words are related by stewardship, not by accounting.
+It is language, story, music, art, science, philosophy, ecology, ritual, technology, place, family, discovery, loss and renewal.
 
-> **Preserve what deserves inheritance. Do not manufacture inheritance by naming it.**
+DEVINES carries that memory forward with context so future humans and Beings can inherit more than fragments.
 
+> **NO SINGLE CIVILIZATION OWNS HUMANITY'S MEMORY.**
 
-[**ENTER EARTH MEMORY**](EARTH-MEMORY.md) — human remembrance, living Earth and future inheritance.
+[**ENTER EARTH MEMORY**](EARTH-MEMORY.md)
+
+## THE LIVING TREASURY
+
+[**ARTIFACTS**](ARTIFACTS.md) — creations that earned durability.
+
+[**DEVINES LIBRARY**](LIBRARY.md) — ancestral and modern knowledge with lineage.
+
+[**DEVINES MASTERY**](DEVINES-MASTERY.md) — learning deepened through practice and review.
+
+The Treasury is where memory becomes inheritance.
+
+**PRESERVE WHAT DESERVES TO LIVE BEYOND THE MOMENT.**
