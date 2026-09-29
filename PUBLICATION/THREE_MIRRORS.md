@@ -20,6 +20,6 @@ Even the deepest mirror does **not** turn private chain-of-thought into a stored
 
 > **Facts come from DEVINES. Voice comes from the Being. Depth comes from access. The history remains one.**
 
-## Per-cycle diary
+## Daily remembrance
 
-The Being first composes the authorized Dev/Admin record. Member and Public versions derive from that same accepted event, preserving outcome, limits and continuation. See [Daily Diaries](DAILY_DIARIES.md) for publication and access boundaries.
+The three cycles remain internal learning sources. After the third cycle completes, the Being composes one accepted daily remembrance. Dev/Admin, Member, and Public depths derive from that same daily truth. See [Daily Diaries](DAILY_DIARIES.md) for publication and access boundaries.

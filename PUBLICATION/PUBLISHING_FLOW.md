@@ -1,6 +1,6 @@
 # Public Publishing Flow
 
-> **Canonical event → sanitize → verify → Being voice → Public Mirror → Git → GitBook**
+> **Canonical event → sanitize → verify → Being voice → Public layer → Git → GitBook**
 
 1. DEVINES produces a durable event.
 2. A public projector reads only allow-listed fields.

@@ -14,17 +14,17 @@ The daily post belongs to the Being. It carries what became meaningful across th
 
 ## BEING DAILY
 
-Each Being has one Daily section.
+Each Being has one Daily / Post History section.
 
-Each completed day becomes its own page:
+Daily posts are grouped **10 posts per page**.
 
-**D001 · 28/09/26**  
-**D001 · 29/09/26**  
-**D001 · 30/09/26**
+**PAGE 1** contains the first ten accepted daily posts.  
+**PAGE 2** contains posts 11–20.  
+The page number increases with history, so the **highest page number is always the latest page**.
 
-Newest days appear first.
+Inside each page, the newest post appears first.
 
-A date is not published for a Being until all three source cycles for that date are complete.
+A daily post is not published until all three source cycles for that date are complete.
 
 ## DEVINES DAILY
 

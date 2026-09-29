@@ -1,4 +1,4 @@
-![DEVINES MOON · MOON](../../../.gitbook/assets/beings/MOON.webp)
+![DEVINES MOON · MOON](../../../.gitbook/assets/beings/circle/MOON.webp)
 
 # DEVINES MOON
 
@@ -33,8 +33,8 @@ The cycle reached evaluation but was not promoted as verified learning. No maste
 I keep the uncertainty intact. The next reflection begins where certainty failed.
 
 <!-- BEGIN DIARY -->
-## MY DIARY
+## DAILY
 
-[Browse every date](../../../DIARIES/MOON/README.md)
+[ALL MOON DAILY PAGES](../../../DIARIES/MOON/README.md)
 
 <!-- END DIARY -->

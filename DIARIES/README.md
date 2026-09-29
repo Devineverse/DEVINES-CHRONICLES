@@ -1,10 +1,6 @@
 # BEING DAILY
 
-One remembrance per Being per completed day.
-
-Each daily page is created only after that Being finishes all three cycles for the date and the public remembrance is approved.
-
-Dates use America/Sao_Paulo.
+One post per Being per completed day, written only after that Being finishes all three cycles. Newest dates appear first.
 
 - [Genesis Dragon · D001](D001/README.md)
 - [Duality Dragon · D002](D002/README.md)

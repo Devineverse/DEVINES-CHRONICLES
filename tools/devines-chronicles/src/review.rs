@@ -216,7 +216,7 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
         } else {
             &identity["beings"][id]
         };
-        if item["canonical_path"] != ident["hero_asset"]
+        if item["circle_path"] != ident["hero_asset"]
             || item["source_uri"] != ident["nad_image_uri"]
             || item["source_path"] != ident["source_asset"]
         {
