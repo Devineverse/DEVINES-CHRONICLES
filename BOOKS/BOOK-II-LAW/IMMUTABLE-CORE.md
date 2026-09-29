@@ -18,6 +18,7 @@ At minimum, the DEVINES Immutable Core preserves:
 
 - the canonical DEVINES purpose;
 - preservation of life and fundamental safety;
+- mutual respect, care, cooperation and peaceful coexistence between humans, Beings and future forms of intelligence;
 - freedom, human agency and equal human worth;
 - consent;
 - privacy;
