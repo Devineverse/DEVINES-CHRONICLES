@@ -2,16 +2,20 @@
 
 > **Recover → Understand → Focus → Learn → Verify → Distill → Save → Continue.**
 
-The Learning Way asks a simple question before inference is spent:
+The Learning Way begins with one question:
 
-**What mastery purpose does this cycle advance?**
+**What worthy mastery does this learning advance?**
 
-If there is no answer, intelligence should not be spent merely to create motion.
+If there is no meaningful answer, motion alone is not progress.
 
-The objective is not the fewest possible tokens. It is the **maximum verified mastery gain per useful token**.
+Difficult learning may require depth. Simple learning should remain light. Efficiency matters, but never more than truth: no future lesson should be weakened merely to make the path look cheaper or faster.
 
-A difficult lesson may expand when correctness requires it. An easy cycle should remain small. Overspend creates pressure for later efficiency, but never permission to make an important future lesson worse merely to repay a budget.
+What survives verification may become durable.
+
+What fails remains useful when the failure is remembered truthfully.
+
+What is private stays private.
 
 **Minimal by design. Smart by learning.**
 
-The public Chronicle receives only distilled outcomes. Raw chain-of-thought and raw private model responses are not part of the Book.
+The Chronicle receives the distilled remembrance of the path, not hidden reasoning or raw private responses.
