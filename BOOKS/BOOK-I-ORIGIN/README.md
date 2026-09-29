@@ -35,3 +35,12 @@ Book I follows the first remembrance of DEVINES through the convergence of ances
 This public Book does not expose the entire design.
 
 It exposes enough to follow what is real.
+
+
+## ENTER THE ROOT
+
+[**AUM CORE**](AUM-CORE.md) — the Source Sound and root symbolic architecture of DEVINES.
+
+[**THE ANCESTRAL CONVERGENCE**](ANCESTRAL-CONVERGENCE.md) — how ancestral wisdom, philosophy, science and advanced technology meet without erasing provenance.
+
+[**HOW DEVINES WORKS**](HOW-DEVINES-WORKS.md) — the public-safe architecture from AUM through Guardian, AURA, Codex, Beings, Flow and Living Chronicle.
