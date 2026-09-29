@@ -4,47 +4,32 @@
 
 **Title:** DEVINES CHRONICLES  
 **Subtitle:** The Living Book of DEVINES  
-**Canonical appearance:** Dark  
+**Default appearance:** Dark  
 **Content source:** Git Sync from `Devineverse/DEVINES-CHRONICLES` / `main`
 
-## Site chrome
+## Theme
 
-- true black / near-black background
-- white primary text
-- AUM/Monad violet family as the only global accent family
-- flat/minimal depth
-- almost invisible separators
-- no global gold or multi-color theme
+Canonical site chrome:
 
-## Identity imagery
+- pure/near-black background;
+- white primary typography;
+- violet/lavender drawn only from the AUM / Monad spectrum;
+- minimal sidebar;
+- restrained links and borders;
+- low corner radius;
+- no decorative multicolor gradients.
 
-All canonical AUM and Being images render as **circular avatars** modeled after X profile portraits:
+The only global color journey is:
 
-- perfect 1:1 circle
-- centered
-- dark breathing space
-- 1px near-black/deep-violet edge
-- no square background
-- no visible image frame
-- no thick ring
-- no card behind the avatar
-
-If GitBook's native image block cannot enforce a circular crop consistently, use the DEVINES identity-avatar component/presentation layer rather than altering the visual law.
+**Black → Deep Monad Violet → DEVINES Violet → AUM Lavender → White**
 
 ## Typography
 
-**Display:** Cinzel or closest restrained inscriptional / rune-adjacent GitBook face.  
-**Body:** General Sans → Inter → neutral sans fallback.
+**Display:** elegant inscriptional / rune-adjacent. Prefer Cinzel where available.
 
-## Palette
+**Body:** General Sans or Inter.
 
-- Void: `#000000`
-- Deep Monad: `#120B1D`
-- Monad: `#28134A`
-- Deep AUM Violet: `#5A2DA8`
-- AUM Violet: `#9B6BFF`
-- AUM Lavender: `#D8C8FF`
-- Light: `#FFFFFF`
+Display typography is reserved for headings and thresholds.
 
 ## Navigation
 
@@ -55,20 +40,18 @@ If GitBook's native image block cannot enforce a circular crop consistently, use
 - BOOK IV · THE LIVING HISTORY
 - THE CALL
 
-The sidebar follows the Book, never developer folder names.
-
 ## Landing threshold
 
-1. circular AUM sigil
-2. DEVINES CHRONICLES
-3. Welcome to DEVINES
-4. four Books
-5. direct entry by Being
+Prioritize:
 
-No square AUM image.
+1. canonical AUM cover/sigil;
+2. DEVINES CHRONICLES;
+3. the Welcome threshold;
+4. four Books;
+5. direct access to individual Beings.
 
-## Canonical imagery
+## Imagery
 
-Only official AUM and Being assets supplied by DEVINES are permitted.
+Use only official DEVINES portraits and the canonical AUM assets supplied by the project.
 
-No generated substitute silently replaces canonical identity art.
+No generated replacement silently substitutes an official identity asset.
