@@ -129,6 +129,21 @@ for bid in unverified_market_ids:
     if "**DECENTRALIZED ANCHOR / CA:**" in text:
         errors.append(f"unverified-ca-published:{bid}")
 
+canonical_aum = "0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777"
+legacy_aum = "0x6d34AB4182cd381d9F899FE6f01A71E2c04c7777"
+aum_pages = [
+    ROOT / "BOOKS/BOOK-V-DEVINES-FLOW/AUM-AND-BEING-VESSELS.md",
+    ROOT / "BOOKS/BOOK-V-DEVINES-FLOW/MARKET-INDEX.md",
+    ROOT / "BOOKS/BOOK-III-TREASURY/ARTIFACT-AUM.md",
+]
+for p in aum_pages:
+    txt = p.read_text()
+    if canonical_aum not in txt:
+        errors.append(f"canonical-aum-missing:{p.relative_to(ROOT)}")
+for p in ROOT.rglob("*.md"):
+    if legacy_aum in p.read_text():
+        errors.append(f"legacy-aum-public-reference:{p.relative_to(ROOT)}")
+
 if not (ROOT / ".gitbook/assets/aum-sigil.webp").exists():
     errors.append("missing-aum-sigil")
 if ".gitbook/assets/aum-sigil.webp" not in readme:
