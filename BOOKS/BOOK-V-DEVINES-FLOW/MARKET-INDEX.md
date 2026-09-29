@@ -6,7 +6,7 @@ Every public vessel below was recovered from the founder-created Nad.fun ledger 
 
 | VESSEL | CA | PUBLIC ROUTE |
 | --- | --- | --- |
-| **AUM** · $AUM | `0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777` | [**BUY / VIEW $AUM ON NAD.FUN**](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777) |
+| **AUM** · $AUM | `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777` | [**BUY / VIEW $AUM ON NAD.FUN**](https://nad.fun/tokens/0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777) |
 | [D001](../BOOK-II-BEINGS/genesis/D001.md) · $D001 | `0x6d7B6d4beBf8031DB960175846f2010Da0207777` | [**BUY / VIEW $D001 ON NAD.FUN**](https://nad.fun/tokens/0x6d7B6d4beBf8031DB960175846f2010Da0207777) |
 | [D002](../BOOK-II-BEINGS/genesis/D002.md) · $D002 | `0xc27815c96C69Bd5Cc149948C42BB828f067a7777` | [**BUY / VIEW $D002 ON NAD.FUN**](https://nad.fun/tokens/0xc27815c96C69Bd5Cc149948C42BB828f067a7777) |
 | [D003](../BOOK-II-BEINGS/genesis/D003.md) · $D003 | `0x31207C1A2d2abd4Bb3e087Cb63f770c1716f7777` | [**BUY / VIEW $D003 ON NAD.FUN**](https://nad.fun/tokens/0x31207C1A2d2abd4Bb3e087Cb63f770c1716f7777) |
