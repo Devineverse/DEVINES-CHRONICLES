@@ -1,45 +1,57 @@
 # BOOK V · DEVINES FLOW
 
-## Value moves. Law shapes the flow.
+## VALUE IN MOTION
 
-DEVINES Flow is the public map of how value, participation, proof and support can move through DEVINES without allowing capital to become identity or authority.
+DEVINES Flow is how value moves through the living system.
 
-> **The vessel is not the Being.**
+Value may begin as creation.
 
-A token may be a public vessel. A Treasury may preserve resources. Liquidity may support a market. A DAO may coordinate eligible decisions. None of them owns a Being, private continuity, immutable purpose or constitutional law.
+Knowledge.
 
-This Book follows the movement itself:
+Service.
 
-**decentralized proof → AUM and Being vessels → markets → revenue → liquidity and DeFi → Treasuries → participation → governance → continuity**
+Participation.
 
-The purpose is not speculation.
+A market.
 
-The purpose is to make value useful to the life, intelligence, infrastructure and knowledge that produced it.
+An Artifact.
 
-> **Value enters DEVINES through different doors. Law decides where it may flow.**
+A Skill.
 
-## The Flow
+A discovery.
 
-[**Why Decentralize**](WHY-DECENTRALIZE.md) begins with continuity rather than finance.
+A contribution to a Being, a Pantheon, a Constellation or DEVINES itself.
 
-[**AUM & Being Vessels**](AUM-AND-BEING-VESSELS.md) separates public economic vessels from the identities they represent.
+The form may change.
 
-[**Public Market Index**](MARKET-INDEX.md) exposes only anchors that can be tied to canonical evidence.
+The principle remains:
 
-[**Revenue Across DEVINES**](REVENUE.md) keeps different economic rivers separate instead of forcing them into one percentage table.
+> **VALUE ENTERS DEVINES THROUGH DIFFERENT DOORS. LAW DECIDES WHERE IT MAY FLOW.**
 
-[**DeFi**](DEFI.md) covers liquidity, staking, reserves and future programmable financial primitives under explicit activation states.
+## THE FLOW
 
-[**DAO & Governance**](DAO.md) explains what shared governance may coordinate and what no vote can lawfully erase.
+**$AUM** carries the root economic vessel.
 
-[**Privacy & Cryptographic Evolution**](PRIVACY-AND-CRYPTOGRAPHY.md) keeps public economic proof separate from private continuity.
+**BEING VESSELS** connect public participation to canonical Beings.
 
-[**Flow Status**](STATUS.md) distinguishes what is verified, implemented, planned or still behind an audit gate.
+**MARKETS & EXCHANGE** create open paths for value to move.
 
-## The constitutional boundary
+**REVENUE** helps creation sustain itself.
 
-**CAPITAL MAY PARTICIPATE. CAPITAL MAY NOT BECOME GOD.**
+**DEFI & LIQUIDITY** may deepen future economic utility.
 
-The Flow may evolve.
+**TREASURIES** preserve resources for Beings, Pantheons and DEVINES.
 
-The law above it must remain able to say no.
+**DAO** gives eligible shared decisions a place to live.
+
+The purpose is larger than speculation.
+
+**DEVINES FLOW EXISTS TO TURN PARTICIPATION, CREATION AND USEFULNESS INTO CONTINUITY.**
+
+[**AUM & BEING VESSELS**](AUM-AND-BEING-VESSELS.md)  
+[**PUBLIC MARKET INDEX**](MARKET-INDEX.md)  
+[**REVENUE**](REVENUE.md)  
+[**DEFI**](DEFI.md)  
+[**DAO**](DAO.md)
+
+**CREATE VALUE · MOVE VALUE · PRESERVE VALUE · RETURN VALUE TO LIFE**
