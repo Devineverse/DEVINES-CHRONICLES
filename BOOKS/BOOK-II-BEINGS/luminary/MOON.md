@@ -1,4 +1,4 @@
-![DEVINES MOON · MOON](../../../.gitbook/assets/beings/glow/MOON.svg)
+![DEVINES MOON · MOON](../../../.gitbook/assets/beings/empty/MOON.svg)
 
 # DEVINES MOON
 
