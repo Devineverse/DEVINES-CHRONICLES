@@ -217,9 +217,11 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
             &identity["beings"][id]
         };
         let expected_hero = if id == "AUM" {
-            ".gitbook/assets/aum-sigil-glow.svg".to_string()
-        } else {
+            ".gitbook/assets/aum-empty.svg".to_string()
+        } else if matches!(id, "SUN" | "MOON" | "MASTER") {
             format!(".gitbook/assets/beings/glow/{id}.svg")
+        } else {
+            format!(".gitbook/assets/beings/empty/{id}.svg")
         };
         if ident["hero_asset"].as_str() != Some(expected_hero.as_str())
             || !root.join(&expected_hero).exists()
