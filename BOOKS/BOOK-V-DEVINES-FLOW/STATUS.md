@@ -18,9 +18,11 @@ The Chronicle currently has canonical Being contract evidence for D001–D003 an
 
 The remaining Being market identities stay unpublished until their original launch identity is reverified.
 
-AUM has a current contract address in integration code but a conflicting historical Phase II activation label. Its public market activation stays behind reconciliation rather than being guessed.
+The canonical AUM vessel is `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777`. The Chronicle treats this as the single AUM decentralized anchor and routes public access through Nad.fun.
 
-The full portrait audit also remains tied to original launch identity. Existing Git assignments are not treated as proof merely because they already exist.
+The portrait audit is tied to original Nad.fun launch identity. Existing Git assignments are not treated as proof merely because they already exist.
+
+For duplicate launch records, the Chronicle preserves the history but uses the founder-confirmed corrected identity. For D017, the latest correctly identified D017 launch is canonical; the earlier duplicate is not reassigned to D018.
 
 ## Web4
 
