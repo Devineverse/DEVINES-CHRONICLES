@@ -1,0 +1,85 @@
+name: Audit NadFun Launch Identity
+
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe founder-created NadFun tokens
+        env:
+          CREATOR: "0xEA0144B94d7CfeC904853e1Fe4CC569D6aBDDCe0"
+        run: |
+          python - <<'PY'
+          import base64, json, os, urllib.parse, urllib.request, time
+          creator=os.environ["CREATOR"].lower()
+          base="https://api.nadapp.net"
+          ua={"Accept":"application/json","User-Agent":"DEVINES-Chronicle-Audit/1.0"}
+
+          def fetch(url):
+              req=urllib.request.Request(url,headers=ua)
+              try:
+                  with urllib.request.urlopen(req,timeout=30) as r:
+                      raw=r.read()
+                      return r.status, raw
+              except Exception as e:
+                  return 0, str(e).encode()
+
+          def decode(raw):
+              s=raw.decode("utf-8","replace").strip()
+              try:
+                  return json.loads(s)
+              except Exception:
+                  pass
+              try:
+                  return json.loads(base64.b64decode(s).decode())
+              except Exception:
+                  return None
+
+          variants=[
+            f"/order/creation_time?page=1&limit=100&is_nsfw=false&direction=DESC&creator={creator}",
+            f"/order/creation_time?page=1&limit=100&is_nsfw=false&direction=DESC&creator_id={creator}",
+            f"/order/creation_time?page=1&limit=100&is_nsfw=false&direction=DESC&address={creator}",
+            f"/agent/created/{creator}?limit=100",
+            f"/agent/creator/{creator}/tokens?limit=100",
+            f"/profile/{creator}/created?limit=100",
+            f"/user/{creator}/created?limit=100",
+          ]
+          print("=== ENDPOINT PROBES ===")
+          for p in variants:
+              status,raw=fetch(base+p)
+              data=decode(raw)
+              toks=[]
+              if isinstance(data,dict):
+                  toks=data.get("tokens") or data.get("data",{}).get("tokens",[]) if isinstance(data.get("data"),dict) else data.get("tokens",[])
+              matches=[]
+              if isinstance(toks,list):
+                  for x in toks:
+                      ti=x.get("token_info",x) if isinstance(x,dict) else {}
+                      cr=str(ti.get("creator") or ti.get("creator_address") or ti.get("owner") or "").lower()
+                      if cr==creator: matches.append(ti)
+              print(json.dumps({"path":p,"status":status,"decoded_type":type(data).__name__ if data is not None else None,"tokens":len(toks) if isinstance(toks,list) else None,"creator_matches":len(matches)},sort_keys=True))
+              if matches:
+                  print("MATCHES",json.dumps(matches,sort_keys=True)[:30000])
+              time.sleep(2)
+
+          # Known-token API shape and image/creator fields.
+          known=[
+            "0x6d7B6d4beBf8031DB960175846f2010Da0207777",
+            "0x4A0479Bf692044262790E2D47Ac4638559257777",
+          ]
+          print("=== KNOWN TOKEN PROBES ===")
+          for token in known:
+              for path in [f"/agent/market/{token}",f"/agent/token/{token}",f"/token/{token}"]:
+                  status,raw=fetch(base+path)
+                  data=decode(raw)
+                  print(json.dumps({"path":path,"status":status,"data":data},sort_keys=True)[:30000])
+                  time.sleep(2)
+          PY
