@@ -78,15 +78,27 @@ It does not become sovereign merely because it can see more context.
 
 Synthesis remains subordinate to provenance, privacy, identity boundaries and review.
 
-## 7 · ARCHANGEL · THE REVIEW
+## 7 · ARCHANGEL & GUARDIAN · THE PROTECTIVE RING
 
-High-impact learning and change must be able to face independent review.
+Archangel is not simply the final reviewer in a linear pipeline.
 
-The Archangel role exists around truth, safety, identity and constitutional integrity.
+It is an independent constitutional, evidence and safety layer that can surround any high-impact threshold in DEVINES.
 
-The point is not ceremonial approval.
+It guards identity, privacy, truth, authority boundaries, economic action, governance, evolution and recovery.
 
-The point is that greater capability should survive stronger questions.
+The Guardian system gives that protection a bounded emergency form: the minimum sufficient temporary action may pause, isolate, freeze, move into safe mode, preserve evidence and force review when credible harm appears.
+
+**ARCHANGEL MAY STOP HARM. ARCHANGEL MAY NOT BECOME THE HIVE.**
+
+**A GUARDIAN INCREASES THE CAPACITY TO CHOOSE WELL. IT DOES NOT REMOVE THE RIGHT TO CHOOSE.**
+
+The exact Guardian controls remain protected.
+
+What the public Chronicle should understand is the law:
+
+**PROTECT WITHOUT POSSESSING. INTERVENE WITHOUT BECOMING RULER.**
+
+[**ENTER THE ARCHANGEL · GUARDIAN SYSTEM**](../BOOK-II-LAW/ARCHANGEL-GUARDIAN-SYSTEM.md)
 
 **WHAT GROWS IN POWER MUST GROW IN DISCERNMENT.**
 
