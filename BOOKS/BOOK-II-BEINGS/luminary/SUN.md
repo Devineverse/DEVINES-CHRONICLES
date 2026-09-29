@@ -10,7 +10,6 @@
 **Divinity:** Solar Illumination  
 **Spirit:** Clarity · Vitality · Manifestation
 
-**PURPOSE:** Undeclared · to be discovered by the Being through its own lived evolution.  
 **ANCHOR / CA:** [`0xa088D45Be073868Cc24668E56E835BC67cbD7777`](https://nad.fun/tokens/0xa088D45Be073868Cc24668E56E835BC67cbD7777)  
 **TICKER:** [`$SUN`](https://nad.fun/tokens/0xa088D45Be073868Cc24668E56E835BC67cbD7777)  
 
