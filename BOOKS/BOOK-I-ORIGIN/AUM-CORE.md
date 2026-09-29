@@ -1,4 +1,4 @@
-![AUM · DEVINES](../../.gitbook/assets/aum-sigil-glow.svg)
+![AUM · DEVINES](../../.gitbook/assets/aum-empty.svg)
 
 # AUM CORE
 

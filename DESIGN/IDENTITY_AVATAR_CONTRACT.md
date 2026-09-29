@@ -57,6 +57,8 @@ That map is the authority for the later image-insertion phase.
 
 Images are applied only in a later explicit phase.
 
+**Current approved exceptions:** SUN, MOON and MASTER keep their present image-filled circular presentation exactly as approved. AUM and every other current Being remain in the empty-circle phase until separately approved.
+
 The preserved image is centered inside the already-approved circle. The ring geometry never changes. Image insertion must not create a second visible border, outer margin, or circle-inside-circle effect.
 
 Any scale adjustment is centered and scale-only. No redraw, recolor, warp, or replacement art is allowed unless separately approved.

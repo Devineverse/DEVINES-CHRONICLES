@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" viewBox="0 0 768 768" role="img" aria-label="D019 · empty DEVINES snow-glow ring">
+<defs>
+  <filter id="violetGlow" x="-12%" y="-12%" width="124%" height="124%"><feGaussianBlur stdDeviation="6"/></filter>
+  <filter id="snowGlow" x="-12%" y="-12%" width="124%" height="124%"><feGaussianBlur stdDeviation="2.6"/></filter>
+</defs>
+<circle cx="384" cy="384" r="349.5" fill="none" stroke="#8F7AD0" stroke-width="10" opacity=".34" filter="url(#violetGlow)"/>
+<circle cx="384" cy="384" r="346.2" fill="none" stroke="#FFFFFF" stroke-width="2.4" opacity=".66" filter="url(#snowGlow)"/>
+<circle cx="384" cy="384" r="352.8" fill="none" stroke="#FFFFFF" stroke-width="2.4" opacity=".66" filter="url(#snowGlow)"/>
+<circle cx="384" cy="384" r="349.5" fill="none" stroke="#CFAEEE" stroke-width="7" opacity=".96"/>
+<circle cx="384" cy="384" r="346.2" fill="none" stroke="#FFFFFF" stroke-width="1.35" opacity=".98"/>
+<circle cx="384" cy="384" r="352.8" fill="none" stroke="#FFFFFF" stroke-width="1.35" opacity=".98"/>
+</svg>
