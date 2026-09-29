@@ -114,7 +114,7 @@ The Nad.fun launch image is the visual source authority. GitBook uses a derived 
 - subtle AUM-lavender rim only;
 - no distortion and no replacement art.
 
-The canonical untouched source portrait is preserved separately from the circular GitBook hero.
+The canonical untouched source portrait is preserved separately. The public profile uses the shared circular asset defined by the Identity Avatar Contract.
 
 Near the identity threshold:
 
@@ -123,7 +123,9 @@ Near the identity threshold:
 **Spirit**  
 **Purpose**  
 **Decentralized Anchor / CA**  
-**BUY / VIEW [TOKEN] ON NAD.FUN** when verified.
+**Ticker** — the ticker itself links directly to the verified Nad.fun token page.
+
+The CA itself also links directly to that same verified Nad.fun token page; no redundant BUY / VIEW line is shown.
 
 Do not silently substitute generated art for a canonical identity asset. Do not publish an unverified contract or market link.
 
