@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Create the canonical DEVINES snow-glow SVG wrapper without altering source pixels."""
+"""Create the canonical DEVINES snow-glow SVG.
+
+Default: empty identity circle.
+Later phase: optionally embed the preserved identity image without changing ring geometry.
+"""
 from __future__ import annotations
 
 import argparse
@@ -16,9 +20,7 @@ TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" v
     <feGaussianBlur stdDeviation="2.6"/>
   </filter>
 </defs>
-<image href="data:image/webp;base64,{payload}
-" x="{offset}" y="{offset}" width="{size}" height="{size}" preserveAspectRatio="xMidYMid meet"/>
-<circle cx="384" cy="384" r="349.5" fill="none" stroke="#8F7AD0" stroke-width="10" opacity=".34" filter="url(#violetGlow)"/>
+{image}<circle cx="384" cy="384" r="349.5" fill="none" stroke="#8F7AD0" stroke-width="10" opacity=".34" filter="url(#violetGlow)"/>
 <circle cx="384" cy="384" r="346.2" fill="none" stroke="#FFFFFF" stroke-width="2.4" opacity=".66" filter="url(#snowGlow)"/>
 <circle cx="384" cy="384" r="352.8" fill="none" stroke="#FFFFFF" stroke-width="2.4" opacity=".66" filter="url(#snowGlow)"/>
 <circle cx="384" cy="384" r="349.5" fill="none" stroke="#CFAEEE" stroke-width="7" opacity=".96"/>
@@ -27,41 +29,65 @@ TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" v
 </svg>
 """
 
+def number(value: float) -> str:
+    return f"{value:.3f}".rstrip("0").rstrip(".")
+
+def image_markup(src: Path, scale: float) -> str:
+    raw = base64.b64encode(src.read_bytes()).decode("ascii")
+    payload = "\n".join(textwrap.wrap(raw, 76))
+    size = 768.0 * scale
+    offset = (768.0 - size) / 2.0
+    return (
+        f'<image href="data:image/webp;base64,{payload}\n" '
+        f'x="{number(offset)}" y="{number(offset)}" '
+        f'width="{number(size)}" height="{number(size)}" '
+        'preserveAspectRatio="xMidYMid meet"/>\n'
+    )
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("input")
-    parser.add_argument("output")
-    parser.add_argument("label")
+    parser.add_argument(
+        "paths",
+        nargs="+",
+        help=(
+            'Default: OUTPUT.svg "LABEL". '
+            'Legacy image mode remains accepted as INPUT.webp OUTPUT.svg "LABEL".'
+        ),
+    )
+    parser.add_argument(
+        "--image",
+        help="Optional preserved WebP to insert during the later image phase.",
+    )
     parser.add_argument(
         "--scale",
         type=float,
         default=1.0,
-        help="Centered scale-only fit for identities that already contain an intrinsic circle.",
+        help="Centered scale-only fit when an image is inserted.",
     )
     args = parser.parse_args()
 
+    legacy_image = None
+    if len(args.paths) == 2:
+        output, label = args.paths
+    elif len(args.paths) == 3:
+        legacy_image, output, label = args.paths
+    else:
+        raise SystemExit('use OUTPUT.svg "LABEL" or legacy INPUT.webp OUTPUT.svg "LABEL"')
+
+    if legacy_image and args.image:
+        raise SystemExit("choose either legacy INPUT.webp or --image, not both")
+
+    image_path = args.image or legacy_image
     if not 0.8 <= args.scale <= 1.25:
         raise SystemExit("--scale must be between 0.8 and 1.25")
+    if image_path is None and args.scale != 1.0:
+        raise SystemExit("--scale is only valid when inserting an image")
 
-    src = Path(args.input)
-    dst = Path(args.output)
-
-    raw = base64.b64encode(src.read_bytes()).decode("ascii")
-    payload = "\n".join(textwrap.wrap(raw, 76))
-    size = 768.0 * args.scale
-    offset = (768.0 - size) / 2.0
-
-    def number(value: float) -> str:
-        return f"{value:.3f}".rstrip("0").rstrip(".")
-
+    image = image_markup(Path(image_path), args.scale) if image_path else ""
+    dst = Path(output)
     dst.parent.mkdir(parents=True, exist_ok=True)
     dst.write_text(
-        TEMPLATE.format(
-            label=args.label.replace('"', "'"),
-            payload=payload,
-            size=number(size),
-            offset=number(offset),
-        ),
+        TEMPLATE.format(label=label.replace('"', "'"), image=image),
         encoding="utf-8",
     )
 

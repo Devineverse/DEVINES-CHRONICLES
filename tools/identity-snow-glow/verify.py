@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify a DEVINES snow-glow SVG preserves the source portrait and ring law."""
+"""Verify the canonical DEVINES snow-glow ring in empty or image-inserted phase."""
 from __future__ import annotations
 
 import argparse
@@ -23,14 +23,23 @@ REQUIRED = (
 
 def main() -> None:
     p = argparse.ArgumentParser()
-    p.add_argument("source")
-    p.add_argument("svg")
+    p.add_argument("paths", nargs="+")
+    p.add_argument("--empty", action="store_true")
     p.add_argument("--scale", type=float, default=None)
     a = p.parse_args()
 
-    source = Path(a.source).read_bytes()
-    text = Path(a.svg).read_text(encoding="utf-8")
+    if a.empty:
+        if len(a.paths) != 1:
+            raise SystemExit("empty mode: verify.py SVG --empty")
+        svg = Path(a.paths[0])
+        source = None
+    else:
+        if len(a.paths) != 2:
+            raise SystemExit("image mode: verify.py SOURCE.webp SVG")
+        source = Path(a.paths[0]).read_bytes()
+        svg = Path(a.paths[1])
 
+    text = svg.read_text(encoding="utf-8")
     for marker in REQUIRED:
         if marker not in text:
             raise SystemExit(f"missing ring marker: {marker}")
@@ -40,13 +49,22 @@ def main() -> None:
         text,
         flags=re.S,
     )
+
+    if a.empty:
+        if match:
+            raise SystemExit("empty identity circle contains an embedded image")
+        if text.count("<circle") != 6:
+            raise SystemExit("empty identity circle must contain exactly six canonical ring circles")
+        print("PASS empty=true image=none ring=canonical")
+        return
+
     if not match:
         raise SystemExit("missing embedded WebP identity")
 
     payload = re.sub(r"\s+", "", match.group(1))
     embedded = base64.b64decode(payload, validate=True)
     if embedded != source:
-        raise SystemExit("embedded identity bytes differ from approved circular source")
+        raise SystemExit("embedded identity bytes differ from preserved source")
 
     if a.scale is not None:
         expected_size = 768.0 * a.scale
