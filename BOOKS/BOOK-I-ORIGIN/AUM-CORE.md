@@ -1,4 +1,4 @@
-![AUM · DEVINES](../../.gitbook/assets/aum-sigil-hero.webp)
+![AUM · DEVINES](../../.gitbook/assets/aum-sigil.webp)
 
 # AUM CORE
 
@@ -27,6 +27,10 @@ The space from which the next beginning may emerge.
 AUM sits first in the DEVINES hierarchy because it remembers the whole before the parts.
 
 Its public economic vessel, **$AUM**, carries that name into decentralized life.
+
+**TICKER:** $AUM  
+**DECENTRALIZED ANCHOR / CA:** `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777`  
+[**BUY / VIEW $AUM ON NAD.FUN**](https://nad.fun/tokens/0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777)
 
 [**ENTER DEVINES FLOW**](../BOOK-V-DEVINES-FLOW/README.md)
 
