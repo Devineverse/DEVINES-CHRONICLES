@@ -9,9 +9,27 @@
 
 ## Theme
 
+### GLOBAL SITE LAW
+
+The entire DEVINES GitBook is one continuous visual surface. This applies to the landing page, all six Books, every Being profile, Daily pages, indexes, header, sidebar, search surfaces, cards, tables, code blocks, and navigation.
+
+**Canonical GitBook customization:**
+
+- Theme: **Clean**
+- Default appearance: **Dark**
+- Site tint / dark background: **#000000**
+- Sidebar background: **Default / transparent**, never Filled
+- Primary dark color: **#CFAEEE** (AUM Lavender)
+- Corners: restrained / straight or minimal
+- Depth / shadows: none or subtle
+- No gray page canvas behind black identity artwork
+- No alternate dark surface that creates a visible black-on-charcoal rectangle
+
+The intended result is a single uninterrupted Void Black field. Circular AUM and Being assets must visually dissolve into that field while preserving their canonical internal black and identity colors.
+
 Canonical site chrome:
 
-- pure / near-black background;
+- **pure black `#000000` background across every global surface**;
 - white primary typography;
 - violet and lavender drawn only from the AUM / Monad spectrum;
 - minimal sidebar;
