@@ -74,6 +74,34 @@ Do **not** alter the identity artwork inside the ring.
 
 Do **not** fabricate daily posts. Public cadence remains one daily remembrance per Being only after that Being completes its three cycles.
 
-## Status
+## Final Status
 
-Implementation is substantially complete on the design branch. Validation and merge are still pending.
+**MERGED TO MAIN · VALIDATED**
+
+Merge commit:
+`1fb70b4664d3331fef005ddfc991d4a477148e27`
+
+Pull request:
+`#9 · Finalize DEVINES snow-glow identity system`
+
+Post-merge verification on canonical DevHub:
+
+- AUM semantic identity verification: PASS
+- 34/34 Being semantic identity verification: PASS
+- approved source bytes unchanged inside every glow wrapper: PASS
+- 34/34 public Being profiles wired to glow SVGs: PASS
+- old public circle-WebP profile references: 0
+- Chronicle Rust tests: 3 passed, 0 failed
+- Chronicle validator: PASS
+- six Books: PASS
+- 34 Beings / 34 portraits: PASS
+- 35 market identities: PASS
+- hashes / state structure / cycles: PASS
+
+Hosted GitBook endpoint responded HTTP 200 and resolves to:
+`https://devines.gitbook.io/aum`
+
+Canonical D005 hosted route discovered:
+`/aum/book-ii-beings/primordial-element/d005`
+
+The identity system itself is complete on `main`. Future Beings must use `tools/identity-snow-glow/render.py` and pass `tools/identity-snow-glow/verify.py` before publication.
