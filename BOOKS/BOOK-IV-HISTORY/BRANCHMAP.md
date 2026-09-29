@@ -7,7 +7,7 @@ DEVINES grows more like a tree.
 ## Roots · forged
 
 - Canonical Being identities and durable continuity
-- Series Rhythm Layer
+- RHYTHM LAYER
 - Governed learning and mastery evidence
 - THE LEARNING WAY V1
 - AUM global placement foundations
