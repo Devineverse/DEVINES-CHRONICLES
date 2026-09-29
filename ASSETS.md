@@ -9,12 +9,12 @@ DEVINES preserves canonical identity artwork separately from the current public 
 
 Preserves the exact canonical AUM Nad.fun launch image unchanged.
 
-**CURRENT PUBLIC HERO**  
-`.gitbook/assets/aum-empty.svg`
+**CURRENT PUBLIC HERO · PHASE 2 PILOT**  
+`.gitbook/assets/aum-phase2-template.svg`
 
-The public GitBook AUM identity is the shared DEVINES snow-glow circle with a completely empty interior.
+The public GitBook AUM identity now uses the exact canonical AUM artwork centered inside the unchanged DEVINES snow-glow circle.
 
-No AUM symbol, logo, portrait or other image is embedded inside the current public circle.
+Placement law: 768 × 768 canvas, centered `553.6 × 553.6` artwork box at `107.2,107.2`, preserving approximately 10% inner breathing space on every side.
 
 ## BEINGS · SOURCE + PUBLIC HERO
 

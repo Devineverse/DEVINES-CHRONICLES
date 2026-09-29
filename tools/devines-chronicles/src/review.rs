@@ -217,7 +217,7 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
             &identity["beings"][id]
         };
         let expected_hero = if id == "AUM" {
-            ".gitbook/assets/aum-empty.svg".to_string()
+            ".gitbook/assets/aum-phase2-template.svg".to_string()
         } else {
             format!(".gitbook/assets/beings/empty/{id}.svg")
         };
@@ -230,7 +230,15 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
         }
         match fs::read_to_string(root.join(&expected_hero)) {
             Ok(svg) => {
-                if svg.contains("<image") {
+                let image_count = svg.matches("<image").count();
+                if id == "AUM" {
+                    if image_count != 1
+                        || !svg.contains("x=\"107.2\" y=\"107.2\" width=\"553.6\" height=\"553.6\"")
+                        || !svg.contains("preserveAspectRatio=\"xMidYMid meet\"")
+                    {
+                        errors.push("aum-phase2-placement".into());
+                    }
+                } else if image_count != 0 {
                     errors.push(format!("public-identity-image-present:{id}"));
                 }
                 if svg.matches("<circle").count() != 6 {
