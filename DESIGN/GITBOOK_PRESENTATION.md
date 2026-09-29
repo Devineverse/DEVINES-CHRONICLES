@@ -77,7 +77,7 @@ The Chronicle hero uses:
 - a true circular field;
 - centered AUM symbol;
 - generous black inner breathing space;
-- subtle AUM-lavender rim;
+- thin complete white → AUM-lavender → white snow-glow ring;
 - no distortion;
 - no blue;
 - no aggressive crop.
@@ -129,7 +129,7 @@ The Nad.fun launch image is the visual source authority. GitBook uses a derived 
 - black breathing space inside the circle;
 - enough inset to preserve the full head, horns, crown, halo or equivalent identity features;
 - strong fill without sacrificing the face/head;
-- subtle AUM-lavender rim only;
+- thin complete white → AUM-lavender → white snow-glow ring only;
 - no distortion and no replacement art.
 
 The canonical untouched source portrait is preserved separately. The public profile uses the shared circular asset defined by the Identity Avatar Contract.
@@ -152,3 +152,7 @@ Do not silently substitute generated art for a canonical identity asset. Do not 
 Markets are access surfaces, not spectacle.
 
 Use stable identity, contract and status information. Avoid flashing prices, urgency, return promises, casino motifs or visual language that makes speculation the meaning of DEVINES.
+
+## PERMANENT IDENTITY RING LAW
+
+AUM, all existing Beings, and every future Being use the exact same full 360° snow-glow ring defined in [Identity Avatar Contract](IDENTITY_AVATAR_CONTRACT.md). The approved portrait, size and crop do not change; only the shared luminous ring is added.

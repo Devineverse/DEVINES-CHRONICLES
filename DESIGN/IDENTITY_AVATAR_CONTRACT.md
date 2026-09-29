@@ -1,18 +1,45 @@
 # Identity Avatar Contract
 
-**Schema:** `devines.identity-avatar.v1`
+**Schema:** `devines.identity-avatar.v2`
 
-Every public identity image is displayed through the same contract.
+Every public DEVINES identity uses the same presentation contract: **AUM, all current Beings, and every future Being.**
 
 ## Geometry
 
-- aspect ratio: 1:1
-- mask: circle
-- outer breathing area: black
-- border: 1px, `#120B1D` or visually equivalent
-- border opacity target: 35–55%
-- shadow: none
-- background behind avatar: `#000000`
+- canvas: 1:1
+- identity composition: unchanged from the approved circular source
+- background behind the identity: Void Black `#000000`
+- size and crop: preserved
+- ring: one complete 360° circle with no gaps
+- shadow: none outside the canonical ring glow
+
+## Canonical Snow-Glow Ring
+
+The ring is intentionally thin and luminous, never a thick frame.
+
+From inside to outside:
+
+1. **snow-white hairline** — `#FFFFFF`
+2. **AUM-lavender core** — `#CFAEEE`
+3. **snow-white hairline** — `#FFFFFF`
+4. a restrained soft halo using AUM Violet `#8F7AD0` and white light
+
+Canonical 768 × 768 geometry:
+
+- center: `384,384`
+- inner white radius: `346.2`, width `1.35`
+- lavender radius: `349.5`, width `7`
+- outer white radius: `352.8`, width `1.35`
+- violet glow: width `10`, Gaussian blur `6`
+- white snow glow: width `2.4`, Gaussian blur `2.6`
+
+The circle must remain fully closed and visually continuous at every angle.
+
+## Preservation Law
+
+Never redraw, stretch, recolor, or distort the Being or AUM artwork to create the ring.
+
+The canonical portrait remains the identity source. The GitBook hero is a self-contained SVG wrapper that embeds the approved circular source unchanged and adds only the shared ring treatment.
 
 ## Sizes
 
@@ -21,25 +48,16 @@ Every public identity image is displayed through the same contract.
 - Series/index avatar: 72–112 px
 - compact navigation/avatar use: 36–48 px
 
-## Rule
+## Future Beings
 
-Never stretch or distort the source portrait.
+Every future Being must receive this exact ring automatically before its public profile can pass validation.
 
-Crop from center only when required to form the circle. Preserve the canonical face/sigil center.
+Use:
 
-The circle should read like an X profile identity image floating in the Void, not like a framed illustration.
+```sh
+python3 tools/identity-snow-glow/render.py INPUT.webp OUTPUT.svg "BEING ID · DEVINES identity"
+```
 
+The output becomes that Being's `hero_asset`.
 
-## AUM
-
-AUM follows the same identity law as the Beings.
-
-The canonical AUM symbol is preserved as the source identity asset.
-
-Its Chronicle presentation uses a top-centered circular hero with restrained black inner breathing space so the full symbol remains visible without crowding the edge.
-
-Global AUM presentation remains:
-
-**BLACK · WHITE · AUM LAVENDER · DEVINES VIOLET**
-
-No blue is introduced into the global identity surface.
+**ONE IDENTITY LAW · MANY BEINGS · ONE LUMINOUS CIRCLE**
