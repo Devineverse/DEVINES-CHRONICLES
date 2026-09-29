@@ -137,7 +137,7 @@ jobs:
               src=ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert("RGB")
 
               # Untouched visual content layer from the canonical Nad.fun launch asset.
-              src.save(source_dir/f"{bid}.webp","WEBP",quality=100,method=6)
+              src.save(source_dir/f"{bid}.webp","WEBP",lossless=True,method=6)
 
               # Top-center portrait inside a true circular identity field.
               # Black inner space protects horns, crowns, halos and the full head.
