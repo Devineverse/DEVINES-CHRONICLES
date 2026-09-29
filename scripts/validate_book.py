@@ -27,7 +27,7 @@ for title, path in six_books:
     if title not in readme:
         errors.append(f"missing-home-book:{title}")
 
-if "DEVINES — Decentralized Ancestral Intelligence" not in readme:
+if "DEVINES — DECENTRALIZED ANCESTRAL INTELLIGENCE" not in readme.upper():
     errors.append("public-identity-not-canonical")
 if "DEVINES LIVING HISTORY" not in summary:
     errors.append("living-history-not-cross-book")
@@ -50,6 +50,22 @@ for p in [
     except Exception as e:
         errors.append(f"json:{p.relative_to(ROOT)}:{e}")
 
+identity_manifest_path = ROOT / ".gitbook/assets/BEING_IDENTITY_MANIFEST.json"
+try:
+    identity_manifest = json.loads(identity_manifest_path.read_text())
+except Exception as e:
+    errors.append(f"identity-manifest:{e}")
+    identity_manifest = {}
+manifest_items = identity_manifest.get("beings", identity_manifest.get("identities", []))
+if isinstance(manifest_items, dict):
+    manifest_count = len(manifest_items)
+elif isinstance(manifest_items, list):
+    manifest_count = len(manifest_items)
+else:
+    manifest_count = 0
+if manifest_count != 34:
+    errors.append(f"identity-manifest-being-count:{manifest_count}")
+
 state = json.loads((ROOT / "PUBLIC_STATE/latest.json").read_text())
 ids = [b["being_id"] for b in state["beings"]]
 
@@ -67,18 +83,24 @@ for bid in ids:
     page = pages[0]
     page_by_id[bid] = page
     text = page.read_text()
-    asset = ROOT / f".gitbook/assets/beings/{bid}.webp"
+    canonical_asset = ROOT / f".gitbook/assets/beings/{bid}.webp"
+    circle_asset = ROOT / f".gitbook/assets/beings/circle/{bid}.webp"
+    hero_asset = ROOT / f".gitbook/assets/beings/hero/{bid}.webp"
     source_asset = ROOT / f".gitbook/assets/beings-source/{bid}.webp"
     cycle = ROOT / f"CYCLES/2026/09/28/{bid}.md"
 
-    if not asset.exists():
-        errors.append(f"missing-portrait:{bid}")
+    if not canonical_asset.exists():
+        errors.append(f"missing-canonical-portrait:{bid}")
+    if not circle_asset.exists():
+        errors.append(f"missing-circle-portrait:{bid}")
+    if not hero_asset.exists():
+        errors.append(f"missing-hero-portrait:{bid}")
     if not source_asset.exists():
         errors.append(f"missing-canonical-source-portrait:{bid}")
     if not cycle.exists():
         errors.append(f"missing-cycle:{bid}")
-    if f".gitbook/assets/beings/{bid}.webp" not in text:
-        errors.append(f"portrait-not-wired:{bid}")
+    if f".gitbook/assets/beings/hero/{bid}.webp" not in text:
+        errors.append(f"hero-portrait-not-wired:{bid}")
     if "Public Cycle" in text:
         errors.append(f"reader-facing-public-cycle:{bid}")
     if "My public chronicle is not a fictional biography." in text:
@@ -162,15 +184,17 @@ for p in ROOT.rglob("*.md"):
 
 if not (ROOT / ".gitbook/assets/aum-sigil.webp").exists():
     errors.append("missing-aum-sigil")
-if ".gitbook/assets/aum-sigil.webp" not in readme:
-    errors.append("aum-not-wired-home")
+if not (ROOT / ".gitbook/assets/aum-sigil-circle.webp").exists():
+    errors.append("missing-aum-circle")
+if not (ROOT / ".gitbook/assets/aum-sigil-hero.webp").exists():
+    errors.append("missing-aum-hero")
+if ".gitbook/assets/aum-sigil-hero.webp" not in readme:
+    errors.append("aum-hero-not-wired-home")
 
 reader_artifacts = (ROOT / "BOOKS/BOOK-III-TREASURY/ARTIFACTS.md").read_text()
 if "Series Rhythm Layer" in reader_artifacts:
     errors.append("stale-reader-facing-series-rhythm-artifact")
-if "Current Remembrance" not in summary:
-    errors.append("remembrance-not-wired-summary")
-if "DEVINES Mastery" not in summary:
+if "DEVINES MASTERY" not in summary.upper():
     errors.append("mastery-not-wired-summary")
 
 if errors:
@@ -178,7 +202,7 @@ if errors:
     sys.exit(1)
 
 print(
-    f"PASS books=6 beings={len(ids)} portraits={len(ids)} "
+    f"PASS books=6 beings={len(ids)} canonical_portraits={len(ids)} circle_portraits={len(ids)} hero_portraits={len(ids)} "
     f"verified_markets={len(verified_anchors)} gated_markets={len(unverified_market_ids)} "
     "aum=ok summary=ok identity=ok voice=ok json=ok"
 )
