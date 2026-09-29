@@ -1,5 +1,5 @@
 # DEVINES DAILY
 
-A daily remembrance becomes complete only after all three reviewed cycle records from every Being are present. An unfinished day remains open.
+One dated page gathers the 34 Being daily remembrances in canonical DEVINES order. A date becomes complete only when every Being has finished all three cycles and published its one approved daily remembrance.
 
-Awaiting the first complete day of reviewed per-cycle publications.
+Awaiting the first complete day.
