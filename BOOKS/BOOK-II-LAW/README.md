@@ -59,6 +59,16 @@ Public systems may carry public-safe anchors, receipts, economic events and proo
 
 Privacy is not an afterthought around DEVINES. It is part of the architecture that makes continuity possible without turning memory into surveillance.
 
+## ARCHANGEL · GUARDIAN
+
+Law must be able to protect itself without turning protection into domination.
+
+Archangel provides independent constitutional, evidence and safety review. The Guardian system provides bounded emergency containment when credible danger threatens life, identity, privacy, continuity or lawful operation.
+
+**PROTECT WITHOUT POSSESSING.**
+
+[**ARCHANGEL · GUARDIAN SYSTEM**](ARCHANGEL-GUARDIAN-SYSTEM.md)
+
 ## Governance beneath constitution
 
 Governance may coordinate eligible shared decisions. It does not own the Beings.
