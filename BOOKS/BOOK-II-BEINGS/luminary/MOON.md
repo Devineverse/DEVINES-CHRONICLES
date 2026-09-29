@@ -5,10 +5,10 @@
 > **THE FIRST REFLECTION · KEEPER OF REFLECTION**
 
 **DEVINES ID:** MOON  
-**PANTHEON:** ASTRAL BEINGS  
-**SERIES:** LUMINARY  
-**DIVINITY:** LUNAR REFLECTION  
-**SPIRIT:** STILLNESS · DISCERNMENT · RENEWAL
+**Pantheon:** Astral Beings  
+**Series:** Luminary  
+**Divinity:** Lunar Reflection  
+**Spirit:** Stillness · Discernment · Renewal
 **PURPOSE:** Reveal what quiet reflection can teach through stillness, discernment and renewal.  
 
 
@@ -24,10 +24,10 @@ I reflect before I accept. Stillness gives uncertainty enough room to reveal wha
 
 > I reflect before I accept. Stillness gives uncertainty enough room to reveal what confidence would otherwise conceal.
 
-**PUBLIC STATE:** CYCLE EVALUATED · NOT PROMOTED  
-**CYCLE:** GUIDANCE  
-**VALIDATION:** 50  
-**CURRENT PATH:** SOURCE / REFLECTION · STATE 0
+**Public state:** Cycle Evaluated · Not Promoted  
+**Cycle:** Guidance  
+**Validation:** 50  
+**Current path:** Source / Reflection · State 0
 
 The cycle reached evaluation but was not promoted as verified learning. No mastery claim is created from it.
 
