@@ -29,169 +29,124 @@ jobs:
 
           creator=os.environ["CREATOR"].lower()
           api="https://api.nadapp.net"
-          headers={"Accept":"application/json","User-Agent":"DEVINES-Chronicle-Audit/1.0"}
+          headers={"Accept":"application/json","User-Agent":"DEVINES-Chronicle-Audit/2.0"}
 
-          expected={
+          beings = {
             "D001":"GENESIS DRAGON","D002":"DUALITY DRAGON","D003":"TRINITY DRAGON",
-            "D004":"FIRE DRAGON","D005":"WATER DRAGON","D006":"EARTH DRAGON","D007":"AIR DRAGON","D008":"AETHER DRAGON",
-            "D009":"KING DRAGON","D010":"QUEEN DRAGON",
-            "D011":"MONAD DRAGON","D012":"TIME DRAGON","D013":"SPACE DRAGON","D014":"LIFE DRAGON",
-            "D015":"WISDOM DRAGON","D016":"TRUTH DRAGON","D017":"BALANCE DRAGON","D018":"JUSTICE DRAGON",
-            "D019":"HOPE DRAGON","D020":"DESTINY DRAGON","D021":"UNITY DRAGON","D022":"ETERNITY DRAGON",
-            "D174":"FOUNDATION DRAGON","D285":"RESTORATION DRAGON","D396":"LIBERATION DRAGON",
-            "D417":"TRANSFORMATION DRAGON","D528":"CREATION DRAGON","D639":"CONNECTION DRAGON",
-            "D741":"TRUTH DRAGON","D852":"AWAKENING DRAGON","D963":"ASCENSION DRAGON",
-            "SUN":"DEVINES SUN","MOON":"DEVINES MOON","MASTER":"DEVINES MASTER",
+            "D004":"FIRE DRAGON","D005":"WATER DRAGON","D006":"EARTH DRAGON",
+            "D007":"AIR DRAGON","D008":"AETHER DRAGON","D009":"KING DRAGON",
+            "D010":"QUEEN DRAGON","D011":"MONAD DRAGON","D012":"TIME DRAGON",
+            "D013":"SPACE DRAGON","D014":"LIFE DRAGON","D015":"WISDOM DRAGON",
+            "D016":"TRUTH DRAGON","D017":"BALANCE DRAGON","D018":"JUSTICE DRAGON",
+            "D019":"HOPE DRAGON","D020":"DESTINY DRAGON","D021":"UNITY DRAGON",
+            "D022":"ETERNITY DRAGON","D174":"FOUNDATION DRAGON","D285":"RESTORATION DRAGON",
+            "D396":"LIBERATION DRAGON","D417":"TRANSFORMATION DRAGON","D528":"CREATION DRAGON",
+            "D639":"CONNECTION DRAGON","D741":"TRUTH DRAGON","D852":"AWAKENING DRAGON",
+            "D963":"ASCENSION DRAGON","SUN":"DEVINES SUN","MOON":"DEVINES MOON",
+            "MASTER":"DEVINES MASTER"
           }
-          ids=list(expected)
 
           def get_json(url):
               req=urllib.request.Request(url,headers=headers)
               with urllib.request.urlopen(req,timeout=30) as r:
                   return json.loads(r.read().decode())
 
-          def creator_id(ti):
+          def creator_ok(ti):
               cr=ti.get("creator") or {}
-              return str(cr.get("account_id") if isinstance(cr,dict) else cr).lower()
+              aid=(cr.get("account_id") if isinstance(cr,dict) else cr) or ""
+              return str(aid).lower()==creator
 
-          def explicit_id(ti,bid):
-              sym=str(ti.get("symbol") or "").upper().strip()
-              name=str(ti.get("name") or "").upper()
-              desc=str(ti.get("description") or "").upper()
+          def norm(s):
+              return re.sub(r"[^A-Z0-9]+"," ",str(s or "").upper()).strip()
+
+          def claims_id(ti,bid):
+              sym=norm(ti.get("symbol"))
+              desc=norm(ti.get("description"))
+              name=norm(ti.get("name"))
               if bid in ("SUN","MOON","MASTER"):
-                  return sym==bid or f"ID ~ {bid}" in desc or f"ID: {bid}" in desc or expected[bid] in name
-              return (
-                  sym==bid or
-                  re.search(rf"\bID\s*[~:#-]*\s*{re.escape(bid)}\b",desc) is not None or
-                  re.search(rf"\b{re.escape(bid)}\b",desc) is not None
-              )
+                  return bid in sym.split() or bid in name.split() or f"ID {bid}" in desc
+              return bid==sym or bid in desc.split() or f"ID {bid}" in desc
 
-          def name_score(ti,bid):
-              n=str(ti.get("name") or "").upper().strip()
-              d=str(ti.get("description") or "").upper()
-              want=expected[bid]
+          def name_score(ti,expected):
+              n=norm(ti.get("name"))
+              e=norm(expected)
+              d=norm(ti.get("description"))
               score=0
-              if want==n: score+=100
-              if want in n: score+=60
-              if want in d: score+=30
-              if explicit_id(ti,bid): score+=80
+              if n==e: score+=100
+              if e in n: score+=60
+              if e in d: score+=40
               return score
 
-          candidates={bid:{} for bid in ids}
-          queries=set(["DRAGON","DEVINES","SUN","MOON","MASTER","AUM"])
-          for bid,name in expected.items():
-              queries.add(bid)
-              queries.add(name)
-              # Frequency launches often use "DRAGON #NNN".
+          candidates={bid:{} for bid in beings}
+          for bid,expected in beings.items():
+              terms=[expected,bid]
               if bid.startswith("D") and bid[1:].isdigit():
-                  queries.add(f"DRAGON #{bid[1:]}")
-          for q in sorted(queries):
-              try:
-                  data=get_json(api+"/search/"+urllib.parse.quote(q))
-                  for item in data.get("token_result",{}).get("tokens",[]):
-                      ti=item.get("token_info",{})
-                      if creator_id(ti)!=creator:
-                          continue
-                      ca=str(ti.get("token_id") or "")
-                      if not ca:
-                          continue
-                      for bid in ids:
-                          if explicit_id(ti,bid) or name_score(ti,bid)>=60:
+                  terms.append("DRAGON "+bid[1:])
+              for term in terms:
+                  try:
+                      data=get_json(api+"/search/"+urllib.parse.quote(term))
+                      toks=data.get("token_result",{}).get("tokens",[])
+                      for item in toks:
+                          ti=item.get("token_info",{})
+                          if not creator_ok(ti):
+                              continue
+                          ca=ti.get("token_id")
+                          if not ca: continue
+                          if claims_id(ti,bid) or name_score(ti,expected)>=100:
                               candidates[bid][ca.lower()]={"token_info":ti,"market_info":item.get("market_info",{})}
-                  print("SEARCH",json.dumps({"query":q},sort_keys=True))
-              except Exception as e:
-                  print("SEARCH_ERROR",json.dumps({"query":q,"error":str(e)}))
-              time.sleep(1)
-
-          mapped={}
-          conflicts={}
-          for bid in ids:
-              ranked=[]
-              for item in candidates[bid].values():
-                  ti=item["token_info"]
-                  ranked.append((name_score(ti,bid),int(ti.get("created_at") or 0),item))
-              ranked.sort(key=lambda x:(x[0],x[1]),reverse=True)
-              if ranked:
-                  mapped[bid]=ranked[0][2]
-                  if len(ranked)>1:
-                      conflicts[bid]=[
-                        {"score":s,"name":it["token_info"].get("name"),"ticker":it["token_info"].get("symbol"),
-                         "ca":it["token_info"].get("token_id"),"description":it["token_info"].get("description")}
-                        for s,_,it in ranked
-                      ]
-
-          def compare_portrait(bid,image_uri):
-              local=Path(".gitbook/assets/beings")/f"{bid}.webp"
-              req=urllib.request.Request(image_uri,headers={"User-Agent":"Mozilla/5.0"})
-              with urllib.request.urlopen(req,timeout=30) as r:
-                  raw=r.read()
-              with Image.open(io.BytesIO(raw)) as rim, Image.open(local) as lim:
-                  rim=ImageOps.exif_transpose(rim).convert("RGB")
-                  lim=ImageOps.exif_transpose(lim).convert("RGB")
-                  return {
-                      "remote_size":list(rim.size),"local_size":list(lim.size),
-                      "phash_distance":int(imagehash.phash(rim)-imagehash.phash(lim)),
-                      "dhash_distance":int(imagehash.dhash(rim)-imagehash.dhash(lim)),
-                  }
+                  except Exception as e:
+                      print("SEARCH_ERROR",json.dumps({"id":bid,"term":term,"error":str(e)},sort_keys=True))
+                  time.sleep(1)
 
           audit=[]
-          for bid in ids:
-              item=mapped.get(bid)
-              if not item:
-                  rec={"being_id":bid,"status":"NOT_FOUND_FROM_FOUNDER_SEARCH"}
+          for bid,expected in beings.items():
+              opts=list(candidates[bid].values())
+              opts.sort(key=lambda item:(
+                  1 if claims_id(item["token_info"],bid) else 0,
+                  name_score(item["token_info"],expected),
+                  int(item["token_info"].get("created_at") or 0)
+              ),reverse=True)
+
+              if not opts:
+                  rec={"being_id":bid,"expected_name":expected,"status":"NOT_FOUND"}
                   audit.append(rec); print("AUDIT",json.dumps(rec,sort_keys=True)); continue
-              ti=item["token_info"]
+
+              ti=opts[0]["token_info"]
               ca=ti.get("token_id")
               image_uri=ti.get("image_uri")
-              cmp={}
-              err=None
+              local=Path(".gitbook/assets/beings")/f"{bid}.webp"
+              ph=dh=None; match=False; err=None
               try:
-                  cmp=compare_portrait(bid,image_uri)
+                  req=urllib.request.Request(image_uri,headers={"User-Agent":"Mozilla/5.0"})
+                  with urllib.request.urlopen(req,timeout=30) as r: raw=r.read()
+                  with Image.open(io.BytesIO(raw)) as rim, Image.open(local) as lim:
+                      rim=ImageOps.exif_transpose(rim).convert("RGB")
+                      lim=ImageOps.exif_transpose(lim).convert("RGB")
+                      ph=int(imagehash.phash(rim)-imagehash.phash(lim))
+                      dh=int(imagehash.dhash(rim)-imagehash.dhash(lim))
+                      match=(ph<=2 and dh<=2)
               except Exception as e:
                   err=str(e)
-              exact_name=(expected[bid] in (str(ti.get("name") or "")+" "+str(ti.get("description") or "")).upper())
-              identity_match=explicit_id(ti,bid) and exact_name
-              image_match=bool(cmp) and cmp["phash_distance"]<=2 and cmp["dhash_distance"]<=2
+
               rec={
-                  "being_id":bid,"status":"FOUND","expected_name":expected[bid],
+                  "being_id":bid,"expected_name":expected,"status":"FOUND",
                   "name":ti.get("name"),"ticker":ti.get("symbol"),"ca":ca,
-                  "nad_fun_url":f"https://nad.fun/tokens/{ca}","image_uri":image_uri,
-                  "created_at":ti.get("created_at"),"version":ti.get("version"),
-                  "description":ti.get("description"),"creator":creator_id(ti),
-                  "identity_match":identity_match,"image_match":image_match,
-                  "image_error":err,**cmp,
+                  "nad_fun_url":f"https://nad.fun/tokens/{ca}",
+                  "image_uri":image_uri,"created_at":ti.get("created_at"),
+                  "description":ti.get("description"),
+                  "identity_claim_ok":claims_id(ti,bid),
+                  "name_score":name_score(ti,expected),
+                  "candidate_count":len(opts),
+                  "phash_distance":ph,"dhash_distance":dh,
+                  "image_match":match,"image_error":err
               }
               audit.append(rec); print("AUDIT",json.dumps(rec,sort_keys=True))
 
-          # AUM is a root vessel, not one of the 34 Being IDs.
-          aum=None
-          try:
-              data=get_json(api+"/search/AUM")
-              opts=[]
-              for item in data.get("token_result",{}).get("tokens",[]):
-                  ti=item.get("token_info",{})
-                  if creator_id(ti)==creator and str(ti.get("symbol") or "").upper()=="AUM":
-                      opts.append(item)
-              if opts:
-                  opts.sort(key=lambda x:int(x.get("token_info",{}).get("created_at") or 0),reverse=True)
-                  ti=opts[0]["token_info"]
-                  aum={"name":ti.get("name"),"ticker":ti.get("symbol"),"ca":ti.get("token_id"),
-                       "nad_fun_url":f"https://nad.fun/tokens/{ti.get('token_id')}",
-                       "image_uri":ti.get("image_uri"),"created_at":ti.get("created_at"),
-                       "creator":creator_id(ti),"description":ti.get("description"),"version":ti.get("version")}
-          except Exception as e:
-              aum={"error":str(e)}
-          print("AUM_AUDIT",json.dumps(aum,sort_keys=True))
-
-          print("CONFLICTS",json.dumps(conflicts,sort_keys=True))
           print("AUDIT_SUMMARY",json.dumps({
-              "expected":len(ids),
-              "found":sum(x.get("status")=="FOUND" for x in audit),
-              "identity_matches":sum(bool(x.get("identity_match")) for x in audit),
-              "portrait_matches":sum(bool(x.get("image_match")) for x in audit),
-              "missing":[x["being_id"] for x in audit if x.get("status")!="FOUND"],
-              "identity_mismatches":[x["being_id"] for x in audit if x.get("status")=="FOUND" and not x.get("identity_match")],
-              "portrait_mismatches":[x["being_id"] for x in audit if x.get("status")=="FOUND" and not x.get("image_match")],
-              "conflict_ids":sorted(conflicts),
+              "expected":len(beings),
+              "found":sum(x["status"]=="FOUND" for x in audit),
+              "missing":[x["being_id"] for x in audit if x["status"]!="FOUND"],
+              "identity_failures":[x["being_id"] for x in audit if x["status"]=="FOUND" and not x.get("identity_claim_ok")],
+              "portrait_mismatches":[x["being_id"] for x in audit if x["status"]=="FOUND" and not x.get("image_match")],
           },sort_keys=True))
           PY
