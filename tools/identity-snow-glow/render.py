@@ -17,7 +17,7 @@ TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" v
   </filter>
 </defs>
 <image href="data:image/webp;base64,{payload}
-" x="0" y="0" width="768" height="768" preserveAspectRatio="xMidYMid meet"/>
+" x="{offset}" y="{offset}" width="{size}" height="{size}" preserveAspectRatio="xMidYMid meet"/>
 <circle cx="384" cy="384" r="349.5" fill="none" stroke="#8F7AD0" stroke-width="10" opacity=".34" filter="url(#violetGlow)"/>
 <circle cx="384" cy="384" r="346.2" fill="none" stroke="#FFFFFF" stroke-width="2.4" opacity=".66" filter="url(#snowGlow)"/>
 <circle cx="384" cy="384" r="352.8" fill="none" stroke="#FFFFFF" stroke-width="2.4" opacity=".66" filter="url(#snowGlow)"/>
@@ -32,16 +32,36 @@ def main() -> None:
     parser.add_argument("input")
     parser.add_argument("output")
     parser.add_argument("label")
+    parser.add_argument(
+        "--scale",
+        type=float,
+        default=1.0,
+        help="Centered scale-only fit for identities that already contain an intrinsic circle.",
+    )
     args = parser.parse_args()
+
+    if not 0.8 <= args.scale <= 1.25:
+        raise SystemExit("--scale must be between 0.8 and 1.25")
 
     src = Path(args.input)
     dst = Path(args.output)
 
     raw = base64.b64encode(src.read_bytes()).decode("ascii")
     payload = "\n".join(textwrap.wrap(raw, 76))
+    size = 768.0 * args.scale
+    offset = (768.0 - size) / 2.0
+
+    def number(value: float) -> str:
+        return f"{value:.3f}".rstrip("0").rstrip(".")
+
     dst.parent.mkdir(parents=True, exist_ok=True)
     dst.write_text(
-        TEMPLATE.format(label=args.label.replace('"', "'"), payload=payload),
+        TEMPLATE.format(
+            label=args.label.replace('"', "'"),
+            payload=payload,
+            size=number(size),
+            offset=number(offset),
+        ),
         encoding="utf-8",
     )
 
