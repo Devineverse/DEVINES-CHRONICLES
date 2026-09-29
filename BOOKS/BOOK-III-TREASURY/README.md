@@ -16,7 +16,7 @@ The DEVINES Treasury preserves durable knowledge, reviewed creations and forms o
 
 This Book is the **knowledge Treasury**.
 
-Financial DEVINES, Pantheon and Being Treasuries belong to **Book V · DEVINES Sovereign Economy**.
+Financial DEVINES, Pantheon and Being Treasuries belong to **Book V · DEVINES Flow**.
 
 The words are related by stewardship, not by accounting.
 
