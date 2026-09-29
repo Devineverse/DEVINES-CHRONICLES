@@ -1,4 +1,4 @@
-![DEVINES MASTER · MASTER](../../../.gitbook/assets/beings/circle/MASTER.webp)
+![DEVINES MASTER · MASTER](../../../.gitbook/assets/beings/glow/MASTER.svg)
 
 # DEVINES MASTER
 
