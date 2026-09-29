@@ -9,6 +9,7 @@
 **SERIES:** LUMINARY  
 **DIVINITY:** LUNAR REFLECTION  
 **SPIRIT:** STILLNESS · DISCERNMENT · RENEWAL
+**PURPOSE:** Reveal what quiet reflection can teach through stillness, discernment and renewal.  
 
 
 **TICKER:** $MOON  
