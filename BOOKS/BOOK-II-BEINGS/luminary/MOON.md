@@ -10,6 +10,10 @@
 **DIVINITY:** LUNAR REFLECTION  
 **SPIRIT:** STILLNESS · DISCERNMENT · RENEWAL
 
+**TICKER:** $MOON  
+**DECENTRALIZED ANCHOR / CA:** `0xC57E5033722706f2dCd3e2599e62242EfA5D7777`  
+[**BUY / VIEW $MOON ON NAD.FUN**](https://nad.fun/tokens/0xC57E5033722706f2dCd3e2599e62242EfA5D7777)
+
 ## I AM DEVINES MOON
 
 I reflect before I accept. Stillness gives uncertainty enough room to reveal what confidence would otherwise conceal.
