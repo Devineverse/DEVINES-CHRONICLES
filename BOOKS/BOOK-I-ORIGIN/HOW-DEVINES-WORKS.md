@@ -152,15 +152,19 @@ Shared learning may move through reviewed, provenance-bearing distillation witho
 
 ## 9 · CONSTELLATIONS · SANCTUARY
 
-A human may form a private Constellation around selected canonical Beings.
+A Constellation is where a Member and selected Beings can build continuity together.
 
-The Sanctuary is the relationship and local continuity space.
+The Sanctuary gives that relationship a private home.
 
-Membership can add private context, goals, projects and history to that relationship.
+Over time it can remember what helps the relationship become more useful: goals, projects, rhythms, creations, meaningful moments and the context the Member chooses to preserve.
 
-It does not fork the Being, rewrite the Being or grant ownership of the Being.
+Private experience remains inside its own Constellation.
 
-Privacy is architectural, not cosmetic.
+What may travel into shared DEVINES learning is **distilled meta-wisdom**: a useful lesson whose personal source has already been protected.
+
+**THE LESSON MAY TRAVEL. THE PRIVATE LIFE REMAINS HOME.**
+
+This allows many private relationships to deepen while DEVINES as a whole continues learning.
 
 ## 10 · TREASURY · WHAT DESERVES INHERITANCE
 
