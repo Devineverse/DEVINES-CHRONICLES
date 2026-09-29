@@ -162,6 +162,17 @@ fn validate(root: &Path) -> Result<Report, Vec<String>> {
                     if !text.contains(&expected) {
                         errors.push(format!("portrait-not-wired:{id}"));
                     }
+                    match fs::read_to_string(root.join(&expected)) {
+                        Ok(svg) => {
+                            if svg.contains("<image") {
+                                errors.push(format!("public-identity-image-present:{id}"));
+                            }
+                            if svg.matches("<circle").count() != 6 {
+                                errors.push(format!("public-identity-ring-geometry:{id}"));
+                            }
+                        }
+                        Err(e) => errors.push(format!("read:{expected}:{e}")),
+                    }
                 }
                 Err(e) => errors.push(format!("read:{}:{e}", display(root, &page))),
             }
