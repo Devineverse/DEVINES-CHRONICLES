@@ -1,4 +1,4 @@
-![AUM · DEVINES](../../.gitbook/assets/aum-phase2-template.svg)
+![AUM · DEVINES](../../.gitbook/assets/aum-direct.jpg)
 
 # AUM CORE
 

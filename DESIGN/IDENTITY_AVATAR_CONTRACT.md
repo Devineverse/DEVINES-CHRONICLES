@@ -57,19 +57,19 @@ That map is the authority for the later image-insertion phase.
 
 **AUM is the Phase 2 pilot. All 34 Beings remain in Phase 1 until their series is reviewed and approved.**
 
-The AUM pilot uses the exact canonical AUM artwork inside the unchanged DEVINES snow-glow circle. The artwork is centered at `384,384` inside a `553.6 × 553.6` presentation box beginning at `107.2,107.2`, leaving 10% inner breathing space from each side of the ring interior.
+The AUM pilot renders the **exact user-approved uploaded AUM image directly**. It is not placed inside another SVG, ring, frame, circle or semicircle. The image's own black field and its own luminous circular composition are the complete public hero.
 
-The public AUM pilot is used identically on the DEVINES landing page and AUM Core page.
+The same exact image file is used identically on the DEVINES landing page and AUM Core page. No redraw, regeneration, recolor, crop, rescale wrapper or replacement artwork is introduced.
 
 Every Being remains an empty six-stroke circle with zero embedded images until its own series is explicitly approved for Phase 2.
 
 ## Phase 2 · Image Insertion
 
-Image insertion is active only for the AUM pilot. Being rollout happens series by series after visual approval.
+Direct image publication is active only for the AUM pilot. Being rollout happens series by series after visual approval.
 
-The preserved image, if ever approved for insertion, is centered inside the already-approved circle. The ring geometry never changes. Image insertion must not create a second visible border, outer margin, or circle-inside-circle effect.
+For AUM, the approved image already contains its complete circular composition, so **no additional ring geometry is added around it**.
 
-Any scale adjustment is centered and scale-only. No redraw, recolor, warp, or replacement art is allowed unless separately approved.
+For future Being Phase 2 reviews, the exact approved source image must be preserved and visually checked before publication. No redraw, recolor, warp, replacement art, duplicate ring, outer margin, or circle-inside-circle effect is allowed.
 
 ## Sizes
 

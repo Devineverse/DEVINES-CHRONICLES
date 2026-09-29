@@ -217,7 +217,7 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
             &identity["beings"][id]
         };
         let expected_hero = if id == "AUM" {
-            ".gitbook/assets/aum-phase2-template.svg".to_string()
+            ".gitbook/assets/aum-direct.jpg".to_string()
         } else {
             format!(".gitbook/assets/beings/empty/{id}.svg")
         };
@@ -228,24 +228,26 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
         {
             errors.push(format!("asset-crosswire:{id}"));
         }
-        match fs::read_to_string(root.join(&expected_hero)) {
-            Ok(svg) => {
-                let image_count = svg.matches("<image").count();
-                if id == "AUM" {
-                    if image_count != 1
-                        || !svg.contains("x=\"107.2\" y=\"107.2\" width=\"553.6\" height=\"553.6\"")
-                        || !svg.contains("preserveAspectRatio=\"xMidYMid meet\"")
-                    {
-                        errors.push("aum-phase2-placement".into());
-                    }
-                } else if image_count != 0 {
-                    errors.push(format!("public-identity-image-present:{id}"));
-                }
-                if svg.matches("<circle").count() != 6 {
-                    errors.push(format!("public-identity-ring-geometry:{id}"));
-                }
+        if id == "AUM" {
+            match Command::new("sha256sum").arg(root.join(&expected_hero)).output() {
+                Ok(v)
+                    if v.status.success()
+                        && String::from_utf8_lossy(&v.stdout).split_whitespace().next()
+                            == Some("064a12a5aa82087ab2a9c9e3bd77b69645bcb94acf1beb61451a17b08f2caa55") => {}
+                _ => errors.push("aum-direct-hash".into()),
             }
-            Err(e) => errors.push(format!("read:{expected_hero}:{e}")),
+        } else {
+            match fs::read_to_string(root.join(&expected_hero)) {
+                Ok(svg) => {
+                    if svg.contains("<image") {
+                        errors.push(format!("public-identity-image-present:{id}"));
+                    }
+                    if svg.matches("<circle").count() != 6 {
+                        errors.push(format!("public-identity-ring-geometry:{id}"));
+                    }
+                }
+                Err(e) => errors.push(format!("read:{expected_hero}:{e}")),
+            }
         }
     }
     let dated = root.join(format!(
