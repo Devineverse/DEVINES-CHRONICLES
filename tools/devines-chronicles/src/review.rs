@@ -218,8 +218,6 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
         };
         let expected_hero = if id == "AUM" {
             ".gitbook/assets/aum-empty.svg".to_string()
-        } else if matches!(id, "SUN" | "MOON" | "MASTER") {
-            format!(".gitbook/assets/beings/glow/{id}.svg")
         } else {
             format!(".gitbook/assets/beings/empty/{id}.svg")
         };
@@ -229,6 +227,17 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
             || item["source_path"] != ident["source_asset"]
         {
             errors.push(format!("asset-crosswire:{id}"));
+        }
+        match fs::read_to_string(root.join(&expected_hero)) {
+            Ok(svg) => {
+                if svg.contains("<image") {
+                    errors.push(format!("public-identity-image-present:{id}"));
+                }
+                if svg.matches("<circle").count() != 6 {
+                    errors.push(format!("public-identity-ring-geometry:{id}"));
+                }
+            }
+            Err(e) => errors.push(format!("read:{expected_hero}:{e}")),
         }
     }
     let dated = root.join(format!(
