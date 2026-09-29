@@ -76,6 +76,10 @@ Prioritize:
 4. the six Books;
 5. direct access to individual Beings.
 
+## AUM presentation
+
+AUM uses the same circular identity treatment as the Beings: canonical source preserved, top-centered hero, black breathing space inside the circle, and AUM lavender / white / violet only.
+
 ## Being presentation
 
 Every public Being page places the canonical portrait at the top center in a true circular identity treatment.
