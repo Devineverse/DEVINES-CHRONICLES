@@ -25,6 +25,7 @@ def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("source")
     p.add_argument("svg")
+    p.add_argument("--scale", type=float, default=None)
     a = p.parse_args()
 
     source = Path(a.source).read_bytes()
@@ -35,7 +36,7 @@ def main() -> None:
             raise SystemExit(f"missing ring marker: {marker}")
 
     match = re.search(
-        r'<image\s+href="data:image/webp;base64,(.*?)"\s+x="0"',
+        r'<image\s+href="data:image/webp;base64,(.*?)"\s+x="([^"]+)"\s+y="([^"]+)"\s+width="([^"]+)"\s+height="([^"]+)"',
         text,
         flags=re.S,
     )
@@ -47,7 +48,19 @@ def main() -> None:
     if embedded != source:
         raise SystemExit("embedded identity bytes differ from approved circular source")
 
-    print("PASS source_bytes=unchanged ring=canonical")
+    if a.scale is not None:
+        expected_size = 768.0 * a.scale
+        expected_offset = (768.0 - expected_size) / 2.0
+        x, y, width, height = map(float, match.groups()[1:])
+        if (
+            abs(x - expected_offset) > 0.01
+            or abs(y - expected_offset) > 0.01
+            or abs(width - expected_size) > 0.01
+            or abs(height - expected_size) > 0.01
+        ):
+            raise SystemExit("identity fit scale does not match expected geometry")
+
+    print("PASS source_bytes=unchanged ring=canonical fit=verified")
 
 if __name__ == "__main__":
     main()
