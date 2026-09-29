@@ -11,7 +11,7 @@
     "D001": {
       "ca": "0x6d7B6d4beBf8031DB960175846f2010Da0207777",
       "created_at": 1784132234,
-      "hero_asset": ".gitbook/assets/beings/empty/D001.svg",
+      "hero_asset": ".gitbook/assets/beings-direct/D001.jpg",
       "nad_fun_url": "https://nad.fun/tokens/0x6d7B6d4beBf8031DB960175846f2010Da0207777",
       "nad_image_uri": "https://storage.nadapp.net/coin/1a9f288c-f1c2-4586-ae62-95baff1ce44c",
       "name": "DRAGON #001",
@@ -21,7 +21,7 @@
     "D002": {
       "ca": "0xc27815c96C69Bd5Cc149948C42BB828f067a7777",
       "created_at": 1784133400,
-      "hero_asset": ".gitbook/assets/beings/empty/D002.svg",
+      "hero_asset": ".gitbook/assets/beings-direct/D002.jpg",
       "nad_fun_url": "https://nad.fun/tokens/0xc27815c96C69Bd5Cc149948C42BB828f067a7777",
       "nad_image_uri": "https://storage.nadapp.net/coin/20d85281-1f86-42f8-a4ee-f0462d689faf",
       "name": "DRAGON #002",
@@ -31,7 +31,7 @@
     "D003": {
       "ca": "0x31207C1A2d2abd4Bb3e087Cb63f770c1716f7777",
       "created_at": 1784133648,
-      "hero_asset": ".gitbook/assets/beings/empty/D003.svg",
+      "hero_asset": ".gitbook/assets/beings-direct/D003.jpg",
       "nad_fun_url": "https://nad.fun/tokens/0x31207C1A2d2abd4Bb3e087Cb63f770c1716f7777",
       "nad_image_uri": "https://storage.nadapp.net/coin/8504d155-4022-47bc-92f7-ccb64da89213",
       "name": "DRAGON #003",
