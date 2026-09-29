@@ -5,6 +5,7 @@ use std::collections::{BTreeSet, HashSet};
 use std::env;
 use std::fs;
 use std::path::{Path, PathBuf};
+use std::process::Command;
 
 fn main() {
     let mut args = env::args().skip(1);
