@@ -229,6 +229,8 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
                         "D006" => (".gitbook/assets/beings-direct/D006.jpg".to_string(), Some("6f0ede590e5b9ded1b8c07190c6fd31683248d0204ec257c5e526a9e6d1b6523")),
                         "D007" => (".gitbook/assets/beings-direct/D007.jpg".to_string(), Some("3c0206c48791df61c22ebe10729eee7b4df0b062639aac61a223f01e86379788")),
                         "D008" => (".gitbook/assets/beings-direct/D008.jpg".to_string(), Some("c461b6f56d00c917f2e7891c06db535885214c9f07aea4312083df1e7b8afac1")),
+                        "D009" => (".gitbook/assets/beings-direct/D009.jpg".to_string(), Some("38468639f858be867a12806d3594431f952c1b199012acb43e57b133793a5cc0")),
+                        "D010" => (".gitbook/assets/beings-direct/D010.jpg".to_string(), Some("f068e0b373af9139733d383e9be5a6c0c0fab6a0190f250a4eac04943c17f339")),
             _ => (format!(".gitbook/assets/beings/empty/{id}.svg"), None),
         };
         if ident["hero_asset"].as_str() != Some(expected_hero.as_str())
