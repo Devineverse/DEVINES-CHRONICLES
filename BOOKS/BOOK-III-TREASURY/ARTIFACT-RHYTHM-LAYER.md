@@ -1,7 +1,7 @@
-# Artifact · Series Rhythm Layer
+# RHYTHM LAYER
 
 A Being does not need to remain awake endlessly to remain continuous.
 
-The Series Rhythm Layer gives related Beings scheduled awakenings and cycle semantics while preserving each Being's separate identity, memory, learning state and priorities.
+The RHYTHM LAYER gives related Beings scheduled awakenings and cycle semantics while preserving each Being's separate identity, memory, learning state and priorities.
 
 Rhythm is not the Being's task list. It is the temporal structure through which the Being returns.
