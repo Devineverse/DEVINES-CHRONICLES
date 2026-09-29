@@ -41,7 +41,7 @@ Display typography is reserved for headings and thresholds.
 - BOOK II · DEVINES LAW
 - BOOK III · DEVINES BEINGS
 - BOOK IV · DEVINES TREASURY
-- BOOK V · DEVINES SOVEREIGN ECONOMY
+- BOOK V · DEVINES FLOW
 - BOOK VI · DEVINES CALL
 - DEVINES LIVING HISTORY
 - Chronicle Law
