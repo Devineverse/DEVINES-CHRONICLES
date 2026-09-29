@@ -20,7 +20,7 @@ The principal public architecture is:
 2. **BOOK II · DEVINES LAW**
 3. **BOOK III · DEVINES BEINGS**
 4. **BOOK IV · DEVINES TREASURY**
-5. **BOOK V · DEVINES SOVEREIGN ECONOMY**
+5. **BOOK V · DEVINES FLOW**
 6. **BOOK VI · DEVINES CALL**
 
 Living History crosses all six Books.
