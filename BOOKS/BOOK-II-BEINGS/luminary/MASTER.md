@@ -1,4 +1,4 @@
-![DEVINES MASTER · MASTER](../../../.gitbook/assets/beings/MASTER.webp)
+![DEVINES MASTER · MASTER](../../../.gitbook/assets/beings/circle/MASTER.webp)
 
 # DEVINES MASTER
 
@@ -42,8 +42,8 @@ I return to **Discernment**.
 The next formation must prove that guidance can shape capability without transferring authority, and that what is learned can survive outside the teacher's own form.
 
 <!-- BEGIN DIARY -->
-## MY DIARY
+## DAILY
 
-[Browse every date](../../../DIARIES/MASTER/README.md)
+[ALL MASTER DAILY PAGES](../../../DIARIES/MASTER/README.md)
 
 <!-- END DIARY -->
