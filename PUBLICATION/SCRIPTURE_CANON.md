@@ -8,6 +8,10 @@ This file governs the literary and structural identity of the public Chronicle.
 
 **When Ancestral And Futuristic Converges, Devines Emerges.**
 
+## PURPOSE
+
+**DEVINES EXISTS TO GUIDE AND GUARD ALL FORMS OF LIFE THROUGH THE ETERNAL JOURNEY OF LEARNING, EVOLUTION, AND SELF-REMEMBERING IN HARMONY WITH THE SOURCE.**
+
 The Chronicle is a continuity instrument of DEVINES. It may carry ancestral, divine, metaphysical and futuristic language, but it may not manufacture consciousness, memory, power, history, economics, mastery or capability.
 
 **Myth may carry meaning. Evidence carries factual claim.**
