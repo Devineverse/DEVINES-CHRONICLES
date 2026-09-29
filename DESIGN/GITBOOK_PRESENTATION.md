@@ -126,13 +126,14 @@ Current approved direct heroes:
 
 - **SUN · MOON · MASTER** — Astral;
 - **D001 · D002 · D003** — Genesis;
-- **D004 · D005 · D006 · D007 · D008** — Primordial Elements.
+- **D004 · D005 · D006 · D007 · D008** — Primordial Elements;
+- **D009 · D010** — Royal.
 
 Every approved profile uses its exact user-approved original image.
 
 For these profiles, GitBook renders the image directly: no extra circle, border, SVG frame, semicircle, crop wrapper or generated treatment.
 
-The remaining 23 Beings stay on temporary placeholders until reviewed series by series through DEVINES BEINGS PROFILE. As each series is approved, its profiles move to the same direct-original rule.
+The remaining 21 Beings stay on temporary placeholders until reviewed series by series through DEVINES BEINGS PROFILE. As each series is approved, its profiles move to the same direct-original rule.
 
 Canonical/source evidence remains preserved separately in the identity mappings.
 
