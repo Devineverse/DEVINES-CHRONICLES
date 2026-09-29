@@ -9,8 +9,9 @@ Every public identity image is displayed through the same contract.
 - aspect ratio: 1:1
 - mask: circle
 - outer breathing area: black
-- border: 1px, `#120B1D` or visually equivalent
-- border opacity target: 35–55%
+- border: none
+- outer identity circumference: pure black `#000000`; no violet, lavender, gray, or other colored rim
+- outer cut rim / seam: forbidden
 - shadow: none
 - background behind avatar: `#000000`
 
