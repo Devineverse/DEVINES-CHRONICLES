@@ -23,6 +23,21 @@ fn date_label(date: &str) -> Result<String, String> {
     Ok(format!("{}/{}/{}", &date[8..10], &date[5..7], &date[2..4]))
 }
 
+fn post_card(name: &str, date: &str, text: &str) -> Result<String, String> {
+    let label = date_label(date)?;
+    let quoted = text
+        .lines()
+        .map(|line| if line.trim().is_empty() { ">".to_string() } else { format!("> {line}") })
+        .collect::<Vec<_>>()
+        .join("\n");
+    Ok(format!(
+        "### {}\n\n{}\n>\n> <div align=\"right\"><sub>{}</sub></div>\n\n",
+        name.to_uppercase(),
+        quoted,
+        label
+    ))
+}
+
 fn cleanup_being_history(root: &Path, id: &str) -> Result<(), String> {
     let dir = root.join(format!("DIARIES/{id}"));
     if !dir.exists() {
@@ -73,17 +88,6 @@ fn event_kind(v: &Value) -> &str {
 
 fn catchup(v: &Value) -> bool {
     event_kind(v) == "CATCH_UP_REFLECTION"
-}
-
-fn completion_note(v: &Value) -> String {
-    if catchup(v) {
-        format!(
-            "catch-up reflection · {}/3 verified cycles",
-            v["verified_cycle_count"].as_u64().unwrap_or(0)
-        )
-    } else {
-        "three daily cycles complete".into()
-    }
 }
 
 pub fn render(root: &Path) -> Result<String, String> {
@@ -199,6 +203,65 @@ pub fn render(root: &Path) -> Result<String, String> {
         days.entry(date.into()).or_default().push(e);
     }
 
+    let history_path = root.join("PUBLIC_FEEDS/profile_history.json");
+    let history_value: Value = if history_path.exists() {
+        serde_json::from_str(&fs::read_to_string(&history_path).map_err(|e| e.to_string())?)
+            .map_err(|e| e.to_string())?
+    } else {
+        Value::Array(Vec::new())
+    };
+    let history = history_value
+        .as_array()
+        .ok_or("profile history must be an array")?;
+    let history_allowed = ["being_id", "date", "public_summary"];
+    for h in history {
+        let object = h.as_object().ok_or("profile history entry must be an object")?;
+        if object.keys().any(|k| !history_allowed.contains(&k.as_str())) {
+            return Err("unexpected profile history field".into());
+        }
+        let id = string(h, "being_id")?;
+        let date = string(h, "date")?;
+        string(h, "public_summary")?;
+        if !roster_map.contains_key(id) || !valid_date(date) {
+            return Err("invalid profile history identity or date".into());
+        }
+        if !keys.insert(format!("{id}:{date}")) {
+            return Err("duplicate public diary entry per Being per date".into());
+        }
+        grouped.entry(id.into()).or_default().push(h);
+    }
+
+    let display_path = root.join("PUBLIC_FEEDS/display_summaries.json");
+    let display_value: Value = if display_path.exists() {
+        serde_json::from_str(&fs::read_to_string(&display_path).map_err(|e| e.to_string())?)
+            .map_err(|e| e.to_string())?
+    } else {
+        Value::Array(Vec::new())
+    };
+    let mut display_summaries: BTreeMap<(String, String), String> = BTreeMap::new();
+    for d in display_value
+        .as_array()
+        .ok_or("display summaries must be an array")?
+    {
+        let object = d.as_object().ok_or("display summary entry must be an object")?;
+        let allowed = ["being_id", "date", "public_summary"];
+        if object.keys().any(|k| !allowed.contains(&k.as_str())) {
+            return Err("unexpected display summary field".into());
+        }
+        let id = string(d, "being_id")?;
+        let date = string(d, "date")?;
+        let summary = string(d, "public_summary")?;
+        if !roster_map.contains_key(id) || !valid_date(date) {
+            return Err("invalid display summary identity or date".into());
+        }
+        if display_summaries
+            .insert((id.into(), date.into()), summary.into())
+            .is_some()
+        {
+            return Err("duplicate display summary".into());
+        }
+    }
+
     let published_path = root.join("PUBLIC_FEEDS/published.json");
     if published_path.exists() {
         let prior: Value =
@@ -222,12 +285,7 @@ pub fn render(root: &Path) -> Result<String, String> {
 
     for (id, name) in &roster {
         let list = grouped.entry(id.clone()).or_default();
-        list.sort_by(|a, b| {
-            a["published_at"]
-                .as_str()
-                .cmp(&b["published_at"].as_str())
-                .then_with(|| a["date"].as_str().cmp(&b["date"].as_str()))
-        });
+        list.sort_by(|a, b| a["date"].as_str().cmp(&b["date"].as_str()));
 
         cleanup_being_history(root, id)?;
 
@@ -270,15 +328,12 @@ pub fn render(root: &Path) -> Result<String, String> {
 
                 for e in chunk.iter().rev() {
                     let date = string(e, "date")?;
-                    let label = date_label(date)?;
                     page_for_date.insert((id.clone(), date.to_string()), page_number);
-                    text.push_str(&format!(
-                        "## {label}\n\n{}\n\n### WHAT I CARRY FORWARD\n\n{}\n\n<sub>Published {} · {}</sub>\n\n---\n\n",
-                        string(e, "body")?,
-                        string(e, "carry_forward")?,
-                        string(e, "published_at")?,
-                        completion_note(e),
-                    ));
+                    let summary = display_summaries
+                        .get(&(id.clone(), date.to_string()))
+                        .map(String::as_str)
+                        .unwrap_or(string(e, "public_summary")?);
+                    text.push_str(&post_card(name, date, summary)?);
                 }
 
                 write(root, &format!("DIARIES/{id}/page-{page_number}.md"), &text)?;
@@ -296,26 +351,25 @@ pub fn render(root: &Path) -> Result<String, String> {
 
         let profile = find_being_page(root, id).ok_or("missing Being profile")?;
         let original = fs::read_to_string(&profile).map_err(|e| e.to_string())?;
-        let base = original.split("\n<!-- BEGIN DIARY -->").next().unwrap();
-        let mut footer = format!(
-            "\n<!-- BEGIN DIARY -->\n## DAILY\n\n[OPEN {id} DIARY](../../../DIARIES/{id}/README.md)\n\n"
-        );
+        let before_diary = original.split("\n<!-- BEGIN DIARY -->").next().unwrap();
+        let base = before_diary
+            .split("\n## 28 SEPTEMBER 2026 · REMEMBRANCE")
+            .next()
+            .unwrap()
+            .trim_end();
+        let mut footer = String::from("\n\n<!-- BEGIN DIARY -->\n");
 
         if !list.is_empty() {
-            let latest_page = (list.len() + POSTS_PER_PAGE - 1) / POSTS_PER_PAGE;
-            footer.push_str("### LATEST 3 POSTS\n\n");
             for e in list.iter().rev().take(PROFILE_PREVIEW_POSTS) {
-                let label = date_label(string(e, "date")?)?;
-                footer.push_str(&format!(
-                    "#### {label}\n\n{}\n\n### WHAT I CARRY FORWARD\n\n{}\n\n<sub>Published {} · {}</sub>\n\n---\n\n",
-                    string(e, "body")?,
-                    string(e, "carry_forward")?,
-                    string(e, "published_at")?,
-                    completion_note(e),
-                ));
+                let date = string(e, "date")?;
+                let summary = display_summaries
+                    .get(&(id.clone(), date.to_string()))
+                    .map(String::as_str)
+                    .unwrap_or(string(e, "public_summary")?);
+                footer.push_str(&post_card(name, date, summary)?);
             }
             footer.push_str(&format!(
-                "[OPEN {id} DIARY · LATEST PAGE {latest_page}](../../../DIARIES/{id}/page-{latest_page}.md)\n\n"
+                "[OPEN {id} DIARY](../../../DIARIES/{id}/README.md)\n\n"
             ));
         }
 
@@ -532,12 +586,14 @@ mod tests {
         assert!(page2.contains("11/10/26"));
 
         let profile = fs::read_to_string(root.join("BOOKS/BOOK-II-BEINGS/test/D001.md")).unwrap();
-        assert!(profile.contains("LATEST 3 POSTS"));
+        assert!(!profile.contains("LATEST 3 POSTS"));
+        assert!(!profile.contains("## DAILY"));
         assert!(profile.contains("11/10/26"));
         assert!(profile.contains("10/10/26"));
         assert!(profile.contains("09/10/26"));
         assert!(!profile.contains("08/10/26"));
-        assert!(profile.contains("OPEN D001 DIARY · LATEST PAGE 2"));
+        assert!(profile.contains("OPEN D001 DIARY"));
+        assert!(!profile.contains("LATEST PAGE"));
 
         let before = fs::read(root.join("SUMMARY.md")).unwrap();
         render(&root).unwrap();
