@@ -46,35 +46,45 @@ def save_json(path: Path, value) -> None:
 
 def update_rust(path: Path, devines_id: str, hero_path: str, sha256: str) -> None:
     text = path.read_text(encoding="utf-8")
-    arm = f'            "{devines_id}" => ("{hero_path}".to_string(), Some("{sha256}")),'
+    arm_body = f'"{devines_id}" => ("{hero_path}".to_string(), Some("{sha256}")),'
+    target_prefix = f'"{devines_id}" => ('
+    fallback_body = '_ => (format!(".gitbook/assets/beings/empty/{id}.svg"), None),'
 
-    # Existing direct arm: replace in place.
-    pattern = re.compile(
-        rf'^\s*"{re.escape(devines_id)}"\s*=>\s*\([^\n]+\),\s*$',
-        re.MULTILINE,
-    )
-    if pattern.search(text):
-        text = pattern.sub(arm, text, count=1)
-    else:
-        fallback = '            _ => (format!(".gitbook/assets/beings/empty/{id}.svg"), None),'
-        if fallback not in text:
-            # main.rs currently uses deeper indentation.
-            fallback = '                        _ => (format!(".gitbook/assets/beings/empty/{id}.svg"), None),'
-        if fallback not in text:
-            die(f"cannot find direct-hero match fallback in {path}")
-        indent = fallback[: len(fallback) - len(fallback.lstrip())]
-        arm = indent + f'"{devines_id}" => ("{hero_path}".to_string(), Some("{sha256}")),'
-        text = text.replace(fallback, arm + "\n" + fallback, 1)
+    lines = text.splitlines(keepends=True)
+    replaced = False
+
+    # Existing direct arm: preserve its exact indentation.
+    for index, line in enumerate(lines):
+        stripped = line.lstrip()
+        if stripped.startswith(target_prefix):
+            indent = line[: len(line) - len(stripped)]
+            newline = chr(10) if line.endswith(chr(10)) else ""
+            lines[index] = indent + arm_body + newline
+            replaced = True
+            break
+
+    # New Being: insert immediately before the existing fallback arm.
+    if not replaced:
+        for index, line in enumerate(lines):
+            if line.strip() == fallback_body:
+                indent = line[: len(line) - len(line.lstrip())]
+                lines.insert(index, indent + arm_body + chr(10))
+                replaced = True
+                break
+
+    if not replaced:
+        die(f"cannot find direct-hero match or fallback in {path}")
+
+    text = "".join(lines)
 
     if "Command::new(" in text and "use std::process::Command;" not in text:
         insert_after = "use std::path::{Path, PathBuf};"
         if insert_after in text:
-            text = text.replace(insert_after, insert_after + "\nuse std::process::Command;", 1)
+            text = text.replace(insert_after, insert_after + chr(10) + "use std::process::Command;", 1)
         else:
             die(f"cannot add Command import in {path}")
 
     path.write_text(text, encoding="utf-8")
-
 
 def main() -> None:
     if len(sys.argv) not in (3, 4):
