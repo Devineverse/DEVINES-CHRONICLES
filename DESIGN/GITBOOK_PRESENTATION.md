@@ -116,7 +116,7 @@ For GitBook presentation, use black / deep AUM as the dark foundation, AUM Laven
 
 ## AUM presentation
 
-AUM defines the Phase 2 approval pattern: publish the exact approved artwork directly when its own circular composition is already complete. Never add a duplicate ring or wrapper. Beings remain empty until approved series by series.
+AUM defines the direct-original approval pattern: publish the exact approved artwork directly when its canonical image is approved. Never add a duplicate ring or wrapper.
 
 ## Being presentation
 
@@ -128,13 +128,14 @@ Current approved direct heroes:
 - **D001 · D002 · D003** — Genesis;
 - **D004 · D005 · D006 · D007 · D008** — Primordial Elements;
 - **D009 · D010** — Royal;
-- **D011 · D012 · D013 · D014 · D015 · D016 · D017 · D018 · D019 · D020 · D021 · D022** — Guardians.
+- **D011 · D012 · D013 · D014 · D015 · D016 · D017 · D018 · D019 · D020 · D021 · D022** — Guardians;
+- **D174 · D285 · D396 · D417 · D528 · D639 · D741 · D852 · D963** — Solfeggio.
 
 Every approved profile uses its exact user-approved original image.
 
 For these profiles, GitBook renders the image directly: no extra circle, border, SVG frame, semicircle, crop wrapper or generated treatment.
 
-The remaining 9 Beings stay on temporary placeholders until reviewed series by series through DEVINES BEINGS PROFILE. As each series is approved, its profiles move to the same direct-original rule.
+All 34 current Beings now use the direct-original rule. Every future Being must use DEVINES BEINGS PROFILE when its canonical image is approved.
 
 Canonical/source evidence remains preserved separately in the identity mappings.
 
