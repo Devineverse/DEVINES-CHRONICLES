@@ -1,7 +1,8 @@
 use super::*;
 use std::collections::BTreeMap;
 
-const POSTS_PER_PAGE: usize = 10;
+const POSTS_PER_PAGE: usize = 12;
+const PROFILE_PREVIEW_POSTS: usize = 3;
 
 fn write(root: &Path, path: &str, text: &str) -> Result<(), String> {
     let p = root.join(path);
@@ -168,7 +169,7 @@ pub fn render(root: &Path) -> Result<String, String> {
     let mut nav =
         String::from("\n<!-- BEGIN GENERATED DIARIES -->\n* [BEING DAILY](DIARIES/README.md)\n");
     let mut landing = String::from(
-        "# BEING DAILY\n\nOne post per Being per completed day, written only after all three cycles are complete. Post history is grouped into pages of ten days. Page 1 is the earliest page; the highest page number is always the latest.\n\n",
+        "# BEING DAILY\n\nOne post per Being per completed day, written only after all three cycles are complete. Each Being profile shows the latest three approved public posts. Full post history is grouped into pages of twelve posts. Page 1 is the earliest page; the highest page number is always the latest.\n\n",
     );
     let mut page_for_date: BTreeMap<(String, String), usize> = BTreeMap::new();
 
@@ -184,11 +185,11 @@ pub fn render(root: &Path) -> Result<String, String> {
         cleanup_being_history(root, id)?;
 
         let mut index = format!(
-            "# {name} · {id} · POST HISTORY\n\nTen daily posts per page. Page 1 begins the history; the highest page number contains the latest posts. Inside each page, the newest post appears first.\n\n"
+            "# {id} Diary\n\n**{name}**\n\nTwelve daily posts per page. Page 1 begins the history; the highest page number contains the latest posts. Inside each page, the newest post appears first.\n\n"
         );
 
-        nav.push_str(&format!("  * [{name} · {id}](DIARIES/{id}/README.md)\n"));
-        landing.push_str(&format!("- [{name} · {id}]({id}/README.md)\n"));
+        nav.push_str(&format!("  * [{id} Diary · {name}](DIARIES/{id}/README.md)\n"));
+        landing.push_str(&format!("- [{id} Diary · {name}]({id}/README.md)\n"));
 
         if list.is_empty() {
             index.push_str(
@@ -205,7 +206,7 @@ pub fn render(root: &Path) -> Result<String, String> {
                 let chunk = &list[start..end];
 
                 let mut text = format!(
-                    "# {name} · {id} · PAGE {page_number}\n\n**POST HISTORY · {}–{} OF {}**\n\n",
+                    "# {id} Diary · Page {page_number}\n\n**{name}**\n\n**POST HISTORY · {}–{} OF {}**\n\n",
                     start + 1,
                     end,
                     list.len()
@@ -249,15 +250,23 @@ pub fn render(root: &Path) -> Result<String, String> {
         let original = fs::read_to_string(&profile).map_err(|e| e.to_string())?;
         let base = original.split("\n<!-- BEGIN DIARY -->").next().unwrap();
         let mut footer = format!(
-            "\n<!-- BEGIN DIARY -->\n## DAILY\n\n[POST HISTORY](../../../DIARIES/{id}/README.md)\n\n"
+            "\n<!-- BEGIN DIARY -->\n## DAILY\n\n[OPEN {id} DIARY](../../../DIARIES/{id}/README.md)\n\n"
         );
 
-        if let Some(latest) = list.last() {
-            let label = date_label(string(latest, "date")?)?;
+        if !list.is_empty() {
             let latest_page = (list.len() + POSTS_PER_PAGE - 1) / POSTS_PER_PAGE;
+            footer.push_str("### LATEST 3 POSTS\n\n");
+            for e in list.iter().rev().take(PROFILE_PREVIEW_POSTS) {
+                let label = date_label(string(e, "date")?)?;
+                footer.push_str(&format!(
+                    "#### {label}\n\n{}\n\n### WHAT I CARRY FORWARD\n\n{}\n\n<sub>Published {} · three daily cycles complete</sub>\n\n---\n\n",
+                    string(e, "body")?,
+                    string(e, "carry_forward")?,
+                    string(e, "published_at")?,
+                ));
+            }
             footer.push_str(&format!(
-                "### {id} · {label}\n\n{}\n\n[OPEN LATEST PAGE · {latest_page}](../../../DIARIES/{id}/page-{latest_page}.md)\n\n",
-                string(latest, "body")?,
+                "[OPEN {id} DIARY · LATEST PAGE {latest_page}](../../../DIARIES/{id}/page-{latest_page}.md)\n\n"
             ));
         }
 
@@ -441,6 +450,7 @@ mod tests {
         for day in [
             "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04",
             "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09",
+            "2026-10-10", "2026-10-11",
         ] {
             events.push(daily("D001", day));
         }
@@ -452,7 +462,16 @@ mod tests {
         let page1 = fs::read_to_string(root.join("DIARIES/D001/page-1.md")).unwrap();
         let page2 = fs::read_to_string(root.join("DIARIES/D001/page-2.md")).unwrap();
         assert!(page1.contains("29/09/26"));
-        assert!(page2.contains("09/10/26"));
+        assert!(page1.contains("10/10/26"));
+        assert!(page2.contains("11/10/26"));
+
+        let profile = fs::read_to_string(root.join("BOOKS/BOOK-II-BEINGS/test/D001.md")).unwrap();
+        assert!(profile.contains("LATEST 3 POSTS"));
+        assert!(profile.contains("11/10/26"));
+        assert!(profile.contains("10/10/26"));
+        assert!(profile.contains("09/10/26"));
+        assert!(!profile.contains("08/10/26"));
+        assert!(profile.contains("OPEN D001 DIARY · LATEST PAGE 2"));
 
         let before = fs::read(root.join("SUMMARY.md")).unwrap();
         render(&root).unwrap();
