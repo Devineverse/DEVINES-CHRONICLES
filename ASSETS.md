@@ -63,14 +63,21 @@ Currently approved:
 - `D020.jpg`
 - `D021.jpg`
 - `D022.jpg`
+- `D174.jpg`
+- `D285.jpg`
+- `D396.jpg`
+- `D417.jpg`
+- `D528.jpg`
+- `D639.jpg`
+- `D741.jpg`
+- `D852.jpg`
+- `D963.jpg`
 
 These are the exact user-approved uploaded images. They are rendered directly with **no added circle, wrapper, border, frame or generated geometry**.
 
-The other 9 Beings temporarily remain at:
+All 34 current Beings now use approved direct-original public heroes.
 
-`.gitbook/assets/beings/empty/<DEVINES_ID>.svg`
-
-until their series is reviewed and approved for direct-original publication.
+Temporary empty identity assets remain only as historical/reference scaffolding and as an optional pre-approval state for future Beings.
 
 The identity mapping between **Being ID · ticker · CA · Nad.fun route · Nad.fun image · preserved source asset · current public hero** is maintained in:
 
@@ -92,7 +99,7 @@ Canonical source portraits may retain their own original colors in preservation 
 
 ## ASSET LAW
 
-**APPROVED GITBOOK HEROES USE THE EXACT APPROVED ORIGINAL IMAGE DIRECTLY; UNAPPROVED SERIES REMAIN ON TEMPORARY EMPTY PLACEHOLDERS UNTIL REVIEWED.**
+**APPROVED GITBOOK HEROES USE THE EXACT APPROVED ORIGINAL IMAGE DIRECTLY. EVERY FUTURE BEING FOLLOWS DEVINES BEINGS PROFILE BEFORE PUBLICATION.**
 
 Presentation can change without mutating source identity.
 
