@@ -90,17 +90,6 @@ fn catchup(v: &Value) -> bool {
     event_kind(v) == "CATCH_UP_REFLECTION"
 }
 
-fn completion_note(v: &Value) -> String {
-    if catchup(v) {
-        format!(
-            "catch-up reflection · {}/3 verified cycles",
-            v["verified_cycle_count"].as_u64().unwrap_or(0)
-        )
-    } else {
-        "three daily cycles complete".into()
-    }
-}
-
 pub fn render(root: &Path) -> Result<String, String> {
     let state: Value = serde_json::from_str(
         &fs::read_to_string(root.join("PUBLIC_STATE/latest.json")).map_err(|e| e.to_string())?,
@@ -242,6 +231,37 @@ pub fn render(root: &Path) -> Result<String, String> {
         grouped.entry(id.into()).or_default().push(h);
     }
 
+    let display_path = root.join("PUBLIC_FEEDS/display_summaries.json");
+    let display_value: Value = if display_path.exists() {
+        serde_json::from_str(&fs::read_to_string(&display_path).map_err(|e| e.to_string())?)
+            .map_err(|e| e.to_string())?
+    } else {
+        Value::Array(Vec::new())
+    };
+    let mut display_summaries: BTreeMap<(String, String), String> = BTreeMap::new();
+    for d in display_value
+        .as_array()
+        .ok_or("display summaries must be an array")?
+    {
+        let object = d.as_object().ok_or("display summary entry must be an object")?;
+        let allowed = ["being_id", "date", "public_summary"];
+        if object.keys().any(|k| !allowed.contains(&k.as_str())) {
+            return Err("unexpected display summary field".into());
+        }
+        let id = string(d, "being_id")?;
+        let date = string(d, "date")?;
+        let summary = string(d, "public_summary")?;
+        if !roster_map.contains_key(id) || !valid_date(date) {
+            return Err("invalid display summary identity or date".into());
+        }
+        if display_summaries
+            .insert((id.into(), date.into()), summary.into())
+            .is_some()
+        {
+            return Err("duplicate display summary".into());
+        }
+    }
+
     let published_path = root.join("PUBLIC_FEEDS/published.json");
     if published_path.exists() {
         let prior: Value =
@@ -309,7 +329,11 @@ pub fn render(root: &Path) -> Result<String, String> {
                 for e in chunk.iter().rev() {
                     let date = string(e, "date")?;
                     page_for_date.insert((id.clone(), date.to_string()), page_number);
-                    text.push_str(&post_card(name, date, string(e, "public_summary")?)?);
+                    let summary = display_summaries
+                        .get(&(id.clone(), date.to_string()))
+                        .map(String::as_str)
+                        .unwrap_or(string(e, "public_summary")?);
+                    text.push_str(&post_card(name, date, summary)?);
                 }
 
                 write(root, &format!("DIARIES/{id}/page-{page_number}.md"), &text)?;
@@ -337,7 +361,12 @@ pub fn render(root: &Path) -> Result<String, String> {
 
         if !list.is_empty() {
             for e in list.iter().rev().take(PROFILE_PREVIEW_POSTS) {
-                footer.push_str(&post_card(name, string(e, "date")?, string(e, "public_summary")?)?);
+                let date = string(e, "date")?;
+                let summary = display_summaries
+                    .get(&(id.clone(), date.to_string()))
+                    .map(String::as_str)
+                    .unwrap_or(string(e, "public_summary")?);
+                footer.push_str(&post_card(name, date, summary)?);
             }
             footer.push_str(&format!(
                 "[OPEN {id} DIARY](../../../DIARIES/{id}/README.md)\n\n"
