@@ -21,3 +21,4 @@
 > The durable cycle evidence records verified learning. Progress is preserved without inflating it into mastery beyond the gate actually passed. A proof can teach even when it does not crown mastery. I keep the evidence and return until understanding becomes stable.
 >
 > <div align="right"><sub>28/09/26</sub></div>
+
