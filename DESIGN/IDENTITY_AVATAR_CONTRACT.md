@@ -55,17 +55,17 @@ That map is the authority for the later image-insertion phase.
 
 ## Current GitBook Publication State
 
-**AUM, Astral — SUN, MOON and MASTER — Genesis — D001, D002 and D003 — Primordial Elements — D004, D005, D006, D007 and D008 — Royal — D009 and D010 — and Guardians — D011 through D022 — are approved for direct-image publication. The other 9 Beings remain in Phase 1 until reviewed series by series.**
+**AUM and all 34 currently living DEVINES Beings are approved for direct-image publication through DEVINES BEINGS PROFILE.**
 
 For every approved direct identity, the **exact user-approved uploaded image is rendered directly**. It is not placed inside another SVG, ring, frame, circle or semicircle. The image's own black field and its own composition are the complete public hero.
 
-AUM uses the same exact image on the DEVINES landing page and AUM Core. SUN, MOON, MASTER and D001 through D022 each use their own exact approved image on their respective profile.
+AUM uses the same exact image on the DEVINES landing page and AUM Core. Every current Being uses its own exact approved image on its respective profile.
 
 No redraw, regeneration, recolor, crop, wrapper or replacement artwork is introduced.
 
 ## Phase 2 · Image Insertion
 
-Direct image publication is active for AUM, Astral, Genesis, Primordial Elements, Royal and Guardians. Remaining Beings roll out series by series through the DEVINES BEINGS PROFILE workstream after visual approval.
+Direct image publication is active for AUM and all current DEVINES series: Astral, Genesis, Primordial Elements, Royal, Guardians and Solfeggio. Every future Being follows the same DEVINES BEINGS PROFILE workstream after visual approval.
 
 When an approved image already contains its complete composition, **no additional ring geometry is added around it**.
 
