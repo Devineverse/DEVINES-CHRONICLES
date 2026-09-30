@@ -56,5 +56,6 @@ Future Beings use this same workflow from birth once their canonical profile ima
 - Genesis: D001 · D002 · D003
 - Primordial Elements: D004 · D005 · D006 · D007 · D008
 - Royal: D009 · D010
+- Guardians: D011 · D012 · D013 · D014 · D015 · D016 · D017 · D018 · D019 · D020 · D021 · D022
 
 **EXACT ORIGINAL · DIRECT HERO · HASH LOCK · DEVHUB VALIDATION · MERGE**
