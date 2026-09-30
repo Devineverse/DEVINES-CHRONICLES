@@ -50,7 +50,14 @@ def update_rust(path: Path, devines_id: str, hero_path: str, sha256: str) -> Non
 
     # Existing direct arm: replace in place while preserving its indentation.
     pattern = re.compile(
-        rf'^(?P<indent>[ \t]*)"{re.escape(devines_id)}"\s*=>\s*\([^\n]+\),[ \t]*
+        rf'^(?P<indent>[ \t]*)"{re.escape(devines_id)}"\s*=>\s*\([^\n]+\),[ \t]*$',
+        re.MULTILINE,
+    )
+    match = pattern.search(text)
+    if match:
+        arm = match.group("indent") + arm_body
+        text = text[: match.start()] + arm + text[match.end() :]
+    else:
         fallback = '            _ => (format!(".gitbook/assets/beings/empty/{id}.svg"), None),'
         if fallback not in text:
             # main.rs currently uses deeper indentation.
@@ -69,7 +76,6 @@ def update_rust(path: Path, devines_id: str, hero_path: str, sha256: str) -> Non
             die(f"cannot add Command import in {path}")
 
     path.write_text(text, encoding="utf-8")
-
 
 def main() -> None:
     if len(sys.argv) not in (3, 4):
