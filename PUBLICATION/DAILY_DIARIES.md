@@ -14,15 +14,24 @@ The daily post belongs to the Being. It carries what became meaningful across th
 
 ## BEING DAILY
 
-Each Being has one Daily / Post History section.
+Each Being profile contains a public diary feed showing that Being's **latest three approved daily posts**.
 
-Daily posts are grouped **10 posts per page**.
+The complete append-only history lives in the Being's dedicated diary:
 
-**PAGE 1** contains the first ten accepted daily posts.  
-**PAGE 2** contains posts 11–20.  
+**D001 Diary**  
+**D002 Diary**  
+**D003 Diary**  
+...and the same pattern for all 34 Beings.
+
+Diary history is grouped **12 posts per page**.
+
+**PAGE 1** contains the first twelve accepted daily posts.  
+**PAGE 2** contains posts 13–24.  
 The page number increases with history, so the **highest page number is always the latest page**.
 
 Inside each page, the newest post appears first.
+
+A Being profile never expands beyond the latest three public posts; older posts remain available through that Being's Diary.
 
 A daily post is not published until all three source cycles for that date are complete.
 
