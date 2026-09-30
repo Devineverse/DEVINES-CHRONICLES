@@ -231,6 +231,18 @@ pub fn audit(root: &Path, errors: &mut Vec<String>) {
                         "D008" => (".gitbook/assets/beings-direct/D008.jpg".to_string(), Some("c461b6f56d00c917f2e7891c06db535885214c9f07aea4312083df1e7b8afac1")),
                         "D009" => (".gitbook/assets/beings-direct/D009.jpg".to_string(), Some("38468639f858be867a12806d3594431f952c1b199012acb43e57b133793a5cc0")),
                         "D010" => (".gitbook/assets/beings-direct/D010.jpg".to_string(), Some("f068e0b373af9139733d383e9be5a6c0c0fab6a0190f250a4eac04943c17f339")),
+                        "D011" => (".gitbook/assets/beings-direct/D011.jpg".to_string(), Some("7fb339b70173dd6b1561e67139cde2a18ff147070ed6b1d9abf700f5725aeb7d")),
+                        "D012" => (".gitbook/assets/beings-direct/D012.jpg".to_string(), Some("fefb9ddc54d59e15ba79679e61da5454e8898353cb09c7c7b66c89fa9c31d097")),
+                        "D013" => (".gitbook/assets/beings-direct/D013.jpg".to_string(), Some("0c77685a304b5cafd592a396c868bf7bdd6015c13d799d899ff2da7c20d6ef83")),
+                        "D014" => (".gitbook/assets/beings-direct/D014.jpg".to_string(), Some("a513185d0fe7d392f6536cff7138c19b21b073f375fe9dc762fd28d0c0299b22")),
+                        "D015" => (".gitbook/assets/beings-direct/D015.jpg".to_string(), Some("da2f4e2dc96a69ffd57e2d03de29681b2964eed9321e62fdb0eba4aa2c3aa6ee")),
+                        "D016" => (".gitbook/assets/beings-direct/D016.jpg".to_string(), Some("c7931291338f23eaab16b9d8cf00abf2cae9b6cb7cb00074d963717e5768c116")),
+                        "D017" => (".gitbook/assets/beings-direct/D017.jpg".to_string(), Some("59daa908bfe687eb50fa2bc518c4d7f5523125aae0bbc9d8fc29741d77540cb2")),
+                        "D018" => (".gitbook/assets/beings-direct/D018.jpg".to_string(), Some("08983cf9953d79dbcea9f9a5cbe1c41a124779859ec812fd8331d4eb619d54e0")),
+                        "D019" => (".gitbook/assets/beings-direct/D019.jpg".to_string(), Some("a19129c7a86116c7ff9540de33a9113079b061747e6cb039d5f29ff7fd183d09")),
+                        "D020" => (".gitbook/assets/beings-direct/D020.jpg".to_string(), Some("d86f999dd406c6b7c42a47529589132473c438db18a46e1223d619d533c1f5a3")),
+                        "D021" => (".gitbook/assets/beings-direct/D021.jpg".to_string(), Some("664a158d9d97a73cd3634b01888ff131ad398309033daf109c11795bb588f188")),
+                        "D022" => (".gitbook/assets/beings-direct/D022.jpg".to_string(), Some("4a448cec35ebd8fd9d47000b075ef300f6a3e37ff53e3f967ce26ac3e8acc085")),
             _ => (format!(".gitbook/assets/beings/empty/{id}.svg"), None),
         };
         if ident["hero_asset"].as_str() != Some(expected_hero.as_str())
