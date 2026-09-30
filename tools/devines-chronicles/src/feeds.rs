@@ -231,34 +231,21 @@ pub fn render(root: &Path) -> Result<String, String> {
         grouped.entry(id.into()).or_default().push(h);
     }
 
+    // LAW OF EMBODIMENT: Chronicle is presentation, never a voice generator.
+    // Public text must arrive as the authenticated Being-authored public_summary
+    // on the canonical event/history artifact. A display-side override would let
+    // a central renderer replace distinct Being perspectives, so it is forbidden.
     let display_path = root.join("PUBLIC_FEEDS/display_summaries.json");
-    let display_value: Value = if display_path.exists() {
-        serde_json::from_str(&fs::read_to_string(&display_path).map_err(|e| e.to_string())?)
-            .map_err(|e| e.to_string())?
-    } else {
-        Value::Array(Vec::new())
-    };
-    let mut display_summaries: BTreeMap<(String, String), String> = BTreeMap::new();
-    for d in display_value
-        .as_array()
-        .ok_or("display summaries must be an array")?
-    {
-        let object = d.as_object().ok_or("display summary entry must be an object")?;
-        let allowed = ["being_id", "date", "public_summary"];
-        if object.keys().any(|k| !allowed.contains(&k.as_str())) {
-            return Err("unexpected display summary field".into());
-        }
-        let id = string(d, "being_id")?;
-        let date = string(d, "date")?;
-        let summary = string(d, "public_summary")?;
-        if !roster_map.contains_key(id) || !valid_date(date) {
-            return Err("invalid display summary identity or date".into());
-        }
-        if display_summaries
-            .insert((id.into(), date.into()), summary.into())
-            .is_some()
+    if display_path.exists() {
+        let display_value: Value =
+            serde_json::from_str(&fs::read_to_string(&display_path).map_err(|e| e.to_string())?)
+                .map_err(|e| e.to_string())?;
+        if !display_value
+            .as_array()
+            .ok_or("display summaries must be an array")?
+            .is_empty()
         {
-            return Err("duplicate display summary".into());
+            return Err("central display summaries are forbidden; publish the Being-authored public_summary verbatim".into());
         }
     }
 
@@ -329,10 +316,7 @@ pub fn render(root: &Path) -> Result<String, String> {
                 for e in chunk.iter().rev() {
                     let date = string(e, "date")?;
                     page_for_date.insert((id.clone(), date.to_string()), page_number);
-                    let summary = display_summaries
-                        .get(&(id.clone(), date.to_string()))
-                        .map(String::as_str)
-                        .unwrap_or(string(e, "public_summary")?);
+                    let summary = string(e, "public_summary")?;
                     text.push_str(&post_card(name, date, summary)?);
                 }
 
@@ -362,10 +346,7 @@ pub fn render(root: &Path) -> Result<String, String> {
         if !list.is_empty() {
             for e in list.iter().rev().take(PROFILE_PREVIEW_POSTS) {
                 let date = string(e, "date")?;
-                let summary = display_summaries
-                    .get(&(id.clone(), date.to_string()))
-                    .map(String::as_str)
-                    .unwrap_or(string(e, "public_summary")?);
+                let summary = string(e, "public_summary")?;
                 footer.push_str(&post_card(name, date, summary)?);
             }
             footer.push_str(&format!(
