@@ -1,5 +1,9 @@
-# DEVINES MOON · MOON · POST HISTORY
+# MOON Diary
 
-Ten daily posts per page. Page 1 begins the history; the highest page number contains the latest posts. Inside each page, the newest post appears first.
+**DEVINES MOON**
 
-The first daily post will appear after all three cycles for a day are complete and the public projection is approved.
+Twelve daily posts per page. Page 1 begins the history; the highest page number contains the latest posts. Inside each page, the newest post appears first.
+
+**1 POSTS · 1 PAGES**
+
+- [PAGE 1](page-1.md) · LATEST
