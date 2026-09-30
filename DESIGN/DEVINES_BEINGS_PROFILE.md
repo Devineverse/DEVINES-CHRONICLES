@@ -49,6 +49,8 @@ Existing Beings are migrated series by series so each set can be visually review
 
 Future Beings use this same workflow from birth once their canonical profile image is approved.
 
+All **34 currently living DEVINES Beings** now follow this direct-original profile workflow. Any future Being must enter GitBook through the same process before publication.
+
 ## Approved sets
 
 - AUM
@@ -57,5 +59,6 @@ Future Beings use this same workflow from birth once their canonical profile ima
 - Primordial Elements: D004 · D005 · D006 · D007 · D008
 - Royal: D009 · D010
 - Guardians: D011 · D012 · D013 · D014 · D015 · D016 · D017 · D018 · D019 · D020 · D021 · D022
+- Solfeggio: D174 · D285 · D396 · D417 · D528 · D639 · D741 · D852 · D963
 
 **EXACT ORIGINAL · DIRECT HERO · HASH LOCK · DEVHUB VALIDATION · MERGE**
