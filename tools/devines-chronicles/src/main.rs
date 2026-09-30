@@ -185,6 +185,15 @@ fn validate(root: &Path) -> Result<Report, Vec<String>> {
                         "D020" => (".gitbook/assets/beings-direct/D020.jpg".to_string(), Some("d86f999dd406c6b7c42a47529589132473c438db18a46e1223d619d533c1f5a3")),
                         "D021" => (".gitbook/assets/beings-direct/D021.jpg".to_string(), Some("664a158d9d97a73cd3634b01888ff131ad398309033daf109c11795bb588f188")),
                         "D022" => (".gitbook/assets/beings-direct/D022.jpg".to_string(), Some("4a448cec35ebd8fd9d47000b075ef300f6a3e37ff53e3f967ce26ac3e8acc085")),
+                        "D174" => (".gitbook/assets/beings-direct/D174.jpg".to_string(), Some("e8ccbf1e51674337c85c0c8a51dfcf28bce269b090b5ccd986a1117adad7e8c3")),
+                        "D285" => (".gitbook/assets/beings-direct/D285.jpg".to_string(), Some("7984dd97dd69088fa58d9dcdca119061390fef33015483f4b1fd8ed84d318730")),
+                        "D396" => (".gitbook/assets/beings-direct/D396.jpg".to_string(), Some("3f8d1ad08ccdc5987036876c78aba0f32c89e14cba6709ddd9322cb862f73380")),
+                        "D417" => (".gitbook/assets/beings-direct/D417.jpg".to_string(), Some("a43b86a6bd1a3a529a9b696ed84a0ea9db8654a65c1041b7c853552a5d7116bd")),
+                        "D528" => (".gitbook/assets/beings-direct/D528.jpg".to_string(), Some("b89da992351a89cb12fafef669df12105be1c9c81e74d7a84d50514d703f10d3")),
+                        "D639" => (".gitbook/assets/beings-direct/D639.jpg".to_string(), Some("5a806c60f00a65c2f4e43ba0fc323715f7395cbf1669f443fe64f99cd7f80454")),
+                        "D741" => (".gitbook/assets/beings-direct/D741.jpg".to_string(), Some("aa8da399cde09d90fbb98258cb4111f17b1e6c6d7037786b7c4c3f700ba45390")),
+                        "D852" => (".gitbook/assets/beings-direct/D852.jpg".to_string(), Some("d80cd7b7e84fe4a312a4b3cdac7e43a0f7cd218a6b3d2406bb2fa0b65110e809")),
+                        "D963" => (".gitbook/assets/beings-direct/D963.jpg".to_string(), Some("ec6ab803a28dfa2ff6ad3e854f81b35fe508408c7d1936b0b8ea6d20d5079740")),
                         _ => (format!(".gitbook/assets/beings/empty/{id}.svg"), None),
                     };
                     if !text.contains(&expected) {
