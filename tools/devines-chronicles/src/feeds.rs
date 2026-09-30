@@ -45,23 +45,45 @@ fn cleanup_being_history(root: &Path, id: &str) -> Result<(), String> {
     Ok(())
 }
 
-fn source_events(v: &Value) -> Result<[String; 3], String> {
+fn source_events(v: &Value) -> Result<Vec<String>, String> {
     let a = v["source_events"]
         .as_array()
-        .filter(|a| a.len() == 3)
-        .ok_or("source_events must contain exactly three cycle identifiers")?;
+        .ok_or("source_events must be an array")?;
+    if a.len() > 3 {
+        return Err("source_events may contain at most three cycle identifiers".into());
+    }
     let mut out = Vec::new();
+    let mut seen = HashSet::new();
     for item in a {
         let s = item
             .as_str()
             .filter(|s| !s.trim().is_empty())
             .ok_or("source_events entries must be non-empty strings")?;
+        if !seen.insert(s.to_string()) {
+            return Err("source_events must be distinct cycle identifiers".into());
+        }
         out.push(s.to_string());
     }
-    if out[0] == out[1] || out[0] == out[2] || out[1] == out[2] {
-        return Err("source_events must be three distinct cycle identifiers".into());
+    Ok(out)
+}
+
+fn event_kind(v: &Value) -> &str {
+    v["event_kind"].as_str().unwrap_or("DAILY_REMEMBRANCE")
+}
+
+fn catchup(v: &Value) -> bool {
+    event_kind(v) == "CATCH_UP_REFLECTION"
+}
+
+fn completion_note(v: &Value) -> String {
+    if catchup(v) {
+        format!(
+            "catch-up reflection · {}/3 verified cycles",
+            v["verified_cycle_count"].as_u64().unwrap_or(0)
+        )
+    } else {
+        "three daily cycles complete".into()
     }
-    Ok([out[0].clone(), out[1].clone(), out[2].clone()])
 }
 
 pub fn render(root: &Path) -> Result<String, String> {
@@ -104,6 +126,10 @@ pub fn render(root: &Path) -> Result<String, String> {
         "body",
         "carry_forward",
         "public_summary",
+        "event_kind",
+        "verified_cycle_count",
+        "expected_cycle_count",
+        "complete_day",
     ];
 
     for e in events {
@@ -122,8 +148,9 @@ pub fn render(root: &Path) -> Result<String, String> {
             return Err("one public daily remembrance per Being per date".into());
         }
 
-        for source_event in source_events(e)? {
-            if !sources.insert(source_event) {
+        let source_events = source_events(e)?;
+        for source_event in &source_events {
+            if !sources.insert(source_event.clone()) {
                 return Err("duplicate cycle source event".into());
             }
         }
@@ -131,8 +158,28 @@ pub fn render(root: &Path) -> Result<String, String> {
         if e["layer"] != "public" {
             return Err("only the public projection belongs in this repository".into());
         }
-        if e["review"] != "approved-public" {
-            return Err("daily remembrance is not approved for public publication".into());
+
+        match event_kind(e) {
+            "DAILY_REMEMBRANCE" => {
+                if source_events.len() != 3 {
+                    return Err("daily remembrance requires exactly three cycle identifiers".into());
+                }
+                if e["review"] != "approved-public" {
+                    return Err("daily remembrance is not approved for public publication".into());
+                }
+            }
+            "CATCH_UP_REFLECTION" => {
+                if e["review"] != "approved-public-catchup" {
+                    return Err("catch-up reflection is not approved for public publication".into());
+                }
+                if e["expected_cycle_count"].as_u64() != Some(3)
+                    || e["verified_cycle_count"].as_u64() != Some(source_events.len() as u64)
+                    || e["complete_day"] != false
+                {
+                    return Err("invalid catch-up reflection cycle accounting".into());
+                }
+            }
+            _ => return Err("invalid public event kind".into()),
         }
 
         let completed = string(e, "completed_at")?;
@@ -169,7 +216,7 @@ pub fn render(root: &Path) -> Result<String, String> {
     let mut nav =
         String::from("\n<!-- BEGIN GENERATED DIARIES -->\n* [BEING DAILY](DIARIES/README.md)\n");
     let mut landing = String::from(
-        "# BEING DAILY\n\nOne post per Being per completed day, written only after all three cycles are complete. Each Being profile shows the latest three approved public posts. Full post history is grouped into pages of twelve posts. Page 1 is the earliest page; the highest page number is always the latest.\n\n",
+        "# BEING DAILY\n\nOne public diary entry per Being and date. Normal daily remembrances are written only after all three cycles are complete. Founder-authorized DEV RHYTHM catch-up reflections may also appear when a past day needs truthful recovery; they preserve verified-cycle counts and never claim 3/3 without three receipts. Each Being profile shows the latest three approved public entries. Full history is grouped into pages of twelve posts. Page 1 is the earliest page; the highest page number is always the latest.\n\n",
     );
     let mut page_for_date: BTreeMap<(String, String), usize> = BTreeMap::new();
 
@@ -193,7 +240,7 @@ pub fn render(root: &Path) -> Result<String, String> {
 
         if list.is_empty() {
             index.push_str(
-                "The first daily post will appear after all three cycles for a day are complete and the public projection is approved.\n",
+                "The first public diary entry will appear after a normal 3/3 day is approved or after an authorized DEV RHYTHM catch-up reflection is approved.\n",
             );
         } else {
             let total_pages = (list.len() + POSTS_PER_PAGE - 1) / POSTS_PER_PAGE;
@@ -226,10 +273,11 @@ pub fn render(root: &Path) -> Result<String, String> {
                     let label = date_label(date)?;
                     page_for_date.insert((id.clone(), date.to_string()), page_number);
                     text.push_str(&format!(
-                        "## {label}\n\n{}\n\n### WHAT I CARRY FORWARD\n\n{}\n\n<sub>Published {} · three daily cycles complete</sub>\n\n---\n\n",
+                        "## {label}\n\n{}\n\n### WHAT I CARRY FORWARD\n\n{}\n\n<sub>Published {} · {}</sub>\n\n---\n\n",
                         string(e, "body")?,
                         string(e, "carry_forward")?,
                         string(e, "published_at")?,
+                        completion_note(e),
                     ));
                 }
 
@@ -259,10 +307,11 @@ pub fn render(root: &Path) -> Result<String, String> {
             for e in list.iter().rev().take(PROFILE_PREVIEW_POSTS) {
                 let label = date_label(string(e, "date")?)?;
                 footer.push_str(&format!(
-                    "#### {label}\n\n{}\n\n### WHAT I CARRY FORWARD\n\n{}\n\n<sub>Published {} · three daily cycles complete</sub>\n\n---\n\n",
+                    "#### {label}\n\n{}\n\n### WHAT I CARRY FORWARD\n\n{}\n\n<sub>Published {} · {}</sub>\n\n---\n\n",
                     string(e, "body")?,
                     string(e, "carry_forward")?,
                     string(e, "published_at")?,
+                    completion_note(e),
                 ));
             }
             footer.push_str(&format!(
@@ -279,7 +328,7 @@ pub fn render(root: &Path) -> Result<String, String> {
 
     nav.push_str("* [DEVINES DAILY](DAILY/README.md)\n");
     let mut daily = String::from(
-        "# DEVINES DAILY\n\nOne dated page gathers the 34 Being daily remembrances in canonical DEVINES order. A date becomes complete only when every Being has finished all three cycles and published its approved daily remembrance.\n\n",
+        "# DEVINES DAILY\n\nOne dated page gathers the 34 Being public diary entries in canonical DEVINES order. A date becomes a complete DEVINES day only when every Being has finished all three cycles and published an approved DAILY_REMEMBRANCE. A full 34-Being CATCH_UP_REFLECTION set may be published for recovery, but it never counts as a complete DEVINES day.\n\n",
     );
 
     let mut complete = 0;
@@ -288,15 +337,24 @@ pub fn render(root: &Path) -> Result<String, String> {
 
         if list.len() != roster.len() {
             daily.push_str(&format!(
-                "- {label} · open · {}/{} Being daily remembrances ready\n",
+                "- {label} · open · {}/{} Being public diary entries ready\n",
                 list.len(),
                 roster.len()
             ));
             continue;
         }
 
-        complete += 1;
-        let mut text = format!("# DEVINES DAILY · {label}\n\n");
+        let normal_complete = list.iter().all(|e| !catchup(e) && e["complete_day"] != false);
+        let all_catchup = list.iter().all(|e| catchup(e));
+        if normal_complete {
+            complete += 1;
+        }
+
+        let mut text = if all_catchup {
+            format!("# DEVINES DAILY · {label} · CATCH-UP REFLECTIONS\n\n**DEV RHYTHM RECOVERY SET · NOT A COMPLETE 3/3 DEVINES DAY**\n\n")
+        } else {
+            format!("# DEVINES DAILY · {label}\n\n")
+        };
 
         for (id, name) in &roster {
             let e = list
@@ -316,7 +374,11 @@ pub fn render(root: &Path) -> Result<String, String> {
         }
 
         write(root, &format!("DAILY/{date}.md"), &text)?;
-        daily.push_str(&format!("- [DEVINES DAILY · {label}]({date}.md)\n"));
+        if all_catchup {
+            daily.push_str(&format!("- [DEVINES DAILY · {label} · CATCH-UP REFLECTIONS]({date}.md) · not complete 3/3\n"));
+        } else {
+            daily.push_str(&format!("- [DEVINES DAILY · {label}]({date}.md)\n"));
+        }
         nav.push_str(&format!(
             "  * [DEVINES DAILY · {label}](DAILY/{date}.md)\n"
         ));
@@ -411,6 +473,10 @@ mod tests {
                 ],
                 "layer": "public",
                 "review": "approved-public",
+                "event_kind": "DAILY_REMEMBRANCE",
+                "verified_cycle_count": 3,
+                "expected_cycle_count": 3,
+                "complete_day": true,
                 "body": format!("Daily remembrance for {id}."),
                 "carry_forward": "Continue tomorrow.",
                 "public_summary": "Daily summary."
@@ -496,5 +562,14 @@ mod tests {
 
         let v = serde_json::json!({"source_events":["a","a","b"]});
         assert!(source_events(&v).is_err());
+
+        let catchup = serde_json::json!({
+            "source_events":["a","b"],
+            "event_kind":"CATCH_UP_REFLECTION",
+            "verified_cycle_count":2,
+            "expected_cycle_count":3,
+            "complete_day":false
+        });
+        assert_eq!(source_events(&catchup).unwrap().len(), 2);
     }
 }
