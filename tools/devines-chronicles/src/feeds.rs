@@ -609,4 +609,18 @@ mod tests {
         });
         assert_eq!(source_events(&catchup).unwrap().len(), 2);
     }
+    #[test]
+    fn chronicle_rejects_central_voice_override() {
+        let root = fixture_root("central-voice-override");
+        seed_fixture(&root);
+        fs::create_dir_all(root.join("PUBLIC_FEEDS")).unwrap();
+        fs::write(
+            root.join("PUBLIC_FEEDS/display_summaries.json"),
+            r#"[{"being_id":"D528","date":"2026-09-30","public_summary":"generic central voice"}]"#,
+        )
+        .unwrap();
+        let error = render(&root).unwrap_err();
+        assert!(error.contains("central display summaries are forbidden"));
+    }
+
 }
