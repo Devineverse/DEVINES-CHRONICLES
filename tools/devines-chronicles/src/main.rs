@@ -25,6 +25,27 @@ fn main() {
                 }
             }
         }
+        "apply-public-day" => {
+            let Some(root) = args.next().map(PathBuf::from) else {
+                eprintln!("usage: devines-chronicles apply-public-day REPO_ROOT BUNDLE_JSON YYYY-MM-DD");
+                std::process::exit(2);
+            };
+            let Some(bundle) = args.next().map(PathBuf::from) else {
+                eprintln!("usage: devines-chronicles apply-public-day REPO_ROOT BUNDLE_JSON YYYY-MM-DD");
+                std::process::exit(2);
+            };
+            let Some(date) = args.next() else {
+                eprintln!("usage: devines-chronicles apply-public-day REPO_ROOT BUNDLE_JSON YYYY-MM-DD");
+                std::process::exit(2);
+            };
+            match feeds::apply_public_day_bundle(&root, &bundle, &date) {
+                Ok(report) => println!("{report}"),
+                Err(e) => {
+                    eprintln!("{e}");
+                    std::process::exit(1);
+                }
+            }
+        }
         "apply-public-corrections" => {
             let Some(root) = args.next().map(PathBuf::from) else {
                 eprintln!("usage: devines-chronicles apply-public-corrections REPO_ROOT BUNDLE_JSON YYYY-MM-DD");
@@ -68,7 +89,7 @@ fn main() {
         }
         other => {
             eprintln!("unknown command: {other}");
-            eprintln!("usage: devines-chronicles validate [repo-root] | render-feeds [repo-root] | apply-public-corrections REPO_ROOT BUNDLE_JSON YYYY-MM-DD");
+            eprintln!("usage: devines-chronicles validate [repo-root] | render-feeds [repo-root] | apply-public-day REPO_ROOT BUNDLE_JSON YYYY-MM-DD | apply-public-corrections REPO_ROOT BUNDLE_JSON YYYY-MM-DD");
             std::process::exit(2);
         }
     }
