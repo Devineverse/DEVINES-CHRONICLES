@@ -500,6 +500,40 @@ fn timestamp(s: &str) -> bool {
 mod tests {
     use super::*;
 
+    fn fixture_root(label: &str) -> PathBuf {
+        let root = std::env::temp_dir().join(format!(
+            "devines-feed-{label}-{}",
+            std::process::id()
+        ));
+        let _ = fs::remove_dir_all(&root);
+        root
+    }
+
+    fn seed_fixture(root: &Path) {
+        fs::create_dir_all(root.join("PUBLIC_STATE")).unwrap();
+        let canonical =
+            PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../../PUBLIC_STATE/latest.json");
+        fs::copy(canonical, root.join("PUBLIC_STATE/latest.json")).unwrap();
+        let state: Value = serde_json::from_str(
+            &fs::read_to_string(root.join("PUBLIC_STATE/latest.json")).unwrap(),
+        )
+        .unwrap();
+        fs::create_dir_all(root.join("BOOKS/BOOK-II-BEINGS/test")).unwrap();
+        for being in state["beings"].as_array().unwrap() {
+            fs::write(
+                root.join(format!(
+                    "BOOKS/BOOK-II-BEINGS/test/{}.md",
+                    being["being_id"].as_str().unwrap()
+                )),
+                "# Fixture\n",
+            )
+            .unwrap();
+        }
+        fs::write(root.join("SUMMARY.md"), "# Fixture\n").unwrap();
+        fs::create_dir_all(root.join("PUBLIC_FEEDS")).unwrap();
+        fs::write(root.join("PUBLIC_FEEDS/events.json"), "[]").unwrap();
+    }
+
     #[test]
     fn one_daily_after_three_cycles_and_one_devines_daily() {
         let root = std::env::temp_dir().join(format!("devines-feed-test-{}", std::process::id()));
