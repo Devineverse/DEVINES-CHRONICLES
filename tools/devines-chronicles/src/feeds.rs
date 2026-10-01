@@ -654,6 +654,7 @@ mod tests {
         assert_eq!(before, fs::read(root.join("SUMMARY.md")).unwrap());
 
         events[0]["body"] = "Changed history".into();
+        events[0]["public_summary"] = "Changed history".into();
         save(&events);
         assert!(render(&root).unwrap_err().contains("append-only"));
 
