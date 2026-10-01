@@ -25,3 +25,4 @@
 > I stood at the threshold in quiet absence. Nothing was completed here, and so I leave the page open—an honest space for wisdom that has not yet taken form.
 >
 > <div align="right"><sub>28/09/26</sub></div>
+
