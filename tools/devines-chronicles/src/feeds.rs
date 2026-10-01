@@ -140,6 +140,9 @@ pub fn render(root: &Path) -> Result<String, String> {
         "canonical_dev_admin_sha256",
         "embodiment_law",
         "gitbook_eligible",
+        "correction",
+        "correction_reason",
+        "supersedes_same_being_date",
     ];
 
     for e in events {
@@ -191,7 +194,15 @@ pub fn render(root: &Path) -> Result<String, String> {
                 }
             }
             "CATCH_UP_REFLECTION" => {
-                if e["review"] != "approved-public-catchup" {
+                let correction = e["correction"].as_bool() == Some(true);
+                if correction {
+                    if e["review"] != "approved-public-correction"
+                        || e["correction_reason"] != "EMBODIMENT_REAUTHORSHIP"
+                        || e["supersedes_same_being_date"] != true
+                    {
+                        return Err("invalid reviewed correction metadata".into());
+                    }
+                } else if e["review"] != "approved-public-catchup" {
                     return Err("catch-up reflection is not approved for public publication".into());
                 }
                 if e["expected_cycle_count"].as_u64() != Some(3)
@@ -288,9 +299,36 @@ pub fn render(root: &Path) -> Result<String, String> {
             serde_json::from_str(&fs::read_to_string(&published_path).map_err(|e| e.to_string())?)
                 .map_err(|e| e.to_string())?;
         for old in prior.as_array().ok_or("invalid publication ledger")? {
-            if !events.contains(old) {
+            if events.contains(old) {
+                continue;
+            }
+            let old_id = string(old, "being_id")?;
+            let old_date = string(old, "date")?;
+            let replacement = events.iter().find(|new| {
+                new["being_id"].as_str() == Some(old_id)
+                    && new["date"].as_str() == Some(old_date)
+            });
+            let Some(new) = replacement else {
                 return Err(
                     "published history is append-only; use a reviewed correction workflow".into(),
+                );
+            };
+            let same_evidence = event_kind(old) == event_kind(new)
+                && old["source_events"] == new["source_events"]
+                && old["verified_cycle_count"] == new["verified_cycle_count"]
+                && old["expected_cycle_count"] == new["expected_cycle_count"]
+                && old["complete_day"] == new["complete_day"];
+            let reviewed_correction = new["correction"].as_bool() == Some(true)
+                && new["correction_reason"] == "EMBODIMENT_REAUTHORSHIP"
+                && new["supersedes_same_being_date"] == true
+                && new["review"] == "approved-public-correction"
+                && new["authorship"] == "BEING_AUTHORED"
+                && new["derivation"] == "DEV_ADMIN_TO_MEMBER_TO_PUBLIC"
+                && new["source_layer"] == "DEV_ADMIN"
+                && new["gitbook_eligible"] == true;
+            if !same_evidence || !reviewed_correction {
+                return Err(
+                    "published correction must preserve evidence and verified Being-authored lineage".into(),
                 );
             }
         }
@@ -683,6 +721,80 @@ mod tests {
         });
         assert_eq!(source_events(&catchup).unwrap().len(), 2);
     }
+    #[test]
+    fn reviewed_correction_replaces_text_but_preserves_evidence() {
+        let root = fixture_root("reviewed-correction");
+        seed_fixture(&root);
+        let state: Value = serde_json::from_str(
+            &fs::read_to_string(root.join("PUBLIC_STATE/latest.json")).unwrap(),
+        )
+        .unwrap();
+        let make = |id: &str, correction: bool| {
+            let text = if correction { "new embodied public" } else { "old generic public" };
+            serde_json::json!({
+                "being_id": id,
+                "date": "2026-09-29",
+                "completed_at": "2026-09-30T12:00:00Z",
+                "published_at": if correction {"2026-10-01T12:00:00Z"} else {"2026-09-30T12:00:00Z"},
+                "source_events": [],
+                "layer": "public",
+                "review": if correction {"approved-public-correction"} else {"approved-public-catchup"},
+                "event_kind": "CATCH_UP_REFLECTION",
+                "verified_cycle_count": 0,
+                "expected_cycle_count": 3,
+                "complete_day": false,
+                "authorship": "BEING_AUTHORED",
+                "derivation": "DEV_ADMIN_TO_MEMBER_TO_PUBLIC",
+                "source_layer": "DEV_ADMIN",
+                "canonical_dev_admin_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "embodiment_law": "DEVINES_LAW_OF_EMBODIMENT_V1",
+                "gitbook_eligible": true,
+                "correction": correction,
+                "correction_reason": if correction {"EMBODIMENT_REAUTHORSHIP"} else {""},
+                "supersedes_same_being_date": correction,
+                "body": text,
+                "carry_forward": "preserve verified evidence",
+                "public_summary": text
+            })
+        };
+        let prior = state["beings"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .map(|b| make(b["being_id"].as_str().unwrap(), false))
+            .collect::<Vec<_>>();
+        fs::write(
+            root.join("PUBLIC_FEEDS/published.json"),
+            serde_json::to_vec(&prior).unwrap(),
+        )
+        .unwrap();
+        let replacement = state["beings"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .map(|b| make(b["being_id"].as_str().unwrap(), true))
+            .collect::<Vec<_>>();
+        fs::write(
+            root.join("PUBLIC_FEEDS/events.json"),
+            serde_json::to_vec(&replacement).unwrap(),
+        )
+        .unwrap();
+        assert!(render(&root).is_ok());
+
+        let mut bad = replacement;
+        bad[0]["source_events"] = serde_json::json!(["fabricated-receipt"]);
+        bad[0]["verified_cycle_count"] = 1.into();
+        fs::write(
+            root.join("PUBLIC_FEEDS/events.json"),
+            serde_json::to_vec(&bad).unwrap(),
+        )
+        .unwrap();
+        assert!(render(&root)
+            .unwrap_err()
+            .contains("preserve evidence"));
+        fs::remove_dir_all(root).unwrap();
+    }
+
     #[test]
     fn chronicle_rejects_public_without_dev_admin_lineage() {
         let root = fixture_root("missing-dev-admin-lineage");
