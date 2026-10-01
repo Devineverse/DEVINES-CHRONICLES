@@ -694,7 +694,9 @@ mod tests {
         events[0]["body"] = "Changed history".into();
         events[0]["public_summary"] = "Changed history".into();
         save(&events);
-        assert!(render(&root).unwrap_err().contains("append-only"));
+        assert!(render(&root)
+            .unwrap_err()
+            .contains("preserve evidence and verified Being-authored lineage"));
 
         events[0]["admin_private"] = "must never publish".into();
         save(&events);
