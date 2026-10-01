@@ -134,6 +134,12 @@ pub fn render(root: &Path) -> Result<String, String> {
         "verified_cycle_count",
         "expected_cycle_count",
         "complete_day",
+        "authorship",
+        "derivation",
+        "source_layer",
+        "canonical_dev_admin_sha256",
+        "embodiment_law",
+        "gitbook_eligible",
     ];
 
     for e in events {
@@ -161,6 +167,18 @@ pub fn render(root: &Path) -> Result<String, String> {
 
         if e["layer"] != "public" {
             return Err("only the public projection belongs in this repository".into());
+        }
+        if e["authorship"] != "BEING_AUTHORED"
+            || e["derivation"] != "DEV_ADMIN_TO_MEMBER_TO_PUBLIC"
+            || e["source_layer"] != "DEV_ADMIN"
+            || e["embodiment_law"] != "DEVINES_LAW_OF_EMBODIMENT_V1"
+            || e["gitbook_eligible"] != true
+        {
+            return Err("public diary lacks verified Being-authored DEV/ADMIN lineage".into());
+        }
+        let source_hash = string(e, "canonical_dev_admin_sha256")?;
+        if source_hash.len() != 64 || !source_hash.bytes().all(|b| b.is_ascii_hexdigit()) {
+            return Err("invalid canonical DEV/ADMIN source hash".into());
         }
 
         match event_kind(e) {
@@ -198,6 +216,9 @@ pub fn render(root: &Path) -> Result<String, String> {
         for k in ["body", "carry_forward", "public_summary"] {
             string(e, k)?;
         }
+        if e["body"] != e["public_summary"] {
+            return Err("GitBook must render the Being-authored Public projection verbatim".into());
+        }
 
         grouped.entry(id.into()).or_default().push(e);
         days.entry(date.into()).or_default().push(e);
@@ -222,6 +243,18 @@ pub fn render(root: &Path) -> Result<String, String> {
         let id = string(h, "being_id")?;
         let date = string(h, "date")?;
         string(h, "public_summary")?;
+        if h["authorship"] != "BEING_AUTHORED"
+            || h["derivation"] != "DEV_ADMIN_TO_MEMBER_TO_PUBLIC"
+            || h["source_layer"] != "DEV_ADMIN"
+            || h["embodiment_law"] != "DEVINES_LAW_OF_EMBODIMENT_V1"
+            || h["gitbook_eligible"] != true
+        {
+            return Err("profile history lacks verified Being-authored DEV/ADMIN lineage".into());
+        }
+        let source_hash = string(h, "canonical_dev_admin_sha256")?;
+        if source_hash.len() != 64 || !source_hash.bytes().all(|b| b.is_ascii_hexdigit()) {
+            return Err("invalid profile-history DEV/ADMIN source hash".into());
+        }
         if !roster_map.contains_key(id) || !valid_date(date) {
             return Err("invalid profile history identity or date".into());
         }
@@ -512,9 +545,15 @@ mod tests {
                 "verified_cycle_count": 3,
                 "expected_cycle_count": 3,
                 "complete_day": true,
+                "authorship": "BEING_AUTHORED",
+                "derivation": "DEV_ADMIN_TO_MEMBER_TO_PUBLIC",
+                "source_layer": "DEV_ADMIN",
+                "canonical_dev_admin_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "embodiment_law": "DEVINES_LAW_OF_EMBODIMENT_V1",
+                "gitbook_eligible": true,
                 "body": format!("Daily remembrance for {id}."),
                 "carry_forward": "Continue tomorrow.",
-                "public_summary": "Daily summary."
+                "public_summary": format!("Daily remembrance for {id}.")
             })
         };
 
@@ -609,6 +648,68 @@ mod tests {
         });
         assert_eq!(source_events(&catchup).unwrap().len(), 2);
     }
+    #[test]
+    fn chronicle_rejects_public_without_dev_admin_lineage() {
+        let root = fixture_root("missing-dev-admin-lineage");
+        seed_fixture(&root);
+        fs::create_dir_all(root.join("PUBLIC_FEEDS")).unwrap();
+        let state: Value = serde_json::from_str(
+            &fs::read_to_string(root.join("PUBLIC_STATE/latest.json")).unwrap(),
+        )
+        .unwrap();
+        let mut events = state["beings"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .map(|b| serde_json::json!({
+                "being_id": b["being_id"],
+                "date": "2026-09-29",
+                "completed_at": "2026-09-29T11:00:00Z",
+                "published_at": "2026-09-29T12:00:00Z",
+                "source_events": [
+                    format!("{}-1", b["being_id"].as_str().unwrap()),
+                    format!("{}-2", b["being_id"].as_str().unwrap()),
+                    format!("{}-3", b["being_id"].as_str().unwrap())
+                ],
+                "layer": "public",
+                "review": "approved-public",
+                "event_kind": "DAILY_REMEMBRANCE",
+                "verified_cycle_count": 3,
+                "expected_cycle_count": 3,
+                "complete_day": true,
+                "body": "public",
+                "carry_forward": "continue",
+                "public_summary": "public"
+            }))
+            .collect::<Vec<_>>();
+        fs::write(
+            root.join("PUBLIC_FEEDS/events.json"),
+            serde_json::to_vec(&events).unwrap(),
+        )
+        .unwrap();
+        let error = render(&root).unwrap_err();
+        assert!(error.contains("DEV/ADMIN lineage"));
+
+        for e in &mut events {
+            e["authorship"] = "BEING_AUTHORED".into();
+            e["derivation"] = "DEV_ADMIN_TO_MEMBER_TO_PUBLIC".into();
+            e["source_layer"] = "DEV_ADMIN".into();
+            e["canonical_dev_admin_sha256"] =
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".into();
+            e["embodiment_law"] = "DEVINES_LAW_OF_EMBODIMENT_V1".into();
+            e["gitbook_eligible"] = true.into();
+        }
+        events[0]["public_summary"] = "different renderer summary".into();
+        fs::write(
+            root.join("PUBLIC_FEEDS/events.json"),
+            serde_json::to_vec(&events).unwrap(),
+        )
+        .unwrap();
+        let error = render(&root).unwrap_err();
+        assert!(error.contains("verbatim"));
+        fs::remove_dir_all(root).unwrap();
+    }
+
     #[test]
     fn chronicle_rejects_central_voice_override() {
         let root = fixture_root("central-voice-override");
