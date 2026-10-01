@@ -266,7 +266,13 @@ pub fn apply_public_correction_bundle(
             "body": body,
             "carry_forward": string(correction, "carry_forward")?,
             "public_summary": public_summary,
-            "event_kind": "CATCH_UP_REFLECTION",
+            "event_kind": if correction["verified_cycle_count"].as_u64() == Some(3)
+                && correction["complete_day"].as_bool() == Some(true)
+            {
+                "DAILY_REMEMBRANCE"
+            } else {
+                "CATCH_UP_REFLECTION"
+            },
             "verified_cycle_count": correction["verified_cycle_count"],
             "expected_cycle_count": correction["expected_cycle_count"],
             "complete_day": correction["complete_day"],
@@ -412,8 +418,22 @@ pub fn render(root: &Path) -> Result<String, String> {
                 if source_events.len() != 3 {
                     return Err("daily remembrance requires exactly three cycle identifiers".into());
                 }
-                if e["review"] != "approved-public" {
+                let correction = e["correction"].as_bool() == Some(true);
+                if correction {
+                    if e["review"] != "approved-public-correction"
+                        || e["correction_reason"] != "EMBODIMENT_REAUTHORSHIP"
+                        || e["supersedes_same_being_date"] != true
+                    {
+                        return Err("invalid reviewed daily correction metadata".into());
+                    }
+                } else if e["review"] != "approved-public" {
                     return Err("daily remembrance is not approved for public publication".into());
+                }
+                if e["verified_cycle_count"].as_u64() != Some(3)
+                    || e["expected_cycle_count"].as_u64() != Some(3)
+                    || e["complete_day"].as_bool() != Some(true)
+                {
+                    return Err("invalid daily remembrance cycle accounting".into());
                 }
             }
             "CATCH_UP_REFLECTION" => {
