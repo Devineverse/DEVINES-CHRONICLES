@@ -90,6 +90,72 @@ fn catchup(v: &Value) -> bool {
     event_kind(v) == "CATCH_UP_REFLECTION"
 }
 
+fn canonical_source_event_id(raw: &str) -> String {
+    let parts = raw.split(':').collect::<Vec<_>>();
+
+    // Legacy Chronicle form: BEING:YYYY-MM-DD:HH-MM
+    if parts.len() == 3
+        && valid_date(parts[1])
+        && parts[2].len() == 5
+        && parts[2].as_bytes().get(2) == Some(&b'-')
+    {
+        return format!(
+            "{}:{}:{}:{}",
+            parts[1],
+            parts[0],
+            &parts[2][0..2],
+            &parts[2][3..5]
+        );
+    }
+
+    // Canonical DEVINES form: YYYY-MM-DD:BEING:HH:MM
+    if parts.len() == 4 && valid_date(parts[0]) {
+        return raw.to_string();
+    }
+
+    // Unknown identifiers stay exact; correction cannot silently rename them.
+    raw.to_string()
+}
+
+fn correction_evidence_compatible(old: &Value, new: &Value) -> Result<bool, String> {
+    let mut old_sources = source_events(old)?
+        .iter()
+        .map(|s| canonical_source_event_id(s))
+        .collect::<Vec<_>>();
+    let mut new_sources = source_events(new)?
+        .iter()
+        .map(|s| canonical_source_event_id(s))
+        .collect::<Vec<_>>();
+    old_sources.sort();
+    new_sources.sort();
+
+    Ok(event_kind(old) == event_kind(new)
+        && old["verified_cycle_count"] == new["verified_cycle_count"]
+        && old["expected_cycle_count"] == new["expected_cycle_count"]
+        && old["complete_day"] == new["complete_day"]
+        && old_sources == new_sources)
+}
+
+fn merge_correction_events(
+    prior: &[Value],
+    normalized: &[Value],
+    expected_date: &str,
+) -> Vec<Value> {
+    let mut merged = prior
+        .iter()
+        .filter(|event| event["date"].as_str() != Some(expected_date))
+        .cloned()
+        .collect::<Vec<_>>();
+    merged.extend(normalized.iter().cloned());
+    merged.sort_by(|a, b| {
+        a["date"]
+            .as_str()
+            .cmp(&b["date"].as_str())
+            .then_with(|| a["being_id"].as_str().cmp(&b["being_id"].as_str()))
+    });
+    merged
+}
+
 pub fn apply_public_correction_bundle(
     root: &Path,
     bundle_path: &Path,
@@ -127,6 +193,13 @@ pub fn apply_public_correction_bundle(
     let prior_events = prior_events_value
         .as_array()
         .ok_or("events must be an array")?;
+    let prior_date_count = prior_events
+        .iter()
+        .filter(|event| event["date"].as_str() == Some(expected_date))
+        .count();
+    if prior_date_count != 0 && prior_date_count != roster.len() {
+        return Err("correction date is only partially published in Git".into());
+    }
 
     let mut seen = HashSet::new();
     let mut normalized = Vec::with_capacity(bundle.len());
@@ -164,18 +237,22 @@ pub fn apply_public_correction_bundle(
             return Err("invalid canonical DEV/ADMIN source hash".into());
         }
 
-        let old = prior_events
-            .iter()
-            .find(|event| event["being_id"].as_str() == Some(id) && event["date"].as_str() == Some(date))
-            .ok_or("correction has no prior Being/date publication")?;
+        let correction_sources = source_events(correction)?;
+        let verified = correction["verified_cycle_count"]
+            .as_u64()
+            .ok_or("correction missing verified cycle count")? as usize;
+        if correction_sources.len() != verified {
+            return Err("correction source receipt count must match verified cycle count".into());
+        }
 
-        let same_evidence = old["event_kind"] == correction["event_kind"]
-            && old["source_events"] == correction["source_events"]
-            && old["verified_cycle_count"] == correction["verified_cycle_count"]
-            && old["expected_cycle_count"] == correction["expected_cycle_count"]
-            && old["complete_day"] == correction["complete_day"];
-        if !same_evidence {
-            return Err("correction must preserve the prior evidence tuple".into());
+        if let Some(old) = prior_events.iter().find(|event| {
+            event["being_id"].as_str() == Some(id) && event["date"].as_str() == Some(date)
+        }) {
+            if !correction_evidence_compatible(old, correction)? {
+                return Err("correction must preserve verified cycle evidence".into());
+            }
+        } else if prior_date_count != 0 {
+            return Err("correction date is only partially published in Git".into());
         }
 
         normalized.push(serde_json::json!({
@@ -213,9 +290,10 @@ pub fn apply_public_correction_bundle(
     let display_path = root.join("PUBLIC_FEEDS/display_summaries.json");
     let old_display = fs::read(&display_path).ok();
 
+    let merged = merge_correction_events(prior_events, &normalized, expected_date);
     fs::write(
         &events_path,
-        serde_json::to_vec_pretty(&normalized).map_err(|e| e.to_string())?,
+        serde_json::to_vec_pretty(&merged).map_err(|e| e.to_string())?,
     )
     .map_err(|e| e.to_string())?;
     fs::write(&display_path, b"[]\n").map_err(|e| e.to_string())?;
@@ -390,7 +468,18 @@ pub fn render(root: &Path) -> Result<String, String> {
     let history = history_value
         .as_array()
         .ok_or("profile history must be an array")?;
-    let history_allowed = ["being_id", "date", "public_summary"];
+    let history_allowed = [
+        "being_id",
+        "date",
+        "public_summary",
+        "authorship",
+        "derivation",
+        "source_layer",
+        "canonical_dev_admin_sha256",
+        "embodiment_law",
+        "gitbook_eligible",
+    ];
+    let legacy_history_allowed = ["being_id", "date", "public_summary"];
     for h in history {
         let object = h.as_object().ok_or("profile history entry must be an object")?;
         if object.keys().any(|k| !history_allowed.contains(&k.as_str())) {
@@ -399,17 +488,24 @@ pub fn render(root: &Path) -> Result<String, String> {
         let id = string(h, "being_id")?;
         let date = string(h, "date")?;
         string(h, "public_summary")?;
-        if h["authorship"] != "BEING_AUTHORED"
-            || h["derivation"] != "DEV_ADMIN_TO_MEMBER_TO_PUBLIC"
-            || h["source_layer"] != "DEV_ADMIN"
-            || h["embodiment_law"] != "DEVINES_LAW_OF_EMBODIMENT_V1"
-            || h["gitbook_eligible"] != true
-        {
-            return Err("profile history lacks verified Being-authored DEV/ADMIN lineage".into());
-        }
-        let source_hash = string(h, "canonical_dev_admin_sha256")?;
-        if source_hash.len() != 64 || !source_hash.bytes().all(|b| b.is_ascii_hexdigit()) {
-            return Err("invalid profile-history DEV/ADMIN source hash".into());
+
+        let grandfathered_sep28 = date == "2026-09-28"
+            && object
+                .keys()
+                .all(|k| legacy_history_allowed.contains(&k.as_str()));
+        if !grandfathered_sep28 {
+            if h["authorship"] != "BEING_AUTHORED"
+                || h["derivation"] != "DEV_ADMIN_TO_MEMBER_TO_PUBLIC"
+                || h["source_layer"] != "DEV_ADMIN"
+                || h["embodiment_law"] != "DEVINES_LAW_OF_EMBODIMENT_V1"
+                || h["gitbook_eligible"] != true
+            {
+                return Err("profile history lacks verified Being-authored DEV/ADMIN lineage".into());
+            }
+            let source_hash = string(h, "canonical_dev_admin_sha256")?;
+            if source_hash.len() != 64 || !source_hash.bytes().all(|b| b.is_ascii_hexdigit()) {
+                return Err("invalid profile-history DEV/ADMIN source hash".into());
+            }
         }
         if !roster_map.contains_key(id) || !valid_date(date) {
             return Err("invalid profile history identity or date".into());
@@ -458,11 +554,7 @@ pub fn render(root: &Path) -> Result<String, String> {
                     "published history is append-only; use a reviewed correction workflow".into(),
                 );
             };
-            let same_evidence = event_kind(old) == event_kind(new)
-                && old["source_events"] == new["source_events"]
-                && old["verified_cycle_count"] == new["verified_cycle_count"]
-                && old["expected_cycle_count"] == new["expected_cycle_count"]
-                && old["complete_day"] == new["complete_day"];
+            let same_evidence = correction_evidence_compatible(old, new)?;
             let reviewed_correction = new["correction"].as_bool() == Some(true)
                 && new["correction_reason"] == "EMBODIMENT_REAUTHORSHIP"
                 && new["supersedes_same_being_date"] == true
@@ -979,6 +1071,70 @@ mod tests {
         assert!(profile.contains("new embodied public from D001"));
         assert!(!profile.contains("old generic"));
         fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
+    fn correction_evidence_allows_authoritative_receipt_id_repair() {
+        let old = serde_json::json!({
+            "event_kind": "CATCH_UP_REFLECTION",
+            "source_events": ["D001:2026-09-29:21-00"],
+            "verified_cycle_count": 1,
+            "expected_cycle_count": 3,
+            "complete_day": false
+        });
+        let repaired = serde_json::json!({
+            "event_kind": "CATCH_UP_REFLECTION",
+            "source_events": ["2026-09-29:D001:21:00"],
+            "verified_cycle_count": 1,
+            "expected_cycle_count": 3,
+            "complete_day": false
+        });
+        assert!(correction_evidence_compatible(&old, &repaired).unwrap());
+
+        let fabricated = serde_json::json!({
+            "event_kind": "CATCH_UP_REFLECTION",
+            "source_events": ["2026-09-29:D001:15:00"],
+            "verified_cycle_count": 1,
+            "expected_cycle_count": 3,
+            "complete_day": false
+        });
+        assert!(!correction_evidence_compatible(&old, &fabricated).unwrap());
+    }
+
+    #[test]
+    fn correction_merge_replaces_one_date_and_appends_missing_next_date() {
+        let prior = vec![
+            serde_json::json!({"being_id":"D001","date":"2026-09-29"}),
+            serde_json::json!({"being_id":"D002","date":"2026-09-29"}),
+        ];
+        let replacement = vec![
+            serde_json::json!({"being_id":"D001","date":"2026-09-29","correction":true}),
+            serde_json::json!({"being_id":"D002","date":"2026-09-29","correction":true}),
+        ];
+        let merged = merge_correction_events(&prior, &replacement, "2026-09-29");
+        assert_eq!(merged.len(), 2);
+        assert!(merged.iter().all(|v| v["correction"] == true));
+
+        let next = vec![
+            serde_json::json!({"being_id":"D001","date":"2026-09-30"}),
+            serde_json::json!({"being_id":"D002","date":"2026-09-30"}),
+        ];
+        let appended = merge_correction_events(&merged, &next, "2026-09-30");
+        assert_eq!(appended.len(), 4);
+        assert_eq!(
+            appended
+                .iter()
+                .filter(|v| v["date"] == "2026-09-29")
+                .count(),
+            2
+        );
+        assert_eq!(
+            appended
+                .iter()
+                .filter(|v| v["date"] == "2026-09-30")
+                .count(),
+            2
+        );
     }
 
     #[test]
