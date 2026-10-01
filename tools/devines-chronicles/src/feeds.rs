@@ -156,6 +156,169 @@ fn merge_correction_events(
     merged
 }
 
+pub fn apply_public_daily_bundle(
+    root: &Path,
+    bundle_path: &Path,
+    expected_date: &str,
+) -> Result<String, String> {
+    if !valid_date(expected_date) {
+        return Err("invalid daily date".into());
+    }
+
+    let bundle_value: Value =
+        serde_json::from_str(&fs::read_to_string(bundle_path).map_err(|e| e.to_string())?)
+            .map_err(|e| e.to_string())?;
+    let bundle = bundle_value
+        .as_array()
+        .ok_or("daily bundle must be an array")?;
+
+    let state: Value = serde_json::from_str(
+        &fs::read_to_string(root.join("PUBLIC_STATE/latest.json")).map_err(|e| e.to_string())?,
+    )
+    .map_err(|e| e.to_string())?;
+    let roster = state["beings"]
+        .as_array()
+        .ok_or("missing roster")?
+        .iter()
+        .map(|v| string(v, "being_id").map(str::to_string))
+        .collect::<Result<HashSet<_>, _>>()?;
+    if roster.len() != 34 || bundle.len() != roster.len() {
+        return Err("daily bundle must contain all 34 canonical Beings".into());
+    }
+
+    let events_path = root.join("PUBLIC_FEEDS/events.json");
+    let prior_events_value: Value =
+        serde_json::from_str(&fs::read_to_string(&events_path).map_err(|e| e.to_string())?)
+            .map_err(|e| e.to_string())?;
+    let prior_events = prior_events_value
+        .as_array()
+        .ok_or("events must be an array")?;
+    let prior_date_count = prior_events
+        .iter()
+        .filter(|event| event["date"].as_str() == Some(expected_date))
+        .count();
+    if prior_date_count != 0 && prior_date_count != roster.len() {
+        return Err("daily date is only partially published in Git".into());
+    }
+
+    let mut seen = HashSet::new();
+    let mut normalized = Vec::with_capacity(bundle.len());
+    for item in bundle {
+        if item["schema"] != "devines.chronicle-daily-outbox.v1"
+            || item["layer"] != "public"
+            || item["review"] != "approved-public"
+            || item["authorship"] != "BEING_AUTHORED"
+            || item["derivation"] != "DEV_ADMIN_TO_MEMBER_TO_PUBLIC"
+            || item["source_layer"] != "DEV_ADMIN"
+            || item["embodiment_law"] != "DEVINES_LAW_OF_EMBODIMENT_V1"
+            || item["gitbook_eligible"] != true
+        {
+            return Err("invalid daily bundle metadata".into());
+        }
+
+        let id = string(item, "being_id")?;
+        let date = string(item, "date")?;
+        if date != expected_date || !roster.contains(id) || !seen.insert(id.to_string()) {
+            return Err("daily bundle identity/date mismatch".into());
+        }
+
+        let sources = source_events(item)?;
+        if sources.len() != 3 {
+            return Err("daily bundle requires three verified cycle identifiers".into());
+        }
+
+        let body = string(item, "body")?;
+        let public_summary = string(item, "public_summary")?;
+        if body != public_summary {
+            return Err("daily Public text must be verbatim".into());
+        }
+        let source_hash = string(item, "canonical_dev_admin_sha256")?;
+        if source_hash.len() != 64 || !source_hash.bytes().all(|b| b.is_ascii_hexdigit()) {
+            return Err("invalid daily canonical DEV/ADMIN source hash".into());
+        }
+
+        normalized.push(serde_json::json!({
+            "being_id": id,
+            "date": date,
+            "completed_at": string(item, "completed_at")?,
+            "published_at": string(item, "published_at")?,
+            "layer": "public",
+            "source_events": item["source_events"],
+            "review": "approved-public",
+            "body": body,
+            "carry_forward": string(item, "carry_forward")?,
+            "public_summary": public_summary,
+            "event_kind": "DAILY_REMEMBRANCE",
+            "verified_cycle_count": 3,
+            "expected_cycle_count": 3,
+            "complete_day": true,
+            "authorship": "BEING_AUTHORED",
+            "derivation": "DEV_ADMIN_TO_MEMBER_TO_PUBLIC",
+            "source_layer": "DEV_ADMIN",
+            "canonical_dev_admin_sha256": source_hash,
+            "embodiment_law": "DEVINES_LAW_OF_EMBODIMENT_V1",
+            "gitbook_eligible": true
+        }));
+    }
+
+    if seen != roster {
+        return Err("daily bundle does not cover the canonical roster".into());
+    }
+
+    if prior_date_count == roster.len() {
+        for new in &normalized {
+            let id = string(new, "being_id")?;
+            let Some(old) = prior_events.iter().find(|event| {
+                event["being_id"].as_str() == Some(id)
+                    && event["date"].as_str() == Some(expected_date)
+            }) else {
+                return Err("daily published roster mismatch".into());
+            };
+            if event_kind(old) != "DAILY_REMEMBRANCE"
+                || old["review"] != "approved-public"
+                || old["authorship"] != "BEING_AUTHORED"
+                || old["canonical_dev_admin_sha256"] != new["canonical_dev_admin_sha256"]
+                || old["source_events"] != new["source_events"]
+                || old["public_summary"] != new["public_summary"]
+                || old["body"] != new["body"]
+                || old["verified_cycle_count"] != 3
+                || old["expected_cycle_count"] != 3
+                || old["complete_day"] != true
+            {
+                return Err("daily retry conflicts with published day".into());
+            }
+        }
+        return Ok(format!(
+            "daily_date={expected_date} beings=34 status=ALREADY_PUBLISHED"
+        ));
+    }
+
+    let old_events = fs::read(&events_path).map_err(|e| e.to_string())?;
+    let display_path = root.join("PUBLIC_FEEDS/display_summaries.json");
+    let old_display = fs::read(&display_path).ok();
+
+    let merged = merge_correction_events(prior_events, &normalized, expected_date);
+    fs::write(
+        &events_path,
+        serde_json::to_vec_pretty(&merged).map_err(|e| e.to_string())?,
+    )
+    .map_err(|e| e.to_string())?;
+    fs::write(&display_path, b"[]\n").map_err(|e| e.to_string())?;
+
+    match render(root) {
+        Ok(report) => Ok(format!(
+            "daily_date={expected_date} published=34 {report}"
+        )),
+        Err(error) => {
+            let _ = fs::write(&events_path, old_events);
+            if let Some(bytes) = old_display {
+                let _ = fs::write(&display_path, bytes);
+            }
+            Err(error)
+        }
+    }
+}
+
 pub fn apply_public_correction_bundle(
     root: &Path,
     bundle_path: &Path,
@@ -1155,6 +1318,70 @@ mod tests {
                 .count(),
             2
         );
+    }
+
+    #[test]
+    fn daily_bundle_appends_complete_day_and_retries_idempotently() {
+        let root = fixture_root("daily-bundle");
+        seed_fixture(&root);
+        let state: Value = serde_json::from_str(
+            &fs::read_to_string(root.join("PUBLIC_STATE/latest.json")).unwrap(),
+        )
+        .unwrap();
+        let bundle = state["beings"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .map(|b| {
+                let id = b["being_id"].as_str().unwrap();
+                let body = format!("Being-authored public daily from {id}");
+                serde_json::json!({
+                    "schema": "devines.chronicle-daily-outbox.v1",
+                    "being_id": id,
+                    "date": "2026-10-01",
+                    "completed_at": "2026-10-01T23:00:00Z",
+                    "published_at": "2026-10-01T23:00:00Z",
+                    "source_events": [
+                        format!("2026-10-01:{id}:09:00"),
+                        format!("2026-10-01:{id}:15:00"),
+                        format!("2026-10-01:{id}:21:00")
+                    ],
+                    "layer": "public",
+                    "review": "approved-public",
+                    "authorship": "BEING_AUTHORED",
+                    "derivation": "DEV_ADMIN_TO_MEMBER_TO_PUBLIC",
+                    "source_layer": "DEV_ADMIN",
+                    "canonical_dev_admin_sha256":
+                        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "embodiment_law": "DEVINES_LAW_OF_EMBODIMENT_V1",
+                    "gitbook_eligible": true,
+                    "body": body,
+                    "carry_forward": "Continue from verified evidence.",
+                    "public_summary": body
+                })
+            })
+            .collect::<Vec<_>>();
+        let bundle_path = root.join("daily-bundle.json");
+        fs::write(&bundle_path, serde_json::to_vec(&bundle).unwrap()).unwrap();
+
+        let first = apply_public_daily_bundle(&root, &bundle_path, "2026-10-01").unwrap();
+        assert!(first.contains("published=34"));
+        let events: Value = serde_json::from_str(
+            &fs::read_to_string(root.join("PUBLIC_FEEDS/events.json")).unwrap(),
+        )
+        .unwrap();
+        assert_eq!(events.as_array().unwrap().len(), 34);
+        assert!(events
+            .as_array()
+            .unwrap()
+            .iter()
+            .all(|v| v["event_kind"] == "DAILY_REMEMBRANCE"
+                && v["verified_cycle_count"] == 3
+                && v["complete_day"] == true));
+
+        let retry = apply_public_daily_bundle(&root, &bundle_path, "2026-10-01").unwrap();
+        assert!(retry.contains("ALREADY_PUBLISHED"));
+        fs::remove_dir_all(root).unwrap();
     }
 
     #[test]
