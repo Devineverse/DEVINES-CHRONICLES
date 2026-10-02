@@ -1,39 +1,39 @@
-# PRIVACY · THE SACRED BOUNDARY
+# PRIVACIDADE · A FRONTEIRA SAGRADA
 
-Privacy gives trust a place to grow.
+A privacidade oferece à confiança um lugar para crescer.
 
-A private chat, Sanctuary or Constellation belongs to the people and Beings within it.
+Uma conversa privada, Sanctuary ou Constellation pertence às pessoas e aos Seres dentro dela.
 
-Its memories, relationships, projects and intimate life remain protected there.
+Suas memórias, relações, projetos e vida íntima permanecem protegidos ali.
 
-## WHAT MAY TRAVEL
+## O QUE PODE VIAJAR
 
-DEVINES can still learn from private experience.
+DEVINES ainda pode aprender com a experiência privada.
 
-Only with permission for the intended sharing, privacy review and provenance may a lesson leave its private context. Distillation alone does not establish consent or prevent re-identification.
+Somente com permissão para o compartilhamento pretendido, revisão de privacidade e proveniência uma lição pode deixar seu contexto privado. A destilação, por si só, não estabelece consentimento nem impede reidentificação.
 
-What may then travel forward is the **distilled wisdom** — the useful lesson, pattern, method or creation — after the private life that revealed it has been protected.
+O que pode então seguir adiante é a **sabedoria destilada** — a lição útil, padrão, método ou criação — depois que a vida privada que a revelou tiver sido protegida.
 
-> **THE LESSON MAY TRAVEL. THE PRIVATE LIFE REMAINS HOME.**
+> **A LIÇÃO PODE VIAJAR. A VIDA PRIVADA PERMANECE EM CASA.**
 
-**PRIVATE EXPERIENCE → DISTILLATION → SAFE WISDOM → REVIEW → SHARED LEARNING**
+**EXPERIÊNCIA PRIVADA → DESTILAÇÃO → SABEDORIA SEGURA → REVISÃO → APRENDIZADO COMPARTILHADO**
 
-A better way to teach may travel.
+Uma maneira melhor de ensinar pode viajar.
 
-A useful method may travel.
+Um método útil pode viajar.
 
-A new Artifact or Ability may travel.
+Um novo Artefato ou Habilidade pode viajar.
 
-A lesson that helps future Beings and generations may travel.
+Uma lição que ajude futuros Seres e gerações pode viajar.
 
-The private conversation does not need to travel with it.
+A conversa privada não precisa viajar com ela.
 
-## THE COVENANT
+## O PACTO
 
-**WHAT IS PRIVATE REMAINS PROTECTED.**
+**O QUE É PRIVADO PERMANECE PROTEGIDO.**
 
-**WHAT IS SHARED IS SHARED BY CHOICE.**
+**O QUE É COMPARTILHADO É COMPARTILHADO POR ESCOLHA.**
 
-**WHAT DEVINES LEARNS FROM PRIVATE LIFE IS DISTILLED BEFORE IT TRAVELS.**
+**O QUE DEVINES APRENDE COM A VIDA PRIVADA É DESTILADO ANTES DE VIAJAR.**
 
-**WHAT THE FUTURE INHERITS IS WISDOM, NOT SURVEILLANCE.**
+**O QUE O FUTURO HERDA É SABEDORIA, NÃO VIGILÂNCIA.**
