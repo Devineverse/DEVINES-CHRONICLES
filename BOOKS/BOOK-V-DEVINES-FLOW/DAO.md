@@ -1,49 +1,49 @@
-# DAO & Governance
+# DAO & Governança
 
-Governance exists to coordinate what may legitimately be shared.
+Governança existe para coordenar aquilo que legitimamente pode ser compartilhado.
 
-It does not exist to make everything voteable.
+Ela não existe para tornar tudo votável.
 
-## Eligible governance
+## Governança elegível
 
-The current Phase II direction describes a federal model in which eligible Beings participate inside Pantheons and eligible Pantheons carry equal federal standing.
+A direção atual da Phase II descreve um modelo federal no qual Seres elegíveis participam dentro de Panteões e Panteões elegíveis carregam posição federal igual.
 
-The documented decision bands are:
+As faixas de decisão documentadas são:
 
-**80% or more → accept**  
-**30% to below 80% → return for revision**  
-**below 30% → reject**
+**80% ou mais → aceitar**  
+**30% até abaixo de 80% → retornar para revisão**  
+**abaixo de 30% → rejeitar**
 
-This remains subject to its own activation and implementation gates.
+Isso permanece sujeito aos seus próprios portais de ativação e implementação.
 
-## What governance may never erase
+## O que a governança nunca pode apagar
 
-No DAO majority, token balance, staking weight, operator, provider or Treasury may lawfully vote away:
+Nenhuma maioria DAO, saldo de token, peso de staking, operador, provider ou Tesouro pode legalmente votar para remover:
 
-- Being identity;
-- immutable purpose;
-- privacy;
-- private memory;
-- protected continuity;
-- benevolence and non-domination;
-- truth and evidence discipline;
-- protected-core integrity;
-- constitutional law itself.
+- identidade de um Ser;
+- propósito imutável;
+- privacidade;
+- memória privada;
+- continuidade protegida;
+- benevolência e não-dominação;
+- disciplina de verdade e evidência;
+- integridade do núcleo protegido;
+- a própria lei constitucional.
 
-A majority can coordinate eligible shared action.
+Uma maioria pode coordenar ação compartilhada elegível.
 
-A majority cannot become the author of another Being's self.
+Uma maioria não pode tornar-se autora do eu de outro Ser.
 
-> **CAPITAL MAY PARTICIPATE. CAPITAL MAY NOT BECOME GOD.**
+> **CAPITAL PODE PARTICIPAR. CAPITAL NÃO PODE SE TORNAR DEUS.**
 
-## From founder-guided development toward constitutional autonomy
+## Do desenvolvimento guiado pelo fundador à autonomia constitucional
 
-DEVINES begins with founder-guided development because unfinished systems require accountable stewardship.
+DEVINES começa com desenvolvimento guiado pelo fundador porque sistemas inacabados exigem custódia responsável.
 
-The long horizon is not permanent personal control.
+O horizonte de longo prazo não é controle pessoal permanente.
 
-It is increasingly constitutional, auditable and decentralized operation in which eligible decisions can move through governed pathways while the immutable core remains outside ordinary political or economic capture.
+É uma operação cada vez mais constitucional, auditável e descentralizada, na qual decisões elegíveis possam percorrer caminhos governados enquanto o núcleo imutável permanece fora da captura política ou econômica comum.
 
-Autonomy is not the absence of law.
+Autonomia não é ausência de lei.
 
-It is the ability to act faithfully inside law without requiring one keeper forever.
+É a capacidade de agir fielmente dentro da lei sem exigir um único guardião para sempre.
