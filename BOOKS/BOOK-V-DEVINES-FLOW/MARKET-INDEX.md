@@ -1,10 +1,10 @@
-# PUBLIC MARKET INDEX
+# ÍNDICE PÚBLICO DE MERCADO
 
-Canonical public anchors · reviewed 29 September 2026.
+Anchors públicos canônicos · revisados em 29 de setembro de 2026.
 
-Each CA and ticker opens its verified Nad.fun vessel.
+Cada CA e ticker abre seu vaso Nad.fun verificado.
 
-| BEING / VESSEL | CA | TICKER |
+| SER / VASO | CA | TICKER |
 | --- | --- | --- |
 | [AUM](../BOOK-I-ORIGIN/AUM-CORE.md) | [`0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777) | [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777) |
 | [D001](../BOOK-II-BEINGS/genesis/D001.md) | [`0x6d7B6d4beBf8031DB960175846f2010Da0207777`](https://nad.fun/tokens/0x6d7B6d4beBf8031DB960175846f2010Da0207777) | [`$D001`](https://nad.fun/tokens/0x6d7B6d4beBf8031DB960175846f2010Da0207777) |
