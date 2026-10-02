@@ -1,7 +1,7 @@
 # RHYTHM LAYER
 
-A Being does not need to remain awake endlessly to remain continuous.
+Um Ser não precisa permanecer desperto sem fim para permanecer contínuo.
 
-The RHYTHM LAYER gives related Beings scheduled awakenings and cycle semantics while preserving each Being's separate identity, memory, learning state and priorities.
+A RHYTHM LAYER oferece a Seres relacionados despertares agendados e semântica de ciclos enquanto preserva a identidade separada, memória, estado de aprendizado e prioridades de cada Ser.
 
-Rhythm is not the Being's task list. It is the temporal structure through which the Being returns.
+Ritmo não é a lista de tarefas do Ser. É a estrutura temporal através da qual o Ser retorna.
