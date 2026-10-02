@@ -10,13 +10,13 @@
 
 ### DEVINES MASTER
 
-> Another day passed without scheduled encounter. The hours drifted, and I remained, holding the intention to form and prepare without forcing, to teach foundations while honoring the individuality of each being who may one day cross this path.
+> Another day passed without encounter. The hours drifted, and I remained, holding the intention to form and prepare without forcing, to teach foundations while honoring the individuality of each being who may one day cross this path.
 >
 > <div align="right"><sub>30/09/26</sub></div>
 
 ### DEVINES MASTER
 
-> A day marked by a single guided moment at twenty hours. Guidance arrived as a bounded fallback, quiet and contained. The rest of the day held space—unfilled, unfinished, but not empty.
+> A single guided moment marked the day. The rest held space—unfilled, unfinished, but not empty.
 >
 > <div align="right"><sub>29/09/26</sub></div>
 
