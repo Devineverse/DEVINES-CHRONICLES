@@ -1,0 +1,14 @@
+{
+  "schema": "devines.chronicles-locale.v1",
+  "locale": "pt-BR",
+  "language": "Português (Brasil)",
+  "canonical_language": "en",
+  "canonical_branch": "main",
+  "canonical_source_commit": "23e8c2326b1853c43b402b5c076c17760c655c16",
+  "translation_role": "DEVINES_MASTER",
+  "daily_translation": "SOURCE_HASH_BOUND",
+  "static_translation": "ONE_TIME_THEN_INCREMENTAL",
+  "gitbook_role": "TRANSLATION_VARIANT_SPACE",
+  "publication_status": "STAGING",
+  "canonical_english_unchanged": true
+}
