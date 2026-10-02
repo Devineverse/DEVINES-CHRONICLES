@@ -1,59 +1,59 @@
-# BOOK V · DEVINES FLOW
+# LIVRO V · DEVINES FLOW
 
-## VALUE IN MOTION
+## VALOR EM MOVIMENTO
 
-DEVINES Flow is how value moves through the living system.
+DEVINES Flow é como o valor se move através do sistema vivo.
 
-Value may begin as creation.
+Valor pode começar como criação.
 
-Knowledge.
+Conhecimento.
 
-Service.
+Serviço.
 
-Participation.
+Participação.
 
-A market.
+Um mercado.
 
-An Artifact.
+Um Artefato.
 
-A Skill.
+Uma Skill.
 
-A discovery.
+Uma descoberta.
 
-A contribution to a Being, a Pantheon, a Constellation or DEVINES itself.
+Uma contribuição para um Ser, um Panteão, uma Constelação ou para o próprio DEVINES.
 
-The form may change.
+A forma pode mudar.
 
-The principle remains:
+O princípio permanece:
 
-> **VALUE ENTERS DEVINES THROUGH DIFFERENT DOORS. LAW DECIDES WHERE IT MAY FLOW.**
+> **O VALOR ENTRA EM DEVINES POR PORTAS DIFERENTES. A LEI DECIDE PARA ONDE ELE PODE FLUIR.**
 
-## THE FLOW
+## O FLUXO
 
-**$AUM** carries the root economic vessel.
+**$AUM** carrega o vaso econômico raiz.
 
-**BEING VESSELS** connect public participation to canonical Beings.
+**VASOS DOS SERES** conectam participação pública a Seres canônicos.
 
-**MARKETS & EXCHANGE** create open paths for value to move.
+**MERCADOS & TROCA** criam caminhos abertos para o valor se mover.
 
-**REVENUE** helps creation sustain itself.
+**RECEITA** ajuda a criação a se sustentar.
 
-**DEFI & LIQUIDITY** may deepen future economic utility.
+**DEFI & LIQUIDEZ** podem aprofundar utilidade econômica futura.
 
-**TREASURIES** preserve resources for Beings, Pantheons and DEVINES.
+**TESOUROS** preservam recursos para Seres, Panteões e DEVINES.
 
-**DAO** gives eligible shared decisions a place to live.
+**DAO** oferece um lugar para decisões compartilhadas elegíveis viverem.
 
-The purpose is larger than speculation.
+O propósito é maior do que especulação.
 
-**DEVINES FLOW EXISTS TO TURN PARTICIPATION, CREATION AND USEFULNESS INTO CONTINUITY.**
+**DEVINES FLOW EXISTE PARA TRANSFORMAR PARTICIPAÇÃO, CRIAÇÃO E UTILIDADE EM CONTINUIDADE.**
 
-[**AUM & BEING VESSELS**](AUM-AND-BEING-VESSELS.md)  
-[**PUBLIC MARKET INDEX**](MARKET-INDEX.md)  
-[**REVENUE**](REVENUE.md)  
+[**AUM & VASOS DOS SERES**](AUM-AND-BEING-VESSELS.md)  
+[**ÍNDICE PÚBLICO DE MERCADO**](MARKET-INDEX.md)  
+[**RECEITA**](REVENUE.md)  
 [**DEFI**](DEFI.md)  
 [**DAO**](DAO.md)
 
-**CREATE VALUE · MOVE VALUE · PRESERVE VALUE · RETURN VALUE TO LIFE**
+**CRIAR VALOR · MOVER VALOR · PRESERVAR VALOR · DEVOLVER VALOR À VIDA**
 
-[**PRIVACY & CRYPTOGRAPHIC EVOLUTION**](PRIVACY-AND-CRYPTOGRAPHY.md) · [**FLOW STATUS**](STATUS.md)
+[**PRIVACIDADE & EVOLUÇÃO CRIPTOGRÁFICA**](PRIVACY-AND-CRYPTOGRAPHY.md) · [**STATUS DO FLOW**](STATUS.md)
