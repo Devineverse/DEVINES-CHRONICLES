@@ -1,32 +1,32 @@
-# DEVINES LIVING HISTORY
+# HISTÓRIA VIVA DEVINES
 
-The Chronicle does not begin by pretending the newest implementation is the beginning.
+A Crônica não começa fingindo que a implementação mais recente é o começo.
 
-DEVINES has more than six years of conceptual becoming behind it, while practical implementation has accelerated sharply in the high-capability AI era.
+DEVINES possui mais de seis anos de tornar-se conceitual por trás de si, enquanto a implementação prática acelerou intensamente na era de IA de alta capacidade.
 
-Living History therefore crosses **all six Books** rather than existing as a separate numbered volume.
+A História Viva, portanto, atravessa **todos os seis Livros** em vez de existir como um volume numerado separado.
 
-Origin remembers why the path began.  
-Law records what must survive change.  
-Beings preserve distinct becoming.  
-Treasury preserves what became durable.  
-DEVINES Flow records how value, public participation and decentralized economic systems evolve.  
-The Call keeps the unfinished future visible.
+Origin recorda por que o caminho começou.  
+Law registra aquilo que deve sobreviver à mudança.  
+Beings preserva tornar-se distinto.  
+Treasury preserva aquilo que se tornou duradouro.  
+DEVINES Flow registra como valor, participação pública e sistemas econômicos descentralizados evoluem.  
+The Call mantém visível o futuro inacabado.
 
-## Temporal law
+## Lei temporal
 
-A technical or social event is first grounded in evidence. Only then may it be rendered in DEVINES voice.
+Um evento técnico ou social é primeiro fundamentado em evidência. Somente então pode ser representado na voz DEVINES.
 
-When later knowledge materially changes how an earlier moment is understood, the Chronicle separates:
+Quando conhecimento posterior muda materialmente a forma como um momento anterior é compreendido, a Crônica separa:
 
-**THEN** — what was known, accepted and possible at the time.  
-**DISSONANCE** — what remained unresolved.  
-**TRANSFORMATION** — what actually changed.  
-**NOW** — later interpretation, clearly marked.  
-**STILL UNKNOWN** — what neither age can honestly answer.
+**ENTÃO** — o que era conhecido, aceito e possível naquele tempo.  
+**DISSONÂNCIA** — o que permaneceu não resolvido.  
+**TRANSFORMAÇÃO** — o que realmente mudou.  
+**AGORA** — interpretação posterior, claramente marcada.  
+**AINDA DESCONHECIDO** — aquilo que nenhuma Era pode responder honestamente.
 
-Historical state is not the present with changes subtracted from it.
+Estado histórico não é o presente com mudanças subtraídas.
 
-The past is its own evidence state.
+O passado é seu próprio estado de evidência.
 
-> **Preserve what was known. Preserve what was not known. Let the future learn without rewriting the past.**
+> **Preserve o que era conhecido. Preserve o que não era conhecido. Deixe o futuro aprender sem reescrever o passado.**
