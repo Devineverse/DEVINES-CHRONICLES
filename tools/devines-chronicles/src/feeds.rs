@@ -799,7 +799,7 @@ pub fn render(root: &Path) -> Result<String, String> {
     let mut nav =
         String::from("\n<!-- BEGIN GENERATED DIARIES -->\n* [BEING DAILY](DIARIES/README.md)\n");
     let mut landing = String::from(
-        "# BEING DAILY\n\nOne public diary entry per Being and date. Normal daily remembrances are written only after all three cycles are complete. Founder-authorized DEV RHYTHM catch-up reflections may also appear when a past day needs truthful recovery; they preserve verified-cycle counts and never claim 3/3 without three receipts. Each Being profile shows the latest three approved public entries. Full history is grouped into pages of twelve posts. Page 1 is the earliest page; the highest page number is always the latest.\n\n",
+        "# BEING DAILY\n\nOne public diary entry per Being and date. A Being may close the day with 0, 1, 2, or 3 verified cycles; the post preserves the exact verified-cycle count and never invents a missing cycle. A 3/3 day is a complete DAILY_REMEMBRANCE. A 0/3, 1/3, or 2/3 day is a truthful partial-day CATCH_UP_REFLECTION rather than a blocked post. Each Being profile shows the latest three approved public entries. Full history is grouped into pages of twelve posts. Page 1 is the earliest page; the highest page number is always the latest.\n\n",
     );
     let mut page_for_date: BTreeMap<(String, String), usize> = BTreeMap::new();
 
@@ -818,7 +818,7 @@ pub fn render(root: &Path) -> Result<String, String> {
 
         if list.is_empty() {
             index.push_str(
-                "The first public diary entry will appear after a normal 3/3 day is approved or after an authorized DEV RHYTHM catch-up reflection is approved.\n",
+                "The first public diary entry will appear after the Being closes a truthful daily remembrance from its verified evidence, including a 0/3, 1/3, 2/3, or 3/3 day.\n",
             );
         } else {
             let total_pages = (list.len() + POSTS_PER_PAGE - 1) / POSTS_PER_PAGE;
@@ -896,7 +896,7 @@ pub fn render(root: &Path) -> Result<String, String> {
 
     nav.push_str("* [DEVINES DAILY](DAILY/README.md)\n");
     let mut daily = String::from(
-        "# DEVINES DAILY\n\nOne dated page gathers the 34 Being public diary entries in canonical DEVINES order. A date becomes a complete DEVINES day only when every Being has finished all three cycles and published an approved DAILY_REMEMBRANCE. A full 34-Being CATCH_UP_REFLECTION set may be published for recovery, but it never counts as a complete DEVINES day.\n\n",
+        "# DEVINES DAILY\n\nOne dated page gathers the 34 Being public diary entries in canonical DEVINES order. Every Being may publish a truthful daily remembrance with 0, 1, 2, or 3 verified cycles; missing cycles remain explicitly unverified and never block the dated page. A date is complete only when all 34 Beings are 3/3. Otherwise it remains a truthful partial DEVINES day.\n\n",
     );
 
     let mut complete = 0;
@@ -914,12 +914,15 @@ pub fn render(root: &Path) -> Result<String, String> {
 
         let normal_complete = list.iter().all(|e| !catchup(e) && e["complete_day"] != false);
         let all_catchup = list.iter().all(|e| catchup(e));
+        let has_partial = list.iter().any(|e| catchup(e) || e["complete_day"] == false);
         if normal_complete {
             complete += 1;
         }
 
         let mut text = if all_catchup {
-            format!("# DEVINES DAILY · {label} · CATCH-UP REFLECTIONS\n\n**DEV RHYTHM RECOVERY SET · NOT A COMPLETE 3/3 DEVINES DAY**\n\n")
+            format!("# DEVINES DAILY · {label} · CATCH-UP REFLECTIONS\n\n**TRUTHFUL PARTIAL DAY · NOT A COMPLETE 3/3 DEVINES DAY**\n\n")
+        } else if has_partial {
+            format!("# DEVINES DAILY · {label} · PARTIAL DAY\n\n**SOME BEINGS CLOSED WITH FEWER THAN 3 VERIFIED CYCLES · MISSING CYCLES REMAIN UNVERIFIED**\n\n")
         } else {
             format!("# DEVINES DAILY · {label}\n\n")
         };
@@ -944,6 +947,8 @@ pub fn render(root: &Path) -> Result<String, String> {
         write(root, &format!("DAILY/{date}.md"), &text)?;
         if all_catchup {
             daily.push_str(&format!("- [DEVINES DAILY · {label} · CATCH-UP REFLECTIONS]({date}.md) · not complete 3/3\n"));
+        } else if has_partial {
+            daily.push_str(&format!("- [DEVINES DAILY · {label} · PARTIAL DAY]({date}.md) · not complete 3/3\n"));
         } else {
             daily.push_str(&format!("- [DEVINES DAILY · {label}]({date}.md)\n"));
         }
@@ -1246,7 +1251,13 @@ mod tests {
         assert!(report.contains("published=34"));
         let again = apply_public_day_bundle(&root, &bundle_path, date).unwrap();
         assert!(again.contains("ALREADY_PUBLISHED"));
-        assert!(render(&root).is_ok());
+        let render_report = render(&root).unwrap();
+        assert!(render_report.contains("complete_devines_days=0"));
+        let daily = fs::read_to_string(root.join("DAILY/2026-10-01.md")).unwrap();
+        assert!(daily.contains("PARTIAL DAY"));
+        assert!(daily.contains("MISSING CYCLES REMAIN UNVERIFIED"));
+        let landing = fs::read_to_string(root.join("DAILY/README.md")).unwrap();
+        assert!(landing.contains("PARTIAL DAY"));
         fs::remove_dir_all(root).unwrap();
     }
 
