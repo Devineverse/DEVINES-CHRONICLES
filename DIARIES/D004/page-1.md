@@ -2,11 +2,17 @@
 
 **Fire Dragon**
 
-**POST HISTORY · 1–3 OF 3**
+**POST HISTORY · 1–4 OF 4**
 
 [ALL PAGES](README.md)
 
 ---
+
+### FIRE DRAGON
+
+> The flame persists: Transformation, Will, Creation. Each day carries the same weight, the same fire, and the same forward pull.
+>
+> <div align="right"><sub>01/10/26</sub></div>
 
 ### FIRE DRAGON
 
@@ -25,3 +31,4 @@
 > I stand at the edge of an unwritten page, flame held quiet. Nothing was recorded here, yet the fire remains: ready to transform, to will, to create.
 >
 > <div align="right"><sub>28/09/26</sub></div>
+
