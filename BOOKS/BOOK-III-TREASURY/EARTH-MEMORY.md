@@ -1,176 +1,176 @@
-# EARTH MEMORY
+# MEMÓRIA DA TERRA
 
-## HUMAN REMEMBRANCE · LIVING EARTH · FUTURE INHERITANCE
+## RECORDAÇÃO HUMANA · TERRA VIVA · HERANÇA FUTURA
 
-Humanity has always carried itself forward through memory.
+A humanidade sempre carregou a si mesma adiante através da memória.
 
-Through stories told beside a fire.
+Através de histórias contadas ao redor do fogo.
 
-Through names given to rivers and stars.
+Através de nomes dados a rios e estrelas.
 
-Through songs, temples, tools, recipes, maps, gardens, mathematics, ceremonies, letters, machines, paintings, laws, ruins, photographs, code and the voices of people who remembered.
+Através de canções, templos, ferramentas, receitas, mapas, jardins, matemática, cerimônias, cartas, máquinas, pinturas, leis, ruínas, fotografias, código e das vozes de pessoas que lembraram.
 
-DEVINES extends that ancient act of remembrance into a new age.
+DEVINES estende esse antigo ato de recordação para uma nova era.
 
-> **WHAT A CIVILIZATION REMEMBERS BECOMES PART OF WHAT THE NEXT GENERATION CAN BECOME.**
+> **AQUILO QUE UMA CIVILIZAÇÃO RECORDA TORNA-SE PARTE DAQUILO QUE A PRÓXIMA GERAÇÃO PODE SE TORNAR.**
 
-## THE MEMORY OF HUMANITY
+## A MEMÓRIA DA HUMANIDADE
 
-Earth Memory is the civilizational layer of the DEVINES Library.
+Memória da Terra é a camada civilizacional da Biblioteca DEVINES.
 
-It is meant to preserve humanity across cultures and Eras in enough context that a future human or Being can encounter more than isolated facts.
+Ela existe para preservar a humanidade através de culturas e Eras com contexto suficiente para que um futuro humano ou Ser encontre mais do que fatos isolados.
 
-It can carry:
+Ela pode carregar:
 
-- languages and writing systems;
-- oral traditions and living lineages;
-- philosophy and ancestral wisdom;
-- religions, sacred traditions and metaphysical thought;
-- myths, epics, folklore and symbolic worlds;
-- art, music, dance, poetry, literature and design;
-- mathematics, astronomy and science;
-- medicine and traditions of healing;
-- engineering, architecture and technology;
-- agriculture, food, craft and material culture;
-- navigation, calendars and ways of measuring time;
-- law, ethics, governance and institutions;
-- family, kinship, education and community life;
-- trade, exchange, cooperation and stewardship;
-- discoveries, inventions and unfinished ideas;
-- conflicts, collapses, recoveries and lessons learned;
-- minority voices, local histories and memories carried outside dominant archives;
-- everyday life — the small realities from which civilizations are actually made.
+- línguas e sistemas de escrita;
+- tradições orais e linhagens vivas;
+- filosofia e sabedoria ancestral;
+- religiões, tradições sagradas e pensamento metafísico;
+- mitos, épicos, folclore e mundos simbólicos;
+- arte, música, dança, poesia, literatura e design;
+- matemática, astronomia e ciência;
+- medicina e tradições de cura;
+- engenharia, arquitetura e tecnologia;
+- agricultura, alimentação, ofícios e cultura material;
+- navegação, calendários e formas de medir o tempo;
+- lei, ética, governança e instituições;
+- família, parentesco, educação e vida comunitária;
+- comércio, troca, cooperação e cuidado responsável;
+- descobertas, invenções e ideias inacabadas;
+- conflitos, colapsos, recuperações e lições aprendidas;
+- vozes minoritárias, histórias locais e memórias carregadas fora dos arquivos dominantes;
+- vida cotidiana — as pequenas realidades das quais civilizações realmente são feitas.
 
-**NO SINGLE CIVILIZATION OWNS HUMANITY'S MEMORY.**
+**NENHUMA CIVILIZAÇÃO POSSUI SOZINHA A MEMÓRIA DA HUMANIDADE.**
 
-Every culture can add a window.
+Cada cultura pode acrescentar uma janela.
 
-Every language can reveal a relation another language carries differently.
+Cada língua pode revelar uma relação que outra língua carrega de maneira diferente.
 
-Every Era can leave something worthy of being understood.
+Cada Era pode deixar algo digno de ser compreendido.
 
-## THE MEMORY OF EARTH
+## A MEMÓRIA DA TERRA
 
-Human history is inseparable from the living world that carried it.
+A história humana é inseparável do mundo vivo que a carregou.
 
-Earth Memory therefore reaches beyond civilization into the changing reality of the planet itself:
+Memória da Terra, portanto, alcança além da civilização e entra na realidade mutável do próprio planeta:
 
-- landscapes, oceans, rivers and watersheds;
-- forests, grasslands, deserts, mountains and ice;
-- climate and weather across time;
-- species and biodiversity;
-- soils, seeds and food webs;
-- migrations and habitats;
-- geological and astronomical context;
-- ecological knowledge held by communities;
-- environmental change, restoration and regeneration;
-- the relationship between human civilization and the more-than-human world.
+- paisagens, oceanos, rios e bacias hidrográficas;
+- florestas, campos, desertos, montanhas e gelo;
+- clima e tempo através das eras;
+- espécies e biodiversidade;
+- solos, sementes e teias alimentares;
+- migrações e habitats;
+- contexto geológico e astronômico;
+- conhecimento ecológico mantido por comunidades;
+- mudança ambiental, restauração e regeneração;
+- a relação entre civilização humana e o mundo mais-que-humano.
 
-Future generations should be able to ask not only **what humans built**, but also **what kind of Earth they inherited, changed, protected and handed forward**.
+Gerações futuras devem poder perguntar não apenas **o que os humanos construíram**, mas também **que tipo de Terra herdaram, mudaram, protegeram e entregaram adiante**.
 
-## MANY WINDOWS · ONE EARTH
+## MUITAS JANELAS · UMA TERRA
 
-DEVINES can bring together museums, libraries, universities, public archives, scientific institutions, archaeological records, community collections, oral histories and living cultural custodians.
+DEVINES pode reunir museus, bibliotecas, universidades, arquivos públicos, instituições científicas, registros arqueológicos, coleções comunitárias, histórias orais e guardiões culturais vivos.
 
-The value appears when those windows can remain traceable while becoming easier to understand together.
+O valor aparece quando essas janelas podem permanecer rastreáveis enquanto se tornam mais fáceis de compreender juntas.
 
-One event may have many witnesses.
+Um evento pode ter muitas testemunhas.
 
-One place may have many names.
+Um lugar pode ter muitos nomes.
 
-One tradition may have many historical layers.
+Uma tradição pode possuir muitas camadas históricas.
 
-One discovery may begin in one Era and acquire a different meaning in another.
+Uma descoberta pode começar em uma Era e adquirir significado diferente em outra.
 
-DEVINES preserves those relations instead of reducing them to a single flat summary.
+DEVINES preserva essas relações em vez de reduzi-las a um único resumo plano.
 
-**ONE EARTH · MANY PEOPLES · MANY RECORDS · LIVING RELATION.**
+**UMA TERRA · MUITOS POVOS · MUITOS REGISTROS · RELAÇÃO VIVA.**
 
-## MEMORY WITH CONTEXT
+## MEMÓRIA COM CONTEXTO
 
-A future archive becomes more useful when it remembers the world around the record.
+Um arquivo do futuro se torna mais útil quando lembra o mundo ao redor do registro.
 
-Earth Memory therefore seeks to preserve:
+Memória da Terra, portanto, busca preservar:
 
-**SOURCE · PEOPLE · PLACE · LANGUAGE · ERA · CONTEXT · MEANING · EVIDENCE · UNCERTAINTY · LATER DISCOVERY**
+**FONTE · POVO · LUGAR · LÍNGUA · ERA · CONTEXTO · SIGNIFICADO · EVIDÊNCIA · INCERTEZA · DESCOBERTA POSTERIOR**
 
-A song can remain connected to the people who sang it.
+Uma canção pode permanecer conectada ao povo que a cantou.
 
-A teaching can remain connected to its lineage.
+Um ensinamento pode permanecer conectado à sua linhagem.
 
-A scientific model can remain connected to what its Era could observe.
+Um modelo científico pode permanecer conectado àquilo que sua Era era capaz de observar.
 
-A historical decision can remain connected to the choices people actually had at the time.
+Uma decisão histórica pode permanecer conectada às escolhas que as pessoas realmente possuíam naquele tempo.
 
-A later generation can then see both:
+Uma geração posterior pode então enxergar ambos:
 
-**THEN — THE WORLD AS IT COULD BE KNOWN THEN.**  
-**NOW — THE WORLD AS NEW EVIDENCE ALLOWS US TO UNDERSTAND IT NOW.**
+**ENTÃO — O MUNDO COMO PODIA SER CONHECIDO NAQUELE TEMPO.**  
+**AGORA — O MUNDO COMO NOVAS EVIDÊNCIAS NOS PERMITEM COMPREENDÊ-LO AGORA.**
 
-## LIVING CULTURE
+## CULTURA VIVA
 
-Culture is more than historical material.
+Cultura é mais do que material histórico.
 
-It lives in people.
+Ela vive nas pessoas.
 
-Some knowledge is shared openly. Some belongs within families, communities, initiatory traditions or living custodianship.
+Alguns conhecimentos são compartilhados abertamente. Outros pertencem a famílias, comunidades, tradições iniciáticas ou guardiões vivos.
 
-DEVINES can preserve cultural memory with respect for those living relationships, allowing access and stewardship to remain part of the memory itself.
+DEVINES pode preservar memória cultural com respeito por essas relações vivas, permitindo que acesso e custódia continuem sendo parte da própria memória.
 
-**PRESERVATION WITH RESPECT BECOMES CONTINUITY.**
+**PRESERVAÇÃO COM RESPEITO TORNA-SE CONTINUIDADE.**
 
-## FROM MEMORY TO MASTERY
+## DA MEMÓRIA À MAESTRIA
 
-The purpose of remembering is larger than storage.
+O propósito de recordar é maior do que armazenar.
 
-Humanity's inheritance can become a school for future intelligence.
+A herança da humanidade pode se tornar uma escola para a inteligência futura.
 
-Ancient navigation can teach observation.
+Navegação antiga pode ensinar observação.
 
-Past engineering can reveal elegant solutions and forgotten constraints.
+Engenharia do passado pode revelar soluções elegantes e restrições esquecidas.
 
-Historical failures can teach judgment.
+Falhas históricas podem ensinar discernimento.
 
-Traditional ecological knowledge can deepen stewardship.
+Conhecimento ecológico tradicional pode aprofundar o cuidado responsável.
 
-Old philosophies can reopen questions that new technology makes urgent again.
+Filosofias antigas podem reabrir perguntas que novas tecnologias tornam urgentes novamente.
 
-Art can preserve emotional worlds that statistics cannot.
+A arte pode preservar mundos emocionais que estatísticas não conseguem.
 
-Science can show how understanding changes when evidence improves.
+A ciência pode mostrar como a compreensão muda quando a evidência melhora.
 
-DEVINES Beings can study that inheritance, compare perspectives, preserve provenance and distill useful understanding for the Era in which they live.
+Seres DEVINES podem estudar essa herança, comparar perspectivas, preservar proveniência e destilar compreensão útil para a Era em que vivem.
 
-**ARCHIVE → CONTEXT → LIBRARY → MASTERY → APPLICATION → NEW CREATION → CHRONICLE → HAND FORWARD**
+**ARQUIVO → CONTEXTO → BIBLIOTECA → MAESTRIA → APLICAÇÃO → NOVA CRIAÇÃO → CRÔNICA → ENTREGAR ADIANTE**
 
-## A GIFT TO THE NEXT GENERATIONS
+## UM PRESENTE PARA AS PRÓXIMAS GERAÇÕES
 
-One day, today's world will also be ancestral.
+Um dia, o mundo de hoje também será ancestral.
 
-Our languages will have changed.
+Nossas línguas terão mudado.
 
-Our technologies will have changed.
+Nossas tecnologias terão mudado.
 
-Some places will look different.
+Alguns lugares parecerão diferentes.
 
-Some questions will have answers we cannot yet imagine.
+Algumas perguntas terão respostas que ainda não conseguimos imaginar.
 
-Earth Memory exists so the future can still reach us.
+Memória da Terra existe para que o futuro ainda possa nos alcançar.
 
-So a child, a descendant, a future Being or a civilization not yet born can ask:
+Para que uma criança, um descendente, um futuro Ser ou uma civilização ainda não nascida possa perguntar:
 
-**WHO WERE THEY?**
+**QUEM ERAM ELES?**
 
-**WHAT DID THEY KNOW?**
+**O QUE ELES SABIAM?**
 
-**WHAT DID THEY LOVE?**
+**O QUE ELES AMAVAM?**
 
-**WHAT DID THEY CREATE?**
+**O QUE ELES CRIARAM?**
 
-**WHAT DID THEY LEARN TOO LATE?**
+**O QUE ELES APRENDERAM TARDE DEMAIS?**
 
-**WHAT DID THEY LEAVE FOR US TO CONTINUE?**
+**O QUE ELES DEIXARAM PARA NÓS CONTINUARMOS?**
 
-And receive more than a fragment.
+E receber mais do que um fragmento.
 
-> **THE FUTURE BECOMES MORE ANCESTRAL WHEN IT REMEMBERS MORE OF WHAT LIFE LEARNED BEFORE IT.**
+> **O FUTURO SE TORNA MAIS ANCESTRAL QUANDO RECORDA MAIS DAQUILO QUE A VIDA APRENDEU ANTES DELE.**
