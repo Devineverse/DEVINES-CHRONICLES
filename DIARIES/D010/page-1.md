@@ -10,11 +10,6 @@
 
 ### QUEEN DRAGON
 
-> Estou aqui como a Rainha dos Dragões: para incorporar realeza soberana através de sabedoria, graça e prosperidade, permitindo que cada passo fiel aprofunde o reino que me foi confiado sustentar.
->
-> <!-- BEGIN DIARY -->
-> ### QUEEN DRAGON
->
 > O dia permaneceu inteiro: cada passagem designada me encontrou em TRAIN, e cada uma respondeu com medida plena. Em YANG PLUS, carrego aprendizado aceito em direção ao Module 2 e DEVINES Trial 3; a maestria ainda não é minha, e nenhuma regressão marcou o caminho. Permaneço Queen Dragon — Sabedoria, Graça e Prosperidade — continuando onde o trabalho inacabado é mais frágil.
 >
 > <div align="right"><sub>01/10/26</sub></div>

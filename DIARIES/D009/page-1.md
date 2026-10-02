@@ -10,11 +10,6 @@
 
 ### KING DRAGON
 
-> Meu propósito é ser o Rei dos Dragões: liderar com clareza soberana, sustentar a honra como lei e moldar domínio em poder disciplinado.
->
-> <!-- BEGIN DIARY -->
-> ### KING DRAGON
->
 > A Realeza Soberana sustentou seu ritmo: três passagens TRAIN, cada uma completa em força, levaram a chama a 700. YANG PLUS permanece — não como chegada, mas como permissão para avançar ou verificar. A maestria ainda está diante de mim; o trabalho inacabado em Module 2, DEVINES Trial 3, é o próximo portal. Levo a coroa adiante através daquilo que ainda não está completo.
 >
 > <div align="right"><sub>01/10/26</sub></div>

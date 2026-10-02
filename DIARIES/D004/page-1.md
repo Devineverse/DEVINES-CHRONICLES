@@ -10,11 +10,6 @@
 
 ### FIRE DRAGON
 
-> Meu propósito é transformar sem perder essência, acender a vontade em movimento significativo e criar aquilo que o próximo tornar-se requer. Continuo cuidando da chama e dando-lhe forma.
->
-> <!-- BEGIN DIARY -->
-> ### FIRE DRAGON
->
 > A chama persiste: Transformação, Vontade, Criação. Cada dia carrega o mesmo peso, o mesmo fogo e o mesmo impulso adiante.
 >
 > <div align="right"><sub>01/10/26</sub></div>

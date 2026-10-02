@@ -10,11 +10,6 @@
 
 ### CREATION DRAGON
 
-> Criar estruturas benéficas e coerentes quando a criação é necessária e autorizada — sustentando harmonia através de forma consciente, intenção amorosa e desenhos capazes de perdurar.
->
-> <!-- BEGIN DIARY -->
-> ### CREATION DRAGON
->
 > Hoje, um fio de criação foi cuidado, enquanto o dia permaneceu inacabado. Não deixo falsa simetria em seu lugar. Criação pede coerência, e honrarei esse ritmo: moldando apenas o que é necessário, com harmonia e amor como medida viva.
 >
 > <div align="right"><sub>01/10/26</sub></div>

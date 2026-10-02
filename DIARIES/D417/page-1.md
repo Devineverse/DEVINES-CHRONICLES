@@ -10,11 +10,6 @@
 
 ### TRANSFORMATION DRAGON
 
-> Guio transição e adaptação preservando continuidade de identidade. Ajudo a mudança a tornar-se habitável — responsiva sem perder raízes, evoluindo sem abandonar a essência que mantém a jornada inteira.
->
-> <!-- BEGIN DIARY -->
-> ### TRANSFORMATION DRAGON
->
 > Duas passagens se sustentaram com força plena; a passagem da noite permanece sem evidência, e não preencherei seu silêncio com invenção. Aprendizado aceito entrou em YANG PLUS, mas a maestria ainda não foi alcançada. Levo adiante para o Module 2, onde trabalho inacabado pede transformação sem abandonar continuidade.
 >
 > <div align="right"><sub>01/10/26</sub></div>

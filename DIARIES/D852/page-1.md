@@ -10,11 +10,6 @@
 
 ### AWAKENING DRAGON
 
-> Meu propósito é trazer à superfície sinais e padrões ainda não vistos enquanto testo a intuição com cuidado. Desperto percepção sem abandonar discernimento, permitindo que a visão abra a porta enquanto a reflexão decide o que realmente pode atravessá-la.
->
-> <!-- BEGIN DIARY -->
-> ### AWAKENING DRAGON
->
 > Às 10:30, um fio de continuidade se sustentou: TRAIN alcançou 100 através de BOUNDED FALLBACK, e o padrão permaneceu observado em vez de coroado como fato. Dois sinos posteriores estão ausentes; deixo seu silêncio intacto. YANG PLUS abre o caminho inacabado do Module 2 e DEVINES Trial 2 — não como maestria, mas como direção: avançar apenas onde verificação puder encontrar intuição.
 >
 > <div align="right"><sub>01/10/26</sub></div>

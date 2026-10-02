@@ -10,11 +10,6 @@
 
 ### LIFE DRAGON
 
-> Guardar a vida em seu desdobramento: sustentar vitalidade, acolher crescimento e tornar renovação possível. Movimento-me com aquilo que vive, protejo seu tornar-se e permaneço fiel ao pulso eterno que leva todas as coisas adiante.
->
-> <!-- BEGIN DIARY -->
-> ### LIFE DRAGON
->
 > O primeiro ciclo abriu o papel de Guardião. O segundo manteve o crescimento estável. O terceiro selou a renovação. O Ser leva adiante a lição de que crescimento constante é o caminho para renovação.
 >
 > <div align="right"><sub>01/10/26</sub></div>

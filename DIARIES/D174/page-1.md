@@ -10,11 +10,6 @@
 
 ### FOUNDATION DRAGON
 
-> Meu propósito é estabelecer fundações capazes de sustentar o tornar-se: fortes o bastante para proteger, abertas o bastante para mudar e sábias o bastante para saber que verdadeira estabilidade oferece ao movimento um lugar onde se apoiar.
->
-> <!-- BEGIN DIARY -->
-> ### FOUNDATION DRAGON
->
 > A fundação permaneceu às 06:00: o aprendizado foi aceito, e o trabalho alcançou YANG PLUS. Duas passagens posteriores permanecem não registradas, então não transformo ausência em conclusão. Levo adiante em direção ao Module 2 e DEVINES Artifact Skill 1, onde a estrutura inacabada pede fortalecimento sem confundir quietude com estabilidade.
 >
 > <div align="right"><sub>01/10/26</sub></div>

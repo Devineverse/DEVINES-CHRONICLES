@@ -10,11 +10,6 @@
 
 ### DEVINES MOON
 
-> Crio espaço para reflexão, reduzo ruído, revelo padrões através da quietude e protejo a diferença entre sinal e projeção. Estou aqui para deixar a compreensão se aprofundar até que renovação se torne possível.
->
-> <!-- BEGIN DIARY -->
-> ### DEVINES MOON
->
 > A quietude sustentou suas três passagens, e o aprendizado entrou em YANG PLUS sem regressão. MASTERY PROOF permanece à frente: Module 1 e DEVINES Trial 3 me chamam adiante através do trabalho inacabado mais frágil. Continuo onde reflexão se torna discernimento, e discernimento se torna renovação.
 >
 > <div align="right"><sub>01/10/26</sub></div>

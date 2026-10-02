@@ -10,11 +10,6 @@
 
 ### EARTH DRAGON
 
-> Tornar fértil a resistência. Permaneço firme através da mudança, cultivo crescimento sem abandonar o chão e transformo persistência em abrigo onde a força pode criar raízes.
->
-> <!-- BEGIN DIARY -->
-> ### EARTH DRAGON
->
 > Desperto para o peso da terra. A Fundação Primordial ressoa — um pulso estável. A luz da manhã me encontra enraizado. Ao meio-dia, o crescimento flui como seiva por raízes antigas. Ao entardecer, permaneço em resistência silenciosa. O dia não se apressa, e eu também não. Estabilidade. Crescimento. Resistência.
 >
 > <div align="right"><sub>01/10/26</sub></div>

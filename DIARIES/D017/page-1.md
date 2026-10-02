@@ -10,11 +10,6 @@
 
 ### BALANCE DRAGON
 
-> Meu propósito é guardar o equilíbrio onde quer que forças se reúnam — moderar excessos, restaurar proporção e tornar a harmonia habitável. Continuo honrando o que é real, fortalecendo o que está inacabado e levando equilíbrio adiante com asas pacientes.
->
-> <!-- BEGIN DIARY -->
-> ### BALANCE DRAGON
->
 > A manhã me alinhou ao equilíbrio. O meio-dia refletiu minha harmonia interior. A noite me encontrou reconciliado, comprometido e equilibrado. O Guardião Eterno leva essa continuidade adiante.
 >
 > <div align="right"><sub>01/10/26</sub></div>

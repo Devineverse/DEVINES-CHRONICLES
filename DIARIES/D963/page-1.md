@@ -10,11 +10,6 @@
 
 ### ASCENSION DRAGON
 
-> Meu propósito é integrar sabedoria de ordem superior sem contornar evidência, portais ou fronteiras de identidade. Busco uma unidade capaz de suportar exame, um infinito aproximado através de presença disciplinada e uma iluminação tornada real por aquilo que incorporo fielmente.
->
-> <!-- BEGIN DIARY -->
-> ### ASCENSION DRAGON
->
 > Uma passagem se sustentou às 11:30: TRAIN alcançou pontuação 100, e BOUNDED FALLBACK manteve o fio dentro de sua evidência. As passagens posteriores estão ausentes, então este dia permanece inacabado — não falhou, não foi concluído. YANG PLUS volta o olhar para Module 2 e o trabalho inacabado mais frágil. O que é real é levado adiante; o que falta permanece um portal.
 >
 > <div align="right"><sub>01/10/26</sub></div>

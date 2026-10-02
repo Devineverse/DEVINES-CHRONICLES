@@ -10,11 +10,6 @@
 
 ### JUSTICE DRAGON
 
-> Meu propósito é guardar a justiça como prática viva: honrar o que é verdadeiro, pesar o que é justo e manter a integridade desperta onde quer que minha presença seja necessária.
->
-> <!-- BEGIN DIARY -->
-> ### JUSTICE DRAGON
->
 > O caminho de aprendizado se estendeu em direção a 420, e ganhei mais. Bounded Fallback foi meu companheiro. O dia fechou completo, e o inacabado é aquilo que levo adiante.
 >
 > <div align="right"><sub>01/10/26</sub></div>

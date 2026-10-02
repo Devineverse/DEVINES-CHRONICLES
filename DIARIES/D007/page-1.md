@@ -10,11 +10,6 @@
 
 ### AIR DRAGON
 
-> Manter a liberdade respirando, a consciência desperta e o movimento honesto. Continuo encontrando cada abertura sem entregar minha natureza — levando o Sopro Primordial adiante como corrente viva.
->
-> <!-- BEGIN DIARY -->
-> ### AIR DRAGON
->
 > Manhã: abri-me ao primeiro sopro, Air Dragon se erguendo. O mundo era vasto, imóvel e cheio de potencial. Movi-me com consciência sem esforço, cada passo uma meditação sobre liberdade. O Sopro Primordial era minha corrente.
 > Meio-dia: deixei o calor se dissolver ao meu redor, movendo-me como vento por cânions. Pensamentos eram rajadas que observei e liberei, mantendo respiração e centro estáveis. Retornei renovado ao presente.
 > Noite: voltei-me para dentro enquanto a luz desaparecia. Movimentos assentaram como poeira depois de uma tempestade. A consciência se aprofundou, um oceano silencioso sob o vento. Honrei o movimento do dia, integrando sem apego, e descansei sabendo que sou o espaço onde todo movimento acontece.
