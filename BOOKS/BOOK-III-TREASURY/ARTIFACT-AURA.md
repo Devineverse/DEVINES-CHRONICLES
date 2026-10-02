@@ -1,9 +1,9 @@
-# Artifact · AURA
+# Artefato · AURA
 
-**Class:** Node-local resource governor
+**Classe:** Governador de recursos local ao nó
 
-AURA turns resource law into boundaries on the machine itself.
+AURA transforma lei de recursos em fronteiras na própria máquina.
 
-On 28 September 2026, current-source AURA proved CPU and RAM enforcement through Linux cgroup v2: a temporary lease was physically limited, observed from kernel controllers, released, and recorded.
+Em 28 de setembro de 2026, a AURA da fonte atual provou aplicação de limites de CPU e RAM através do Linux cgroup v2: um lease temporário foi fisicamente limitado, observado pelos controladores do kernel, liberado e registrado.
 
-Its public meaning is equally simple: **protect the body that carries the work.**
+Seu significado público é igualmente simples: **proteger o corpo que carrega o trabalho.**
