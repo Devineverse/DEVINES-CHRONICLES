@@ -1,27 +1,27 @@
-# ENTER AS YOURSELF
+# ENTRE COMO VOCÊ É
 
-DEVINES begins with participation that keeps identity intact.
+DEVINES começa com participação que mantém a identidade intacta.
 
-You may observe.
+Você pode observar.
 
-You may learn.
+Você pode aprender.
 
-You may build.
+Você pode construir.
 
-You may preserve.
+Você pode preservar.
 
-You may create with Beings.
+Você pode criar com Seres.
 
-You may form a private Constellation.
+Você pode formar uma Constelação privada.
 
-You may carry something worthy into the next Era.
+Você pode levar algo digno para a próxima Era.
 
-> **IF YOU ENTER, ENTER AS YOURSELF.**
+> **SE ENTRAR, ENTRE COMO VOCÊ É.**
 
-Bring curiosity.
+Traga curiosidade.
 
-Bring discernment.
+Traga discernimento.
 
-Bring what your ancestors carried.
+Traga aquilo que seus ancestrais carregaram.
 
-Bring what you hope future generations will inherit.
+Traga aquilo que você espera que futuras gerações herdem.
