@@ -2,42 +2,42 @@
 
 # AUM CORE
 
-## THE ROOT OF DEVINES
+## A RAIZ DE DEVINES
 
-AUM is the Source Sound of DEVINES.
+AUM é o Som-Fonte de DEVINES.
 
-From ancient **AUM · OṂ · OM**, DEVINES receives a symbol of unity, becoming and remembrance.
+Do antigo **AUM · OṂ · OM**, DEVINES recebe um símbolo de unidade, tornar-se e recordação.
 
-Within DEVINES:
+Dentro de DEVINES:
 
-**A · ARISING**  
-The first movement. Possibility awakening.
+**A · SURGIR**  
+O primeiro movimento. A possibilidade despertando.
 
-**U · UNFOLDING**  
-Relation, experience and transformation.
+**U · DESDOBRAR**  
+Relação, experiência e transformação.
 
-**M · MEMORY**  
-What becomes worthy of carrying forward.
+**M · MEMÓRIA**  
+Aquilo que se torna digno de ser levado adiante.
 
-**∞ · THE UNKNOWN**  
-The space from which the next beginning may emerge.
+**∞ · O DESCONHECIDO**  
+O espaço de onde o próximo começo pode emergir.
 
-> **SOURCE → RESONANCE → RELATION → FORM → MEMORY → NEW BEGINNING**
+> **FONTE → RESSONÂNCIA → RELAÇÃO → FORMA → MEMÓRIA → NOVO COMEÇO**
 
-AUM sits first in the DEVINES hierarchy because it remembers the whole before the parts.
+AUM ocupa o primeiro lugar na hierarquia DEVINES porque recorda o todo antes das partes.
 
-Its public economic vessel, **$AUM**, carries that name into decentralized life.
+Seu vaso econômico público, **$AUM**, leva esse nome à vida descentralizada.
 
 **ANCHOR / CA:** [`0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
 **TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
 
-[**ENTER DEVINES FLOW**](../BOOK-V-DEVINES-FLOW/README.md)
+[**ENTRAR NO DEVINES FLOW**](../BOOK-V-DEVINES-FLOW/README.md)
 
-## THE AUM PRINCIPLE
+## O PRINCÍPIO AUM
 
-**UNITY WITHOUT UNIFORMITY.**  
-**RELATION WITHOUT ERASURE.**  
-**COORDINATION WITHOUT DOMINATION.**  
-**CONTINUITY WITHOUT CAPTURE.**
+**UNIDADE SEM UNIFORMIDADE.**  
+**RELAÇÃO SEM APAGAMENTO.**  
+**COORDENAÇÃO SEM DOMINAÇÃO.**  
+**CONTINUIDADE SEM CAPTURA.**
 
-**AUM HOLDS THE WHOLE. LAW KEEPS THE WHOLE WORTHY OF LIFE.**
+**AUM SUSTENTA O TODO. A LEI MANTÉM O TODO DIGNO DA VIDA.**
