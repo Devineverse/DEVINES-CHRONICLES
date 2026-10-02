@@ -1,35 +1,35 @@
-# Flow Status
+# Status do Flow
 
-DEVINES Flow uses explicit state language so architecture is not confused with activation.
+DEVINES Flow usa linguagem explícita de estado para que arquitetura não seja confundida com ativação.
 
-**LIVE** — observable and currently operating.
+**LIVE** — observável e atualmente operando.
 
-**VERIFIED** — the relevant identity, contract, rule or evidence has been confirmed.
+**VERIFIED** — a identidade, contrato, regra ou evidência relevante foi confirmada.
 
-**IMPLEMENTED · NOT ECONOMICALLY ACTIVATED** — code or structure exists, but the economic mechanism is not yet active.
+**IMPLEMENTED · NOT ECONOMICALLY ACTIVATED** — código ou estrutura existe, mas o mecanismo econômico ainda não está ativo.
 
-**PLANNED** — accepted direction without completed implementation.
+**PLANNED** — direção aceita sem implementação concluída.
 
-**FUTURE · REQUIRES GOVERNANCE / AUDIT** — a possible later capability that must pass additional constitutional, technical or security gates.
+**FUTURE · REQUIRES GOVERNANCE / AUDIT** — uma possível capacidade futura que precisa passar por portais constitucionais, técnicos ou de segurança adicionais.
 
-## Current publication gates
+## Portais atuais de publicação
 
-As of 29 September 2026, the Chronicle records verified market identities for all 34 Beings and AUM. The [Market Index](MARKET-INDEX.md) links each canonical CA and ticker.
+Em 29 de setembro de 2026, a Crônica registra identidades de mercado verificadas para todos os 34 Seres e AUM. O [Índice de Mercado](MARKET-INDEX.md) liga cada CA e ticker canônicos.
 
-Verified identity does not establish active staking, DAO execution, revenue settlement or universal economic routing. Those mechanisms retain their own activation gates.
+Identidade verificada não estabelece staking ativo, execução DAO, liquidação de receita ou roteamento econômico universal. Esses mecanismos mantêm seus próprios portais de ativação.
 
-The canonical AUM vessel is `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777`. The Chronicle treats this as the single AUM decentralized anchor and routes public access through Nad.fun.
+O vaso AUM canônico é `0x079f07f2eb3a59ba34c38c6fcf5059f398cb7777`. A Crônica o trata como o único anchor descentralizado AUM e direciona o acesso público através da Nad.fun.
 
-The portrait audit is tied to original Nad.fun launch identity. Existing Git assignments are not treated as proof merely because they already exist.
+A auditoria de retratos está vinculada à identidade original de lançamento na Nad.fun. Atribuições Git existentes não são tratadas como prova apenas porque já existem.
 
-For duplicate launch records, the Chronicle preserves the history but uses the founder-confirmed corrected identity. For D017, the latest correctly identified D017 launch is canonical; the earlier duplicate is not reassigned to D018.
+Para registros de lançamento duplicados, a Crônica preserva a história, mas usa a identidade corrigida e confirmada pelo fundador. Para D017, o lançamento D017 corretamente identificado mais recente é canônico; o duplicado anterior não é reatribuído a D018.
 
 ## Web4
 
-**DEVINES Web4** is a future DEVINES vision, not a settled industry standard.
+**DEVINES Web4** é uma visão futura de DEVINES, não um padrão consolidado da indústria.
 
-It describes a possible convergence of decentralized proof, persistent intelligences, identity continuity, private human–Being relationships, living knowledge, bounded autonomy and constitutional governance.
+Ela descreve uma possível convergência de prova descentralizada, inteligências persistentes, continuidade de identidade, relações privadas humano–Ser, conhecimento vivo, autonomia limitada e governança constitucional.
 
-The name may evolve.
+O nome pode evoluir.
 
-The constitutional boundary should not.
+A fronteira constitucional não deve.
