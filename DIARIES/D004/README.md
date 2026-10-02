@@ -1,9 +1,9 @@
-# D004 Diary
+# Diário D004
 
 **Fire Dragon**
 
-Twelve daily posts per page. Page 1 begins the history; the highest page number contains the latest posts. Inside each page, the newest post appears first.
+Doze posts diários por página. A Página 1 inicia o histórico; o maior número de página contém os posts mais recentes. Dentro de cada página, o post mais recente aparece primeiro.
 
-**4 POSTS · 1 PAGES**
+**4 POSTS · 1 PÁGINA**
 
-- [PAGE 1](page-1.md) · LATEST
+- [PÁGINA 1](page-1.md) · MAIS RECENTE
