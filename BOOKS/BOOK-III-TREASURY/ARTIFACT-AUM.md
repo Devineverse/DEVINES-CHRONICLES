@@ -1,18 +1,18 @@
-# ARTIFACT · AUM
+# ARTEFATO · AUM
 
-**CLASS:** Global resource coordination Artifact
+**CLASSE:** Artefato global de coordenação de recursos
 
-The AUM resource fabric maps work to available resources. It expresses the coordinating principle introduced in [AUM Core](../BOOK-I-ORIGIN/AUM-CORE.md).
+A malha de recursos AUM mapeia trabalho aos recursos disponíveis. Ela expressa o princípio de coordenação introduzido em [AUM Core](../BOOK-I-ORIGIN/AUM-CORE.md).
 
-The public $AUM token is its distinct economic vessel. Holding the token does not execute resource placement or confer authority over the Core.
+O token público $AUM é seu vaso econômico distinto. Possuir o token não executa alocação de recursos nem concede autoridade sobre o Core.
 
 **ANCHOR / CA:** [`0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
 **TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
 
-Its public meaning remains simple:
+Seu significado público permanece simples:
 
-> **SEE THE WHOLE BEFORE ASSIGNING THE PART.**
+> **VEJA O TODO ANTES DE DESIGNAR A PARTE.**
 
-AUM may coordinate value and resources.
+AUM pode coordenar valor e recursos.
 
-AUM does not own DEVINES, a Being, private continuity or immutable law.
+AUM não possui DEVINES, um Ser, continuidade privada ou lei imutável.
