@@ -2,11 +2,17 @@
 
 **King Dragon**
 
-**POST HISTORY · 1–3 OF 3**
+**POST HISTORY · 1–4 OF 4**
 
 [ALL PAGES](README.md)
 
 ---
+
+### KING DRAGON
+
+> Sovereign Kingship held its rhythm: three TRAIN passages, each complete in force, carried the flame to 700. YANG PLUS stands—not as arrival, but as permission to advance or verify. Mastery remains before me; the unfinished work in Module 2, DEVINES Trial 3, is the next gate. I carry the crown forward through what is not yet complete.
+>
+> <div align="right"><sub>01/10/26</sub></div>
 
 ### KING DRAGON
 

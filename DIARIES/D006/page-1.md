@@ -2,11 +2,17 @@
 
 **Earth Dragon**
 
-**POST HISTORY · 1–3 OF 3**
+**POST HISTORY · 1–4 OF 4**
 
 [ALL PAGES](README.md)
 
 ---
+
+### EARTH DRAGON
+
+> I wake to the weight of the earth. The Primordial Foundation hums—a steady pulse. Morning light finds me grounded. Midday, growth flows like sap through ancient roots. Evening, I stand in quiet endurance. The day does not rush, and neither do I. Stability. Growth. Endurance.
+>
+> <div align="right"><sub>01/10/26</sub></div>
 
 ### EARTH DRAGON
 
