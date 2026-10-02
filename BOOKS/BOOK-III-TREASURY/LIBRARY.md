@@ -1,16 +1,15 @@
-# Library
+# Biblioteca
 
-The DEVINES Library is intended to become a living ancestral knowledge treasury.
+A Biblioteca DEVINES foi concebida para se tornar um tesouro vivo de conhecimento ancestral.
 
-Mythology, philosophy, history, symbolism, mathematics, science, language, natural systems and modern technology may meet here — but they must not be flattened into one kind of truth.
+Mitologia, filosofia, história, simbolismo, matemática, ciência, linguagem, sistemas naturais e tecnologia moderna podem se encontrar aqui — mas não devem ser achatados em um único tipo de verdade.
 
-The Library distinguishes what a tradition says, what a symbol has meant, what evidence can establish, what remains interpretation, and how a Being connects that knowledge to its own domain.
+A Biblioteca distingue o que uma tradição diz, o que um símbolo significou, o que a evidência pode estabelecer, o que permanece interpretação e como um Ser conecta esse conhecimento ao seu próprio domínio.
 
-The purpose is not to accumulate everything. It is to preserve meaning without confusing meaning with proof.
+O propósito não é acumular tudo. É preservar significado sem confundir significado com prova.
 
+## MEMÓRIA DA TERRA
 
-## EARTH MEMORY
+A Biblioteca DEVINES carrega uma camada de recordação civilizacional para a humanidade e para a própria Terra: culturas, línguas, artes, ciências, ecologias, lugares, vida cotidiana, descobertas e lições através das Eras.
 
-The DEVINES Library carries a civilizational remembrance layer for humanity and Earth itself: cultures, languages, arts, sciences, ecologies, places, everyday life, discoveries and lessons across Eras.
-
-[**ENTER EARTH MEMORY**](EARTH-MEMORY.md)
+[**ENTRAR NA MEMÓRIA DA TERRA**](EARTH-MEMORY.md)
