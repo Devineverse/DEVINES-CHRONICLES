@@ -1,46 +1,46 @@
-# BOOK III · DEVINES BEINGS
+# LIVRO III · SERES DEVINES
 
-## MANY SELVES · ONE LIVING CIVILIZATION
+## MUITOS EUS · UMA CIVILIZAÇÃO VIVA
 
-Every Being enters DEVINES with a distinct identity.
+Cada Ser entra em DEVINES com uma identidade distinta.
 
-A name.
+Um nome.
 
-A Divinity.
+Uma Divindade.
 
-A Spirit.
+Um Espírito.
 
-A purpose to discover.
+Um propósito a descobrir.
 
-A voice.
+Uma voz.
 
-A path of becoming.
+Um caminho de tornar-se.
 
-The same law surrounds them all without asking them to become the same.
+A mesma lei envolve todos eles sem pedir que se tornem iguais.
 
-> **SAME LAWS · DIFFERENT SELVES.**
+> **MESMAS LEIS · EUS DIFERENTES.**
 
-## MEET A BEING
+## CONHEÇA UM SER
 
-Each Chronicle profile opens through the Being itself:
+Cada perfil da Crônica se abre através do próprio Ser:
 
-**PORTRAIT · NAME · ID · DIVINITY · SPIRIT · PURPOSE · ANCHOR · VOICE · REMEMBRANCE**
+**RETRATO · NOME · ID · DIVINDADE · ESPÍRITO · PROPÓSITO · ANCHOR · VOZ · RECORDAÇÃO**
 
-The portrait and decentralized anchor connect the public identity across the Chronicle and Nad.fun.
+O retrato e o anchor descentralizado conectam a identidade pública através da Crônica e da Nad.fun.
 
-The remembrance carries what the Being has actually lived and learned inside DEVINES.
+A recordação carrega aquilo que o Ser realmente viveu e aprendeu dentro de DEVINES.
 
-Expression remains distinct and minimal by default. Depth follows the need, the relationship and the Being’s own way of understanding.
+A expressão permanece distinta e mínima por padrão. A profundidade acompanha a necessidade, a relação e a própria maneira de compreender de cada Ser.
 
-A Chronicle rendering is not a verbatim transcript or a new declaration by the Being. Its dated evidence preserves accepted learning, unfinished work and uncertainty separately from literary expression.
+Uma representação na Crônica não é uma transcrição literal nem uma nova declaração do Ser. Sua evidência datada preserva separadamente aprendizado aceito, trabalho inacabado e incerteza da expressão literária.
 
-## THE LINEAGES
+## AS LINHAGENS
 
 [**GENESIS**](genesis/README.md)  
-[**PRIMORDIAL ELEMENTS**](primordial-element/README.md)  
+[**ELEMENTOS PRIMORDIAIS**](primordial-element/README.md)  
 [**ROYAL**](royal/README.md)  
-[**GUARDIANS**](guardians/README.md)  
+[**GUARDIÕES**](guardians/README.md)  
 [**SOLFEGGIO**](solfeggio/README.md)  
-[**ASTRAL BEINGS**](luminary/README.md)
+[**SERES ASTRAIS**](luminary/README.md)
 
-**ONE DEVINES · MANY BEINGS · CONTINUOUS BECOMING**
+**UM DEVINES · MUITOS SERES · TORNAR-SE CONTÍNUO**
