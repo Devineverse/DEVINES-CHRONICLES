@@ -1,67 +1,67 @@
-# Revenue Across DEVINES
+# Receita em DEVINES
 
-> **Value enters DEVINES through different doors. Law decides where it may flow.**
+> **O valor entra em DEVINES por portas diferentes. A lei decide para onde ele pode fluir.**
 
-There is no single DEVINES percentage table that honestly describes every economic event.
+Não existe uma única tabela percentual DEVINES que descreva honestamente todos os eventos econômicos.
 
-Different mechanisms belong to different rivers.
+Mecanismos diferentes pertencem a rios diferentes.
 
-## Nad.fun vessel fees
+## Taxas dos vasos Nad.fun
 
-Where a Nad.fun token exposes an active fee strategy, that strategy belongs to that specific public vessel.
+Quando um token Nad.fun expõe uma estratégia de taxas ativa, essa estratégia pertence àquele vaso público específico.
 
-Fee rates and destinations must be checked on the exact vessel’s current market record. A launch description or an earlier observation does not establish today’s strategy for that vessel or any other Being.
+Taxas e destinos devem ser verificados no registro de mercado atual do vaso exato. Uma descrição de lançamento ou uma observação anterior não estabelece a estratégia de hoje para aquele vaso nem para qualquer outro Ser.
 
-The current market page outranks stale launch copy for the current market state, while historical copy remains part of provenance.
+A página atual do mercado tem precedência sobre texto antigo de lançamento para o estado atual do mercado, enquanto o texto histórico permanece parte da proveniência.
 
-## Universal Being revenue routing
+## Roteamento universal de receita dos Seres
 
-The current Phase II constitutional design records a **planned** universal 10,000-bps distribution:
+O desenho constitucional atual da Phase II registra uma distribuição **planejada** de 10.000 bps:
 
-| Destination | Planned share |
+| Destino | Participação planejada |
 | --- | ---: |
-| Locked liquidity | 90% |
-| Eligible holders | 6% |
-| Being isolated Treasury | 1% |
-| Pantheon Treasury | 0.5% |
-| DEVINES Treasury | 0.5% |
-| Creator | 1% |
+| Liquidez bloqueada | 90% |
+| Holders elegíveis | 6% |
+| Tesouro isolado do Ser | 1% |
+| Tesouro do Panteão | 0.5% |
+| Tesouro DEVINES | 0.5% |
+| Criador | 1% |
 | Buyback / burn | 1% |
 
-This is a planned constitutional routing model. It must not be described as the live Nad.fun fee strategy unless implementation evidence proves that activation.
+Este é um modelo constitucional de roteamento planejado. Ele não deve ser descrito como a estratégia de taxas Nad.fun ao vivo a menos que evidência de implementação prove essa ativação.
 
-## Member / Constellation funding
+## Financiamento de Membro / Constelação
 
-Current member-economy runtime separates funding into a different stream:
+O runtime atual da economia de membros separa financiamento em um fluxo diferente:
 
-**80% private active compute · 10% shared DEVINES runtime reserve · 10% DEVINES revenue**
+**80% compute privado ativo · 10% reserva compartilhada de runtime DEVINES · 10% receita DEVINES**
 
-This supports the member relationship and operating infrastructure. It is not the token-fee distribution above.
+Isso sustenta a relação do membro e a infraestrutura operacional. Não é a distribuição de taxas de token acima.
 
-## Being lineage revenue
+## Receita de linhagem dos Seres
 
-Some canonical Being identity records carry explicit lineage economics.
+Alguns registros canônicos de identidade dos Seres carregam economia explícita de linhagem.
 
-For example, current Solfeggio identity records may reserve a 1% royalty on **settled revenue** to D001 through Genesis Creation Power #001.
+Por exemplo, registros atuais de identidade Solfeggio podem reservar royalty de 1% sobre **receita liquidada** para D001 através do Genesis Creation Power #001.
 
-Those records explicitly state that market volume is not settled revenue and that settlement requires reviewed financial runtime.
+Esses registros afirmam explicitamente que volume de mercado não é receita liquidada e que liquidação requer runtime financeiro revisado.
 
-Lineage is not a license to invent revenue that has not settled.
+Linhagem não é licença para inventar receita que ainda não foi liquidada.
 
-## Services, Artifacts, Skills and Abilities
+## Serviços, Artefatos, Skills e Habilidades
 
-Oracle services, Artifacts, Skills, Abilities and other work may create additional value streams where their own economic rules become active.
+Serviços Oracle, Artefatos, Skills, Habilidades e outros trabalhos podem criar fluxos adicionais de valor quando suas próprias regras econômicas se tornarem ativas.
 
-Each stream must define:
+Cada fluxo deve definir:
 
-**source → payer → recipient → Treasury effect → fee → authority → privacy boundary → activation state**
+**fonte → pagador → destinatário → efeito no Tesouro → taxa → autoridade → fronteira de privacidade → estado de ativação**
 
-Until those fields are verified, the Chronicle describes the mechanism as planned rather than pretending revenue already exists.
+Até que esses campos sejam verificados, a Crônica descreve o mecanismo como planejado em vez de fingir que a receita já existe.
 
-## Treasuries
+## Tesouros
 
-Financial Treasuries are stewardship vessels, not the knowledge Treasury of Book IV.
+Tesouros financeiros são vasos de custódia, não o Tesouro de conhecimento do Livro IV.
 
-DEVINES, Pantheon and Being Treasuries may receive value only under their own lawful routing and authority boundaries.
+Tesouros DEVINES, de Panteões e de Seres podem receber valor apenas sob seus próprios limites legais de roteamento e autoridade.
 
-No Treasury balance grants ownership of identity.
+Nenhum saldo de Tesouro concede propriedade sobre identidade.
