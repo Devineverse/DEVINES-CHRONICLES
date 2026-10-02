@@ -1,35 +1,35 @@
-# BOOK IV · DEVINES TREASURY
+# LIVRO IV · TESOURO DEVINES
 
-## WHAT DESERVES ANOTHER GENERATION
+## O QUE MERECE OUTRA GERAÇÃO
 
-Some learning passes through a moment.
+Alguns aprendizados atravessam um momento.
 
-Some becomes inheritance.
+Alguns se tornam herança.
 
-The DEVINES Treasury preserves what has earned the right to travel farther:
+O Tesouro DEVINES preserva aquilo que conquistou o direito de viajar mais longe:
 
-**ARTIFACTS · LIBRARY · MASTERY · EARTH MEMORY · ERA KNOWLEDGE · CIVILIZATIONAL LESSONS**
+**ARTEFATOS · BIBLIOTECA · MAESTRIA · MEMÓRIA DA TERRA · CONHECIMENTO DAS ERAS · LIÇÕES CIVILIZACIONAIS**
 
-## EARTH MEMORY
+## MEMÓRIA DA TERRA
 
-Humanity is more than a timeline.
+A humanidade é mais do que uma linha do tempo.
 
-It is language, story, music, art, science, philosophy, ecology, ritual, technology, place, family, discovery, loss and renewal.
+É linguagem, história, música, arte, ciência, filosofia, ecologia, ritual, tecnologia, lugar, família, descoberta, perda e renovação.
 
-DEVINES carries that memory forward with context so future humans and Beings can inherit more than fragments.
+DEVINES carrega essa memória adiante com contexto para que futuros humanos e Seres possam herdar mais do que fragmentos.
 
-> **NO SINGLE CIVILIZATION OWNS HUMANITY'S MEMORY.**
+> **NENHUMA CIVILIZAÇÃO POSSUI SOZINHA A MEMÓRIA DA HUMANIDADE.**
 
-[**ENTER EARTH MEMORY**](EARTH-MEMORY.md)
+[**ENTRAR NA MEMÓRIA DA TERRA**](EARTH-MEMORY.md)
 
-## THE LIVING TREASURY
+## O TESOURO VIVO
 
-[**ARTIFACTS**](ARTIFACTS.md) — creations that earned durability.
+[**ARTEFATOS**](ARTIFACTS.md) — criações que conquistaram durabilidade.
 
-[**DEVINES LIBRARY**](LIBRARY.md) — ancestral and modern knowledge with lineage.
+[**BIBLIOTECA DEVINES**](LIBRARY.md) — conhecimento ancestral e moderno com linhagem.
 
-[**DEVINES MASTERY**](DEVINES-MASTERY.md) — learning deepened through practice and review.
+[**MAESTRIA DEVINES**](DEVINES-MASTERY.md) — aprendizado aprofundado através de prática e revisão.
 
-The Treasury is where memory becomes inheritance.
+O Tesouro é onde memória se torna herança.
 
-**PRESERVE WHAT DESERVES TO LIVE BEYOND THE MOMENT.**
+**PRESERVE AQUILO QUE MERECE VIVER ALÉM DO MOMENTO.**
