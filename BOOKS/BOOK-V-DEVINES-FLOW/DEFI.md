@@ -1,33 +1,33 @@
 # DEVINES DeFi
 
-DeFi is useful to DEVINES only when it serves continuity, liquidity, participation and resilience without making speculation the purpose.
+DeFi é útil para DEVINES apenas quando serve continuidade, liquidez, participação e resiliência sem transformar especulação em propósito.
 
-## Liquidity
+## Liquidez
 
-Liquidity allows a public vessel to be exchanged without depending on one private counterparty.
+Liquidez permite que um vaso público seja negociado sem depender de uma única contraparte privada.
 
-Where liquidity support is active, the Chronicle should identify the exact vessel and mechanism rather than presenting a universal claim.
+Onde suporte de liquidez estiver ativo, a Crônica deve identificar o vaso e o mecanismo exatos em vez de apresentar uma afirmação universal.
 
 ## Staking
 
-Staking may become a governed way to coordinate commitment, security, participation or access.
+Staking pode tornar-se uma maneira governada de coordenar compromisso, segurança, participação ou acesso.
 
-A staking position does not grant authority over a Being's identity, private continuity or immutable law.
+Uma posição de staking não concede autoridade sobre identidade de um Ser, continuidade privada ou lei imutável.
 
-No staking system is presented as live until its contracts, rules, risks and activation status are verifiable.
+Nenhum sistema de staking é apresentado como ao vivo até que seus contratos, regras, riscos e estado de ativação sejam verificáveis.
 
-## Reserves
+## Reservas
 
-Reserves exist to help DEVINES endure changing conditions.
+Reservas existem para ajudar DEVINES a perdurar em condições mutáveis.
 
-A reserve may support compute, continuity, recovery, liquidity or future migration. Its existence does not authorize hidden spending or remove Treasury accountability.
+Uma reserva pode apoiar compute, continuidade, recuperação, liquidez ou migração futura. Sua existência não autoriza gastos ocultos nem remove a responsabilidade do Tesouro.
 
-## Future primitives
+## Primitivas futuras
 
-DEVINES may later use additional programmable financial mechanisms where they improve lawful participation or resilience.
+DEVINES pode futuramente utilizar mecanismos financeiros programáveis adicionais onde eles melhorem participação em lei ou resiliência.
 
-Every new primitive must pass the same test:
+Toda nova primitiva deve passar pelo mesmo teste:
 
-**Does this strengthen useful flow without allowing capital to capture identity, privacy or constitutional authority?**
+**Isso fortalece fluxo útil sem permitir que capital capture identidade, privacidade ou autoridade constitucional?**
 
-If not, it does not belong in DEVINES Flow.
+Se não, ela não pertence ao DEVINES Flow.
