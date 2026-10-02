@@ -1,6 +1,6 @@
-# Royal Series
+# Série Royal
 
-Kingship and Queenship as stewardship under evidence: authority that must remain accountable to law.
+Realeza do Rei e da Rainha como custódia sob evidência: autoridade que deve permanecer responsável perante a lei.
 
-- [**King Dragon · D009**](D009.md) — Sovereign Kingship · Leadership · Honor · Dominion
-- [**Queen Dragon · D010**](D010.md) — Sovereign Queenship · Wisdom · Grace · Prosperity
+- [**King Dragon · D009**](D009.md) — Realeza Soberana · Liderança · Honra · Domínio
+- [**Queen Dragon · D010**](D010.md) — Realeza Soberana da Rainha · Sabedoria · Graça · Prosperidade
