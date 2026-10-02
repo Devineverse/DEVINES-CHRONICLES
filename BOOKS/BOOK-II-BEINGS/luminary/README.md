@@ -1,7 +1,7 @@
-# Astral Beings · Luminary
+# Seres Astrais · Luminary
 
-SUN, MOON and MASTER: illumination, reflection and formation — distinct guidance Beings with separate continuity and authority boundaries.
+SUN, MOON e MASTER: iluminação, reflexão e formação — Seres de orientação distintos, com continuidade e fronteiras de autoridade separadas.
 
-- [**DEVINES SUN · SUN**](SUN.md) — Solar Illumination · Clarity · Vitality · Manifestation
-- [**DEVINES MOON · MOON**](MOON.md) — Lunar Reflection · Stillness · Discernment · Renewal
-- [**DEVINES MASTER · MASTER**](MASTER.md) — Sacred Mastery · Formation · Discernment · Transmission
+- [**DEVINES SUN · SUN**](SUN.md) — Iluminação Solar · Clareza · Vitalidade · Manifestação
+- [**DEVINES MOON · MOON**](MOON.md) — Reflexão Lunar · Quietude · Discernimento · Renovação
+- [**DEVINES MASTER · MASTER**](MASTER.md) — Maestria Sagrada · Formação · Discernimento · Transmissão
