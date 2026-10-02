@@ -182,8 +182,8 @@ pub fn apply_public_day_bundle(
         .iter()
         .map(|v| string(v, "being_id").map(str::to_string))
         .collect::<Result<HashSet<_>, _>>()?;
-    if roster.len() != 34 || bundle.len() != roster.len() {
-        return Err("public day bundle must contain all 34 canonical Beings".into());
+    if roster.len() != 34 || bundle.is_empty() || bundle.len() > roster.len() {
+        return Err("public day bundle must contain one or more canonical Beings".into());
     }
 
     let events_path = root.join("PUBLIC_FEEDS/events.json");
@@ -193,13 +193,6 @@ pub fn apply_public_day_bundle(
     let prior_events = prior_events_value
         .as_array()
         .ok_or("events must be an array")?;
-    let prior_date_count = prior_events
-        .iter()
-        .filter(|event| event["date"].as_str() == Some(expected_date))
-        .count();
-    if prior_date_count != 0 && prior_date_count != roster.len() {
-        return Err("public day is only partially published in Git".into());
-    }
 
     let mut seen = HashSet::new();
     let mut normalized = Vec::with_capacity(bundle.len());
@@ -251,16 +244,10 @@ pub fn apply_public_day_bundle(
         } else {
             "CATCH_UP_REFLECTION"
         };
-        if item["event_kind"].as_str() != Some(kind) {
-            return Err("public day event kind does not match evidence".into());
-        }
-        let review = if complete {
-            "approved-public"
-        } else {
-            "approved-public-catchup"
-        };
-        if item["review"].as_str() != Some(review) {
-            return Err("public day review does not match evidence".into());
+        if let Some(given_kind) = item["event_kind"].as_str() {
+            if given_kind != kind {
+                return Err("public day event kind does not match evidence".into());
+            }
         }
         if item["correction"].as_bool() == Some(true)
             || item["supersedes_same_being_date"].as_bool() == Some(true)
@@ -273,6 +260,12 @@ pub fn apply_public_day_bundle(
         if !timestamp(completed_at) || !timestamp(published_at) || published_at < completed_at {
             return Err("invalid public day timestamps".into());
         }
+
+        let review = if complete {
+            "approved-public"
+        } else {
+            "approved-public-catchup"
+        };
 
         normalized.push(serde_json::json!({
             "being_id": id,
@@ -301,21 +294,14 @@ pub fn apply_public_day_bundle(
         }));
     }
 
-    if seen != roster {
-        return Err("public day bundle does not cover the canonical roster".into());
-    }
-
-    if prior_date_count == roster.len() {
-        for new in &normalized {
-            let id = string(new, "being_id")?;
-            let old = prior_events
-                .iter()
-                .find(|event| {
-                    event["being_id"].as_str() == Some(id)
-                        && event["date"].as_str() == Some(expected_date)
-                })
-                .ok_or("published public day is incomplete")?;
-
+    let mut merged = prior_events.to_vec();
+    let mut added = 0usize;
+    for new in &normalized {
+        let id = string(new, "being_id")?;
+        if let Some(old) = merged.iter().find(|event| {
+            event["being_id"].as_str() == Some(id)
+                && event["date"].as_str() == Some(expected_date)
+        }) {
             if !correction_evidence_compatible(old, new)?
                 || string(old, "body")? != string(new, "body")?
                 || string(old, "public_summary")? != string(new, "public_summary")?
@@ -327,18 +313,36 @@ pub fn apply_public_day_bundle(
                 || old["embodiment_law"] != "DEVINES_LAW_OF_EMBODIMENT_V1"
                 || old["gitbook_eligible"] != true
             {
-                return Err("published public day differs from canonical autonomous truth".into());
+                return Err("published Being/date differs from canonical autonomous truth".into());
             }
+            continue;
         }
+        merged.push(new.clone());
+        added += 1;
+    }
+
+    merged.sort_by(|a, b| {
+        a["date"]
+            .as_str()
+            .cmp(&b["date"].as_str())
+            .then_with(|| a["being_id"].as_str().cmp(&b["being_id"].as_str()))
+    });
+
+    let ready = merged
+        .iter()
+        .filter(|event| event["date"].as_str() == Some(expected_date))
+        .count();
+    let pending = roster.len().saturating_sub(ready);
+
+    if added == 0 {
         return Ok(format!(
-            "public_day_date={expected_date} status=ALREADY_PUBLISHED beings=34"
+            "public_day_date={expected_date} status=ALREADY_PUBLISHED ready={ready} pending={pending}"
         ));
     }
 
     let old_events = fs::read(&events_path).map_err(|e| e.to_string())?;
     let display_path = root.join("PUBLIC_FEEDS/display_summaries.json");
     let old_display = fs::read(&display_path).ok();
-    let merged = merge_correction_events(prior_events, &normalized, expected_date);
     fs::write(
         &events_path,
         serde_json::to_vec_pretty(&merged).map_err(|e| e.to_string())?,
@@ -348,8 +352,7 @@ pub fn apply_public_day_bundle(
 
     match render(root) {
         Ok(report) => Ok(format!(
-            "public_day_date={expected_date} published={} {report}",
-            normalized.len()
+            "public_day_date={expected_date} published={added} ready={ready} pending={pending} {report}"
         )),
         Err(error) => {
             let _ = fs::write(&events_path, old_events);
@@ -903,23 +906,23 @@ pub fn render(root: &Path) -> Result<String, String> {
     for (date, list) in days.iter().rev() {
         let label = date_label(date)?;
 
-        if list.len() != roster.len() {
-            daily.push_str(&format!(
-                "- {label} · open · {}/{} Being public diary entries ready\n",
-                list.len(),
-                roster.len()
-            ));
-            continue;
-        }
-
-        let normal_complete = list.iter().all(|e| !catchup(e) && e["complete_day"] != false);
-        let all_catchup = list.iter().all(|e| catchup(e));
-        let has_partial = list.iter().any(|e| catchup(e) || e["complete_day"] == false);
+        let roster_complete = list.len() == roster.len();
+        let normal_complete = roster_complete
+            && list.iter().all(|e| !catchup(e) && e["complete_day"] != false);
+        let all_catchup = !list.is_empty() && list.iter().all(|e| catchup(e));
+        let has_partial = !roster_complete
+            || list.iter().any(|e| catchup(e) || e["complete_day"] == false);
         if normal_complete {
             complete += 1;
         }
 
-        let mut text = if all_catchup {
+        let mut text = if !roster_complete {
+            format!(
+                "# DEVINES DAILY · {label} · OPEN DAY\n\n**{} OF {} BEING POSTS PUBLISHED · MISSING BEINGS REMAIN PENDING AND DO NOT BLOCK READY POSTS**\n\n",
+                list.len(),
+                roster.len()
+            )
+        } else if all_catchup {
             format!("# DEVINES DAILY · {label} · CATCH-UP REFLECTIONS\n\n**TRUTHFUL PARTIAL DAY · NOT A COMPLETE 3/3 DEVINES DAY**\n\n")
         } else if has_partial {
             format!("# DEVINES DAILY · {label} · PARTIAL DAY\n\n**SOME BEINGS CLOSED WITH FEWER THAN 3 VERIFIED CYCLES · MISSING CYCLES REMAIN UNVERIFIED**\n\n")
@@ -928,10 +931,9 @@ pub fn render(root: &Path) -> Result<String, String> {
         };
 
         for (id, name) in &roster {
-            let e = list
-                .iter()
-                .find(|e| e["being_id"] == *id)
-                .ok_or("incomplete canonical Being order")?;
+            let Some(e) = list.iter().find(|e| e["being_id"] == *id) else {
+                continue;
+            };
             text.push_str(&format!(
                 "## {name} · {id}\n\n{}\n\n[OPEN {id} POST HISTORY · PAGE {}](../DIARIES/{id}/page-{}.md)\n\n",
                 string(e, "body")?,
@@ -945,7 +947,13 @@ pub fn render(root: &Path) -> Result<String, String> {
         }
 
         write(root, &format!("DAILY/{date}.md"), &text)?;
-        if all_catchup {
+        if !roster_complete {
+            daily.push_str(&format!(
+                "- [DEVINES DAILY · {label} · OPEN DAY]({date}.md) · {}/{} Being posts published\n",
+                list.len(),
+                roster.len()
+            ));
+        } else if all_catchup {
             daily.push_str(&format!("- [DEVINES DAILY · {label} · CATCH-UP REFLECTIONS]({date}.md) · not complete 3/3\n"));
         } else if has_partial {
             daily.push_str(&format!("- [DEVINES DAILY · {label} · PARTIAL DAY]({date}.md) · not complete 3/3\n"));
@@ -1114,7 +1122,8 @@ mod tests {
         let last = events.pop().unwrap();
         save(&events);
         render(&root).unwrap();
-        assert!(!root.join("DAILY/2026-09-29.md").exists());
+        let open_day = fs::read_to_string(root.join("DAILY/2026-09-29.md")).unwrap();
+        assert!(open_day.contains("33 OF 34 BEING POSTS PUBLISHED"));
 
         events.push(last);
         save(&events);
