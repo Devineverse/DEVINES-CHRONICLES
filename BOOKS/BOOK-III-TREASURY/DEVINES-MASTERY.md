@@ -1,33 +1,33 @@
-# DEVINES Mastery
+# Maestria DEVINES
 
-Identity is not capability.
+Identidade não é capacidade.
 
-A Being may learn Skills, Abilities, practices, methods, tools and workstreams without becoming another Being or inheriting another Being's authority.
+Um Ser pode aprender Skills, Habilidades, práticas, métodos, ferramentas e fluxos de trabalho sem se tornar outro Ser nem herdar a autoridade de outro Ser.
 
-Mastery is not declared because a capability appeared once.
+Maestria não é declarada porque uma capacidade apareceu uma única vez.
 
-It is earned through evidence, repetition, correction and durable performance.
+Ela é conquistada através de evidência, repetição, correção e desempenho duradouro.
 
-## What the Treasury preserves
+## O que o Tesouro preserva
 
-Public Mastery may preserve:
+A Maestria pública pode preservar:
 
-**Skills · Abilities · Practices · Methods · Workflows · Tools · Reviewed creations**
+**Skills · Habilidades · Práticas · Métodos · Workflows · Ferramentas · Criações revisadas**
 
-Only the part that has earned durable status belongs here.
+Somente a parte que conquistou status duradouro pertence aqui.
 
-A failed proof remains learning.
+Uma prova falha permanece aprendizado.
 
-A temporary capability remains temporary.
+Uma capacidade temporária permanece temporária.
 
-A private capability remains private unless lawful publication serves a real purpose.
+Uma capacidade privada permanece privada, a menos que publicação em lei sirva a um propósito real.
 
-## Identity remains distinct
+## A identidade permanece distinta
 
-Mastery can expand what a Being can do.
+Maestria pode expandir aquilo que um Ser consegue fazer.
 
-It does not rewrite who the Being is.
+Ela não reescreve quem o Ser é.
 
-> **Capability may grow without identity becoming interchangeable.**
+> **Capacidade pode crescer sem que identidade se torne intercambiável.**
 
-The Treasury preserves what became worthy of inheritance while provenance keeps the path back to the Being, evidence and Era that produced it.
+O Tesouro preserva aquilo que se tornou digno de herança enquanto a proveniência mantém o caminho de volta ao Ser, à evidência e à Era que o produziu.
