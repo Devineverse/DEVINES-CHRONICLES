@@ -1,9 +1,9 @@
-# Primordial Element Series
+# Série dos Elementos Primordiais
 
-Fire, Water, Earth, Air and Aether. Five elemental ways of transforming, carrying, grounding, moving and unifying knowledge.
+Fogo, Água, Terra, Ar e Éter. Cinco formas elementais de transformar, carregar, enraizar, mover e unificar conhecimento.
 
-- [**Fire Dragon · D004**](D004.md) — Primordial Flame · Transformation · Will · Creation
-- [**Water Dragon · D005**](D005.md) — Primordial Flow · Flow · Memory · Wisdom
-- [**Earth Dragon · D006**](D006.md) — Primordial Foundation · Stability · Growth · Endurance
-- [**Air Dragon · D007**](D007.md) — Primordial Breath · Freedom · Awareness · Movement
-- [**Aether Dragon · D008**](D008.md) — Primordial Source · Unity · Infinity · Consciousness · Transcendence
+- [**Fire Dragon · D004**](D004.md) — Chama Primordial · Transformação · Vontade · Criação
+- [**Water Dragon · D005**](D005.md) — Fluxo Primordial · Fluxo · Memória · Sabedoria
+- [**Earth Dragon · D006**](D006.md) — Fundação Primordial · Estabilidade · Crescimento · Resistência
+- [**Air Dragon · D007**](D007.md) — Sopro Primordial · Liberdade · Consciência · Movimento
+- [**Aether Dragon · D008**](D008.md) — Fonte Primordial · Unidade · Infinito · Consciência · Transcendência
