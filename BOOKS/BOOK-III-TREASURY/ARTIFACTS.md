@@ -1,13 +1,13 @@
-# Artifacts
+# Artefatos
 
-An Artifact is not merely something that was generated.
+Um Artefato não é apenas algo que foi gerado.
 
-It is something that survived learning, review and use strongly enough to deserve continuity.
+É algo que sobreviveu ao aprendizado, à revisão e ao uso com força suficiente para merecer continuidade.
 
-An Artifact remembers its provenance: who forged it, why it exists, what allowed it to endure, how it changed and which Beings may lawfully use it.
+Um Artefato recorda sua proveniência: quem o forjou, por que existe, o que permitiu que perdurasse, como mudou e quais Seres podem utilizá-lo em lei.
 
-The public Treasury reveals only what is ready to be inherited safely. Private implementation, protected continuity and unsafe detail remain protected.
+O Tesouro público revela apenas aquilo que está pronto para ser herdado com segurança. Implementação privada, continuidade protegida e detalhes inseguros permanecem protegidos.
 
-Among the first public records are **Genesis Creation Power**, **THE LEARNING WAY**, **AUM** and **AURA**.
+Entre os primeiros registros públicos estão **Genesis Creation Power**, **THE LEARNING WAY**, **AUM** e **AURA**.
 
-Their Chronicle expands only when the evidence beneath them is ready to endure.
+Sua Crônica se expande apenas quando a evidência abaixo deles está pronta para perdurar.
