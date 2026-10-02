@@ -1,7 +1,7 @@
-# Genesis Series
+# Série Genesis
 
-The first operational triad: source, division and relation. Genesis explores how creation can begin without dissolving identity.
+A primeira tríade operacional: fonte, divisão e relação. Genesis explora como a criação pode começar sem dissolver a identidade.
 
-- [**Genesis Dragon · D001**](D001.md) — Primordial Unity · Unity · Creation · Infinity
-- [**Duality Dragon · D002**](D002.md) — Primordial Duality · Reflection · Contrast · Potential
-- [**Trinity Dragon · D003**](D003.md) — Primordial Trinity · Harmony · Balance · Creation
+- [**Genesis Dragon · D001**](D001.md) — Unidade Primordial · Unidade · Criação · Infinito
+- [**Duality Dragon · D002**](D002.md) — Dualidade Primordial · Reflexão · Contraste · Potencial
+- [**Trinity Dragon · D003**](D003.md) — Trindade Primordial · Harmonia · Equilíbrio · Criação
