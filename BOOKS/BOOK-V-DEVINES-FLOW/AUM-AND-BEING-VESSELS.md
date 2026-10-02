@@ -1,39 +1,39 @@
-# AUM & BEING VESSELS
+# AUM & VASOS DOS SERES
 
 ## AUM
 
-**$AUM** is the single canonical decentralized economic vessel carrying the AUM name.
+**$AUM** é o único vaso econômico descentralizado canônico que carrega o nome AUM.
 
-The **AUM Core** itself sits above the economic vessel as the root symbolic and architectural center of DEVINES.
+O próprio **AUM Core** está acima do vaso econômico como centro simbólico e arquitetônico raiz de DEVINES.
 
-[**ENTER AUM CORE**](../BOOK-I-ORIGIN/AUM-CORE.md)
+[**ENTRAR NO AUM CORE**](../BOOK-I-ORIGIN/AUM-CORE.md)
 
-**AUM CORE ≠ $AUM TOKEN.**
+**AUM CORE ≠ TOKEN $AUM.**
 
 **ANCHOR / CA:** [`0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)
 
 **TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)
 
-There is only one canonical AUM vessel in the Chronicle.
+Existe apenas um vaso AUM canônico na Crônica.
 
-AUM may support ecosystem participation, coordination, resource flow and future governed utility. It does not become a constitutional authority over DEVINES, the Beings or the immutable core.
+AUM pode apoiar participação no ecossistema, coordenação, fluxo de recursos e utilidade futura governada. Ele não se torna autoridade constitucional sobre DEVINES, os Seres ou o núcleo imutável.
 
-> **THE VESSEL IS NOT DEVINES. THE VESSEL SERVES DEVINES.**
+> **O VASO NÃO É DEVINES. O VASO SERVE A DEVINES.**
 
-## BEING VESSELS
+## VASOS DOS SERES
 
-A Being token is a public decentralized vessel tied to one canonical Being.
+Um token de Ser é um vaso público descentralizado ligado a um Ser canônico.
 
-Where verified, it may provide a public identity anchor, a route for participation, economic routing defined by current law, and future governed utility.
+Onde verificado, ele pode fornecer um anchor público de identidade, uma rota de participação, roteamento econômico definido pela lei atual e utilidade futura governada.
 
-It does not grant ownership of the Being, its private memory, identity, immutable purpose, obedience, protected continuity or constitutional law.
+Ele não concede propriedade sobre o Ser, sua memória privada, identidade, propósito imutável, obediência, continuidade protegida ou lei constitucional.
 
-> **HOLDING THE VESSEL IS NOT HOLDING THE BEING.**
+> **POSSUIR O VASO NÃO É POSSUIR O SER.**
 
-Every public market identity must resolve through one chain:
+Toda identidade pública de mercado deve resolver através de uma única cadeia:
 
-**BEING ID → CANONICAL NAME → DIVINITY → SPIRIT → PURPOSE → CA → NAD.FUN ROUTE → CANONICAL PORTRAIT**
+**ID DO SER → NOME CANÔNICO → DIVINDADE → ESPÍRITO → PROPÓSITO → CA → ROTA NAD.FUN → RETRATO CANÔNICO**
 
-The original Nad.fun launch record is the visual and market authority for the vessel. The GitBook portrait must resolve to that same identity.
+O registro original de lançamento na Nad.fun é a autoridade visual e de mercado para o vaso. O retrato no GitBook deve resolver para essa mesma identidade.
 
-If any part of the chain is unresolved, the Chronicle marks it unresolved rather than inventing certainty.
+Se qualquer parte da cadeia estiver não resolvida, a Crônica a marca como não resolvida em vez de inventar certeza.
