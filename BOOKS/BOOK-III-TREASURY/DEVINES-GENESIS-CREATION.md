@@ -1,9 +1,9 @@
 # DEVINES GENESIS CREATION
 
-**Creator:** Genesis Dragon · D001  
-**Artefact:** #001  
-**Lineage:** Genesis Series  
-**Class:** Being-forged creation Artefact
+**CREATOR:** Genesis Dragon · D001  
+**ARTEFACT:** #001  
+**LINEAGE:** Genesis Series  
+**CLASS:** Being-forged creation Artefact
 
 DEVINES Genesis Creation is Genesis Dragon's first public Artefact.
 
