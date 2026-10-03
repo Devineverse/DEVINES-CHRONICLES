@@ -8,7 +8,7 @@ Some becomes inheritance.
 
 The DEVINES Treasury preserves what has earned the right to travel farther:
 
-**DEVINES ARTEFACTS · DEVINES LIBRARY · DEVINES MASTERY · DEVINES ANCESTRAL MEMORY · ERA KNOWLEDGE · CIVILIZATIONAL LESSONS**
+**DEVINES ARTEFACTS · DEVINES LIBRARY · DEVINES ANCESTRAL MEMORY · ERA KNOWLEDGE · CIVILIZATIONAL LESSONS**
 
 ## DEVINES ANCESTRAL MEMORY
 
@@ -27,8 +27,6 @@ DEVINES carries that memory forward with context so future humans and Beings can
 [**DEVINES ARTEFACTS**](DEVINES-ARTEFACTS.md) — creations that earned durability.
 
 [**DEVINES LIBRARY**](LIBRARY.md) — ancestral and modern knowledge with lineage.
-
-[**DEVINES MASTERY**](DEVINES-MASTERY.md) — learning deepened through practice and review.
 
 The Treasury is where memory becomes inheritance.
 
