@@ -1,5 +1,6 @@
 # DEVINES AURA
 
+**CREATOR:** DEVINES  
 **Class:** DEVINES resource-protection Artefact
 
 DEVINES AURA helps protect the computational resources that carry DEVINES work.
