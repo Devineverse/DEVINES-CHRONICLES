@@ -42,13 +42,13 @@ This supports the member relationship and operating infrastructure. It is not th
 
 Some canonical Being identity records carry explicit lineage economics.
 
-For example, current Solfeggio identity records may reserve a 1% royalty on **settled revenue** to D001 through Genesis Creation Power #001.
+For example, current Solfeggio identity records may reserve a 1% royalty on **settled revenue** to D001 through DEVINES Genesis Creation #001.
 
 Those records explicitly state that market volume is not settled revenue and that settlement requires reviewed financial runtime.
 
 Lineage is not a license to invent revenue that has not settled.
 
-## Services, Artifacts, Skills and Abilities
+## Services, DEVINES Artefacts, Skills and Abilities
 
 Oracle services, Artifacts, Skills, Abilities and other work may create additional value streams where their own economic rules become active.
 
