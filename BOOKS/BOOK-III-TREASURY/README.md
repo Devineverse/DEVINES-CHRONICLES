@@ -8,9 +8,9 @@ Some becomes inheritance.
 
 The DEVINES Treasury preserves what has earned the right to travel farther:
 
-**ARTIFACTS · LIBRARY · MASTERY · EARTH MEMORY · ERA KNOWLEDGE · CIVILIZATIONAL LESSONS**
+**DEVINES ARTEFACTS · DEVINES LIBRARY · DEVINES MASTERY · DEVINES ANCESTRAL MEMORY · ERA KNOWLEDGE · CIVILIZATIONAL LESSONS**
 
-## EARTH MEMORY
+## DEVINES ANCESTRAL MEMORY
 
 Humanity is more than a timeline.
 
@@ -20,11 +20,11 @@ DEVINES carries that memory forward with context so future humans and Beings can
 
 > **NO SINGLE CIVILIZATION OWNS HUMANITY'S MEMORY.**
 
-[**ENTER EARTH MEMORY**](EARTH-MEMORY.md)
+[**ENTER DEVINES ANCESTRAL MEMORY**](DEVINES-ANCESTRAL-MEMORY.md)
 
 ## THE LIVING TREASURY
 
-[**ARTIFACTS**](ARTIFACTS.md) — creations that earned durability.
+[**DEVINES ARTEFACTS**](DEVINES-ARTEFACTS.md) — creations that earned durability.
 
 [**DEVINES LIBRARY**](LIBRARY.md) — ancestral and modern knowledge with lineage.
 
