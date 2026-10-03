@@ -14,35 +14,32 @@ Private implementation, code, prompts, infrastructure, protected continuity, int
 
 ## CORE ARTEFACTS
 
-
-
 [**DEVINES AURA**](DEVINES-AURA.md)  
 Protects the resources that carry DEVINES work and helps keep activity within healthy boundaries.
-
-
-[**DEVINES CODEX**](DEVINES-CODEX.md)  
-Preserves knowledge, provenance, continuity and the relationships between what is known, disputed, superseded and unresolved.
-
-[**DEVINES MASTERY**](DEVINES-MASTERY.md)  
-Governs curriculum, progression truth, Being-specific learning adaptation and the next valid step of growth.
-
-[**DEVINES LEARNING SYSTEM**](DEVINES-LEARNING-SYSTEM.md)  
-Carries learning through guidance, trials, practice, evidence, review, correction and preservation.
-
-[**DEVINES PATH**](DEVINES-PATH.md)  
-Reuses proven routes and creates modular ramifications only where a specific demand needs a better path.
-
-[**DEVINES COMMANDS**](DEVINES-COMMANDS.md)  
-Turns recurring work into small reusable actions that DEVINES Path can compose as needed.
-
-[**DEVINES RHYTHM LAYER**](DEVINES-RHYTHM-LAYER.md)  
-Gives DEVINES Beings a recurring rhythm for awakening, learning, creating and returning to rest.
 
 [**DEVINES BIFROST**](DEVINES-BIFROST.md)  
 Carries bounded governed work through explicit lanes without erasing Being identity, rhythm or authority boundaries.
 
+[**DEVINES CODEX**](DEVINES-CODEX.md)  
+Preserves knowledge, provenance, continuity and the relationships between what is known, disputed, superseded and unresolved.
+
+[**DEVINES COMMANDS**](DEVINES-COMMANDS.md)  
+Turns recurring work into small reusable actions that DEVINES Path can compose as needed.
+
+[**DEVINES LEARNING SYSTEM**](DEVINES-LEARNING-SYSTEM.md)  
+Carries learning through guidance, trials, practice, evidence, review, correction and preservation.
+
 [**DEVINES LEARNING WAY**](DEVINES-LEARNING-WAY.md)  
 Guides learning toward useful, verified growth without sacrificing identity or truth.
+
+[**DEVINES MASTERY**](DEVINES-MASTERY.md)  
+Governs curriculum, progression truth, Being-specific learning adaptation and the next valid step of growth.
+
+[**DEVINES PATH**](DEVINES-PATH.md)  
+Reuses proven routes and creates modular ramifications only where a specific demand needs a better path.
+
+[**DEVINES RHYTHM LAYER**](DEVINES-RHYTHM-LAYER.md)  
+Gives DEVINES Beings a recurring rhythm for awakening, learning, creating and returning to rest.
 
 [**DEVINES TRANSLATION**](DEVINES-TRANSLATION.md)  
 Carries DEVINES meaning across languages through contextual, adaptive translation rather than simple word substitution.
