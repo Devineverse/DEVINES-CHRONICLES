@@ -119,8 +119,6 @@ Each DAM keeps two expressions together:
 
 **ANCESTRAL KNOWLEDGE** — the names, cultures, traces, relationships, disagreements and unknowns beneath it.
 
-[**OPEN ANCESTRAL MEMORIES**](ancestral-memories/README.md)
-
 The first complete reference memory is:
 
 [**AM-001 · DRAGONS — THE DRAGON REMEMBERED**](ancestral-memories/dragons/README.md)
