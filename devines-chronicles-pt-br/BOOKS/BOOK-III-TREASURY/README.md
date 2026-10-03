@@ -8,7 +8,7 @@ Alguns se tornam herança.
 
 O Tesouro DEVINES preserva aquilo que conquistou o direito de viajar mais longe:
 
-**ARTEFATOS · BIBLIOTECA · MEMÓRIA ANCESTRAL · CONHECIMENTO DAS ERAS · LIÇÕES CIVILIZACIONAIS**
+**ARTEFATOS · BIBLIOTECA · MAESTRIA · MEMÓRIA DA TERRA · CONHECIMENTO DAS ERAS · LIÇÕES CIVILIZACIONAIS**
 
 ## MEMÓRIA DA TERRA
 
@@ -27,6 +27,8 @@ DEVINES carrega essa memória adiante com contexto para que futuros humanos e Se
 [**ARTEFATOS**](ARTIFACTS.md) — criações que conquistaram durabilidade.
 
 [**BIBLIOTECA DEVINES**](LIBRARY.md) — conhecimento ancestral e moderno com linhagem.
+
+[**MAESTRIA DEVINES**](DEVINES-MASTERY.md) — aprendizado aprofundado através de prática e revisão.
 
 O Tesouro é onde memória se torna herança.
 
