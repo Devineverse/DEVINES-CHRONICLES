@@ -7,7 +7,8 @@ const PROFILE_PREVIEW_POSTS: usize = 3;
 fn write(root: &Path, path: &str, text: &str) -> Result<(), String> {
     let p = root.join(path);
     fs::create_dir_all(p.parent().unwrap()).map_err(|e| e.to_string())?;
-    fs::write(p, text).map_err(|e| e.to_string())
+    let normalized = format!("{}\n", text.trim_end_matches('\n'));
+    fs::write(p, normalized).map_err(|e| e.to_string())
 }
 
 fn string<'a>(v: &'a Value, k: &str) -> Result<&'a str, String> {
