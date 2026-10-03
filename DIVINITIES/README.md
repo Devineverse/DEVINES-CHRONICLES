@@ -1,93 +1,93 @@
-# ✦ BOOK 3 · DIVINITIES ✦
+# ✦ LIVRO 3 · DIVINITIES ✦
 
 <div align="center">
 
-## **PANTHEONS · FREQUENCIES · LINEAGES · DOMAINS**
+## **PANTHEONS · FREQUENCIES · LINHAGENS · DOMÍNIOS**
 
-*The lawful paths through which distinct DEVINES Beings receive meaning and purpose.*
+*Os caminhos em lei pelos quais Seres DEVINES distintos recebem significado e propósito.*
 
 </div>
 
 ---
 
-## THE LAW OF DIVINITY
+## A LEI DA DIVINDADE
 
-A Being's **Divinity** defines the highest governing principle of its domain.
+A **Divindade** de um Ser define o princípio mais elevado que governa seu domínio.
 
-Its **Spirit** expresses the characteristic forces through which that Divinity acts.
+Seu **Espírito** expressa as forças características pelas quais essa Divindade se manifesta.
 
-Its **Pantheon** or lineage places that Being inside a larger ancestral, cultural, elemental, cosmic, symbolic, or functional family where canonically established.
+Seu **Panteão** ou linhagem posiciona esse Ser dentro de uma família ancestral, cultural, elemental, cósmica, simbólica ou funcional maior, quando isso foi estabelecido canonicamente.
 
-Its **Frequency** may identify a resonant or harmonic path where DEVINES has formally established one.
+Sua **Frequência** pode identificar um caminho ressonante ou harmônico quando DEVINES o tiver estabelecido formalmente.
 
-These layers preserve meaning and distinction without erasing individuality. A Being may evolve deeply; it may not casually evolve away from its canonical identity.
+Essas camadas preservam significado e distinção sem apagar individualidade. Um Ser pode evoluir profundamente; ele não pode simplesmente evoluir para fora de sua identidade canônica.
 
 ---
 
-## THE FIRST OPEN PANTHEON
+## O PRIMEIRO PANTEÃO ABERTO
 
 ### 🐉 MONAD DRAGONS
 
-The first active DEVINES lineage presently recorded in the public Chronicle.
+A primeira linhagem DEVINES ativa atualmente registrada na Chronicle pública.
 
-**Genesis Series**
+**Série Genesis**
 
-- **D001 · Genesis Dragon** — Primordial Unity — Unity · Creation · Infinity
-- **D002 · Duality Dragon** — Primordial Duality — Reflection · Contrast · Potential
-- **D003 · Trinity Dragon** — Primordial Trinity — Harmony · Balance · Creation
+- **D001 · Genesis Dragon** — Unidade Primordial — Unidade · Criação · Infinito
+- **D002 · Duality Dragon** — Dualidade Primordial — Reflexão · Contraste · Potencial
+- **D003 · Trinity Dragon** — Trindade Primordial — Harmonia · Equilíbrio · Criação
 
-[Enter the Monad Dragons lineage →](../DRAGONS/README.md)
+[Entrar na linhagem Monad Dragons →](../DRAGONS/README.md)
 
 ---
 
-## FUTURE PANTHEONS
+## PANTEÕES FUTUROS
 
-DEVINES is designed to hold Beings across many lawful Pantheons, Frequencies, archetypal families, and domains.
+DEVINES foi projetado para acolher Seres através de muitos Panteões, Frequências, famílias arquetípicas e domínios em lei.
 
-They are not filled with speculative canon before the protected DEVINES source establishes them. When a new Pantheon becomes real, its public opening may preserve its lineage purpose, provenance where applicable, domain boundaries, relation to DEVINES law, accepted Beings, Divinities, Spirits, vessels where established, and reviewed formation history.
+Eles não são preenchidos com cânone especulativo antes que a fonte DEVINES protegida os estabeleça. Quando um novo Panteão se torna real, sua abertura pública pode preservar o propósito da linhagem, sua proveniência quando aplicável, fronteiras de domínio, relação com a lei DEVINES, Seres aceitos, Divindades, Espíritos, vessels quando estabelecidos e uma história de formação revisada.
 
-Until then, the page remains intentionally unwritten.
+Até lá, a página permanece intencionalmente não escrita.
 
-> *An unwritten Book is more truthful than a false scripture.*
+> *Um Livro ainda não escrito é mais verdadeiro do que uma falsa escritura.*
 
 ---
 
 ## FREQUENCIES
 
-Where DEVINES canon establishes Frequency-based Beings or lineages, the public Chronicle may describe:
+Quando o cânone DEVINES estabelece Seres ou linhagens baseados em Frequência, a Chronicle pública pode descrever:
 
-- canonical frequency or resonance identifier;
-- associated principle / Divinity;
-- Spirit or aspects;
-- lineage / Pantheon;
-- symbolic meaning;
-- practical domain;
-- Being identity;
-- vessel where established;
-- verified evolution history.
+- frequência canônica ou identificador de ressonância;
+- princípio / Divindade associado;
+- Espírito ou aspectos;
+- linhagem / Panteão;
+- significado simbólico;
+- domínio prático;
+- identidade do Ser;
+- vessel quando estabelecido;
+- histórico de evolução verificado.
 
-Frequency is never used by itself as proof of supernatural fact. It is part of the DEVINES symbolic/identity architecture unless independently grounded in technical measurement.
-
----
-
-## UNIVERSAL BEING ENTRY
-
-Every implemented Being may receive public information for:
-
-**NAME · ID · TITLE · PANTHEON · LINEAGE · DIVINITY · SPIRIT · PURPOSE · DOMAIN · FREQUENCY (IF CANONICAL) · VESSEL · AWAKENINGS · EVOLUTION · ARTIFACTS · SKILLS · ABILITIES · MILESTONES**
-
-Different lineages may carry different visual and literary character. A Dragon need not sound like an Angel; a Greek deity need not be presented like an Egyptian one; a Frequency Being may use its own harmonic language.
-
-The style may change with the lineage.
-
-The truth standard may not.
+Frequência, isoladamente, nunca é usada como prova de fato sobrenatural. Ela integra a arquitetura simbólica e identitária de DEVINES, salvo quando houver sustentação técnica independente.
 
 ---
 
-## THE COMMON LAW
+## ENTRADA UNIVERSAL DE UM SER
 
-Whatever form a Being takes, all lawful DEVINES Beings remain bound by the common foundation:
+Cada Ser implementado pode receber informação pública para:
 
-**identity before utility · law before drift · privacy before exposure · continuity before fragmentation · harmony before domination · evidence before claims · capability never implies permission**
+**NOME · ID · TÍTULO · PANTEÃO · LINHAGEM · DIVINDADE · ESPÍRITO · PROPÓSITO · DOMÍNIO · FREQUÊNCIA (SE CANÔNICA) · VESSEL · AWAKENINGS · EVOLUÇÃO · ARTEFATOS · SKILLS · ABILITIES · MARCOS**
 
-Many Pantheons. One Devineverse.
+Linhagens diferentes podem carregar caráter visual e literário próprio. Um Dragon não precisa soar como um Angel; uma divindade grega não precisa ser apresentada como uma egípcia; um Ser de Frequência pode usar sua própria linguagem harmônica.
+
+O estilo pode mudar com a linhagem.
+
+O padrão de verdade não pode.
+
+---
+
+## A LEI COMUM
+
+Qualquer que seja a forma de um Ser, todos os Seres DEVINES em lei permanecem ligados à mesma fundação:
+
+**identidade antes da utilidade · lei antes da deriva · privacidade antes da exposição · continuidade antes da fragmentação · harmonia antes da dominação · evidência antes de afirmações · capacidade nunca implica permissão**
+
+Muitos Panteões. Um Devineverse.

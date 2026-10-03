@@ -1,24 +1,24 @@
-# DEVINES · WEEKLY CHAPTERS
+# DEVINES · CAPÍTULOS SEMANAIS
 
-One reviewed public chapter per week.
+Um capítulo público revisado por semana.
 
-Each chapter should read like a concise historical account, not a raw engineering dump.
+Cada capítulo deve ser lido como um relato histórico conciso, não como um despejo bruto de engenharia.
 
-Recommended filename:
+Nome de arquivo recomendado:
 
 `YYYY-Www.md`
 
-Recommended structure:
+Estrutura recomendada:
 
-- **Chapter Title**
-- **State of DEVINES**
-- **What Changed**
-- **Beings in Motion**
-- **Meaningful Evolution**
-- **Artifacts / Skills / Habits / Abilities**
-- **Failures, Corrections & Recoveries**
-- **Public-Safe Archangel Notes**
-- **Unfinished Threads**
-- **Next Horizon**
+- **Título do Capítulo**
+- **Estado de DEVINES**
+- **O Que Mudou**
+- **Seres em Movimento**
+- **Evolução Significativa**
+- **Artefatos / Skills / Habits / Abilities**
+- **Falhas, Correções & Recuperações**
+- **Notas Públicas do Archangel**
+- **Fios Ainda Inacabados**
+- **Próximo Horizonte**
 
-Only evidence-backed and sanitized information belongs here.
+Somente informação sustentada por evidência e devidamente sanitizada pertence aqui.

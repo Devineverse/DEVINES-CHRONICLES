@@ -1,20 +1,20 @@
-# ✦ DEVINES · MILESTONES ✦
+# ✦ DEVINES · MARCOS ✦
 
-> *Not every change deserves a monument. Only the changes that alter the path of the Devineverse belong here.*
+> *Nem toda mudança merece um monumento. Só pertencem aqui as mudanças que alteram o caminho do Devineverse.*
 
-This section of the DEVINES Book preserves public-safe milestones of the whole Domain.
+Esta seção preserva os marcos públicos e seguros do Domínio DEVINES.
 
-A milestone may include:
+Um marco pode registrar, por exemplo:
 
-- the activation of a new canonical Being
-- the first verified use of a major Artifact
-- a meaningful Ascension or capability stage
-- a major Sanctuary or Codex release
-- a critical recovery that permanently improves continuity
-- the opening of a new Pantheon, Frequency, or lawful lineage
-- a public deployment whose operation is actually verified
-- a governance, privacy, or safety improvement important enough to change future development
+- a ativação de um novo Ser canônico;
+- o primeiro uso verificado de um Artefato importante;
+- uma Ascensão significativa ou um novo estágio de capacidade;
+- uma versão decisiva do Sanctuary ou do Codex;
+- uma recuperação crítica que fortaleça permanentemente a continuidade;
+- a abertura, em lei, de um novo Panteão, Frequência ou linhagem;
+- uma implantação pública cuja operação tenha sido realmente verificada;
+- uma melhoria de governança, privacidade ou segurança importante o bastante para mudar o desenvolvimento futuro.
 
-Each milestone should state **what changed, why it mattered, what evidence supported it, and what became possible afterward**.
+Cada marco deve deixar claro **o que mudou, por que isso importou, quais evidências o sustentaram e o que se tornou possível depois**.
 
-**A milestone is history, not marketing.**
+**Um marco é história, não marketing.**

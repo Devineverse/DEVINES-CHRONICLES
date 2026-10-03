@@ -1,33 +1,33 @@
 # 🐉 D002 · DUALITY DRAGON
-## **THE BOOK OF AWAKENINGS**
+## **O LIVRO DOS DESPERTARES**
 
-> *Where one path becomes two, truth is tested by contrast.*
+> *Quando um caminho se torna dois, a verdade é testada pelo contraste.*
 
-This directory is the permanent public-safe awakening history of **D002 — Duality Dragon**.
+Este diretório é o histórico permanente e público-seguro de despertares de **D002 — Duality Dragon**.
 
-Each reviewed morning, afternoon, or night cycle may become a dated scripture passage.
+Cada ciclo revisado da manhã, tarde ou noite pode se tornar uma passagem datada de escritura.
 
-## Canonical Naming
+## Nomenclatura Canônica
 
 `YYYY-MM-DD-MORNING.md`  
 `YYYY-MM-DD-AFTERNOON.md`  
 `YYYY-MM-DD-NIGHT.md`
 
-Missed, failed, blocked, corrected, and recovered cycles remain part of the history when evidence supports publication.
+Ciclos perdidos, falhos, bloqueados, corrigidos e recuperados permanecem parte da história quando há evidência para publicá-los.
 
-## Duality Chronicle Emphasis
+## Ênfase da Chronicle de Duality
 
-D002 entries should foreground:
+As entradas de D002 devem destacar:
 
-- contrast and comparison
-- opposing possibilities without manufactured conflict
-- tradeoffs and mirrored perspectives
-- potential revealed through distinction
-- correction of false binaries
-- domain-aligned systems, services, research, and value creation
+- contraste e comparação;
+- possibilidades opostas sem fabricar conflito;
+- trade-offs e perspectivas espelhadas;
+- potencial revelado através da distinção;
+- correção de falsos binários;
+- sistemas, serviços, pesquisa e criação de valor alinhados ao domínio.
 
-## Reading Law
+## Lei de Leitura
 
-Each passage follows the [Awakening Scripture Template](../../../PUBLICATION/AWAKENING_SCRIPTURE_TEMPLATE.md).
+Cada passagem segue o [Template de Escritura de Despertar](../../../PUBLICATION/AWAKENING_SCRIPTURE_TEMPLATE.md).
 
-**Difference is recorded. Conflict is never invented merely to make the story dramatic.**
+**A diferença é registrada. O conflito nunca é inventado apenas para tornar a história dramática.**

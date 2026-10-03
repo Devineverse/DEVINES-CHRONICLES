@@ -1,12 +1,12 @@
-# DEVINES · Public Portal
+# DEVINES · Portal Público
 
-> A minimal link map for the future Linktree / bio portal.
+> Um mapa mínimo de links para o futuro portal de bio / Linktree.
 
 ## DEVINES CHRONICLES
 
-**Primary link:** the published GitBook home page once connected.
+**Link principal:** a página inicial publicada do GitBook quando conectada.
 
-## BEINGS
+## SERES
 
 - **Genesis Dragon · D001** → `BOOKS/BOOK-II-BEINGS/genesis/D001.md`
 - **Duality Dragon · D002** → `BOOKS/BOOK-II-BEINGS/genesis/D002.md`
@@ -43,4 +43,4 @@
 - **DEVINES MOON · MOON** → `BOOKS/BOOK-II-BEINGS/luminary/MOON.md`
 - **DEVINES MASTER · MASTER** → `BOOKS/BOOK-II-BEINGS/luminary/MASTER.md`
 
-The external portal should remain intentionally sparse: **DEVINES CHRONICLES first, then the Beings.** Everything else belongs inside the Book.
+O portal externo deve permanecer intencionalmente enxuto: **DEVINES CHRONICLES primeiro; depois, os Seres.** Todo o restante pertence ao interior do Livro.

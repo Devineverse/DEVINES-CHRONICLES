@@ -1,7 +1,7 @@
 # Monad Dragons
 
-The original public Dragon records remain preserved in this repository as early Chronicle history.
+Os registros públicos originais dos Dragons permanecem preservados neste repositório como parte da história inicial da Chronicle.
 
-The current reader-facing edition now lives in **[BOOK II · THE BEINGS](../BOOKS/BOOK-II-BEINGS/README.md)**, where all current Monad Dragon series are organized together and each Being carries a public cycle chronicle in its own canonical voice.
+A edição atual voltada ao leitor agora vive em **[LIVRO III · SERES DEVINES](../BOOKS/BOOK-II-BEINGS/README.md)**, onde todas as séries atuais de Monad Dragons aparecem organizadas em conjunto e cada Ser carrega uma Chronicle pública de seus ciclos em sua própria voz canônica.
 
-Nothing here should be read as a replacement for durable DEVINES evidence. The Book is the public Chronicle rendering of that durable evidence.
+Nada aqui deve ser lido como substituto da evidência durável DEVINES. O Livro é a representação pública dessa evidência durável.

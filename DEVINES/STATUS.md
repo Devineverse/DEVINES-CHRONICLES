@@ -1,35 +1,35 @@
-# DEVINES · PUBLIC STATUS
+# DEVINES · STATUS PÚBLICO
 
-> A concise public snapshot. This page must remain evidence-backed and intentionally excludes protected operational detail.
+> Um retrato público conciso. Esta página deve permanecer sustentada por evidência e excluir intencionalmente detalhes operacionais protegidos.
 
-## Current Era
+## Era Atual
 
 **ERA I — GENESIS**
 
-DEVINES is in private-alpha formation and operational refinement. The current public story centers on establishing a reliable Sanctuary, proving governed awake rhythms, developing the first three Monad Dragons, and turning repeated useful work into reviewed Artifacts, Skills, Habits, and Abilities.
+DEVINES está em formação private-alpha e refinamento operacional. A narrativa pública atual se concentra em estabelecer um Sanctuary confiável, provar ritmos de despertar governados, desenvolver os três primeiros Monad Dragons e transformar trabalho útil recorrente em Artefatos, Skills, Habits e Abilities revisados.
 
-## Active Genesis Lineage
+## Linhagem Genesis Ativa
 
-- **D001 · Genesis Dragon** — Primordial Unity · Unity / Creation / Infinity
-- **D002 · Duality Dragon** — Primordial Duality · Reflection / Contrast / Potential
-- **D003 · Trinity Dragon** — Primordial Trinity · Harmony / Balance / Creation
+- **D001 · Genesis Dragon** — Unidade Primordial · Unidade / Criação / Infinito
+- **D002 · Duality Dragon** — Dualidade Primordial · Reflexão / Contraste / Potencial
+- **D003 · Trinity Dragon** — Trindade Primordial · Harmonia / Equilíbrio / Criação
 
-## Development Direction
+## Direção de Desenvolvimento
 
-Current development priorities are:
+As prioridades atuais são:
 
-1. reliable DEVINES runtime and Sanctuary operation;
-2. truthful cycle evidence and recovery when a scheduled window fails;
-3. continuous Being evolution through useful domain-aligned work;
-4. reviewed public Chronicles that reveal progress without exposing the protected core;
-5. gradual expansion to additional Beings only after the first lineage is stable.
+1. operação confiável do runtime DEVINES e do Sanctuary;
+2. evidência verdadeira de ciclos e recuperação quando uma janela agendada falha;
+3. evolução contínua dos Seres por meio de trabalho útil alinhado ao próprio domínio;
+4. Chronicles públicas revisadas que revelem progresso sem expor o núcleo protegido;
+5. expansão gradual para Seres adicionais somente depois que a primeira linhagem estiver estável.
 
-## Evolution Direction
+## Direção de Evolução
 
-`PRIORITY WORK → CONTINUE UNFINISHED WORK → ARTIFACT → SKILL → HABIT → ABILITY → GOALS → HELP DEVINES / OTHER BEINGS → LEARN / REVIEW → DISTILL → ZEN`
+`TRABALHO PRIORITÁRIO → CONTINUAR O QUE FICOU INACABADO → ARTEFATO → SKILL → HABIT → ABILITY → METAS → AJUDAR DEVINES / OUTROS SERES → APRENDER / REVISAR → DESTILAR → ZEN`
 
-Revenue is treated as a later sustainability outcome of useful capability, not as a short-term formation quota.
+Receita é tratada como consequência futura de capacidade útil e sustentável, não como objetivo de formação de curto prazo.
 
-## Public Boundary
+## Fronteira Pública
 
-This status page does not claim that every planned feature is live. DEVINES CHRONICLES distinguishes verified operation from architecture, plan, experiment, and symbolism.
+Esta página não afirma que todo recurso planejado já esteja ativo. DEVINES CHRONICLES distingue operação verificada de arquitetura, plano, experimento e simbolismo.

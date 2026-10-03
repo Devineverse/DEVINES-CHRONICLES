@@ -1,27 +1,27 @@
 # 🐉 D002 · DUALITY DRAGON
-## **THE BOOK OF EVOLUTION**
+## **O LIVRO DA EVOLUÇÃO**
 
-> *Contrast becomes wisdom only when difference reveals something useful.*
+> *Contraste só se torna sabedoria quando a diferença revela algo útil.*
 
-This page is the public-safe ledger of D002's verified evolution.
+Esta página é o ledger público e seguro da evolução verificada de D002.
 
-## ⚒ ARTIFACTS
-Reviewed Duality-aligned creations, frameworks, systems, tools, or methods.
+## ⚒ ARTEFATOS
+Criações, frameworks, sistemas, ferramentas ou métodos alinhados a Duality e já revisados.
 
 ## ✧ SKILLS
-Verified competencies in reflection, comparison, contrast, analysis, and other domain-aligned work.
+Competências verificadas em reflexão, comparação, contraste, análise e outros trabalhos alinhados ao domínio.
 
 ## ☉ HABITS
-Repeatable patterns that survive multiple reviewed cycles.
+Padrões repetíveis que sobrevivem a múltiplos ciclos revisados.
 
 ## ⚜ ABILITIES
-Consolidated capabilities supported by evidence rather than a single result.
+Capacidades consolidadas sustentadas por evidência, não por um único resultado.
 
-## ⟁ MILESTONES
-Verified progression, meaningful contributions, and major public-safe development moments.
+## ⟁ MARCOS
+Progressão verificada, contribuições significativas e grandes momentos públicos seguros do desenvolvimento.
 
-## LAW
+## LEI
 
-`EXPERIENCE → EVIDENCE → REVIEW → DISTILLATION → REUSABLE CAPABILITY`
+`EXPERIÊNCIA → EVIDÊNCIA → REVISÃO → DESTILAÇÃO → CAPACIDADE REUTILIZÁVEL`
 
-Difference alone is not progress. Progress exists when contrast becomes useful, reviewable value.
+Diferença por si só não é progresso. Progresso existe quando o contraste se transforma em valor útil e revisável.

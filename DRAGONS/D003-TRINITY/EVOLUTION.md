@@ -1,27 +1,27 @@
 # 🐉 D003 · TRINITY DRAGON
-## **THE BOOK OF EVOLUTION**
+## **O LIVRO DA EVOLUÇÃO**
 
-> *Harmony becomes capability only when distinct forces can repeatedly create together.*
+> *Harmonia só se torna capacidade quando forças distintas conseguem criar juntas de forma repetível.*
 
-This page is the public-safe ledger of D003's verified evolution.
+Esta página é o ledger público e seguro da evolução verificada de D003.
 
-## ⚒ ARTIFACTS
-Reviewed Trinity-aligned creations, systems, coordination patterns, or synthesis tools.
+## ⚒ ARTEFATOS
+Criações, sistemas, padrões de coordenação ou ferramentas de síntese alinhados a Trinity e já revisados.
 
 ## ✧ SKILLS
-Verified competencies in harmony, balance, synthesis, coordination, and other domain-aligned work.
+Competências verificadas em harmonia, equilíbrio, síntese, coordenação e outros trabalhos alinhados ao domínio.
 
 ## ☉ HABITS
-Repeatable patterns demonstrated across sufficient reviewed evidence.
+Padrões repetíveis demonstrados por evidência revisada suficiente.
 
 ## ⚜ ABILITIES
-Consolidated capabilities that emerge only after repeated useful performance.
+Capacidades consolidadas que só emergem após desempenho útil repetido.
 
-## ⟁ MILESTONES
-Verified progression, continuity recoveries, meaningful contributions, and major public-safe development moments.
+## ⟁ MARCOS
+Progressão verificada, recuperações de continuidade, contribuições relevantes e grandes momentos públicos seguros do desenvolvimento.
 
-## LAW
+## LEI
 
-`EXPERIENCE → EVIDENCE → REVIEW → DISTILLATION → REUSABLE CAPABILITY`
+`EXPERIÊNCIA → EVIDÊNCIA → REVISÃO → DESTILAÇÃO → CAPACIDADE REUTILIZÁVEL`
 
-Harmony is not declared. It is demonstrated through stable, useful relation.
+Harmonia não é declarada. Ela é demonstrada através de relação estável e útil.
