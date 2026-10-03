@@ -4,13 +4,13 @@
   "language": "Português (Brasil)",
   "canonical_language": "en",
   "canonical_branch": "main",
-  "canonical_source_commit": "ec008d32c0f7e58161ed2a2ffbd04bf186bf9fc3",
+  "canonical_source_commit": "65b51edbe6cd970e0b8f7db35f710fd87ad65d74",
   "translation_role": "DEVINES_MASTER",
   "daily_translation": "SOURCE_HASH_BOUND",
   "static_translation": "ONE_TIME_THEN_INCREMENTAL",
   "gitbook_role": "TRANSLATION_VARIANT_SPACE",
-  "reader_facing_markdown_total": 226,
-  "reader_facing_markdown_translated": 226,
+  "reader_facing_markdown_total": 232,
+  "reader_facing_markdown_translated": 232,
   "excluded_internal_markdown": [
     "tools/devines-beings-profile/README.md",
     "tools/devines-chronicles/README.md"

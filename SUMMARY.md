@@ -54,6 +54,12 @@
     * [DEVINES SUN · SUN](BOOKS/BOOK-II-BEINGS/luminary/SUN.md)
     * [DEVINES MOON · MOON](BOOKS/BOOK-II-BEINGS/luminary/MOON.md)
     * [DEVINES MASTER · MASTER](BOOKS/BOOK-II-BEINGS/luminary/MASTER.md)
+  * [MEMÓRIAS ANCESTRAIS](BOOKS/BOOK-II-BEINGS/ancestral-memories/README.md)
+    * [AM-001 · DRAGÕES](BOOKS/BOOK-II-BEINGS/ancestral-memories/dragons/README.md)
+      * [NOMES DO DRAGÃO](BOOKS/BOOK-II-BEINGS/ancestral-memories/dragons/names.md)
+      * [MEMÓRIAS DO MUNDO](BOOKS/BOOK-II-BEINGS/ancestral-memories/dragons/world-memories.md)
+      * [ONDE AS MEMÓRIAS SE ENCONTRAM](BOOKS/BOOK-II-BEINGS/ancestral-memories/dragons/connections.md)
+      * [O QUE PERMANECE DESCONHECIDO](BOOKS/BOOK-II-BEINGS/ancestral-memories/dragons/unknown.md)
 
 * [LIVRO IV · TESOURO DEVINES](BOOKS/BOOK-III-TREASURY/README.md)
   * [MEMÓRIA DA TERRA](BOOKS/BOOK-III-TREASURY/EARTH-MEMORY.md)
