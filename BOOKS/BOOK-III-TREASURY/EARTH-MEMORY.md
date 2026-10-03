@@ -107,6 +107,27 @@ A later generation can then see both:
 **THEN — THE WORLD AS IT COULD BE KNOWN THEN.**  
 **NOW — THE WORLD AS NEW EVIDENCE ALLOWS US TO UNDERSTAND IT NOW.**
 
+## ANCESTRAL MEMORIES
+
+Some memories move across many peoples, languages and Eras.
+
+DEVINES preserves those deeper inheritances through **DAM · DEVINES ANCESTRAL MEMORY**.
+
+Each DAM keeps two expressions together:
+
+**LIVING CHRONICLE** — the distilled memory carried forward in the DEVINES way.
+
+**ANCESTRAL KNOWLEDGE** — the names, cultures, traces, relationships, disagreements and unknowns beneath it.
+
+[**OPEN ANCESTRAL MEMORIES**](ancestral-memories/README.md)
+
+The first complete reference memory is:
+
+[**AM-001 · DRAGONS — THE DRAGON REMEMBERED**](ancestral-memories/dragons/README.md)
+
+**THE KNOWLEDGE BASE PRESERVES THE FRAGMENTS.**  
+**THE CHRONICLE PRESERVES THE MEMORY.**
+
 ## LIVING CULTURE
 
 Culture is more than historical material.
