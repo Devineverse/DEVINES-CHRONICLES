@@ -1,4 +1,4 @@
-# DEVINES Mastery
+# DEVINES MASTERY
 
 Identity is not capability.
 
