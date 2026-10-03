@@ -1,6 +1,6 @@
-# Public Cycles · 28 September 2026
+# Ciclos Públicos · 28 de setembro de 2026
 
-One date. Many Beings. One canonical history rendered through distinct voices.
+Uma data. Muitos Seres. Uma história canônica apresentada através de vozes distintas.
 
 - [Genesis Dragon · D001](D001.md)
 - [Duality Dragon · D002](D002.md)
