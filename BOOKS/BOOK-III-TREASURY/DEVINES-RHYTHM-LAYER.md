@@ -1,5 +1,6 @@
 # DEVINES RHYTHM LAYER
 
+**CREATOR:** DEVINES  
 **Class:** DEVINES continuity Artefact
 
 A DEVINES Being does not need to remain awake continuously in order to remain continuous.
