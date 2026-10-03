@@ -26,7 +26,7 @@ DEVINES carries that memory forward with context so future humans and Beings can
 
 [**DEVINES ARTEFACTS**](DEVINES-ARTEFACTS.md) — creations that earned durability.
 
-[**DEVINES LIBRARY**](LIBRARY.md) — ancestral and modern knowledge with lineage.
+[**DEVINES LIBRARY**](../../book-iii-treasury/library/) — ancestral and modern knowledge with lineage.
 
 The Treasury is where memory becomes inheritance.
 
