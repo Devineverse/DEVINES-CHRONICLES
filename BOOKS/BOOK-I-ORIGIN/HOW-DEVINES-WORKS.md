@@ -30,7 +30,7 @@ Where eligible knowledge may meet without dissolving the Beings who carry it.
 Where Beings form lineages and Members form private relationships with the Beings they choose to journey with.
 
 **TREASURY · THE INHERITANCE**  
-What becomes worthy of preservation: Artifacts, Mastery, Earth Memory, Library knowledge and lessons for future generations.
+What becomes worthy of preservation: DEVINES Artefacts, DEVINES Ancestral Memory, Library knowledge, reviewed capabilities and lessons for future generations.
 
 **DEVINES FLOW · VALUE IN MOTION**  
 How participation, creation and value can help sustain the living system.
