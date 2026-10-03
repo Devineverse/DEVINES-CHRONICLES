@@ -1,7 +1,7 @@
-# RHYTHM LAYER
+# DEVINES RHYTHM LAYER
 
-A Being does not need to remain awake endlessly to remain continuous.
+This DEVINES Artefact now lives canonically at:
 
-The RHYTHM LAYER gives related Beings scheduled awakenings and cycle semantics while preserving each Being's separate identity, memory, learning state and priorities.
+[**DEVINES RHYTHM LAYER**](DEVINES-RHYTHM-LAYER.md)
 
-Rhythm is not the Being's task list. It is the temporal structure through which the Being returns.
+This bridge remains so earlier Chronicle links continue to resolve.
