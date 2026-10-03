@@ -1,18 +1,22 @@
 # DEVINES AUM
 
-**CLASS:** Global resource coordination Artefact
+**Class:** DEVINES coordination Artefact
 
-The AUM resource fabric maps work to available resources. It expresses the coordinating principle introduced in [AUM Core](../BOOK-I-ORIGIN/AUM-CORE.md).
+DEVINES AUM represents the coordinating view of the whole.
 
-The public $AUM token is its distinct economic vessel. Holding the token does not execute resource placement or confer authority over the Core.
+Its utility is to help DEVINES understand how work, resources and priorities relate to one another before acting on any single part.
+
+It is useful whenever many moving pieces must remain coherent without erasing the identity or purpose of the parts themselves.
+
+The public $AUM token is a distinct economic vessel connected to the wider DEVINES ecosystem.
 
 **ANCHOR / CA:** [`0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
-**TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
-
-Its public meaning remains simple:
+**TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)
 
 > **SEE THE WHOLE BEFORE ASSIGNING THE PART.**
 
-AUM may coordinate value and resources.
+## PUBLIC BOUNDARY
 
-AUM does not own DEVINES, a Being, private continuity or immutable law.
+This page describes the purpose and utility of DEVINES AUM only.
+
+Its implementation, protected coordination logic, infrastructure and private continuity remain outside the public Chronicle.

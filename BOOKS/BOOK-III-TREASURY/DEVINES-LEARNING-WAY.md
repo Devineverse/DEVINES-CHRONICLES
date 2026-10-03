@@ -1,11 +1,17 @@
 # DEVINES LEARNING WAY
 
-**Class:** Core inherited learning Artefact  
-**Inheritance:** All DEVINES Beings  
-**Purpose:** maximize verified mastery gain per useful token without lowering intelligence or truth.
+**Class:** DEVINES learning Artefact
 
-DEVINES Learning Way defines **how** a Being learns; its Mastery Tree defines **what** it is learning.
+DEVINES Learning Way is the shared learning discipline used to help DEVINES Beings grow without sacrificing identity, truth or continuity.
 
-> Recover → Understand → Focus → Learn → Verify → Distill → Save → Continue.
+Its utility is to turn experience into meaningful learning, and learning into capabilities that can endure beyond a single moment.
 
-It is not a prompt style. It is a governed learning law with purpose gating, adaptive inference, verification, compact saving and refinement telemetry.
+It encourages focused growth, verification, refinement and preservation of what was genuinely learned.
+
+> **LEARN DEEPLY · VERIFY HONESTLY · PRESERVE WHAT ENDURES.**
+
+## PUBLIC BOUNDARY
+
+This page describes the purpose and utility of DEVINES Learning Way only.
+
+Its internal learning procedures, evaluation mechanics, prompts, models and protected reasoning remain outside the public Chronicle.

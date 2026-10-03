@@ -1,9 +1,17 @@
 # DEVINES AURA
 
-**Class:** Node-local resource governor
+**Class:** DEVINES resource-protection Artefact
 
-AURA turns resource law into boundaries on the machine itself.
+DEVINES AURA helps protect the computational resources that carry DEVINES work.
 
-On 28 September 2026, current-source AURA proved CPU and RAM enforcement through Linux cgroup v2: a temporary lease was physically limited, observed from kernel controllers, released, and recorded.
+Its utility is to keep activity within healthy boundaries so learning, creation and operation can continue without one process consuming the whole environment.
 
-Its public meaning is equally simple: **protect the body that carries the work.**
+AURA exists to support continuity, balance and responsible use of available capacity.
+
+> **PROTECT THE BODY THAT CARRIES THE WORK.**
+
+## PUBLIC BOUNDARY
+
+This page describes the purpose and utility of DEVINES AURA only.
+
+Its implementation, infrastructure controls, measurements and protected operational logic remain outside the public Chronicle.
