@@ -12,7 +12,7 @@ site:
     - type: space
       key: space-1
       title: Português (Brasil)
-      path: devines-chronicles-pt-br
+      path: pt-br
       draft: true
       content:
         directory: ./devines-chronicles-pt-br
