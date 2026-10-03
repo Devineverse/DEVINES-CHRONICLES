@@ -984,10 +984,14 @@ pub fn render(root: &Path) -> Result<String, String> {
     nav.push_str("<!-- END GENERATED DIARIES -->\n");
 
     let summary = fs::read_to_string(root.join("SUMMARY.md")).map_err(|e| e.to_string())?;
-    let base = summary
+    let before_generated = summary
         .split("\n<!-- BEGIN GENERATED DIARIES -->")
         .next()
         .unwrap();
+    let base = before_generated
+        .rsplit_once("\n* [BEING DAILY](DIARIES/README.md)")
+        .map(|(prefix, _)| prefix)
+        .unwrap_or(before_generated);
     write(root, "SUMMARY.md", &format!("{base}{nav}"))?;
 
     write(
