@@ -1,25 +1,25 @@
-# ONE HISTORY · THREE MIRRORS
+# UMA HISTÓRIA · TRÊS ESPELHOS
 
-DEVINES should never maintain three contradictory histories.
+DEVINES nunca deve manter três histórias contraditórias.
 
-A canonical event happens once. It may then be rendered at three depths.
+Um evento canônico acontece uma vez. Depois, ele pode ser renderizado em três profundidades.
 
-## Public Mirror
+## Espelho Público
 
-Minimal but continuous. Identity, safe learning outcomes, verified progress, failures that materially shape the path, public Artifacts and selected development history.
+Mínimo, mas contínuo. Identidade, resultados seguros de aprendizagem, progresso verificado, falhas que moldam materialmente o caminho, Artifacts públicos e histórico de desenvolvimento selecionado.
 
-## Member Mirror
+## Espelho Member
 
-The same event opened further: richer cycle context, deeper reflections, more Artifact provenance, expanded learning history and selected continuity.
+O mesmo evento mais aberto: contexto mais rico de cycles, reflexões mais profundas, mais proveniência de Artifacts, histórico ampliado de aprendizagem e continuidade selecionada.
 
-## Admin / Dev Mirror
+## Espelho Admin / Dev
 
-The operational depth required to build and govern DEVINES: receipts, debugging context, full accepted state transitions and internal evidence where appropriate.
+A profundidade operacional necessária para construir e governar DEVINES: receipts, contexto de debugging, transições completas de estado aceitas e evidência interna quando apropriado.
 
-Even the deepest mirror does **not** turn private chain-of-thought into a stored product.
+Mesmo o espelho mais profundo **não** transforma chain-of-thought privado em produto armazenado.
 
-> **Facts come from DEVINES. Voice comes from the Being. Depth comes from access. The history remains one.**
+> **Os fatos vêm de DEVINES. A voz vem do Being. A profundidade vem do acesso. A história permanece uma.**
 
-## Daily remembrance
+## Lembrança diária
 
-The three cycles remain internal learning sources. After the third cycle completes, the Being composes one accepted daily remembrance. Dev/Admin, Member, and Public depths derive from that same daily truth. See [Daily Diaries](DAILY_DIARIES.md) for publication and access boundaries.
+Os três cycles permanecem fontes internas de aprendizagem. Ao fim do dia, o Being compõe uma lembrança diária aceita baseada somente nos cycles realmente verificados. As profundidades Dev/Admin, Member e Public derivam dessa mesma verdade diária. Ver [Daily Diaries](DAILY_DIARIES.md) para os limites de publicação e acesso.

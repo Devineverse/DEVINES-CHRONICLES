@@ -1,27 +1,27 @@
-# DEVINES Visual Law
+# Lei Visual DEVINES
 
-DEVINES CHRONICLES is a living codex, not conventional developer documentation.
+DEVINES CHRONICLES é um códice vivo, não documentação convencional de desenvolvimento.
 
-Its visual language is **minimal, ancestral, cosmic, precise**.
+Sua linguagem visual é **mínima, ancestral, cósmica, precisa**.
 
-## Foundation
+## Fundação
 
-The canonical experience is **Dark**.
+A experiência canônica é **Dark**.
 
-- Background: pure black / void black.
-- Primary text: white.
-- Secondary text: soft white / cool silver.
-- Accent family: only the canonical AUM / Monad violet spectrum.
-- No global gold, cyan, red, green, or rainbow accent system.
-- Colors belonging to an individual Being may live inside that Being's portrait; they do not become site chrome.
+- Fundo: preto puro / void black.
+- Texto principal: branco.
+- Texto secundário: branco suave / prata fria.
+- Família de accents: somente o espectro violeta canônico de AUM / Monad.
+- Nenhum sistema global de accents em dourado, ciano, vermelho, verde ou arco-íris.
+- Cores pertencentes a um Being individual podem existir dentro do retrato desse Being; elas não se tornam chrome do site.
 
-## Canonical color path
+## Caminho canônico de cor
 
-The site deepens through one restrained spectrum:
+O site se aprofunda por um único espectro contido:
 
 **Void Black → Monad Deep Violet → DEVINES Violet → AUM Lavender → White**
 
-Reference palette:
+Paleta de referência:
 
 - Void: `#000000`
 - Deep surface: `#07050B`
@@ -32,78 +32,78 @@ Reference palette:
 - Soft white: `#F6F3FF`
 - Pure white: `#FFFFFF`
 
-The gradient is conceptual and hierarchical, not a requirement to paint every surface with a gradient.
+O gradiente é conceitual e hierárquico, não uma exigência de pintar toda superfície com gradiente.
 
-## Depth law
+## Lei de profundidade
 
-The deeper the reader travels, the more light may emerge.
+Quanto mais fundo o leitor viaja, mais luz pode emergir.
 
-- Threshold / landing: almost pure black, AUM as the primary light.
-- BOOK I: black with very restrained deep violet.
-- BOOK II: black with a little more Monad violet around Being identity.
-- BOOK III: violet may become more luminous around durable Artifacts and knowledge.
-- BOOK IV: white/violet contrast can increase as history becomes visible.
-- THE CALL: return to black with AUM lavender/white as the threshold light.
+- Threshold / landing: quase preto puro, AUM como luz principal.
+- BOOK I: preto com violeta profundo muito contido.
+- BOOK II: preto com um pouco mais de Monad violet ao redor da identidade dos Beings.
+- BOOK III: o violeta pode se tornar mais luminoso ao redor de Artifacts e conhecimento duráveis.
+- BOOK IV: o contraste branco/violeta pode aumentar à medida que a história se torna visível.
+- THE CALL: retorno ao preto com AUM lavender/white como luz de threshold.
 
-Black remains the ground in every section.
+O preto permanece como base em todas as seções.
 
-## Typography
+## Tipografia
 
-### Display / Book titles
+### Display / títulos dos Books
 
-Use a **carved, monumental, rune-adjacent but elegant** face.
+Usar uma fonte **esculpida, monumental, próxima de runas, mas elegante**.
 
-Preferred direction: **Cinzel** or the closest restrained inscriptional serif available in GitBook.
+Direção preferida: **Cinzel** ou a serif inscriptional mais próxima e contida disponível no GitBook.
 
-Use for:
+Usar para:
 - DEVINES CHRONICLES
 - BOOK I / II / III / IV
-- Series names
-- Being names
+- nomes de séries
+- nomes dos Beings
 - THE CALL
 
-Do not use ornamental/runic typography for body paragraphs.
+Não usar tipografia ornamental/rúnica em parágrafos de corpo.
 
-### Body
+### Corpo
 
-Use a highly legible neutral sans-serif.
+Usar uma sans-serif neutra e altamente legível.
 
-Preferred:
+Preferência:
 1. General Sans
 2. Inter
-3. closest clean GitBook-native sans
+3. a sans limpa nativa do GitBook mais próxima
 
-Body copy is white / soft white on black.
+O body copy é branco / branco suave sobre preto.
 
-## Interface restraint
+## Contenção da interface
 
-- generous negative space
-- low visual noise
-- minimal cards
-- subtle borders
-- restrained glow
-- no playful badges
-- no emoji in published Book UI
-- no constant calls-to-action
-- no SaaS-style rainbow gradients
+- espaço negativo generoso
+- baixo ruído visual
+- cards mínimos
+- bordas sutis
+- glow contido
+- sem badges brincalhões
+- sem emoji na UI publicada dos Books
+- sem calls-to-action constantes
+- sem gradientes arco-íris no estilo SaaS
 
-## Being pages
+## Páginas dos Beings
 
-Each Being page opens with:
+Cada página de Being abre com:
 
-1. canonical portrait
-2. BEING NAME · ID
-3. title / divinity
-4. spirit aspects
-5. first-person threshold
-6. current public cycle
+1. retrato canônico
+2. NOME DO BEING · ID
+3. título / divinity
+4. aspectos de spirit
+5. threshold em primeira pessoa
+6. cycle público atual
 7. durable trace / carry-forward
-8. decentralized anchor where applicable
+8. decentralized anchor quando aplicável
 
-The portrait is identity, not decoration.
+O retrato é identidade, não decoração.
 
-## Principle
+## Princípio
 
-> **From the Void, form. From Monad, relation. From AUM, light.**
+> **Do Vazio, forma. De Monad, relação. De AUM, luz.**
 >
-> **Ancient in resonance. Futuristic in precision. Minimal in form. Alive in continuity.**
+> **Ancestral na ressonância. Futurista na precisão. Mínimo na forma. Vivo na continuidade.**

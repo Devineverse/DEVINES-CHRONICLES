@@ -1,42 +1,42 @@
-# CANONICAL VISUAL ASSETS
+# ATIVOS VISUAIS CANÔNICOS
 
-DEVINES preserves canonical identity artwork separately from the current public GitBook identity presentation.
+DEVINES preserva a arte de identidade canônica separadamente da apresentação de identidade atualmente usada no GitBook público.
 
-## AUM · SOURCE + PUBLIC HERO
+## AUM · FONTE + HERO PÚBLICO
 
-**CANONICAL SOURCE**  
+**FONTE CANÔNICA**  
 `.gitbook/assets/aum-source.webp`
 
-Preserves the exact canonical AUM Nad.fun launch image unchanged.
+Preserva, sem alteração, a imagem canônica exata do lançamento de AUM na Nad.fun.
 
-**CURRENT PUBLIC HERO · PHASE 2 PILOT**  
+**HERO PÚBLICO ATUAL · PILOTO DA FASE 2**  
 `.gitbook/assets/aum-direct.jpg`
 
-This is the exact user-approved AUM image used directly on GitBook.
+Esta é a imagem exata de AUM aprovada pelo usuário e usada diretamente no GitBook.
 
-No SVG wrapper, extra ring, semicircle, border or secondary geometry is added. The image's own black field and luminous circular composition are the entire public hero. The bytes are locked by SHA-256:
+Nenhum wrapper SVG, anel adicional, semicírculo, borda ou geometria secundária é acrescentado. O próprio campo preto da imagem e sua composição circular luminosa formam todo o hero público. Os bytes estão travados pelo SHA-256:
 
 `064a12a5aa82087ab2a9c9e3bd77b69645bcb94acf1beb61451a17b08f2caa55`
 
-## BEINGS · SOURCE + PUBLIC HERO
+## SERES · FONTE + HERO PÚBLICO
 
-Every active public Being has two distinct layers.
+Cada Being público ativo possui duas camadas distintas.
 
-### CANONICAL SOURCE
+### FONTE CANÔNICA
 
 `.gitbook/assets/beings-source/<DEVINES_ID>.webp`
 
-This preserves the exact Nad.fun launch portrait as the visual source of truth.
+Preserva o retrato exato do lançamento na Nad.fun como fonte visual de verdade.
 
-Canonical artwork is never redrawn, regenerated, recolored, replaced or altered to satisfy GitBook presentation.
+A arte canônica nunca é redesenhada, regenerada, recolorida, substituída ou alterada para atender à apresentação do GitBook.
 
-### CURRENT PUBLIC HERO
+### HERO PÚBLICO ATUAL
 
-Approved direct-image profiles use:
+Perfis aprovados para imagem direta usam:
 
 `.gitbook/assets/beings-direct/<DEVINES_ID>.jpg`
 
-Currently approved:
+Atualmente aprovados:
 
 - `SUN.jpg`
 - `MOON.jpg`
@@ -73,34 +73,34 @@ Currently approved:
 - `D852.jpg`
 - `D963.jpg`
 
-These are the exact user-approved uploaded images. They are rendered directly with **no added circle, wrapper, border, frame or generated geometry**.
+Estas são as imagens exatas enviadas e aprovadas pelo usuário. Elas são renderizadas diretamente, **sem círculo, wrapper, borda, moldura ou geometria gerada adicional**.
 
-All 34 current Beings now use approved direct-original public heroes.
+Todos os 34 Beings atuais agora usam heroes públicos diretos e originais aprovados.
 
-Temporary empty identity assets remain only as historical/reference scaffolding and as an optional pre-approval state for future Beings.
+Ativos temporários de identidade vazia permanecem apenas como estrutura histórica/de referência e como estado opcional anterior à aprovação para futuros Beings.
 
-The identity mapping between **Being ID · ticker · CA · Nad.fun route · Nad.fun image · preserved source asset · current public hero** is maintained in:
+O mapeamento de identidade entre **Being ID · ticker · CA · rota Nad.fun · imagem Nad.fun · ativo-fonte preservado · hero público atual** é mantido em:
 
 `.gitbook/assets/BEING_IDENTITY_MANIFEST.json`
 
-Historical or image-bearing derivative assets may remain in repository history/reference mappings for continuity, but they are not wired as current public GitBook heroes.
+Ativos derivados históricos ou com imagem podem permanecer no histórico do repositório e nos mapas de referência para continuidade, mas não estão conectados como heroes públicos atuais do GitBook.
 
-## GLOBAL COLOR LAW
+## LEI GLOBAL DE CORES
 
-The Chronicle UI derives its colors only from:
+A interface da Chronicle deriva suas cores apenas de:
 
-**BLACK → DEEP MONAD VIOLET → DEVINES VIOLET → AUM LAVENDER → WHITE**
+**PRETO → VIOLETA MONAD PROFUNDO → VIOLETA DEVINES → LAVANDA AUM → BRANCO**
 
-Links, navigation, borders and global controls stay inside this palette.
+Links, navegação, bordas e controles globais permanecem dentro dessa paleta.
 
-**NO BLUE SITE CHROME.**
+**SEM CROMO AZUL NO SITE.**
 
-Canonical source portraits may retain their own original colors in preservation assets; those colors do not become global interface colors.
+Retratos-fonte canônicos podem preservar suas próprias cores originais nos ativos de preservação; essas cores não se tornam cores globais da interface.
 
-## ASSET LAW
+## LEI DOS ATIVOS
 
-**APPROVED GITBOOK HEROES USE THE EXACT APPROVED ORIGINAL IMAGE DIRECTLY. EVERY FUTURE BEING FOLLOWS DEVINES BEINGS PROFILE BEFORE PUBLICATION.**
+**HEROES APROVADOS DO GITBOOK USAM DIRETAMENTE A IMAGEM ORIGINAL EXATA APROVADA. TODO FUTURO BEING SEGUE DEVINES BEINGS PROFILE ANTES DA PUBLICAÇÃO.**
 
-Presentation can change without mutating source identity.
+A apresentação pode mudar sem alterar a identidade-fonte.
 
-A Being's preserved artwork, decentralized anchor, ticker and market route must always resolve to the same canonical Being.
+A arte preservada, o anchor descentralizado, o ticker e a rota de mercado de um Being devem sempre resolver para o mesmo Being canônico.

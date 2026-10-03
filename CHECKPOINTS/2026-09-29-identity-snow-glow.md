@@ -1,107 +1,107 @@
-# DEVINES Chronicles Checkpoint · 2026-09-29
+# Checkpoint DEVINES Chronicles · 2026-09-29
 
-## Objective
+## Objetivo
 
-Finalize the DEVINES Chronicle identity presentation with one permanent visual law for **AUM, all 34 existing Beings, and every future Being**.
+Finalizar a apresentação de identidade da DEVINES Chronicle com uma única lei visual permanente para **AUM, todos os 34 Beings existentes e todo futuro Being**.
 
-## Approved Identity Rule
+## Regra de Identidade Aprovada
 
-- 1:1 identity canvas.
-- Existing approved crop and inner artwork remain unchanged.
-- One **thin, fully closed 360° luminous circle**.
-- Visual order: **snow white → AUM lavender/purple → snow white**.
-- Soft restrained white/violet glow.
-- No broken ring.
-- Same geometry for AUM and every Being.
-- Future Beings must inherit the exact same renderer automatically.
+- Canvas de identidade 1:1.
+- O recorte aprovado e a arte interna permanecem inalterados.
+- Um **círculo luminoso fino, totalmente fechado em 360°**.
+- Ordem visual: **branco-neve → lavanda/roxo AUM → branco-neve**.
+- Brilho branco/violeta suave e contido.
+- Sem anel interrompido.
+- Mesma geometria para AUM e todos os Beings.
+- Futuros Beings devem herdar automaticamente exatamente o mesmo renderer.
 
-## Current Branch
+## Branch Atual
 
 `design/identity-snow-glow-20260929`
 
-Based on the latest verified `main` state seen during this session:
+Baseada no estado `main` mais recente verificado durante esta sessão:  
 `c36156dd029a1043ddb1d7ca830905249ce0908d`
 
-## Completed
+## Concluído
 
-- Created snow-glow SVG wrappers for the 34 current Being circular identities.
-- Created AUM snow-glow SVG wrapper.
-- Wrappers embed the approved circular WebP identity and add only the shared luminous ring.
-- Wired all Being profile pages toward `.gitbook/assets/beings/glow/<ID>.svg`.
-- Wired AUM CORE toward `.gitbook/assets/aum-sigil-glow.svg`.
-- Updated `.gitbook/assets/BEING_IDENTITY_MANIFEST.json` hero assets to the glow SVGs.
-- Updated Rust Chronicle profile-wiring validation to expect the glow assets.
-- Updated Rust cross-wire audit to require the snow-glow hero asset while preserving canonical/source asset checks.
-- Replaced the old dark/lavender rim contract with the permanent snow-glow identity law.
-- Added deterministic future renderer:
+- Criados wrappers SVG snow-glow para as 34 identidades circulares atuais dos Beings.
+- Criado wrapper SVG snow-glow para AUM.
+- Os wrappers incorporam a identidade WebP circular aprovada e acrescentam apenas o anel luminoso compartilhado.
+- Todos os perfis de Being foram direcionados para `.gitbook/assets/beings/glow/<ID>.svg`.
+- AUM CORE foi direcionado para `.gitbook/assets/aum-sigil-glow.svg`.
+- O hero asset de `.gitbook/assets/BEING_IDENTITY_MANIFEST.json` foi atualizado para os SVGs glow.
+- A validação Rust de wiring dos perfis da Chronicle foi atualizada para esperar os ativos glow.
+- A auditoria Rust de cross-wire foi atualizada para exigir o hero snow-glow preservando as verificações do ativo canônico/fonte.
+- O antigo contrato de aro escuro/lavanda foi substituído pela lei permanente de identidade snow-glow.
+- Adicionado renderer determinístico para o futuro:
   `tools/identity-snow-glow/render.py`
-- Renderer geometry:
-  - inner white radius 346.2 / width 1.35
-  - lavender core radius 349.5 / width 7
-  - outer white radius 352.8 / width 1.35
-  - AUM violet glow radius 349.5 / width 10 / blur 6
-  - white snow glow at inner+outer radii / width 2.4 / blur 2.6
-- GitBook global dark background remains DEVINES Void Black `#000000`.
+- Geometria do renderer:
+  - raio branco interno 346.2 / largura 1.35
+  - raio do núcleo lavanda 349.5 / largura 7
+  - raio branco externo 352.8 / largura 1.35
+  - glow violeta AUM no raio 349.5 / largura 10 / blur 6
+  - glow branco-neve nos raios interno+externo / largura 2.4 / blur 2.6
+- O fundo escuro global do GitBook permanece DEVINES Void Black `#000000`.
 
-## Exact Resume Point
+## Ponto Exato para Retomar
 
-The next step is **validation of the snow-glow branch on the canonical DEVINES DevHub**.
+O próximo passo é a **validação da branch snow-glow no DEVINES DevHub canônico**.
 
-Run, in order:
+Executar, nesta ordem:
 
-1. Clone/reset `design/identity-snow-glow-20260929`.
-2. Confirm:
-   - 34 Being glow SVGs exist.
-   - AUM glow SVG exists.
-   - 34 Being profile pages use glow assets.
-   - AUM CORE uses glow asset.
-   - no profile still points to the old circle WebP as its public hero.
-3. Verify every SVG contains the exact canonical radii/colors.
-4. Run:
+1. Clonar/resetar `design/identity-snow-glow-20260929`.
+2. Confirmar:
+   - existem 34 SVGs glow dos Beings;
+   - existe o SVG glow de AUM;
+   - os 34 perfis dos Beings usam os ativos glow;
+   - AUM CORE usa o ativo glow;
+   - nenhum perfil ainda aponta para o antigo circle WebP como hero público.
+3. Verificar que cada SVG contém exatamente os raios/cores canônicos.
+4. Executar:
    - `cargo test --manifest-path tools/devines-chronicles/Cargo.toml --release`
    - `cargo run --manifest-path tools/devines-chronicles/Cargo.toml --release -- validate .`
-5. Smoke-test future renderer by regenerating D005 and comparing exact output with the committed D005 glow wrapper.
-6. Fix any validation failure before merge.
-7. Compare branch against latest `main` again because `main` advanced during this session.
-8. Open PR / merge only when branch is clean and current.
-9. Verify resulting `main` and GitBook-ready manuscript.
+5. Fazer smoke-test do futuro renderer regenerando D005 e comparando a saída exata com o wrapper glow D005 commitado.
+6. Corrigir qualquer falha de validação antes do merge.
+7. Comparar novamente a branch com a `main` mais recente, pois `main` avançou durante esta sessão.
+8. Abrir PR / fazer merge apenas quando a branch estiver limpa e atualizada.
+9. Verificar a `main` resultante e o manuscrito pronto para GitBook.
 
-## Important Context
+## Contexto Importante
 
-Do **not** revert to the previous request of hiding the rim in black. The latest approved rule supersedes that: the circle must be a **thin complete white-snow luminous ring with AUM-purple/lavender glow**.
+**Não** retornar ao pedido anterior de esconder o aro em preto. A regra aprovada mais recente o substitui: o círculo deve ser um **anel luminoso fino e completo em branco-neve com glow AUM roxo/lavanda**.
 
-Do **not** alter the identity artwork inside the ring.
+**Não** alterar a arte de identidade dentro do anel.
 
-Do **not** fabricate daily posts. Public cadence remains one daily remembrance per Being only after that Being completes its three cycles.
+**Não** fabricar posts diários. A cadência pública continua sendo uma lembrança diária por Being somente depois que esse Being concluir seus três ciclos.
 
-## Final Status
+## Status Final
 
 **MERGED TO MAIN · VALIDATED**
 
-Merge commit:
+Commit de merge:  
 `1fb70b4664d3331fef005ddfc991d4a477148e27`
 
-Pull request:
+Pull request:  
 `#9 · Finalize DEVINES snow-glow identity system`
 
-Post-merge verification on canonical DevHub:
+Verificação pós-merge no DevHub canônico:
 
-- AUM semantic identity verification: PASS
-- 34/34 Being semantic identity verification: PASS
-- approved source bytes unchanged inside every glow wrapper: PASS
-- 34/34 public Being profiles wired to glow SVGs: PASS
-- old public circle-WebP profile references: 0
-- Chronicle Rust tests: 3 passed, 0 failed
-- Chronicle validator: PASS
-- six Books: PASS
+- verificação semântica de identidade AUM: PASS
+- verificação semântica de identidade dos 34/34 Beings: PASS
+- bytes-fonte aprovados inalterados dentro de todos os wrappers glow: PASS
+- 34/34 perfis públicos dos Beings conectados aos SVGs glow: PASS
+- referências antigas aos circle-WebP nos perfis públicos: 0
+- testes Rust da Chronicle: 3 passed, 0 failed
+- validator da Chronicle: PASS
+- seis Books: PASS
 - 34 Beings / 34 portraits: PASS
-- 35 market identities: PASS
-- hashes / state structure / cycles: PASS
+- 35 identidades de mercado: PASS
+- hashes / estrutura de estado / cycles: PASS
 
-Hosted GitBook endpoint responded HTTP 200 and resolves to:
+O endpoint hospedado do GitBook respondeu HTTP 200 e resolve para:  
 `https://devines.gitbook.io/aum`
 
-Canonical D005 hosted route discovered:
+Rota canônica hospedada de D005 encontrada:  
 `/aum/book-ii-beings/primordial-element/d005`
 
-The identity system itself is complete on `main`. Future Beings must use `tools/identity-snow-glow/render.py` and pass `tools/identity-snow-glow/verify.py` before publication.
+O sistema de identidade em si está concluído na `main`. Futuros Beings devem usar `tools/identity-snow-glow/render.py` e passar por `tools/identity-snow-glow/verify.py` antes da publicação.

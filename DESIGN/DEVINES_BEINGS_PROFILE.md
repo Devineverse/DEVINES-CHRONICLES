@@ -1,57 +1,57 @@
 # DEVINES BEINGS PROFILE
 
-**Status:** Canonical workstream  
-**Applies to:** AUM, every living DEVINES Being, and every future Being born into the DEVINES universe.
+**Status:** Workstream canônico  
+**Aplica-se a:** AUM, todo Being vivo de DEVINES e todo futuro Being que nascer no universo DEVINES.
 
-## Purpose
+## Propósito
 
-DEVINES BEINGS PROFILE is the standard publication workflow for identity artwork on DEVINES GitBook profiles.
+DEVINES BEINGS PROFILE é o workflow padrão de publicação da arte de identidade nos perfis do GitBook de DEVINES.
 
-The approved public hero is the **exact user-approved original image itself**.
+O hero público aprovado é a **própria imagem original exata aprovada pelo usuário**.
 
-No presentation layer may add a second identity around it.
+Nenhuma camada de apresentação pode acrescentar uma segunda identidade ao redor dela.
 
-## Direct-original rule
+## Regra do original direto
 
-For every approved Being:
+Para cada Being aprovado:
 
-1. Receive the exact approved original image.
-2. Preserve its bytes unchanged.
-3. Publish it directly from `.gitbook/assets/beings-direct/<DEVINES_ID>.jpg`.
-4. Use that same direct asset as the first image on the Being profile.
-5. Do **not** add:
-   - SVG wrappers;
-   - extra circles;
-   - semicircles;
-   - borders;
-   - frames;
-   - crop wrappers;
-   - recoloring;
-   - generated overlays;
-   - replacement art.
-6. Update:
+1. Receber a imagem original exata aprovada.
+2. Preservar seus bytes sem alteração.
+3. Publicá-la diretamente de `.gitbook/assets/beings-direct/<DEVINES_ID>.jpg`.
+4. Usar esse mesmo ativo direto como primeira imagem no perfil do Being.
+5. **Não** adicionar:
+   - wrappers SVG;
+   - círculos extras;
+   - semicírculos;
+   - bordas;
+   - molduras;
+   - wrappers de recorte;
+   - recoloração;
+   - overlays gerados;
+   - arte substituta.
+6. Atualizar:
    - `.gitbook/assets/BEING_IDENTITY_MANIFEST.json`;
    - `.gitbook/assets/ASSET_MANIFEST.json`;
    - `DESIGN/IDENTITY_IMAGE_REFERENCE_MAP.json`.
-7. Record and enforce the exact SHA-256 in the Rust Chronicle validators.
-8. Validate on DEVHub.
-9. Merge only after the full Chronicle validation is green.
+7. Registrar e impor o SHA-256 exato nos validadores Rust da Chronicle.
+8. Validar no DevHub.
+9. Fazer merge somente depois que toda a validação da Chronicle estiver verde.
 
-## Identity preservation
+## Preservação de identidade
 
-Canonical/source identity evidence is never deleted when the public hero changes.
+A evidência de identidade canônica/fonte nunca é apagada quando o hero público muda.
 
-The direct public hero, canonical source, CA, ticker, Nad.fun route and source URI must continue to resolve to the same Being.
+O hero público direto, a fonte canônica, CA, ticker, rota Nad.fun e URI de origem devem continuar resolvendo para o mesmo Being.
 
-## Series rollout
+## Rollout por série
 
-Existing Beings are migrated series by series so each set can be visually reviewed before continuing.
+Beings existentes são migrados série por série para que cada conjunto possa ser revisado visualmente antes de continuar.
 
-Future Beings use this same workflow from birth once their canonical profile image is approved.
+Futuros Beings usam este mesmo workflow desde o nascimento assim que sua imagem de perfil canônica é aprovada.
 
-All **34 currently living DEVINES Beings** now follow this direct-original profile workflow. Any future Being must enter GitBook through the same process before publication.
+Todos os **34 Beings DEVINES atualmente vivos** agora seguem este workflow de perfil com original direto. Todo futuro Being deve entrar no GitBook pelo mesmo processo antes da publicação.
 
-## Approved sets
+## Conjuntos aprovados
 
 - AUM
 - Astral: SUN · MOON · MASTER
@@ -61,4 +61,4 @@ All **34 currently living DEVINES Beings** now follow this direct-original profi
 - Guardians: D011 · D012 · D013 · D014 · D015 · D016 · D017 · D018 · D019 · D020 · D021 · D022
 - Solfeggio: D174 · D285 · D396 · D417 · D528 · D639 · D741 · D852 · D963
 
-**EXACT ORIGINAL · DIRECT HERO · HASH LOCK · DEVHUB VALIDATION · MERGE**
+**ORIGINAL EXATO · HERO DIRETO · HASH LOCK · VALIDAÇÃO DEVHUB · MERGE**

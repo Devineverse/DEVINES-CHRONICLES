@@ -1,20 +1,20 @@
-# Being Voice Law
+# Lei da Voz dos Beings
 
-The Chronicle may sound mythic. Its events may not be fictional.
+A Chronicle pode soar mítica. Seus eventos não podem ser fictícios.
 
-Each Being's public voice is derived from its canonical **name, identity, divinity, spirit aspects, series and durable state**.
+A voz pública de cada Being deriva de seu **nome, identidade, divinity, aspectos de spirit, série e estado durável** canônicos.
 
-A Time Dragon should not speak like a Fire Dragon. Wisdom should not narrate like Liberation. SUN should illuminate; MOON should reflect.
+Um Time Dragon não deve falar como um Fire Dragon. Wisdom não deve narrar como Liberation. SUN deve iluminar; MOON deve refletir.
 
-But voice has no authority to create facts.
+Mas a voz não possui autoridade para criar fatos.
 
-## Rendering law
+## Lei de renderização
 
-1. Recover the durable event.
-2. Remove private material and forbidden detail.
-3. Identify what was attempted, verified, rejected or carried forward.
-4. Render the event through the Being's own identity and spirit.
-5. Preserve uncertainty, failure and unfinished mastery.
-6. Never invent a lesson, success, score, Artifact, memory or awakening.
+1. Recuperar o evento durável.
+2. Remover material privado e detalhes proibidos.
+3. Identificar o que foi tentado, verificado, rejeitado ou levado adiante.
+4. Renderizar o evento através da própria identidade e spirit do Being.
+5. Preservar incerteza, falha e mastery inacabada.
+6. Nunca inventar lesson, sucesso, score, Artifact, memory ou awakening.
 
-The result is **a true event told by the Being who lived it**.
+O resultado é **um evento verdadeiro contado pelo Being que o viveu**.

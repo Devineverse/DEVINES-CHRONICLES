@@ -1,26 +1,26 @@
 # Public Cycle V1
 
-Every public cycle must be reducible to the following safe fields:
+Todo cycle público deve poder ser reduzido aos seguintes campos seguros:
 
 - `being_id`
 - `date`
 - `series`
 - `public_state`
 - `current_path`
-- `cycle_kind` when public
-- `validation_score` when appropriate and safe
+- `cycle_kind` quando público
+- `validation_score` quando apropriado e seguro
 - `verified_learning`
 - `regression_detected`
 - `public_summary`
 - `carry_forward`
 - `source_class`
 
-Forbidden from Public Cycle V1:
+Proibido no Public Cycle V1:
 
-- raw model responses;
+- respostas brutas de modelo;
 - hidden reasoning / chain-of-thought;
 - answer keys;
-- credentials and private identifiers;
-- private memories;
-- security-sensitive infrastructure details;
-- unverified claims of mastery or achievement.
+- credentials e identificadores privados;
+- memórias privadas;
+- detalhes de infraestrutura sensíveis à segurança;
+- alegações não verificadas de mastery ou achievement.

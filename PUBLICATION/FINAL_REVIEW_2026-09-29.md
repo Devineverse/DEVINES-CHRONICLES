@@ -1,15 +1,15 @@
-# Final review · 29 September 2026
+# Revisão final · 29 de setembro de 2026
 
-Base: f1f5877c48a118102e0eee994914bb1bc73ffaf9. Dedicated review branch; no merge or production publication.
+Base: f1f5877c48a118102e0eee994914bb1bc73ffaf9. Branch dedicada de revisão; sem merge nem publicação em produção.
 
-Preserved: all 34 Being portraits, AUM original artwork, established Being expressions and evidence states, six Books in the current canonical order, and cross-cutting Living History. The handoff's illustrative numbering differed from the repository; the existing Origin / Law / Beings / Treasury / Flow / Call order remains.
+Preservado: todos os 34 retratos dos Beings, arte original de AUM, expressões estabelecidas dos Beings e estados de evidência, seis Books na ordem canônica atual e a Living History transversal. A numeração ilustrativa do handoff diferia do repositório; a ordem existente Origin / Law / Beings / Treasury / Flow / Call permanece.
 
-Refined: consent before private distillation travels; self-discovered Being purpose inside the benevolent constitutional core; separation of AUM Core, resource Artifact and token; Member availability language; clickable CA/ticker market index; dated market status; accessible privacy/cryptography and status pages; removal of undated live fee percentages.
+Refinado: consentimento antes que a destilação privada viaje; propósito autodescoberto do Being dentro do núcleo constitucional benevolente; separação entre AUM Core, resource Artifact e token; linguagem de disponibilidade para Member; índice de mercado com CA/ticker clicáveis; status de mercado datado; páginas acessíveis de privacy/cryptography e status; remoção de percentuais de fee ao vivo sem data.
 
-Repaired all 35 stale canonical image hashes after the earlier original-art restoration. Added source-image hashes without changing artwork. The 35 market identities match the recovered founder launch ledger for CA, ticker and source image URI. This verifies identity, not market performance or economic activation.
+Reparados todos os 35 hashes de imagem canônica que estavam desatualizados após a restauração anterior da arte original. Adicionados hashes das imagens-fonte sem alterar a arte. As 35 identidades de mercado correspondem ao ledger recuperado de lançamento do founder para CA, ticker e URI da imagem-fonte. Isso verifica identidade, não performance de mercado nem ativação econômica.
 
-Expanded Rust checks: exact 34-ID roster, six-Book order, tracked Markdown file targets, identity/portrait cross-wiring, source and rendered hashes, clickable market routes, basic state field types/ranges and latest/dated equality. The existing cycle schema is parsed; this is not a complete general JSON Schema validation engine. Markdown fragment existence and arbitrary external-link availability are not claimed.
+Checks Rust ampliados: roster exato de 34 IDs, ordem dos seis Books, targets de arquivos Markdown rastreados, cross-wiring de identidade/retrato, hashes de fonte e renderizados, rotas de mercado clicáveis, tipos/faixas básicos dos campos de estado e igualdade latest/dated. O schema de cycle existente é analisado; isto não é um engine completo de validação geral de JSON Schema. A existência de fragments Markdown e a disponibilidade arbitrária de links externos não são reivindicadas.
 
-Tests introduce incorrect Spirit, ticker, missing target, wrong Book order, changed hash and invalid score. Diary tests exercise the 101/102 daily gate, publication ordering, pagination, idempotency, append-only history, private-layer rejection and timestamp validity.
+Os testes introduzem Spirit incorreto, ticker incorreto, target ausente, ordem errada dos Books, hash alterado e score inválido. Testes de Diary exercitam o gate diário 101/102, ordenação da publicação, paginação, idempotência, histórico append-only, rejeição de camada privada e validade de timestamps.
 
-Remaining review gates: live GitBook rendering and synchronization (browser blocked access); exact small metadata typography; full runtime integration of the three private/public projections and completion-triggered outbox; general schema and fragment validation. Public feed generation is prepared, not activated. No synthetic posts are included.
+Gates de revisão restantes: renderização e sincronização ao vivo do GitBook (acesso pelo navegador bloqueado); tipografia exata de metadados pequenos; integração completa em runtime das três projeções private/public e outbox acionada por conclusão; validação geral de schema e fragments. A geração do feed público está preparada, não ativada. Nenhum post sintético está incluído.

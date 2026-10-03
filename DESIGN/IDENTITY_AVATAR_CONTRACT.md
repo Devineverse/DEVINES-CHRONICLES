@@ -1,90 +1,90 @@
-# Identity Avatar Contract
+# Contrato de Avatar de Identidade
 
 **Schema:** `devines.identity-avatar.v3`
 
-Every public DEVINES identity uses the same two-phase presentation contract: **AUM, all current Beings, and every future Being.**
+Toda identidade pública de DEVINES usa o mesmo contrato de apresentação em duas fases: **AUM, todos os Beings atuais e todo futuro Being.**
 
-## Phase 1 · Empty Identity Circle
+## Fase 1 · Círculo de Identidade Vazio
 
-The default state is the shared DEVINES snow-glow circle with a **completely empty interior**.
+O estado padrão é o círculo snow-glow compartilhado de DEVINES com o **interior completamente vazio**.
 
-No portrait, symbol, logo, image, margin, inner frame, or secondary circle is embedded during Phase 1.
+Nenhum retrato, símbolo, logo, imagem, margem, frame interno ou círculo secundário é incorporado durante a Fase 1.
 
-This is the required default for every new Being before any identity image is applied.
+Este é o padrão obrigatório para todo novo Being antes de qualquer imagem de identidade ser aplicada.
 
-## Geometry
+## Geometria
 
 - canvas: 1:1 · 768 × 768
-- interior: empty
-- background supplied by the DEVINES/GitBook Void Black surface
-- ring: one complete 360° circle with no gaps
-- shadow: none outside the canonical ring glow
-- every current and future Being uses identical ring geometry
+- interior: vazio
+- fundo fornecido pela superfície Void Black de DEVINES/GitBook
+- anel: um círculo completo em 360° sem falhas
+- sombra: nenhuma fora do glow canônico do anel
+- todo Being atual e futuro usa geometria de anel idêntica
 
-## Canonical Snow-Glow Ring
+## Anel Snow-Glow Canônico
 
-The ring is intentionally thin and luminous, never a thick frame.
+O anel é propositalmente fino e luminoso, nunca uma moldura grossa.
 
-From inside to outside:
+De dentro para fora:
 
-1. **snow-white hairline** — `#FFFFFF`
-2. **AUM-lavender core** — `#CFAEEE`
-3. **snow-white hairline** — `#FFFFFF`
-4. restrained soft halo using AUM Violet `#8F7AD0` and white light
+1. **linha fina branco-neve** — `#FFFFFF`
+2. **núcleo lavanda AUM** — `#CFAEEE`
+3. **linha fina branco-neve** — `#FFFFFF`
+4. halo suave e contido usando AUM Violet `#8F7AD0` e luz branca
 
-Canonical 768 × 768 geometry:
+Geometria canônica 768 × 768:
 
-- center: `384,384`
-- inner white radius: `346.2`, width `1.35`
-- lavender radius: `349.5`, width `7`
-- outer white radius: `352.8`, width `1.35`
-- violet glow: width `10`, Gaussian blur `6`
-- white snow glow: width `2.4`, Gaussian blur `2.6`
+- centro: `384,384`
+- raio branco interno: `346.2`, largura `1.35`
+- raio lavanda: `349.5`, largura `7`
+- raio branco externo: `352.8`, largura `1.35`
+- glow violeta: largura `10`, Gaussian blur `6`
+- glow branco-neve: largura `2.4`, Gaussian blur `2.6`
 
-The SVG contains exactly six canonical circle/glow strokes and **zero `<image>` elements** while in Phase 1.
+O SVG contém exatamente seis strokes canônicos de círculo/glow e **zero elementos `<image>`** enquanto estiver na Fase 1.
 
-## Image Reference Preservation
+## Preservação da Referência da Imagem
 
-Removing an image from the public hero never deletes or rewrites its source identity.
+Remover uma imagem do hero público nunca apaga nem reescreve sua identidade-fonte.
 
-The exact source/canonical/circle/hero paths, Nad.fun image URI, hashes, CA, ticker and identity mapping are preserved in:
+Os paths exatos source/canonical/circle/hero, URI da imagem Nad.fun, hashes, CA, ticker e mapeamento de identidade são preservados em:
 
 `DESIGN/IDENTITY_IMAGE_REFERENCE_MAP.json`
 
-That map is the authority for the later image-insertion phase.
+Esse mapa é a autoridade para a fase posterior de inserção de imagem.
 
-## Current GitBook Publication State
+## Estado Atual de Publicação no GitBook
 
-**AUM and all 34 currently living DEVINES Beings are approved for direct-image publication through DEVINES BEINGS PROFILE.**
+**AUM e todos os 34 Beings DEVINES atualmente vivos estão aprovados para publicação com imagem direta por meio de DEVINES BEINGS PROFILE.**
 
-For every approved direct identity, the **exact user-approved uploaded image is rendered directly**. It is not placed inside another SVG, ring, frame, circle or semicircle. The image's own black field and its own composition are the complete public hero.
+Para cada identidade direta aprovada, a **imagem exata enviada e aprovada pelo usuário é renderizada diretamente**. Ela não é colocada dentro de outro SVG, anel, moldura, círculo ou semicírculo. O próprio campo preto da imagem e sua própria composição formam todo o hero público.
 
-AUM uses the same exact image on the DEVINES landing page and AUM Core. Every current Being uses its own exact approved image on its respective profile.
+AUM usa a mesma imagem exata na landing page de DEVINES e em AUM Core. Cada Being atual usa sua própria imagem exata aprovada em seu respectivo perfil.
 
-No redraw, regeneration, recolor, crop, wrapper or replacement artwork is introduced.
+Nenhum redesenho, regeneração, recoloração, crop, wrapper ou arte substituta é introduzido.
 
-## Phase 2 · Image Insertion
+## Fase 2 · Inserção de Imagem
 
-Direct image publication is active for AUM and all current DEVINES series: Astral, Genesis, Primordial Elements, Royal, Guardians and Solfeggio. Every future Being follows the same DEVINES BEINGS PROFILE workstream after visual approval.
+A publicação direta de imagem está ativa para AUM e todas as séries DEVINES atuais: Astral, Genesis, Primordial Elements, Royal, Guardians e Solfeggio. Todo futuro Being segue o mesmo workstream DEVINES BEINGS PROFILE após aprovação visual.
 
-When an approved image already contains its complete composition, **no additional ring geometry is added around it**.
+Quando uma imagem aprovada já contém sua composição completa, **nenhuma geometria de anel adicional é colocada ao redor dela**.
 
-For future Being Phase 2 reviews, the exact approved source image must be preserved and visually checked before publication. No redraw, recolor, warp, replacement art, duplicate ring, outer margin, or circle-inside-circle effect is allowed.
+Para futuras revisões de Fase 2 de um Being, a imagem-fonte exata aprovada deve ser preservada e verificada visualmente antes da publicação. Nenhum redesenho, recoloração, distorção, arte substituta, anel duplicado, margem externa ou efeito de círculo dentro de círculo é permitido.
 
-## Sizes
+## Tamanhos
 
-- canonical asset: 768 × 768
-- Landing AUM: 240–320 px visual diameter on desktop, responsive on mobile
-- Being hero: 220–280 px desktop
-- Series/index avatar: 72–112 px
-- compact navigation/avatar use: 36–48 px
+- ativo canônico: 768 × 768
+- AUM na landing: diâmetro visual de 240–320 px no desktop, responsivo no mobile
+- hero do Being: 220–280 px desktop
+- avatar de série/índice: 72–112 px
+- uso compacto em navegação/avatar: 36–48 px
 
-## Future Beings
+## Futuros Beings
 
-Every future Being follows [DEVINES BEINGS PROFILE](DEVINES_BEINGS_PROFILE.md) once its canonical identity image is approved. Before approval, a temporary placeholder may be used.
+Todo futuro Being segue [DEVINES BEINGS PROFILE](DEVINES_BEINGS_PROFILE.md) assim que sua imagem canônica de identidade for aprovada. Antes da aprovação, um placeholder temporário pode ser usado.
 
-The Rust Chronicle validator is the publication gate. A public identity SVG is invalid if it contains an `<image>` element or does not match the six-stroke snow-glow circle structure.
+O validator Rust da Chronicle é o gate de publicação. Um SVG de identidade pública é inválido se contiver um elemento `<image>` ou não corresponder à estrutura snow-glow de seis strokes.
 
-Canonical source artwork is preserved independently from the public hero so presentation can change without mutating identity.
+A arte-fonte canônica é preservada independentemente do hero público para que a apresentação possa mudar sem alterar a identidade.
 
-**PRESERVE THE SOURCE · APPROVE THE ORIGINAL · PUBLISH DIRECTLY · HASH LOCK**
+**PRESERVE A FONTE · APROVE O ORIGINAL · PUBLIQUE DIRETAMENTE · HASH LOCK**

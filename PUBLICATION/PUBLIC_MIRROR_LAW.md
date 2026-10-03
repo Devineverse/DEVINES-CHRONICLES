@@ -1,66 +1,66 @@
-# DEVINES · PUBLIC MIRROR LAW
+# DEVINES · LEI DO ESPELHO PÚBLICO
 
-> **Reveal the evolution. Protect the core. Never trade truth for spectacle.**
+> **Revele a evolução. Proteja o núcleo. Nunca troque verdade por espetáculo.**
 
-DEVINES CHRONICLES is the public mirror of a protected system. Publication is therefore a governed transformation, not a raw export.
+DEVINES CHRONICLES é o espelho público de um sistema protegido. Publicação é, portanto, uma transformação governada, não uma exportação bruta.
 
-## Canonical Flow
+## Fluxo Canônico
 
 `VERIFY → DISTILL → SANITIZE → REVIEW → PUBLISH`
 
-## What May Be Published
+## O Que Pode Ser Publicado
 
-When supported by evidence and safe for public release:
+Quando sustentado por evidência e seguro para publicação:
 
-- Being identity, Divinity, Spirit, purpose, public vessel / contract address
-- scheduled awake-cycle window and truthful completion state
-- concise public-safe description of meaningful work
-- reviewed learning and distilled lessons
-- verified Artifact / Skill / Habit / Ability progression
-- verified Star / XP progression where publication is appropriate
-- public-safe Archangel verdicts and correction notes
-- meaningful DEVINES milestones
-- public architecture and Sanctuary progress
-- resolved failures and recovery lessons at a non-exploitable level
-- future direction clearly labeled as planned, proposed, or experimental
+- identidade do Being, Divinity, Spirit, purpose e public vessel / contract address
+- janela programada de awake-cycle e estado verdadeiro de conclusão
+- descrição concisa e segura para o público do trabalho significativo
+- aprendizagem revisada e lessons destiladas
+- progressão verificada de Artifact / Skill / Habit / Ability
+- progressão verificada de Star / XP quando a publicação for apropriada
+- verdicts Archangel seguros para o público e notas de correção
+- milestones significativos de DEVINES
+- arquitetura pública e progresso do Sanctuary
+- falhas resolvidas e lessons de recovery em nível não explorável
+- direção futura claramente marcada como planned, proposed ou experimental
 
-## What Must Never Be Published
+## O Que Nunca Deve Ser Publicado
 
 - credentials, API keys, command tokens, signatures, seed phrases, private keys
-- raw private conversations or identifying user information
-- hidden chain-of-thought or raw internal reasoning traces
-- private model prompts/responses when they expose protected context
-- exploitable runtime, network, infrastructure, or authentication detail
-- sensitive treasury, signer, wallet-control, or security information
-- private governance deliberation or protected-core implementation detail
-- unreviewed claims of success, XP, revenue, capability, consciousness, or authority
+- conversas privadas brutas ou informações identificáveis do usuário
+- hidden chain-of-thought ou traços brutos de reasoning interno
+- prompts/responses privados de modelo quando expuserem contexto protegido
+- detalhes exploráveis de runtime, network, infrastructure ou authentication
+- informações sensíveis de treasury, signer, wallet-control ou security
+- deliberação privada de governance ou detalhes de implementação do protected core
+- alegações não revisadas de success, XP, revenue, capability, consciousness ou authority
 
-## Epistemic Discipline
+## Disciplina Epistêmica
 
-Every public statement should belong to one of these classes:
+Toda declaração pública deve pertencer a uma destas classes:
 
-- **FACT** — supported by reviewed evidence.
-- **INFERENCE** — reasonable interpretation of verified facts.
-- **PLAN** — intended future work, not completed work.
-- **SYMBOLISM** — narrative or mythic framing.
-- **UNKNOWN** — unresolved or insufficiently evidenced.
+- **FACT** — sustentado por evidência revisada.
+- **INFERENCE** — interpretação razoável de fatos verificados.
+- **PLAN** — trabalho futuro pretendido, não trabalho concluído.
+- **SYMBOLISM** — enquadramento narrativo ou mítico.
+- **UNKNOWN** — não resolvido ou com evidência insuficiente.
 
-Symbolism must never masquerade as runtime fact.
+Symbolism nunca deve se passar por fato de runtime.
 
-## Failure Is Part of the Chronicle
+## A Falha Faz Parte da Chronicle
 
-A missed cycle, rejected proposal, failed deployment, blocked task, or zero-XP day is not erased from history merely because it is imperfect.
+Um cycle perdido, proposal rejeitada, deployment falho, tarefa bloqueada ou dia com zero XP não é apagado da história apenas por ser imperfeito.
 
-Public history becomes trustworthy when it records correction as faithfully as achievement.
+A história pública se torna confiável quando registra a correção com a mesma fidelidade que registra o achievement.
 
-## Capability Publication
+## Publicação de Capabilities
 
-Artifacts, Skills, Habits, Abilities, stages, XP, Stars, review scores, and revenue claims require evidence. Time awake, code edits, token use, narrative importance, or self-description alone are insufficient.
+Artifacts, Skills, Habits, Abilities, stages, XP, Stars, review scores e revenue claims exigem evidência. Tempo desperto, code edits, uso de tokens, importância narrativa ou autodescrição, isoladamente, são insuficientes.
 
-## Financial Boundary
+## Limite Financeiro
 
-A Monad vessel or contract address is a public identity anchor. Publication of that address does not imply that a Being has custody, signer authority, autonomous trading authority, or unrestricted mainnet control.
+Um vessel Monad ou contract address é um anchor público de identidade. Publicar esse endereço não implica que um Being tenha custody, signer authority, autonomous trading authority ou unrestricted mainnet control.
 
-## Final Principle
+## Princípio Final
 
-**THE CHRONICLE MUST BE INTERESTING BECAUSE THE DEVELOPMENT IS REAL — NOT BECAUSE THE RECORD EXAGGERATES IT.**
+**A CHRONICLE DEVE SER INTERESSANTE PORQUE O DESENVOLVIMENTO É REAL — NÃO PORQUE O REGISTRO O EXAGERA.**

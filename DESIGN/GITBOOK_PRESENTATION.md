@@ -1,102 +1,102 @@
-# GitBook Presentation Specification
+# Especificação de Apresentação do GitBook
 
 ## Site
 
-**Title:** DEVINES CHRONICLES  
-**Subtitle:** The Living Book of DEVINES  
-**Default appearance:** Dark  
-**Content source:** Git Sync from `Devineverse/DEVINES-CHRONICLES` / `main`
+**Título:** DEVINES CHRONICLES  
+**Subtítulo:** O Livro Vivo de DEVINES  
+**Aparência padrão:** Dark  
+**Fonte de conteúdo:** Git Sync de `Devineverse/DEVINES-CHRONICLES` / `main`
 
-## Theme
+## Tema
 
-### GLOBAL SITE LAW
+### LEI GLOBAL DO SITE
 
-The entire DEVINES GitBook is one continuous visual surface. This applies to the landing page, all six Books, every Being profile, Daily pages, indexes, header, sidebar, search surfaces, cards, tables, code blocks, and navigation.
+Todo o GitBook de DEVINES é uma única superfície visual contínua. Isso se aplica à landing page, aos seis Books, a cada perfil de Being, páginas Daily, índices, header, sidebar, busca, cards, tabelas, code blocks e navegação.
 
-**Canonical GitBook customization:**
+**Customização canônica do GitBook:**
 
 - Theme: **Clean**
-- Default appearance: **Dark**
-- Site tint / dark background: **#000000**
-- Sidebar background: **Default / transparent**, never Filled
-- Primary dark color: **#CFAEEE** (AUM Lavender)
-- Corners: restrained / straight or minimal
-- Depth / shadows: none or subtle
-- No gray page canvas behind black identity artwork
-- No alternate dark surface that creates a visible black-on-charcoal rectangle
+- Aparência padrão: **Dark**
+- Tint / fundo escuro do site: **#000000**
+- Fundo da sidebar: **Default / transparente**, nunca Filled
+- Cor primária dark: **#CFAEEE** (AUM Lavender)
+- Cantos: contidos / retos ou mínimos
+- Profundidade / sombras: nenhuma ou sutil
+- Nenhum canvas cinza atrás da arte de identidade preta
+- Nenhuma superfície dark alternativa que crie um retângulo preto sobre carvão visível
 
-The intended result is a single uninterrupted Void Black field. Circular public identity rings must visually dissolve into that field. Canonical AUM and Being artwork remains preserved separately and is not embedded inside the current GitBook hero circles.
+O resultado desejado é um único campo Void Black ininterrupto. Anéis circulares públicos de identidade devem se dissolver visualmente nesse campo. A arte canônica de AUM e dos Beings permanece preservada separadamente e não é incorporada aos atuais círculos hero do GitBook.
 
-Canonical site chrome:
+Chrome canônico do site:
 
-- **pure black `#000000` background across every global surface**;
-- white primary typography;
-- violet and lavender drawn only from the AUM / Monad spectrum;
-- minimal sidebar;
-- restrained links and borders;
-- links in white / AUM lavender / DEVINES violet only;
-- **no blue site chrome, blue links, blue buttons or blue navigation**;
-- low corner radius;
-- no decorative multicolor gradients;
-- no casino-like market treatment.
+- **fundo preto puro `#000000` em toda superfície global**;
+- tipografia principal branca;
+- violeta e lavanda derivados somente do espectro AUM / Monad;
+- sidebar mínima;
+- links e bordas contidos;
+- links apenas em branco / AUM lavender / DEVINES violet;
+- **sem chrome azul, links azuis, botões azuis ou navegação azul**;
+- baixo raio de canto;
+- sem gradientes multicoloridos decorativos;
+- sem tratamento de mercado com aparência de cassino.
 
-The only global color journey is:
+A única jornada global de cor é:
 
-**Black → Deep Monad Violet → DEVINES Violet → AUM Lavender → White**
+**Preto → Violeta AUM Profundo → Violeta DEVINES → Lavanda AUM → Branco**
 
-Individual Being portraits preserve their own canonical colors. Their palettes do not become global interface palettes.
+Retratos individuais dos Beings preservam suas próprias cores canônicas. Suas paletas não se tornam paletas globais da interface.
 
-## Typography
+## Tipografia
 
-**Display:** elegant inscriptional / rune-adjacent. Prefer Cinzel where available.
+**Display:** elegante, inscriptional / próxima de runas. Preferir Cinzel quando disponível.
 
-**Body:** General Sans or Inter.
+**Body:** General Sans ou Inter.
 
-Display typography is reserved for headings and thresholds.
+Tipografia display é reservada a headings e thresholds.
 
-## Navigation
+## Navegação
 
-- Welcome to DEVINES
-- BOOK I · DEVINES ORIGIN
-- BOOK II · DEVINES LAW
-- BOOK III · DEVINES BEINGS
-- BOOK IV · DEVINES TREASURY
-- BOOK V · DEVINES FLOW
-- BOOK VI · DEVINES CALL
-- DEVINES LIVING HISTORY
-- Chronicle Law
+- Bem-vindo ao DEVINES
+- LIVRO I · ORIGEM DEVINES
+- LIVRO II · LEI DEVINES
+- LIVRO III · SERES DEVINES
+- LIVRO IV · TESOURO DEVINES
+- LIVRO V · DEVINES FLOW
+- LIVRO VI · CHAMADO DEVINES
+- HISTÓRIA VIVA DEVINES
+- Lei da Chronicle
 
-## AUM PRESENTATION
+## APRESENTAÇÃO DE AUM
 
-AUM is the first visual threshold of DEVINES.
+AUM é o primeiro threshold visual de DEVINES.
 
-Its canonical source artwork is preserved separately from the Chronicle hero.
+Sua arte-fonte canônica é preservada separadamente do hero da Chronicle.
 
-The current public AUM hero is the **exact approved AUM image itself**:
+O hero público atual de AUM é a **própria imagem exata aprovada de AUM**:
 
-- direct image render;
-- no SVG wrapper;
-- no added outer ring, circle, semicircle, border or frame;
-- no old AUM asset substituted;
-- no redraw, regeneration, recolor or replacement artwork;
-- the image's own black background fills its complete square field;
-- the image's own luminous circular composition remains exactly as supplied.
+- renderização direta da imagem;
+- sem wrapper SVG;
+- sem anel externo, círculo, semicírculo, borda ou moldura adicionados;
+- nenhum ativo antigo de AUM substituído;
+- sem redesenho, regeneração, recoloração ou arte substituta;
+- o fundo preto da própria imagem preenche todo o seu campo quadrado;
+- a composição circular luminosa própria da imagem permanece exatamente como fornecida.
 
-The exact same image file is used on both the DEVINES landing page and AUM Core.
+O mesmo arquivo de imagem exato é usado tanto na landing page de DEVINES quanto em AUM Core.
 
-## Landing threshold
+## Threshold de entrada
 
-Prioritize:
+Priorizar:
 
-1. the exact approved AUM direct hero;
+1. o hero direto e exato aprovado de AUM;
 2. DEVINES CHRONICLES;
-3. the Welcome threshold;
-4. the six Books;
-5. direct access to individual Beings.
+3. o threshold de boas-vindas;
+4. os seis Books;
+5. acesso direto aos Beings individuais.
 
-## CANONICAL AUM PALETTE
+## PALETA CANÔNICA AUM
 
-The global Chronicle palette is sampled from the canonical AUM symbol itself:
+A paleta global da Chronicle é amostrada do próprio símbolo canônico de AUM:
 
 - **VOID BLACK** · `#000000`
 - **DEEP AUM** · `#1C133F`
@@ -106,23 +106,23 @@ The global Chronicle palette is sampled from the canonical AUM symbol itself:
 - **AUM LAVENDER** · `#CFAEEE`
 - **AUM LIGHT** · `#F2EBFB`
 
-Global links, buttons, borders, highlights and navigation stay inside this field.
+Links globais, botões, bordas, destaques e navegação permanecem dentro desse campo.
 
-**NO BLUE UI.**
+**SEM UI AZUL.**
 
-Blue may appear only inside the canonical artwork of a Being whose own identity contains blue.
+Azul pode aparecer apenas dentro da arte canônica de um Being cuja própria identidade contenha azul.
 
-For GitBook presentation, use black / deep AUM as the dark foundation, AUM Lavender as the primary interactive accent, and AUM Light / white for text and high-contrast links.
+Para a apresentação no GitBook, usar black / deep AUM como base escura, AUM Lavender como accent interativo principal e AUM Light / white para texto e links de alto contraste.
 
-## AUM presentation
+## Apresentação de AUM
 
-AUM defines the direct-original approval pattern: publish the exact approved artwork directly when its canonical image is approved. Never add a duplicate ring or wrapper.
+AUM define o padrão de aprovação de original direto: publicar diretamente a arte exata aprovada quando sua imagem canônica for aprovada. Nunca adicionar anel ou wrapper duplicado.
 
-## Being presentation
+## Apresentação dos Beings
 
-The approved presentation direction is **direct original imagery with no added wrapper**.
+A direção de apresentação aprovada é **imagem original direta, sem wrapper adicional**.
 
-Current approved direct heroes:
+Heroes diretos atualmente aprovados:
 
 - **SUN · MOON · MASTER** — Astral;
 - **D001 · D002 · D003** — Genesis;
@@ -131,35 +131,35 @@ Current approved direct heroes:
 - **D011 · D012 · D013 · D014 · D015 · D016 · D017 · D018 · D019 · D020 · D021 · D022** — Guardians;
 - **D174 · D285 · D396 · D417 · D528 · D639 · D741 · D852 · D963** — Solfeggio.
 
-Every approved profile uses its exact user-approved original image.
+Cada perfil aprovado usa sua imagem original exata aprovada pelo usuário.
 
-For these profiles, GitBook renders the image directly: no extra circle, border, SVG frame, semicircle, crop wrapper or generated treatment.
+Nesses perfis, o GitBook renderiza a imagem diretamente: sem círculo extra, borda, frame SVG, semicírculo, wrapper de crop ou tratamento gerado.
 
-All 34 current Beings now use the direct-original rule. Every future Being must use DEVINES BEINGS PROFILE when its canonical image is approved.
+Todos os 34 Beings atuais agora usam a regra do original direto. Todo futuro Being deve usar DEVINES BEINGS PROFILE quando sua imagem canônica for aprovada.
 
-Canonical/source evidence remains preserved separately in the identity mappings.
+A evidência canônica/fonte permanece preservada separadamente nos mapas de identidade.
 
-Near the identity threshold:
+Próximo ao threshold de identidade:
 
-**NAME · ID**  
+**NOME · ID**  
 **Divinity**  
 **Spirit**  
 **Purpose**  
 **Decentralized Anchor / CA**  
-**Ticker** — the ticker itself links directly to the verified Nad.fun token page.
+**Ticker** — o próprio ticker leva diretamente à página verificada do token na Nad.fun.
 
-The CA itself also links directly to that same verified Nad.fun token page; no redundant BUY / VIEW line is shown.
+A própria CA também leva diretamente à mesma página verificada do token na Nad.fun; nenhuma linha redundante BUY / VIEW é exibida.
 
-Do not silently substitute generated art for a canonical identity asset. Do not publish an unverified contract or market link.
+Não substituir silenciosamente uma identidade canônica por arte gerada. Não publicar contrato ou market link não verificado.
 
-## Economic presentation
+## Apresentação econômica
 
-Markets are access surfaces, not spectacle.
+Mercados são superfícies de acesso, não espetáculo.
 
-Use stable identity, contract and status information. Avoid flashing prices, urgency, return promises, casino motifs or visual language that makes speculation the meaning of DEVINES.
+Usar identidade estável, contrato e informação de status. Evitar preços piscando, urgência, promessas de retorno, motivos de cassino ou linguagem visual que transforme especulação no significado de DEVINES.
 
-## DEVINES BEINGS PROFILE LAW
+## LEI DEVINES BEINGS PROFILE
 
-Approved public profiles use the exact original image directly. No extra ring, SVG wrapper, frame, border, semicircle, crop wrapper or generated treatment is added.
+Perfis públicos aprovados usam diretamente a imagem original exata. Nenhum anel extra, wrapper SVG, moldura, borda, semicírculo, wrapper de crop ou tratamento gerado é adicionado.
 
-See [DEVINES BEINGS PROFILE](DEVINES_BEINGS_PROFILE.md) for the canonical workstream used for all current and future Beings.
+Ver [DEVINES BEINGS PROFILE](DEVINES_BEINGS_PROFILE.md) para o workstream canônico usado por todos os Beings atuais e futuros.

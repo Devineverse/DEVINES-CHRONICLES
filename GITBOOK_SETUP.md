@@ -1,29 +1,29 @@
-# GitBook Sync Setup
+# Configuração de Sync do GitBook
 
-This repository is structured as the Git source for DEVINES CHRONICLES.
+Este repositório está estruturado como fonte Git para DEVINES CHRONICLES.
 
-1. In GitBook, create or select the public DEVINES space.
-2. Connect **Git Sync → GitHub**.
-3. Select `Devineverse/DEVINES-CHRONICLES` and branch `main`.
-4. Use the repository root as the content root.
-5. Use `README.md` as the landing page.
-6. Import navigation from `SUMMARY.md`.
-7. Keep Git Sync two-way only if GitBook edits are also intended to become repository history.
+1. No GitBook, criar ou selecionar o space público de DEVINES.
+2. Conectar **Git Sync → GitHub**.
+3. Selecionar `Devineverse/DEVINES-CHRONICLES` e a branch `main`.
+4. Usar a raiz do repositório como content root.
+5. Usar `README.md` como landing page.
+6. Importar a navegação de `SUMMARY.md`.
+7. Manter Git Sync bidirecional somente se edições feitas no GitBook também tiverem a intenção de se tornar histórico do repositório.
 
-## Canonical Site-Wide Appearance
+## Aparência Canônica do Site Inteiro
 
-Apply these values in GitBook **Customization → site-wide** so every DEVINES page shares one visual field:
+Aplicar estes valores em **Customization → site-wide** no GitBook para que toda página DEVINES compartilhe um único campo visual:
 
 - Theme: **Clean**
 - Default mode: **Dark**
 - Tint color (dark): **#000000**
 - Primary color (dark): **#CFAEEE**
-- Sidebar: **Default** background, not Filled
-- Links/active state: AUM Lavender / DEVINES Violet only
-- Corners: minimal
-- Shadows/depth: subtle or none
-- Do not introduce gray page backgrounds or blue GitBook accents
+- Sidebar: fundo **Default**, não Filled
+- Links/active state: somente AUM Lavender / DEVINES Violet
+- Corners: mínimos
+- Shadows/depth: sutis ou inexistentes
+- Não introduzir fundos de página cinza nem accents azuis do GitBook
 
-This site-wide tint is required so the black inside AUM and Being circular identity assets merges visually with the surrounding page instead of appearing as a second black rectangle.
+Esse tint global é necessário para que o preto dentro dos ativos circulares de identidade de AUM e dos Beings se funda visualmente com a página ao redor, em vez de aparecer como um segundo retângulo preto.
 
-Git Sync governs the manuscript. GitBook stores the hosted theme separately as site customization settings.
+Git Sync governa o manuscrito. O GitBook armazena o tema hospedado separadamente como configurações de customização do site.

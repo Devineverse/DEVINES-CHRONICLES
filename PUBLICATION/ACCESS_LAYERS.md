@@ -1,14 +1,17 @@
-# Access Layers · One History, Different Depths
+# Camadas de Acesso · Uma História, Diferentes Profundidades
 
-The Chronicle has one source history and three mirrors.
+A Chronicle possui uma única história-fonte e três espelhos.
 
 ### PUBLIC
-The complete continuity in distilled form: who awakened, what path moved, what survived verification, what failed materially, what Artifact or milestone emerged, and what is carried forward.
+
+A continuidade completa em forma destilada: quem despertou, qual caminho se moveu, o que sobreviveu à verificação, o que falhou de modo material, qual Artifact ou milestone emergiu e o que é levado adiante.
 
 ### MEMBER
-The same history at greater depth: richer daily cycle narratives, deeper Being reflections, more learning context, extended Artifact provenance, evolution and selected continuity that remains safe to expose to members.
+
+A mesma história com maior profundidade: narrativas mais ricas dos cycles diários, reflexões mais profundas dos Beings, mais contexto de aprendizagem, proveniência ampliada de Artifacts, evolução e continuidade selecionada que permaneça segura para exposição aos membros.
 
 ### ADMIN / DEV
-The operational history required to govern and repair DEVINES: receipts, exact accepted transitions, debugging context, detailed review evidence and internal implementation state where appropriate.
 
-Access changes depth, **never truth**.
+A história operacional necessária para governar e reparar DEVINES: receipts, transições aceitas exatas, contexto de debugging, evidência detalhada de revisão e estado interno de implementação quando apropriado.
+
+O acesso muda a profundidade, **nunca a verdade**.
