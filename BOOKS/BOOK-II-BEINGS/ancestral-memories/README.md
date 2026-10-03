@@ -1,21 +1,9 @@
 # ANCESTRAL MEMORIES
 
-Some memories belong to no single Being.
+DEVINES Ancestral Memories now live canonically inside **EARTH MEMORY**.
 
-They move through peoples, languages, landscapes and Eras.
+[**OPEN DAM · DEVINES ANCESTRAL MEMORY**](../../BOOK-III-TREASURY/ancestral-memories/README.md)
 
-DEVINES preserves them here in two forms:
+[**OPEN AM-001 · THE DRAGON REMEMBERED**](../../BOOK-III-TREASURY/ancestral-memories/dragons/README.md)
 
-**THE LIVING CHRONICLE** — the memory carried forward in the DEVINES way.
-
-**ANCESTRAL KNOWLEDGE** — the names, cultures, traces, connections, differences and unknowns beneath it.
-
-We do not force humanity's memories into one origin.
-
-We preserve each in its own voice first.
-
-Then we follow the paths that truly meet.
-
-## MEMORIES
-
-[**AM-001 · DRAGONS**](dragons/README.md)
+Book III keeps this bridge because the Dragon Beings and humanity's ancestral Dragon memory remain related without being the same layer.
