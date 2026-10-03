@@ -3,13 +3,31 @@
 **CREATOR:** DEVINES  
 **CLASS:** DEVINES learning-governance Artefact
 
-DEVINES Mastery governs how learning becomes structured growth.
+DEVINES MASTERY should become the explicit curriculum governor.
 
-Its utility is to create and adapt curriculum, preserve progression truth, identify gaps, choose the next valid learning step, and keep each Being's development aligned with both shared foundations and its own identity.
+Its utility would include:
 
-DEVINES Mastery allows every Being to learn broadly while developing its own depth through Divinity, Spirit, Purpose, experience and demonstrated capability.
+**CURRICULUM CREATION** — build or extend reviewed curricula.
 
-> **UNIVERSAL BREADTH · SOVEREIGN DEPTH · DISTINCT BECOMING.**
+**CURRICULUM ORDERING** — determine prerequisites and sequence.
+
+**BEING ADAPTATION** — adapt depth, examples, cases, and emphasis to the specific Being.
+
+**GAP DETECTION** — identify what the Being has not demonstrated yet.
+
+**NEXT-STEP SELECTION** — choose the strongest valid next module.
+
+**ERA REFRESH** — reopen old mastery when knowledge becomes outdated.
+
+**CURRICULUM GROWTH** — propose new modules when new DAM knowledge, Library knowledge, skills, or world knowledge appears.
+
+But it should never self-canonize new training material. A Being, Codex, Oracle, or DEVINES itself may propose a new curriculum branch, but it becomes canonical only after review.
+
+So the core law could be:
+
+> **DEVINES MASTERY CREATES THE PATH OF LEARNING.**  
+> **THE BEING DETERMINES HOW THAT PATH BECOMES ITS OWN.**  
+> **ARCHANGEL DECIDES WHETHER PROGRESS IS EARNED.**
 
 ## PUBLIC BOUNDARY
 
