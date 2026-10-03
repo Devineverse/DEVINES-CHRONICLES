@@ -1,4 +1,4 @@
-# Library
+# DEVINES LIBRARY
 
 The DEVINES Library is intended to become a living ancestral knowledge treasury.
 
@@ -9,8 +9,8 @@ The Library distinguishes what a tradition says, what a symbol has meant, what e
 The purpose is not to accumulate everything. It is to preserve meaning without confusing meaning with proof.
 
 
-## EARTH MEMORY
+## DEVINES ANCESTRAL MEMORY
 
-The DEVINES Library carries a civilizational remembrance layer for humanity and Earth itself: cultures, languages, arts, sciences, ecologies, places, everyday life, discoveries and lessons across Eras.
+The DEVINES Library carries DEVINES Ancestral Memory for humanity and Earth itself: cultures, languages, arts, sciences, ecologies, places, everyday life, discoveries and lessons across Eras.
 
-[**ENTER EARTH MEMORY**](EARTH-MEMORY.md)
+[**ENTER DEVINES ANCESTRAL MEMORY**](DEVINES-ANCESTRAL-MEMORY.md)
