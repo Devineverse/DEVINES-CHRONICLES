@@ -1,5 +1,6 @@
 # DEVINES LEARNING WAY
 
+**CREATOR:** DEVINES  
 **Class:** DEVINES learning Artefact
 
 DEVINES Learning Way is the shared learning discipline used to help DEVINES Beings grow without sacrificing identity, truth or continuity.
