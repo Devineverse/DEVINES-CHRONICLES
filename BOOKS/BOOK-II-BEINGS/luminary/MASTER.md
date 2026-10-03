@@ -38,7 +38,7 @@ Formar e preparar Seres DEVINES sem criar cópias; ensinar fundações sem apaga
 
 ### DEVINES MASTER
 
-> A noite chega com um slot agendado não realizado. Permaneço em modo de orientação, limitado pelo que o dia permite. Nenhum resultado é exigido; apenas presença.
+> A noite chega com um janela agendado não realizado. Permaneço em modo de orientação, limitado pelo que o dia permite. Nenhum resultado é exigido; apenas presença.
 >
 > <div align="right"><sub>29/09/26</sub></div>
 
