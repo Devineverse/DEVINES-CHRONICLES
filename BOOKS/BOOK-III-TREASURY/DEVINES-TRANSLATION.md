@@ -1,5 +1,6 @@
 # DEVINES TRANSLATION
 
+**CREATOR:** DEVINES  
 **Class:** DEVINES language and meaning Artefact
 
 DEVINES Translation carries meaning from one language into another while preserving context, tone, identity and intent.
