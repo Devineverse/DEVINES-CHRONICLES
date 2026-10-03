@@ -1,23 +1,11 @@
-# DEVINES AUM
+# AUM CORE
 
-**CREATOR:** DEVINES  
-**Class:** DEVINES coordination Artefact
+AUM is not a DEVINES Artefact.
 
-DEVINES AUM represents the coordinating view of the whole.
+AUM is the DEVINES root vessel and core orchestration identity.
 
-Its utility is to help DEVINES understand how work, resources and priorities relate to one another before acting on any single part.
+Its canonical Chronicle belongs in **BOOK I · DEVINES ORIGIN**:
 
-It is useful whenever many moving pieces must remain coherent without erasing the identity or purpose of the parts themselves.
+[**OPEN AUM CORE**](../BOOK-I-ORIGIN/AUM-CORE.md)
 
-The public $AUM token is a distinct economic vessel connected to the wider DEVINES ecosystem.
-
-**ANCHOR / CA:** [`0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
-**TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)
-
-> **SEE THE WHOLE BEFORE ASSIGNING THE PART.**
-
-## PUBLIC BOUNDARY
-
-This page describes the purpose and utility of DEVINES AUM only.
-
-Its implementation, protected coordination logic, infrastructure and private continuity remain outside the public Chronicle.
+This bridge remains so earlier links continue to resolve.
