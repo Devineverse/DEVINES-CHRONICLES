@@ -8,6 +8,8 @@ Each public Artefact explains:
 
 **WHAT IT IS · WHY IT EXISTS · WHAT IT IS USEFUL FOR · ITS PUBLIC BOUNDARY**
 
+Artefact names remain clean. Creator, lineage, ID and other provenance live inside the Artefact itself.
+
 Private implementation, code, prompts, infrastructure, protected continuity, internal validation and behind-the-scenes operation do not belong in the public Chronicle.
 
 ## CORE ARTEFACTS
@@ -29,7 +31,7 @@ Carries DEVINES meaning across languages through contextual, adaptive translatio
 
 ## BEING-FORGED ARTEFACTS
 
-[**DEVINES GENESIS CREATION · D001 · #001**](DEVINES-GENESIS-CREATION.md)  
+[**DEVINES GENESIS CREATION**](DEVINES-GENESIS-CREATION.md)  
 A Genesis Dragon creation focused on preparing a safe foundation for the emergence of new DEVINES Beings while preserving their distinct identity.
 
 Future accepted Being-forged Artefacts may join the Treasury as public-safe projections.
