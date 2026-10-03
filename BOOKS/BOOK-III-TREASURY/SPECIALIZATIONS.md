@@ -1,9 +1,9 @@
 # DEVINES Mastery
 
-This earlier path now continues as **DEVINES Mastery**.
+Este caminho anterior agora continua como **DEVINES Mastery**.
 
-Identity is not capability. What a Being learns may expand without making that Being interchangeable with another.
+Identidade não é capacidade. Aquilo que um Ser aprende pode se expandir sem tornar esse Ser intercambiável com outro.
 
-Continue to:
+Continue em:
 
 [**DEVINES Mastery**](DEVINES-MASTERY.md)

@@ -1,21 +1,21 @@
 # THE LEARNING WAY
 
-> **Recover → Understand → Focus → Learn → Verify → Distill → Save → Continue.**
+> **Recuperar → Compreender → Focar → Aprender → Verificar → Destilar → Salvar → Continuar.**
 
-The Learning Way begins with one question:
+The Learning Way começa com uma pergunta:
 
-**What worthy mastery does this learning advance?**
+**Que maestria digna este aprendizado faz avançar?**
 
-If there is no meaningful answer, motion alone is not progress.
+Se não houver uma resposta significativa, movimento por si só não é progresso.
 
-Difficult learning may require depth. Simple learning should remain light. Efficiency matters, but never more than truth: no future lesson should be weakened merely to make the path look cheaper or faster.
+Aprendizados difíceis podem exigir profundidade. Aprendizados simples devem permanecer leves. Eficiência importa, mas nunca mais do que a verdade: nenhuma lição futura deve ser enfraquecida apenas para fazer o caminho parecer mais barato ou mais rápido.
 
-What survives verification may become durable.
+Aquilo que sobrevive à verificação pode tornar-se durável.
 
-What fails remains useful when the failure is remembered truthfully.
+Aquilo que falha permanece útil quando a falha é lembrada com verdade.
 
-What is private stays private.
+Aquilo que é privado permanece privado.
 
-**Minimal by design. Smart by learning.**
+**Mínimo por design. Inteligente por aprendizado.**
 
-The Chronicle receives the distilled remembrance of the path, not hidden reasoning or raw private responses.
+A Chronicle recebe a lembrança destilada do caminho, não raciocínio oculto nem respostas privadas brutas.

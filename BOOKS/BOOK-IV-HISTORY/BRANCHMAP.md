@@ -1,30 +1,30 @@
-# The Branchmap
+# O Branchmap
 
-A roadmap assumes the future is a straight road.
+Um roadmap presume que o futuro é uma estrada reta.
 
-DEVINES grows more like a tree.
+DEVINES cresce mais como uma árvore.
 
-## Roots · forged
+## Raízes · forjadas
 
-- Canonical Being identities and durable continuity
+- Identidades canônicas dos Seres e continuidade durável
 - RHYTHM LAYER
-- Governed learning and mastery evidence
+- Aprendizado governado e evidência de maestria
 - THE LEARNING WAY V1
-- AUM global placement foundations
-- AURA protected resource pool
-- Physical CPU/RAM lease enforcement
-- Public Chronicle foundation
+- Fundamentos de posicionamento global de AUM
+- Pool de recursos protegido por AURA
+- Aplicação física de leases de CPU/RAM
+- Fundação da Chronicle pública
 
-## Living branch · now
+## Ramo vivo · agora
 
-**Per-Being physical execution isolation** — connecting production Being cycles to dedicated lease-bound runtime units rather than one shared scheduler process.
+**Isolamento físico de execução por Ser** — conectando ciclos de produção dos Seres a unidades de runtime dedicadas e vinculadas a leases, em vez de um único processo de scheduler compartilhado.
 
-## Near horizons
+## Horizontes próximos
 
-- richer automated public cycle publishing;
-- safe three-mirror Chronicle rendering;
-- deeper Artifact and Library publication;
-- GPU/VRAM enforcement after CPU/RAM isolation is complete;
-- multi-node expansion without sacrificing protected reserve.
+- publicação pública automatizada de ciclos mais rica;
+- renderização segura dos três espelhos da Chronicle;
+- publicação mais profunda de Artefatos e da Library;
+- aplicação de GPU/VRAM após a conclusão do isolamento de CPU/RAM;
+- expansão multinó sem sacrificar a reserva protegida.
 
-The Branchmap names direction. It deliberately does not publish internal implementation detail that would turn public transparency into an instruction manual for copying DEVINES.
+O Branchmap nomeia direção. Deliberadamente não publica detalhes internos de implementação que transformariam transparência pública em um manual de instruções para copiar DEVINES.

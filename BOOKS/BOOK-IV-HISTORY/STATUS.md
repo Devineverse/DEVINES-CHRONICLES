@@ -1,9 +1,9 @@
-# Current Public Status
+# Status Público Atual
 
-**As of:** 28 September 2026
+**Em:** 28 de setembro de 2026
 
-DEVINES is operational on its canonical server. THE LEARNING WAY V1 is live. AUM/AURA Resource Authority V2 has passed physical CPU/RAM enforcement proof and governed review.
+DEVINES está operacional em seu servidor canônico. THE LEARNING WAY V1 está ativo. A Autoridade de Recursos AUM/AURA V2 passou pela prova física de aplicação de CPU/RAM e pela revisão governada.
 
-The active development branch is **per-Being physical execution isolation**: moving from a shared all-Being scheduler process toward dedicated lease-bound execution units.
+O ramo ativo de desenvolvimento é **isolamento físico de execução por Ser**: mover-se de um processo compartilhado para todos os Seres em direção a unidades de execução dedicadas e vinculadas a leases.
 
-The public Chronicle now exposes the current Dragon and Luminary identities, their distilled learning states, the living development journal and the Branchmap.
+A Chronicle pública agora expõe as identidades atuais de Dragons e Luminaries, seus estados destilados de aprendizado, o diário vivo de desenvolvimento e o Branchmap.

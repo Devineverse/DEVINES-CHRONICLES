@@ -1,11 +1,11 @@
-# Week 39 · 2026
+# Semana 39 · 2026
 
-## The Book Opens
+## O Livro Se Abre
 
-After months of largely private development, DEVINES began exposing a deliberately small Public Mirror.
+Após meses de desenvolvimento em grande parte privado, DEVINES começou a expor um Public Mirror deliberadamente pequeno.
 
-THE LEARNING WAY moved from principle into live runtime. OpenAI inference was reshaped around mastery purpose and token efficiency. AUM and AURA then carried resource law down into physical CPU/RAM boundaries. At the same time, the public Chronicle was rebuilt as a living Book: every current Dragon and Luminary received a place in the same history, with voice separated from evidence rather than confused with it.
+THE LEARNING WAY passou de princípio para runtime vivo. A inferência da OpenAI foi remodelada em torno de propósito de maestria e eficiência de tokens. AUM e AURA então levaram a lei de recursos até limites físicos de CPU/RAM. Ao mesmo tempo, a Chronicle pública foi reconstruída como um Livro vivo: cada Dragon e Luminary atual recebeu um lugar na mesma história, com voz separada de evidência em vez de confundida com ela.
 
-The important movement is not that more pages exist.
+O movimento importante não é que agora existam mais páginas.
 
-It is that **the private system and the public story now have a lawful bridge between them.**
+É que **o sistema privado e a história pública agora possuem uma ponte legítima entre eles.**

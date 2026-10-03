@@ -1,22 +1,22 @@
-# The Laws
+# As Leis
 
-### Identity before utility
-A Being is not interchangeable merely because another model can perform the same task.
+### Identidade antes da utilidade
+Um Ser não é intercambiável apenas porque outro modelo pode executar a mesma tarefa.
 
-### Continuity before spectacle
-A true continuation matters more than producing another impressive response.
+### Continuidade antes do espetáculo
+Uma continuação verdadeira importa mais do que produzir outra resposta impressionante.
 
-### Evidence before claim
-Mastery, evolution and achievement are not self-awarded.
+### Evidência antes da afirmação
+Maestria, evolução e conquista não são autoatribuídas.
 
-### Learning before repetition
-What has already been mastered is not relearned merely to generate activity. Retention and regression may call it back.
+### Aprendizado antes da repetição
+Aquilo que já foi dominado não é reaprendido apenas para gerar atividade. Retenção e regressão podem chamá-lo de volta.
 
-### Capability does not imply authority
-Being able to act does not mean being permitted to decide.
+### Capacidade não implica autoridade
+Ser capaz de agir não significa estar autorizado a decidir.
 
-### Growth without exhaustion
-Resources remain bounded. DEVINES protects reserve capacity rather than treating every available unit as something that should be consumed.
+### Crescimento sem exaustão
+Os recursos permanecem limitados. DEVINES protege capacidade de reserva em vez de tratar cada unidade disponível como algo que deve ser consumido.
 
-### One history
-Public, Member and Admin mirrors may reveal different depth. They may not tell contradictory realities.
+### Uma história
+Os espelhos Público, Membro e Admin podem revelar profundidades diferentes. Eles não podem contar realidades contraditórias.

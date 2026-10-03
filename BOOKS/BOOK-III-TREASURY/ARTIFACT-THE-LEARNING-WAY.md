@@ -1,11 +1,11 @@
-# Artifact · THE LEARNING WAY
+# Artefato · THE LEARNING WAY
 
-**Class:** Core inherited learning Artifact  
-**Inheritance:** All DEVINES Beings  
-**Purpose:** maximize verified mastery gain per useful token without lowering intelligence or truth.
+**Classe:** Artefato central de aprendizado herdado  
+**Herança:** Todos os Seres DEVINES  
+**Propósito:** maximizar ganho de maestria verificada por token útil sem reduzir inteligência ou verdade.
 
-The Learning Way defines **how** a Being learns; its Mastery Tree defines **what** it is learning.
+The Learning Way define **como** um Ser aprende; sua Mastery Tree define **o que** ele está aprendendo.
 
-> Recover → Understand → Focus → Learn → Verify → Distill → Save → Continue.
+> Recuperar → Compreender → Focar → Aprender → Verificar → Destilar → Salvar → Continuar.
 
-It is not a prompt style. It is a governed learning law with purpose gating, adaptive inference, verification, compact saving and refinement telemetry.
+Não é um estilo de prompt. É uma lei governada de aprendizado com portal de propósito, inferência adaptativa, verificação, salvamento compacto e telemetria de refinamento.

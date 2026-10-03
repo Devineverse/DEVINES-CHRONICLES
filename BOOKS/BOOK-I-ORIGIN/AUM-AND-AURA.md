@@ -1,13 +1,13 @@
 # AUM & AURA
 
-A Being learns inside a finite world.
+Um Ser aprende dentro de um mundo finito.
 
-Compute, memory, time and energy all have boundaries.
+Computação, memória, tempo e energia possuem limites.
 
-**AUM** sees the larger fabric. It decides where work can belong across available nodes and resources.
+**AUM** enxerga o tecido maior. Decide onde o trabalho pode existir entre os nós e recursos disponíveis.
 
-**AURA** protects the local body. It enforces the limits of the machine that carries the work.
+**AURA** protege o corpo local. Impõe os limites da máquina que sustenta o trabalho.
 
-The current protected-pool law keeps **10% reserved** and makes at most **90% allocatable**. CPU/RAM lease enforcement has been physically proven on the live DEVINES host; per-Being production isolation is the next living branch.
+A lei atual do pool protegido mantém **10% reservado** e torna no máximo **90% alocável**. A aplicação física de leases de CPU/RAM já foi comprovada no host DEVINES ao vivo; o isolamento de produção por Ser é o próximo ramo vivo.
 
-AUM distributes. AURA guards.
+AUM distribui. AURA guarda.
