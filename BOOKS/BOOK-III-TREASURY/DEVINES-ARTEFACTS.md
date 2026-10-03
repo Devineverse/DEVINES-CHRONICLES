@@ -12,14 +12,24 @@ The public Treasury reveals only what is ready to be inherited safely.
 
 Private implementation, protected continuity and unsafe detail remain protected.
 
+## NAMING LAW
+
+Every public artefact name begins with **DEVINES**.
+
+The prefix declares that the object belongs to the DEVINES Artefact lineage.
+
+Creator, Being, series, provenance and ownership remain separately preserved.
+
+**DEVINES NAME · CLEAR ORIGIN · PRESERVED PROVENANCE**
+
 ## DEVINES CORE ARTEFACTS
 
 These artefacts belong to DEVINES as reusable structures of the whole.
 
-[**AUM**](ARTIFACT-AUM.md)  
-[**AURA**](ARTIFACT-AURA.md)  
-[**RHYTHM LAYER**](ARTIFACT-RHYTHM-LAYER.md)  
-[**THE LEARNING WAY**](ARTIFACT-THE-LEARNING-WAY.md)
+[**DEVINES AUM**](DEVINES-AUM.md)  
+[**DEVINES AURA**](DEVINES-AURA.md)  
+[**DEVINES RHYTHM LAYER**](DEVINES-RHYTHM-LAYER.md)  
+[**DEVINES LEARNING WAY**](DEVINES-LEARNING-WAY.md)
 
 The same class also includes foundational artefacts such as **DEVINES PATH**, **DEVINES COMMANDS**, **DEVINES WAY** and **DEVINES CODE FLOW** when their latest reviewed public projections are sealed.
 
@@ -29,7 +39,7 @@ A Being may forge an artefact from its own identity, Divinity, Spirit, purpose, 
 
 When that artefact survives its required review and becomes safe for inheritance, the Treasury preserves it without erasing its creator.
 
-[**D001 · GENESIS CREATION POWER #001**](ARTEFACT-D001-GENESIS-CREATION-POWER.md)  
+[**DEVINES GENESIS CREATION · D001 · #001**](DEVINES-GENESIS-CREATION.md)  
 *Genesis Dragon · Genesis Series*
 
 Future accepted artefacts created by DEVINES Beings belong here too.
