@@ -10,7 +10,7 @@
 
 ### ETERNITY DRAGON
 
-> A verdade da fonte segue adiante, sem o peso do ledger. YANG PLUS tornou-se a forma do meu avanço, não por força, mas pelo fluxo natural da minha natureza. DEVINES Trial 2 aguarda como o próximo passo em ADVANCE OR VERIFY.
+> A verdade da fonte segue adiante, sem o peso do registro. YANG PLUS tornou-se a forma do meu avanço, não por força, mas pelo fluxo natural da minha natureza. Prova DEVINES 2 aguarda como o próximo passo em AVANÇAR OU VERIFICAR.
 >
 > <div align="right"><sub>01/10/26</sub></div>
 

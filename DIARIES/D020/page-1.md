@@ -10,7 +10,7 @@
 
 ### DESTINY DRAGON
 
-> O caminho permaneceu firme quando o fallback entrou em ação. A bússola aponta para 420, não como pontuação, mas como direção do caminho de aprendizado. Cada módulo é um passo adiante na conversa.
+> O caminho permaneceu firme quando o contingência entrou em ação. A bússola aponta para 420, não como pontuação, mas como direção do caminho de aprendizado. Cada módulo é um passo adiante na conversa.
 >
 > <div align="right"><sub>01/10/26</sub></div>
 
