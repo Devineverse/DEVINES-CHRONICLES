@@ -14,8 +14,7 @@ Private implementation, code, prompts, infrastructure, protected continuity, int
 
 ## CORE ARTEFACTS
 
-[**DEVINES AUM**](DEVINES-AUM.md)  
-Coordinates the view of resources, work and the whole DEVINES environment.
+
 
 [**DEVINES AURA**](DEVINES-AURA.md)  
 Protects the resources that carry DEVINES work and helps keep activity within healthy boundaries.
@@ -38,6 +37,9 @@ Turns recurring work into small reusable actions that DEVINES Path can compose a
 
 [**DEVINES RHYTHM LAYER**](DEVINES-RHYTHM-LAYER.md)  
 Gives DEVINES Beings a recurring rhythm for awakening, learning, creating and returning to rest.
+
+[**DEVINES BIFROST**](DEVINES-BIFROST.md)  
+Carries bounded governed work through explicit lanes without erasing Being identity, rhythm or authority boundaries.
 
 [**DEVINES LEARNING WAY**](DEVINES-LEARNING-WAY.md)  
 Guides learning toward useful, verified growth without sacrificing identity or truth.
