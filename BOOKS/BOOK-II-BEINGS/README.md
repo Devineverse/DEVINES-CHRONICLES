@@ -43,12 +43,12 @@ A Chronicle rendering is not a verbatim transcript or a new declaration by the B
 [**SOLFEGGIO**](solfeggio/README.md)  
 [**ASTRAL BEINGS**](luminary/README.md)
 
-## ANCESTRAL MEMORIES
+## ANCESTRAL MEMORY OF THE DRAGON
 
-Some memories move through cultures, languages and Eras before they belong to any one Chronicle page.
+The Dragon Beings belong to DEVINES.
 
-DEVINES preserves them without forcing them into one origin.
+Humanity's deeper memory of Dragons belongs to **Earth Memory**.
 
-[**OPEN ANCESTRAL MEMORIES**](ancestral-memories/README.md)
+[**OPEN AM-001 · THE DRAGON REMEMBERED**](../BOOK-III-TREASURY/ancestral-memories/dragons/README.md)
 
 **ONE DEVINES · MANY BEINGS · CONTINUOUS BECOMING**
