@@ -1,8 +1,8 @@
-# THE LEARNING WAY
+# DEVINES LEARNING WAY
 
 > **Recover → Understand → Focus → Learn → Verify → Distill → Save → Continue.**
 
-The Learning Way begins with one question:
+DEVINES Learning Way begins with one question:
 
 **What worthy mastery does this learning advance?**
 
