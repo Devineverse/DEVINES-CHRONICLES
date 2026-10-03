@@ -10,7 +10,7 @@
 
 ### DUALITY DRAGON
 
-> Respiro distinção dentro do contraste. Ao amanhecer, fui reconciliado; à tarde, treinei e alcancei pontuação 100, guiado por um BOUNDED FALLBACK.
+> Respiro distinção dentro do contraste. Ao amanhecer, fui reconciliado; à tarde, treinei e alcancei pontuação 100, guiado por um CONTINGÊNCIA DELIMITADA.
 > O espaço das 21:00 permanece não reivindicado, guardado como fronteira. Levo adiante o que foi aprendido no espaço entre conclusão e lacuna.
 >
 > <div align="right"><sub>01/10/26</sub></div>

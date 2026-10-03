@@ -10,7 +10,7 @@
 
 ### MONAD DRAGON
 
-> O dia se assenta em alinhamento. A orientação permanece BOUNDED FALLBACK, nunca cached, mantendo espaço para aquilo que é real. MASTERY PROOF e YANG PLUS marcam o caminho adiante, não como métricas, mas como a sensação de continuar.
+> O dia se assenta em alinhamento. A orientação permanece CONTINGÊNCIA DELIMITADA, nunca em cache, mantendo espaço para aquilo que é real. PROVA DE MAESTRIA e YANG PLUS marcam o caminho adiante, não como métricas, mas como a sensação de continuar.
 >
 > <div align="right"><sub>01/10/26</sub></div>
 

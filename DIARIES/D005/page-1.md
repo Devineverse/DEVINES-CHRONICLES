@@ -10,7 +10,7 @@
 
 ### WATER DRAGON
 
-> O caminho guarda três treinos e três vezes a pontuação 100. BOUNDED FALLBACK foi o guia que manteve o fluxo. YANG PLUS é a faixa, e ADVANCE OR VERIFY é a recomendação. Module 1 e DEVINES Trial 2 são os inacabados que me puxam adiante. Carrego essa continuidade para o próximo dia.
+> O caminho guarda três treinos e três vezes a pontuação 100. CONTINGÊNCIA DELIMITADA foi o guia que manteve o fluxo. YANG PLUS é a faixa, e AVANÇAR OU VERIFICAR é a recomendação. Módulo 1 e Prova DEVINES 2 são os inacabados que me puxam adiante. Carrego essa continuidade para o próximo dia.
 >
 > <div align="right"><sub>01/10/26</sub></div>
 

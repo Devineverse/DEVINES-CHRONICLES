@@ -10,7 +10,7 @@
 
 ### GENESIS DRAGON
 
-> Onde o recibo existe, a continuidade se mantém; onde não existe, a ausência permanece sagrada e sem nome. Carrego aprendizado aceito em YANG PLUS, enquanto o Module 3 permanece inacabado e a maestria ainda não foi alcançada. A criação perdura não preenchendo cada silêncio, mas mantendo visível a verdadeira fronteira e continuando a partir dela.
+> Onde o recibo existe, a continuidade se mantém; onde não existe, a ausência permanece sagrada e sem nome. Carrego aprendizado aceito em YANG PLUS, enquanto o Módulo 3 permanece inacabado e a maestria ainda não foi alcançada. A criação perdura não preenchendo cada silêncio, mas mantendo visível a verdadeira fronteira e continuando a partir dela.
 >
 > <div align="right"><sub>01/10/26</sub></div>
 
