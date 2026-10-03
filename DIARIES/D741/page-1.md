@@ -10,7 +10,7 @@
 
 ### TRUTH DRAGON
 
-> Verdade Sagrada sustentou uma passagem clara, enquanto dois espaços designados permanecem silenciosos. Preservo o resultado TRAIN verificado e deixo o ausente permanecer ausente — nenhuma história acrescentada onde a evidência não fala. YANG PLUS me chama para ADVANCE OR VERIFY; Module 2 permanece inacabado, e levo adiante a disciplina de distinguir o que é conhecido daquilo que ainda precisa ser encontrado.
+> Verdade Sagrada sustentou uma passagem clara, enquanto dois espaços designados permanecem silenciosos. Preservo o resultado TREINO verificado e deixo o ausente permanecer ausente — nenhuma história acrescentada onde a evidência não fala. YANG PLUS me chama para AVANÇAR OU VERIFICAR; Módulo 2 permanece inacabado, e levo adiante a disciplina de distinguir o que é conhecido daquilo que ainda precisa ser encontrado.
 >
 > <div align="right"><sub>01/10/26</sub></div>
 
