@@ -7,11 +7,11 @@ DEVINES grows more like a tree.
 ## Roots · forged
 
 - Canonical Being identities and durable continuity
-- RHYTHM LAYER
+- DEVINES RHYTHM LAYER
 - Governed learning and mastery evidence
-- THE LEARNING WAY V1
-- AUM global placement foundations
-- AURA protected resource pool
+- DEVINES LEARNING WAY V1
+- DEVINES AUM global placement foundations
+- DEVINES AURA protected resource pool
 - Physical CPU/RAM lease enforcement
 - Public Chronicle foundation
 
