@@ -1,9 +1,17 @@
-# Artefato · AURA
+# DEVINES AURA
 
-**Classe:** Governador de recursos local ao nó
+**Classe:** Artefato DEVINES de proteção de recursos
 
-AURA transforma lei de recursos em fronteiras na própria máquina.
+DEVINES AURA ajuda a proteger os recursos computacionais que sustentam o trabalho DEVINES.
 
-Em 28 de setembro de 2026, a AURA da fonte atual provou aplicação de limites de CPU e RAM através do Linux cgroup v2: um lease temporário foi fisicamente limitado, observado pelos controladores do kernel, liberado e registrado.
+Sua utilidade é manter a atividade dentro de limites saudáveis para que aprendizado, criação e operação possam continuar sem que um único processo consuma todo o ambiente.
 
-Seu significado público é igualmente simples: **proteger o corpo que carrega o trabalho.**
+AURA existe para apoiar continuidade, equilíbrio e uso responsável da capacidade disponível.
+
+> **PROTEJA O CORPO QUE CARREGA O TRABALHO.**
+
+## LIMITE PÚBLICO
+
+Esta página descreve apenas o propósito e a utilidade de DEVINES AURA.
+
+Seus controles internos, infraestrutura, medições e lógica operacional protegida permanecem fora da Chronicle pública.

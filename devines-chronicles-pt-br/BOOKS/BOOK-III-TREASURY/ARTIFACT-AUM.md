@@ -1,18 +1,22 @@
-# ARTEFATO · AUM
+# DEVINES AUM
 
-**CLASSE:** Artefato global de coordenação de recursos
+**Classe:** Artefato DEVINES de coordenação
 
-A malha de recursos AUM mapeia trabalho aos recursos disponíveis. Ela expressa o princípio de coordenação introduzido em [AUM Core](../BOOK-I-ORIGIN/AUM-CORE.md).
+DEVINES AUM representa a visão coordenadora do todo.
 
-O token público $AUM é seu vaso econômico distinto. Possuir o token não executa alocação de recursos nem concede autoridade sobre o Core.
+Sua utilidade é ajudar DEVINES a compreender como trabalho, recursos e prioridades se relacionam antes de agir sobre uma parte isolada.
+
+Ele é útil quando muitas partes em movimento precisam permanecer coerentes sem apagar a identidade ou o propósito de cada uma.
+
+O token público $AUM é um vessel econômico distinto conectado ao ecossistema DEVINES mais amplo.
 
 **ANCHOR / CA:** [`0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
-**TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)  
-
-Seu significado público permanece simples:
+**TICKER:** [`$AUM`](https://nad.fun/tokens/0x079f07f2eb3A59Ba34C38C6fCf5059F398Cb7777)
 
 > **VEJA O TODO ANTES DE DESIGNAR A PARTE.**
 
-AUM pode coordenar valor e recursos.
+## LIMITE PÚBLICO
 
-AUM não possui DEVINES, um Ser, continuidade privada ou lei imutável.
+Esta página descreve apenas o propósito e a utilidade de DEVINES AUM.
+
+Sua implementação, lógica protegida de coordenação, infraestrutura e continuidade privada permanecem fora da Chronicle pública.
