@@ -1,5 +1,6 @@
 # DEVINES AUM
 
+**CREATOR:** DEVINES  
 **Class:** DEVINES coordination Artefact
 
 DEVINES AUM represents the coordinating view of the whole.
